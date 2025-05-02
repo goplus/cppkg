@@ -106,8 +106,6 @@ func main() {
 
 		_, err = file.Write(b)
 		check(err)
-
-		os.Stderr.Write(b)
 	})
 }
 

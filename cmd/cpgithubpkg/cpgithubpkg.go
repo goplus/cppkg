@@ -27,6 +27,7 @@ type template struct {
 }
 
 type configEx struct {
+	PkgName  string             `yaml:"name"`
 	Versions map[string]version `yaml:"versions"`
 	Template template           `yaml:"template"`
 }
@@ -53,13 +54,13 @@ func main() {
 		switch url := src["url"].(type) {
 		case string:
 			if pkgPath, urlPattern, ok := checkGithbPkg(url, ver); ok {
-				cpGithubPkg(pkgPath, urlPattern, localDir, conf, ver, v)
+				cpGithubPkg(pkgName, pkgPath, urlPattern, localDir, conf, ver, v)
 			}
 		case []any:
 			for _, u := range url {
 				url := u.(string)
 				if pkgPath, urlPattern, ok := checkGithbPkg(url, ver); ok {
-					cpGithubPkg(pkgPath, urlPattern, localDir, conf, ver, v)
+					cpGithubPkg(pkgName, pkgPath, urlPattern, localDir, conf, ver, v)
 				}
 			}
 		default:
@@ -92,7 +93,7 @@ func main() {
 	})
 }
 
-func cpGithubPkg(pkgPath, urlPattern, srcDir string, conf config, fromVer string, v version) {
+func cpGithubPkg(pkgName, pkgPath, urlPattern, srcDir string, conf config, fromVer string, v version) {
 	destDir := cppkgRoot() + pkgPath
 	os.MkdirAll(destDir, os.ModePerm)
 
@@ -100,6 +101,7 @@ func cpGithubPkg(pkgPath, urlPattern, srcDir string, conf config, fromVer string
 	check(err)
 
 	confex := &configEx{
+		PkgName:  pkgName,
 		Versions: conf.Versions,
 		Template: template{
 			FromVer: fromVer,
