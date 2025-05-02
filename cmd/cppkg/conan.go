@@ -48,6 +48,8 @@ func doReplace(src map[string]any, fromVer, toVer string) {
 
 func (p *Manager) Install(pkg *Package, flags int) (err error) {
 	outDir := p.outDir(pkg)
+	os.MkdirAll(outDir, os.ModePerm)
+
 	conanfileDir := p.conanfileDir(pkg.Path, pkg.Folder)
 	pkgVer := pkg.Version
 	template := pkg.Template
@@ -91,7 +93,10 @@ func (p *Manager) Install(pkg *Package, flags int) (err error) {
 	} else {
 		out = os.Stdout
 	}
-	return conanInstall(pkgVer, outDir, conanfileDir, out, flags)
+	logFile := outDir + "/rp.log"
+	return p.remoteProxy(flags, logFile, func() error {
+		return conanInstall(pkgVer, outDir, conanfileDir, out, flags)
+	})
 }
 
 func (p *Manager) outDir(pkg *Package) string {

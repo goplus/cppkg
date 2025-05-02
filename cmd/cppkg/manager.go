@@ -26,7 +26,7 @@ func New(cacheDir string) (ret *Manager, err error) {
 		}
 		cacheDir += "/cppkg"
 	}
-	os.MkdirAll(cacheDir, 0755)
+	os.MkdirAll(cacheDir, os.ModePerm)
 	ret = &Manager{
 		cacheDir: cacheDir,
 	}
