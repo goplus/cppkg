@@ -25,6 +25,7 @@ func (p rtHandler) RoundTrip(req *http.Request) (*http.Response, error) {
 type teeReader struct {
 	rc   io.ReadCloser
 	b    bytes.Buffer
+	req  *http.Request
 	resp *http.Response
 	log  *stdlog.Logger
 }
@@ -40,6 +41,7 @@ func (p *teeReader) Close() error {
 	resp := *p.resp
 	resp.Body = io.NopCloser(&p.b)
 	var b bytes.Buffer
+	p.req.Write(&b)
 	resp.Write(&b)
 	p.log.Print(b.String())
 	return err
@@ -56,14 +58,12 @@ func startRevertProxy(endpoint string, log *stdlog.Logger) (_ *revertProxy, err 
 	proxy := httptest.NewServer(&httputil.ReverseProxy{
 		Rewrite: func(r *httputil.ProxyRequest) {
 			r.SetURL(rpURL)
-			var b bytes.Buffer
-			r.Out.Write(&b)
-			log.Print(b.String())
 		},
 		Transport: rtHandler(func(req *http.Request) (resp *http.Response, err error) {
 			resp, err = http.DefaultTransport.RoundTrip(req)
 			resp.Body = &teeReader{
 				rc:   resp.Body,
+				req:  req,
 				resp: resp,
 				log:  log,
 			}
