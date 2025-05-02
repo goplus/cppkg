@@ -1,3 +1,4 @@
+name: cpp-dump
 versions:
   0.5.0:
     folder: all
@@ -6,5 +7,6 @@ versions:
   0.7.0:
     folder: all
 template:
+  from: 0.7.0
   folder: all
   url: https://github.com/philip82148/cpp-dump/archive/refs/tags/v${version}.tar.gz

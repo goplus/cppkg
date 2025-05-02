@@ -1,8 +1,10 @@
+name: openal-soft
 versions:
   1.22.2:
     folder: all
   1.23.1:
     folder: all
 template:
+  from: 1.23.1
   folder: all
   url: https://github.com/kcat/openal-soft/releases/download/${version}/openal-soft-${version}.tar.bz2

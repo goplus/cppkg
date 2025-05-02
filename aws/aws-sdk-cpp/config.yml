@@ -1,8 +1,10 @@
+name: aws-sdk-cpp
 versions:
   1.11.352:
     folder: all
   1.9.234:
     folder: all
 template:
+  from: 1.11.352
   folder: all
   url: https://github.com/aws/aws-sdk-cpp/archive/${version}.tar.gz

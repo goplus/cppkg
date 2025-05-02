@@ -1,3 +1,4 @@
+name: cyclonedds
 versions:
   0.10.2:
     folder: all
@@ -6,5 +7,6 @@ versions:
   0.10.4:
     folder: all
 template:
+  from: 0.10.4
   folder: all
   url: https://github.com/eclipse-cyclonedds/cyclonedds/archive/${version}.tar.gz

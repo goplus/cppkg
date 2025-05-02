@@ -1,6 +1,8 @@
+name: ctrack
 versions:
   1.0.2:
     folder: all
 template:
+  from: 1.0.2
   folder: all
   url: https://github.com/Compaile/ctrack/releases/download/v${version}/ctrack-main.zip

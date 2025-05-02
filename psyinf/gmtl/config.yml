@@ -1,6 +1,8 @@
+name: psyinf-gmtl
 versions:
   0.7.1:
     folder: all
 template:
+  from: 0.7.1
   folder: all
   url: https://github.com/psyinf/gmtl/archive/refs/tags/${version}.tar.gz

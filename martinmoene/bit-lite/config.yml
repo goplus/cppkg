@@ -1,6 +1,8 @@
+name: bit-lite
 versions:
   0.1.0:
     folder: all
 template:
+  from: 0.1.0
   folder: all
   url: https://github.com/martinmoene/bit-lite/archive/${version}.zip

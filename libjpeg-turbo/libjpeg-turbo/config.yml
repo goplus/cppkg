@@ -1,3 +1,4 @@
+name: libjpeg-turbo
 versions:
   2.0.6:
     folder: all
@@ -16,5 +17,6 @@ versions:
   3.1.0:
     folder: all
 template:
+  from: 3.1.0
   folder: all
   url: https://github.com/libjpeg-turbo/libjpeg-turbo/releases/download/${version}/libjpeg-turbo-${version}.tar.gz

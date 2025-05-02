@@ -1,3 +1,4 @@
+name: jwt-cpp
 versions:
   0.3.1:
     folder: all
@@ -14,5 +15,6 @@ versions:
   0.7.1:
     folder: all
 template:
+  from: 0.7.1
   folder: all
   url: https://github.com/Thalhammer/jwt-cpp/archive/v${version}.tar.gz

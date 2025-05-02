@@ -1,6 +1,8 @@
+name: usrsctp
 versions:
   0.9.5.0:
     folder: all
 template:
+  from: 0.9.5.0
   folder: all
   url: https://github.com/sctplab/usrsctp/archive/refs/tags/${version}.tar.gz

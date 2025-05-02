@@ -1,3 +1,4 @@
+name: openvdb
 versions:
   10.1.0:
     folder: all
@@ -6,5 +7,6 @@ versions:
   9.1.0:
     folder: all
 template:
+  from: 11.0.0
   folder: all
   url: https://github.com/AcademySoftwareFoundation/openvdb/archive/refs/tags/v${version}.tar.gz

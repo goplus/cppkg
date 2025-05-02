@@ -1,6 +1,8 @@
+name: cn-cbor
 versions:
   1.0.0:
     folder: all
 template:
+  from: 1.0.0
   folder: all
   url: https://github.com/jimsch/cn-cbor/archive/${version}.zip

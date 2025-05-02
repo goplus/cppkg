@@ -1,3 +1,4 @@
+name: caf
 versions:
   0.18.6:
     folder: all
@@ -8,5 +9,6 @@ versions:
   1.0.2:
     folder: all
 template:
+  from: 1.0.2
   folder: all
   url: https://github.com/actor-framework/actor-framework/archive/${version}.tar.gz

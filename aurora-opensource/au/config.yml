@@ -1,6 +1,8 @@
+name: au
 versions:
   0.4.1:
     folder: all
 template:
+  from: 0.4.1
   folder: all
   url: https://github.com/aurora-opensource/au/archive/refs/tags/${version}.tar.gz

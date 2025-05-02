@@ -1,3 +1,4 @@
+name: alembic
 versions:
   1.8.2:
     folder: all
@@ -8,5 +9,6 @@ versions:
   1.8.6:
     folder: all
 template:
+  from: 1.8.6
   folder: all
   url: https://github.com/alembic/alembic/archive/refs/tags/${version}.tar.gz

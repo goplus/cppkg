@@ -1,3 +1,4 @@
+name: zeromq
 versions:
   4.3.2:
     folder: all
@@ -8,5 +9,6 @@ versions:
   4.3.5:
     folder: all
 template:
+  from: 4.3.5
   folder: all
   url: https://github.com/zeromq/libzmq/releases/download/v${version}/zeromq-${version}.tar.gz

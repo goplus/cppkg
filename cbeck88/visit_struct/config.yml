@@ -1,8 +1,10 @@
+name: visit_struct
 versions:
   "1.0":
     folder: all
   1.1.0:
     folder: all
 template:
+  from: 1.1.0
   folder: all
   url: https://github.com/cbeck88/visit_struct/archive/refs/tags/v${version}.tar.gz

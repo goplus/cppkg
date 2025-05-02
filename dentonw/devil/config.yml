@@ -1,6 +1,8 @@
+name: devil
 versions:
   1.8.0:
     folder: all
 template:
+  from: 1.8.0
   folder: all
   url: https://github.com/DentonW/DevIL/archive/refs/tags/v${version}.tar.gz

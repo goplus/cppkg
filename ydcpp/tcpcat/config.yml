@@ -1,8 +1,10 @@
+name: ydcpp-tcpcat
 versions:
   1.0.4:
     folder: all
   1.0.5:
     folder: all
 template:
+  from: 1.0.5
   folder: all
   url: https://github.com/ydcpp/tcpcat/archive/refs/tags/${version}.tar.gz

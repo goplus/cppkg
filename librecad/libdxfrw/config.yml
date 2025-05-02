@@ -1,8 +1,10 @@
+name: libdxfrw
 versions:
   1.0.1:
     folder: all
   2.2.0:
     folder: all
 template:
+  from: 2.2.0
   folder: all
   url: https://github.com/LibreCAD/libdxfrw/archive/refs/tags/LC${version}.tar.gz

@@ -1,6 +1,8 @@
+name: reckless
 versions:
   3.0.3:
     folder: all
 template:
+  from: 3.0.3
   folder: all
   url: https://github.com/mattiasflodin/reckless/archive/refs/tags/v${version}.tar.gz

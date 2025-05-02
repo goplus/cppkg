@@ -1,3 +1,4 @@
+name: trompeloeil
 versions:
   "39":
     folder: all
@@ -20,5 +21,6 @@ versions:
   "49":
     folder: all
 template:
+  from: "49"
   folder: all
   url: https://github.com/rollbear/trompeloeil/archive/v${version}.tar.gz

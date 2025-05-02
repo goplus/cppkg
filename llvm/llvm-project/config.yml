@@ -1,3 +1,4 @@
+name: llvm-openmp
 versions:
   10.0.0:
     folder: all
@@ -22,5 +23,6 @@ versions:
   9.0.1:
     folder: all
 template:
+  from: 14.0.6
   folder: all
   url: https://github.com/llvm/llvm-project/releases/download/llvmorg-${version}/openmp-${version}.src.tar.xz

@@ -1,3 +1,4 @@
+name: cista
 versions:
   "0.10":
     folder: all
@@ -14,5 +15,6 @@ versions:
   "0.9":
     folder: all
 template:
+  from: "0.15"
   folder: all
   url: https://github.com/felixguendling/cista/releases/download/v${version}/cista.h

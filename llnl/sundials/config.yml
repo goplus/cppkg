@@ -1,3 +1,4 @@
+name: sundials
 versions:
   5.2.0:
     folder: all
@@ -6,5 +7,6 @@ versions:
   5.4.0:
     folder: all
 template:
+  from: 5.4.0
   folder: all
   url: https://github.com/LLNL/sundials/releases/download/v${version}/sundials-${version}.tar.gz

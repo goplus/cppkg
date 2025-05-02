@@ -1,3 +1,4 @@
+name: thrust
 versions:
   1.16.0:
     folder: all
@@ -6,5 +7,6 @@ versions:
   1.17.2:
     folder: all
 template:
+  from: 1.17.2
   folder: all
   url: https://github.com/thrust/thrust/archive/${version}.tar.gz

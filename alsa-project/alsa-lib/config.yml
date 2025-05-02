@@ -1,3 +1,4 @@
+name: libalsa
 versions:
   1.1.9:
     folder: all
@@ -18,5 +19,6 @@ versions:
   1.2.7.2:
     folder: all
 template:
+  from: 1.2.13
   folder: all
   url: https://github.com/alsa-project/alsa-lib/archive/v${version}.tar.gz

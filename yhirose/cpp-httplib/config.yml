@@ -1,3 +1,4 @@
+name: cpp-httplib
 versions:
   0.14.1:
     folder: all
@@ -24,5 +25,6 @@ versions:
   0.19.0:
     folder: all
 template:
+  from: 0.19.0
   folder: all
   url: https://github.com/yhirose/cpp-httplib/archive/v${version}.tar.gz

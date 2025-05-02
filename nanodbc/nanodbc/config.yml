@@ -1,8 +1,10 @@
+name: nanodbc
 versions:
   2.13.0:
     folder: all
   2.14.0:
     folder: all
 template:
+  from: 2.14.0
   folder: all
   url: https://github.com/nanodbc/nanodbc/archive/v${version}.tar.gz

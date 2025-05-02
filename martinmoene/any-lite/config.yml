@@ -1,3 +1,4 @@
+name: any-lite
 versions:
   0.2.0:
     folder: all
@@ -6,5 +7,6 @@ versions:
   0.4.0:
     folder: all
 template:
+  from: 0.4.0
   folder: all
   url: https://github.com/martinmoene/any-lite/archive/v${version}.tar.gz

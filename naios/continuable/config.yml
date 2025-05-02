@@ -1,3 +1,4 @@
+name: continuable
 versions:
   4.1.0:
     folder: all
@@ -8,5 +9,6 @@ versions:
   4.2.2:
     folder: all
 template:
+  from: 4.2.2
   folder: all
   url: https://github.com/Naios/continuable/archive/${version}.tar.gz

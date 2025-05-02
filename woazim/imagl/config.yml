@@ -1,3 +1,4 @@
+name: imagl
 versions:
   0.1.0:
     folder: all
@@ -8,5 +9,6 @@ versions:
   0.2.1:
     folder: all
 template:
+  from: 0.2.1
   folder: all
   url: https://github.com/Woazim/imaGL/archive/refs/tags/v${version}.tar.gz

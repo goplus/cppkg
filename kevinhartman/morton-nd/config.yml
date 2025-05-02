@@ -1,8 +1,10 @@
+name: morton-nd
 versions:
   3.0.0:
     folder: all
   4.0.0:
     folder: all
 template:
+  from: 4.0.0
   folder: all
   url: https://github.com/kevinhartman/morton-nd/archive/refs/tags/v${version}.tar.gz

@@ -1,8 +1,10 @@
+name: xlsxio
 versions:
   0.2.33:
     folder: all
   0.2.34:
     folder: all
 template:
+  from: 0.2.34
   folder: all
   url: https://github.com/brechtsanders/xlsxio/archive/refs/tags/${version}.tar.gz

@@ -1,6 +1,8 @@
+name: octo-encryption-cpp
 versions:
   1.1.0:
     folder: all
 template:
+  from: 1.1.0
   folder: all
   url: https://github.com/ofiriluz/octo-encryption-cpp/archive/refs/tags/v${version}.tar.gz

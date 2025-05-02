@@ -1,3 +1,4 @@
+name: kealib
 versions:
   1.4.14:
     folder: all
@@ -6,5 +7,6 @@ versions:
   1.5.2:
     folder: all
 template:
+  from: 1.5.2
   folder: all
   url: https://github.com/ubarsc/kealib/archive/refs/tags/kealib-${version}.tar.gz

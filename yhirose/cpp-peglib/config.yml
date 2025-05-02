@@ -1,3 +1,4 @@
+name: cpp-peglib
 versions:
   0.1.13:
     folder: 0.x.x
@@ -30,5 +31,6 @@ versions:
   1.9.1:
     folder: 1.x.x
 template:
+  from: 1.9.1
   folder: 1.x.x
   url: https://github.com/yhirose/cpp-peglib/archive/v${version}.tar.gz

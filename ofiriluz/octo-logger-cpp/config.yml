@@ -1,3 +1,4 @@
+name: octo-logger-cpp
 versions:
   1.1.0:
     folder: all
@@ -22,5 +23,6 @@ versions:
   2.1.2:
     folder: all
 template:
+  from: 2.1.2
   folder: all
   url: https://github.com/ofiriluz/octo-logger-cpp/archive/v${version}.tar.gz

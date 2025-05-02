@@ -1,3 +1,4 @@
+name: libe57format
 versions:
   2.3.0:
     folder: all
@@ -6,5 +7,6 @@ versions:
   3.2.0:
     folder: all
 template:
+  from: 3.2.0
   folder: all
   url: https://github.com/asmaloney/libE57Format/archive/refs/tags/v${version}.tar.gz

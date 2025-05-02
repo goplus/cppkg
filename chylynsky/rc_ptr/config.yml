@@ -1,6 +1,8 @@
+name: rc_ptr
 versions:
   0.0.2:
     folder: all
 template:
+  from: 0.0.2
   folder: all
   url: https://github.com/Chylynsky/rc_ptr/archive/refs/tags/v${version}.tar.gz

@@ -1,6 +1,8 @@
+name: svtjpegxs
 versions:
   0.9.0:
     folder: all
 template:
+  from: 0.9.0
   folder: all
   url: https://github.com/OpenVisualCloud/SVT-JPEG-XS/archive/refs/tags/v${version}.tar.gz

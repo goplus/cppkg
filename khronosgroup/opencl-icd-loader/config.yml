@@ -1,3 +1,4 @@
+name: opencl-icd-loader
 versions:
   2020.06.16:
     folder: all
@@ -16,5 +17,6 @@ versions:
   2023.12.14:
     folder: all
 template:
+  from: 2023.12.14
   folder: all
   url: https://github.com/KhronosGroup/OpenCL-ICD-Loader/archive/refs/tags/v${version}.tar.gz

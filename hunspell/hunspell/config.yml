@@ -1,8 +1,10 @@
+name: hunspell
 versions:
   1.7.0:
     folder: all
   1.7.2:
     folder: all
 template:
+  from: 1.7.2
   folder: all
   url: https://github.com/hunspell/hunspell/archive/refs/tags/v${version}.tar.gz

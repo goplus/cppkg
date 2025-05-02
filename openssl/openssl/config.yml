@@ -1,3 +1,4 @@
+name: openssl
 versions:
   1.1.1w:
     folder: 1.x.x
@@ -14,5 +15,6 @@ versions:
   3.4.1:
     folder: 3.x.x
 template:
+  from: 3.4.1
   folder: 3.x.x
   url: https://github.com/openssl/openssl/releases/download/openssl-${version}/openssl-${version}.tar.gz

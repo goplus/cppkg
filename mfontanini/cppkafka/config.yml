@@ -1,8 +1,10 @@
+name: cppkafka
 versions:
   0.4.0:
     folder: all
   0.4.1:
     folder: all
 template:
+  from: 0.4.1
   folder: all
   url: https://github.com/mfontanini/cppkafka/archive/refs/tags/v${version}.tar.gz

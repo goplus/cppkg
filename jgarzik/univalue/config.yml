@@ -1,8 +1,10 @@
+name: univalue
 versions:
   1.0.5:
     folder: all
   1.1.1:
     folder: all
 template:
+  from: 1.1.1
   folder: all
   url: https://github.com/jgarzik/univalue/archive/v${version}.tar.gz

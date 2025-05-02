@@ -1,6 +1,8 @@
+name: status-value-lite
 versions:
   1.1.0:
     folder: all
 template:
+  from: 1.1.0
   folder: all
   url: https://github.com/martinmoene/status-value-lite/archive/v${version}.tar.gz

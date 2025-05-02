@@ -1,6 +1,8 @@
+name: manif
 versions:
   0.0.5:
     folder: all
 template:
+  from: 0.0.5
   folder: all
   url: https://github.com/artivis/manif/archive/refs/tags/${version}.tar.gz

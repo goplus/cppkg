@@ -1,6 +1,8 @@
+name: libpopcnt
 versions:
   "3.1":
     folder: all
 template:
+  from: "3.1"
   folder: all
   url: https://github.com/kimwalisch/libpopcnt/archive/refs/tags/v${version}.tar.gz

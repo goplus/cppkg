@@ -1,8 +1,10 @@
+name: cpp-lazy
 versions:
   6.0.0:
     folder: all
   7.0.2:
     folder: all
 template:
+  from: 7.0.2
   folder: all
   url: https://github.com/MarcDirven/cpp-lazy/releases/download/v${version}/cpp-lazy-src.zip

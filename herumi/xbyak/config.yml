@@ -1,3 +1,4 @@
+name: xbyak
 versions:
   "5.993":
     folder: all
@@ -34,5 +35,6 @@ versions:
   "7.21":
     folder: all
 template:
+  from: "7.21"
   folder: all
   url: https://github.com/herumi/xbyak/archive/v${version}.tar.gz

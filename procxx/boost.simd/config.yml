@@ -1,6 +1,8 @@
+name: procxx-boost-ext-simd
 versions:
   4.17.6.0:
     folder: all
 template:
+  from: 4.17.6.0
   folder: all
   url: https://github.com/procxx/boost.simd/archive/refs/tags/v${version}.tar.gz

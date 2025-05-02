@@ -1,8 +1,10 @@
+name: tlx
 versions:
   0.5.20200222:
     folder: all
   0.6.1:
     folder: all
 template:
+  from: 0.6.1
   folder: all
   url: https://github.com/tlx/tlx/archive/refs/tags/v${version}.tar.gz

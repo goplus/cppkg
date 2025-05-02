@@ -1,3 +1,4 @@
+name: hictk
 versions:
   0.0.12:
     folder: all
@@ -6,5 +7,6 @@ versions:
   2.0.2:
     folder: all
 template:
+  from: 2.0.2
   folder: all
   url: https://github.com/paulsengroup/hictk/archive/refs/tags/v${version}.tar.gz

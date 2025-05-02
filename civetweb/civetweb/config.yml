@@ -1,3 +1,4 @@
+name: civetweb
 versions:
   "1.13":
     folder: all
@@ -8,5 +9,6 @@ versions:
   "1.16":
     folder: all
 template:
+  from: "1.16"
   folder: all
   url: https://github.com/civetweb/civetweb/archive/v${version}.tar.gz

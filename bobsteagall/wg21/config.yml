@@ -1,6 +1,8 @@
+name: wg21-linear_algebra
 versions:
   0.7.3:
     folder: all
 template:
+  from: 0.7.3
   folder: all
   url: https://github.com/BobSteagall/wg21/archive/refs/tags/v${version}.tar.gz

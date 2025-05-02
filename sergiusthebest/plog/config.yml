@@ -1,3 +1,4 @@
+name: plog
 versions:
   1.1.10:
     folder: all
@@ -6,5 +7,6 @@ versions:
   1.1.9:
     folder: all
 template:
+  from: 1.1.10
   folder: all
   url: https://github.com/SergiusTheBest/plog/archive/${version}.tar.gz

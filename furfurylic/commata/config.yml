@@ -1,3 +1,4 @@
+name: commata
 versions:
   0.2.5:
     folder: all
@@ -18,5 +19,6 @@ versions:
   1.0.2:
     folder: all
 template:
+  from: 1.0.2
   folder: all
   url: https://github.com/furfurylic/commata/archive/refs/tags/v${version}.tar.gz

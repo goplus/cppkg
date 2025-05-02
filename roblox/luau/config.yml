@@ -1,3 +1,4 @@
+name: luau
 versions:
   "0.620":
     folder: all
@@ -18,5 +19,6 @@ versions:
   "0.667":
     folder: all
 template:
+  from: "0.667"
   folder: all
   url: https://github.com/Roblox/luau/archive/${version}.tar.gz

@@ -1,3 +1,4 @@
+name: libsodium
 versions:
   1.0.18:
     folder: all
@@ -8,5 +9,6 @@ versions:
   cci.20220430:
     folder: all
 template:
+  from: 1.0.20
   folder: all
   url: https://github.com/jedisct1/libsodium/archive/${version}-RELEASE.tar.gz

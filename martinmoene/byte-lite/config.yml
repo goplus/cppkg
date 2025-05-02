@@ -1,6 +1,8 @@
+name: byte-lite
 versions:
   0.3.0:
     folder: all
 template:
+  from: 0.3.0
   folder: all
   url: https://github.com/martinmoene/byte-lite/archive/v${version}.tar.gz

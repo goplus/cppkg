@@ -1,6 +1,8 @@
+name: zmqpp
 versions:
   4.2.0:
     folder: all
 template:
+  from: 4.2.0
   folder: all
   url: https://github.com/zeromq/zmqpp/archive/${version}.tar.gz

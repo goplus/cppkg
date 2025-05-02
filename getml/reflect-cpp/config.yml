@@ -1,3 +1,4 @@
+name: reflect-cpp
 versions:
   0.16.0:
     folder: all
@@ -6,5 +7,6 @@ versions:
   0.18.0:
     folder: all
 template:
+  from: 0.18.0
   folder: all
   url: https://github.com/getml/reflect-cpp/archive/refs/tags/v${version}.tar.gz

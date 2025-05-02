@@ -1,8 +1,10 @@
+name: cyrus-sasl
 versions:
   2.1.27:
     folder: all
   2.1.28:
     folder: all
 template:
+  from: 2.1.28
   folder: all
   url: https://github.com/cyrusimap/cyrus-sasl/releases/download/cyrus-sasl-${version}/cyrus-sasl-${version}.tar.gz

@@ -1,3 +1,4 @@
+name: ms-gsl
 versions:
   2.0.0:
     folder: all
@@ -12,5 +13,6 @@ versions:
   4.1.0:
     folder: all
 template:
+  from: 4.1.0
   folder: all
   url: https://github.com/microsoft/GSL/archive/v${version}.tar.gz

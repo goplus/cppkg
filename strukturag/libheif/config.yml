@@ -1,3 +1,4 @@
+name: libheif
 versions:
   1.11.0:
     folder: all
@@ -18,5 +19,6 @@ versions:
   1.9.1:
     folder: all
 template:
+  from: 1.19.5
   folder: all
   url: https://github.com/strukturag/libheif/releases/download/v${version}/libheif-${version}.tar.gz

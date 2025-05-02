@@ -1,3 +1,4 @@
+name: proposal
 versions:
   7.4.2:
     folder: all
@@ -6,5 +7,6 @@ versions:
   7.6.2:
     folder: all
 template:
+  from: 7.6.2
   folder: all
   url: https://github.com/tudo-astroparticlephysics/PROPOSAL/archive/refs/tags/${version}.tar.gz

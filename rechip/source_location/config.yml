@@ -1,3 +1,4 @@
+name: source_location
 versions:
   0.1.1:
     folder: all
@@ -6,5 +7,6 @@ versions:
   0.2.1:
     folder: all
 template:
+  from: 0.2.1
   folder: all
   url: https://github.com/Rechip/source_location/archive/v${version}.tar.gz

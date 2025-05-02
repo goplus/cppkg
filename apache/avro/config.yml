@@ -1,3 +1,4 @@
+name: libavrocpp
 versions:
   1.10.1:
     folder: all
@@ -10,5 +11,6 @@ versions:
   1.11.3:
     folder: all
 template:
+  from: 1.11.3
   folder: all
   url: https://github.com/apache/avro/archive/release-${version}.tar.gz

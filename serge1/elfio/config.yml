@@ -1,3 +1,4 @@
+name: elfio
 versions:
   "3.10":
     folder: all
@@ -10,5 +11,6 @@ versions:
   "3.9":
     folder: all
 template:
+  from: "3.12"
   folder: all
   url: https://github.com/serge1/ELFIO/releases/download/Release_${version}/elfio-${version}.tar.gz

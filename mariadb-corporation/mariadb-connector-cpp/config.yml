@@ -1,6 +1,8 @@
+name: mariadb-connector-cpp
 versions:
   1.1.4:
     folder: all
 template:
+  from: 1.1.4
   folder: all
   url: https://github.com/mariadb-corporation/mariadb-connector-cpp/archive/refs/tags/${version}.zip

@@ -1,6 +1,8 @@
+name: poshlib
 versions:
   1.3.002:
     folder: all
 template:
+  from: 1.3.002
   folder: all
   url: https://github.com/PhilipLudington/poshlib/archive/v${version}.tar.gz

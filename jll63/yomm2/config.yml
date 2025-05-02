@@ -1,3 +1,4 @@
+name: yomm2
 versions:
   1.5.1:
     folder: all
@@ -6,5 +7,6 @@ versions:
   1.6.0:
     folder: all
 template:
+  from: 1.6.0
   folder: all
   url: https://github.com/jll63/yomm2/archive/refs/tags/v${version}.tar.gz

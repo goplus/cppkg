@@ -1,8 +1,10 @@
+name: playrho
 versions:
   1.1.0:
     folder: all
   1.1.2:
     folder: all
 template:
+  from: 1.1.2
   folder: all
   url: https://github.com/louis-langholtz/PlayRho/archive/refs/tags/v${version}.tar.gz

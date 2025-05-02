@@ -1,3 +1,4 @@
+name: pciutils
 versions:
   3.10.0:
     folder: all
@@ -6,5 +7,6 @@ versions:
   3.7.0:
     folder: all
 template:
+  from: 3.12.0
   folder: all
   url: https://github.com/pciutils/pciutils/archive/v${version}.tar.gz

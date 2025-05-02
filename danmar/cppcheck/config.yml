@@ -1,3 +1,4 @@
+name: cppcheck
 versions:
   2.10.3:
     folder: all
@@ -24,5 +25,6 @@ versions:
   2.9.3:
     folder: all
 template:
+  from: 2.17.1
   folder: all
   url: https://github.com/danmar/cppcheck/archive/${version}.tar.gz

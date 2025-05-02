@@ -1,8 +1,10 @@
+name: libnabo
 versions:
   1.0.7:
     folder: all
   1.1.0:
     folder: all
 template:
+  from: 1.1.0
   folder: all
   url: https://github.com/ethz-asl/libnabo/archive/refs/tags/${version}.tar.gz

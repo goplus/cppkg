@@ -1,3 +1,4 @@
+name: stc
 versions:
   1.0.0-rc1:
     folder: all
@@ -10,5 +11,6 @@ versions:
   "4.2":
     folder: all
 template:
+  from: "4.2"
   folder: all
   url: https://github.com/tylov/STC/archive/v${version}.tar.gz

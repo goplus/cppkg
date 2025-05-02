@@ -1,3 +1,4 @@
+name: uwebsockets
 versions:
   20.62.0:
     folder: all
@@ -8,5 +9,6 @@ versions:
   20.71.0:
     folder: all
 template:
+  from: 20.71.0
   folder: all
   url: https://github.com/uNetworking/uWebSockets/archive/v${version}.tar.gz

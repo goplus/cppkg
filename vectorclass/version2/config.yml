@@ -1,3 +1,4 @@
+name: vectorclass
 versions:
   2.01.03:
     folder: all
@@ -6,5 +7,6 @@ versions:
   2.02.00:
     folder: all
 template:
+  from: 2.02.00
   folder: all
   url: https://github.com/vectorclass/version2/archive/refs/tags/v${version}.tar.gz

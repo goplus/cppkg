@@ -1,8 +1,10 @@
+name: primesieve
 versions:
   "11.2":
     folder: all
   "12.1":
     folder: all
 template:
+  from: "12.1"
   folder: all
   url: https://github.com/kimwalisch/primesieve/archive/refs/tags/v${version}.tar.gz

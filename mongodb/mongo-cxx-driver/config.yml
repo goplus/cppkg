@@ -1,3 +1,4 @@
+name: mongo-cxx-driver
 versions:
   3.10.1:
     folder: all
@@ -16,5 +17,6 @@ versions:
   3.8.1:
     folder: all
 template:
+  from: 3.11.0
   folder: all
   url: https://github.com/mongodb/mongo-cxx-driver/releases/download/r${version}/mongo-cxx-driver-r${version}.tar.gz

@@ -1,3 +1,4 @@
+name: miniz
 versions:
   2.1.0:
     folder: all
@@ -8,5 +9,6 @@ versions:
   3.0.2:
     folder: all
 template:
+  from: 3.0.2
   folder: all
   url: https://github.com/richgel999/miniz/archive/refs/tags/${version}.tar.gz

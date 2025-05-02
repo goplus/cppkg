@@ -1,6 +1,8 @@
+name: libsersi
 versions:
   0.1.0:
     folder: all
 template:
+  from: 0.1.0
   folder: all
   url: https://github.com/crhowell3/libsersi/archive/refs/tags/v${version}.tar.gz

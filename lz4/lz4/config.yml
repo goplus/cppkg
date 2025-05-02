@@ -1,3 +1,4 @@
+name: lz4
 versions:
   1.10.0:
     folder: all
@@ -6,5 +7,6 @@ versions:
   1.9.4:
     folder: all
 template:
+  from: 1.10.0
   folder: all
   url: https://github.com/lz4/lz4/archive/v${version}.tar.gz

@@ -1,6 +1,8 @@
+name: libatomic_ops
 versions:
   7.8.2:
     folder: all
 template:
+  from: 7.8.2
   folder: all
   url: https://github.com/ivmai/libatomic_ops/releases/download/v${version}/libatomic_ops-${version}.tar.gz

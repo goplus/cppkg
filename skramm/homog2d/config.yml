@@ -1,3 +1,4 @@
+name: homog2d
 versions:
   "2.10":
     folder: all
@@ -6,5 +7,6 @@ versions:
   "2.9":
     folder: all
 template:
+  from: "2.11"
   folder: all
   url: https://github.com/skramm/homog2d/archive/refs/tags/v${version}.tar.gz

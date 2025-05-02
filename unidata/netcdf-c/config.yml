@@ -1,8 +1,10 @@
+name: netcdf
 versions:
   4.7.4:
     folder: all
   4.8.1:
     folder: all
 template:
+  from: 4.8.1
   folder: all
   url: https://github.com/Unidata/netcdf-c/archive/v${version}.tar.gz

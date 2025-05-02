@@ -1,3 +1,4 @@
+name: pango
 versions:
   1.48.9:
     folder: all
@@ -16,5 +17,6 @@ versions:
   1.54.0:
     folder: all
 template:
+  from: 1.50.7
   folder: all
   url: https://github.com/GNOME/pango/archive/${version}.tar.gz

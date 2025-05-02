@@ -1,3 +1,4 @@
+name: earcut
 versions:
   0.12.4:
     folder: all
@@ -6,5 +7,6 @@ versions:
   2.2.4:
     folder: all
 template:
+  from: 2.2.4
   folder: all
   url: https://github.com/mapbox/earcut.hpp/archive/v${version}.tar.gz

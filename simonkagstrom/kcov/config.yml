@@ -1,3 +1,4 @@
+name: kcov
 versions:
   "38":
     folder: all
@@ -6,5 +7,6 @@ versions:
   "42":
     folder: all
 template:
+  from: "42"
   folder: all
   url: https://github.com/SimonKagstrom/kcov/archive/refs/tags/v${version}.tar.gz

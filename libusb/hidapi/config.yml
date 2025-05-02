@@ -1,3 +1,4 @@
+name: hidapi
 versions:
   0.10.1:
     folder: all
@@ -12,5 +13,6 @@ versions:
   0.14.0:
     folder: all
 template:
+  from: 0.14.0
   folder: all
   url: https://github.com/libusb/hidapi/archive/hidapi-${version}.tar.gz

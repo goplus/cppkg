@@ -1,8 +1,10 @@
+name: libslz
 versions:
   1.2.0:
     folder: all
   1.2.1:
     folder: all
 template:
+  from: 1.2.1
   folder: all
   url: https://github.com/wtarreau/libslz/archive/v${version}.tar.gz

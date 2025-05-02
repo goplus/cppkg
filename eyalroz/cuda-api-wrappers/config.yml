@@ -1,3 +1,4 @@
+name: cuda-api-wrappers
 versions:
   0.6.3:
     folder: all
@@ -10,5 +11,6 @@ versions:
   0.8.0:
     folder: all
 template:
+  from: 0.8.0
   folder: all
   url: https://github.com/eyalroz/cuda-api-wrappers/archive/refs/tags/v${version}.tar.gz

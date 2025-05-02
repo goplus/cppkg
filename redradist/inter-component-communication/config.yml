@@ -1,6 +1,8 @@
+name: redradist-icc
 versions:
   1.0.0:
     folder: all
 template:
+  from: 1.0.0
   folder: all
   url: https://github.com/redradist/Inter-Component-Communication/archive/refs/tags/v${version}.tar.gz

@@ -1,6 +1,8 @@
+name: microtar
 versions:
   0.1.0:
     folder: all
 template:
+  from: 0.1.0
   folder: all
   url: https://github.com/rxi/microtar/archive/refs/tags/v${version}.tar.gz

@@ -1,8 +1,10 @@
+name: hexl
 versions:
   1.2.4:
     folder: all
   1.2.5:
     folder: all
 template:
+  from: 1.2.5
   folder: all
   url: https://github.com/intel/hexl/archive/refs/tags/v${version}.tar.gz

@@ -1,6 +1,8 @@
+name: kainjow-mustache
 versions:
   "4.1":
     folder: all
 template:
+  from: "4.1"
   folder: all
   url: https://github.com/kainjow/Mustache/archive/v${version}.tar.gz

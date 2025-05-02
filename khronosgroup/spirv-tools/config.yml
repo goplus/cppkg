@@ -1,3 +1,4 @@
+name: spirv-tools
 versions:
   1.2.198.0:
     folder: all
@@ -14,5 +15,6 @@ versions:
   1.4.309.0:
     folder: all
 template:
+  from: 1.4.309.0
   folder: all
   url: https://github.com/KhronosGroup/SPIRV-Tools/archive/refs/tags/vulkan-sdk-${version}.tar.gz

@@ -1,6 +1,8 @@
+name: qpdf
 versions:
   11.1.1:
     folder: all
 template:
+  from: 11.1.1
   folder: all
   url: https://github.com/qpdf/qpdf/archive/refs/tags/v${version}.tar.gz

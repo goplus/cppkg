@@ -1,3 +1,4 @@
+name: trantor
 versions:
   1.5.13:
     folder: all
@@ -16,5 +17,6 @@ versions:
   1.5.22:
     folder: all
 template:
+  from: 1.5.22
   folder: all
   url: https://github.com/an-tao/trantor/archive/v${version}.tar.gz

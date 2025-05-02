@@ -1,8 +1,10 @@
+name: directx-headers
 versions:
   1.610.2:
     folder: all
   1.614.0:
     folder: all
 template:
+  from: 1.614.0
   folder: all
   url: https://github.com/microsoft/DirectX-Headers/archive/refs/tags/v${version}.tar.gz

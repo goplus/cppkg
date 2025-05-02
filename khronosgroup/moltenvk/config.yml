@@ -1,3 +1,4 @@
+name: moltenvk
 versions:
   1.1.11:
     folder: all
@@ -8,5 +9,6 @@ versions:
   1.2.2:
     folder: all
 template:
+  from: 1.2.2
   folder: all
   url: https://github.com/KhronosGroup/MoltenVK/archive/refs/tags/v${version}.tar.gz

@@ -1,6 +1,8 @@
+name: libplist
 versions:
   2.6.0:
     folder: all
 template:
+  from: 2.6.0
   folder: all
   url: https://github.com/libimobiledevice/libplist/releases/download/${version}/libplist-${version}.tar.bz2

@@ -1,6 +1,8 @@
+name: reproc
 versions:
   14.2.5:
     folder: all
 template:
+  from: 14.2.5
   folder: all
   url: https://github.com/DaanDeMeyer/reproc/archive/refs/tags/v${version}.tar.gz

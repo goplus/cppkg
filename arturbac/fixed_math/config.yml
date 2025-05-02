@@ -1,8 +1,10 @@
+name: fixed_math
 versions:
   1.0.2:
     folder: 1.x.x
   2.0.0:
     folder: all
 template:
+  from: 2.0.0
   folder: all
   url: https://github.com/arturbac/fixed_math/archive/refs/tags/v${version}.tar.gz

@@ -1,3 +1,4 @@
+name: poco
 versions:
   1.11.3:
     folder: all
@@ -24,5 +25,6 @@ versions:
   1.13.3:
     folder: all
 template:
+  from: 1.13.3
   folder: all
   url: https://github.com/pocoproject/poco/archive/poco-${version}-release.tar.gz

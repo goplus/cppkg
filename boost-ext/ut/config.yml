@@ -1,3 +1,4 @@
+name: boost-ext-ut
 versions:
   1.1.8:
     folder: all
@@ -10,5 +11,6 @@ versions:
   2.1.0:
     folder: all
 template:
+  from: 2.1.0
   folder: all
   url: https://github.com/boost-ext/ut/archive/v${version}.tar.gz

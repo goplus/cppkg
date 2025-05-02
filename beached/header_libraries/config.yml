@@ -1,3 +1,4 @@
+name: daw_header_libraries
 versions:
   2.101.0:
     folder: all
@@ -22,5 +23,6 @@ versions:
   2.98.5:
     folder: all
 template:
+  from: 2.118.0
   folder: all
   url: https://github.com/beached/header_libraries/archive/v${version}.tar.gz

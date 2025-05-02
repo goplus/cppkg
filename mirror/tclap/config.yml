@@ -1,3 +1,4 @@
+name: tclap
 versions:
   1.2.3:
     folder: all
@@ -6,5 +7,6 @@ versions:
   1.2.5:
     folder: all
 template:
+  from: 1.2.5
   folder: all
   url: https://github.com/mirror/tclap/archive/refs/tags/v${version}.tar.gz

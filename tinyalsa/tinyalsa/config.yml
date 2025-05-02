@@ -1,8 +1,10 @@
+name: tinyalsa
 versions:
   1.1.1:
     folder: all
   2.0.0:
     folder: all
 template:
+  from: 2.0.0
   folder: all
   url: https://github.com/tinyalsa/tinyalsa/archive/refs/tags/v${version}.tar.gz

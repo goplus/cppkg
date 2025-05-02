@@ -1,9 +1,8 @@
 cmake_minimum_required(VERSION 3.15)
 project(test_package LANGUAGES CXX)
 
-find_package(PkgConfig REQUIRED)
-pkg_check_modules(BREAKPAD REQUIRED IMPORTED_TARGET breakpad-client)
+find_package(sentry REQUIRED CONFIG)
 
 add_executable(${PROJECT_NAME} test_package.cpp)
-target_link_libraries(${PROJECT_NAME} PRIVATE PkgConfig::BREAKPAD)
-target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_11)
+target_link_libraries(${PROJECT_NAME} PRIVATE sentry::sentry)
+target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_17)

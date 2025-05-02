@@ -1,3 +1,4 @@
+name: bitsery
 versions:
   5.2.2:
     folder: all
@@ -6,5 +7,6 @@ versions:
   5.2.4:
     folder: all
 template:
+  from: 5.2.4
   folder: all
   url: https://github.com/fraillt/bitsery/archive/v${version}.tar.gz

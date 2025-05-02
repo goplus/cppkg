@@ -1,6 +1,8 @@
+name: pretty-name
 versions:
   1.0.0:
     folder: all
 template:
+  from: 1.0.0
   folder: all
   url: https://github.com/Rechip/pretty-name/archive/refs/tags/v${version}.zip

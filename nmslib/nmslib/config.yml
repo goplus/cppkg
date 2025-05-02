@@ -1,6 +1,8 @@
+name: nmslib
 versions:
   2.1.1:
     folder: all
 template:
+  from: 2.1.1
   folder: all
   url: https://github.com/nmslib/nmslib/archive/v${version}.zip

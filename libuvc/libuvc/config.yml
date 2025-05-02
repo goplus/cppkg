@@ -1,8 +1,10 @@
+name: libuvc
 versions:
   0.0.6:
     folder: all
   0.0.7:
     folder: all
 template:
+  from: 0.0.7
   folder: all
   url: https://github.com/libuvc/libuvc/archive/v${version}.tar.gz

@@ -1,3 +1,4 @@
+name: stringzilla
 versions:
   1.1.3:
     folder: all
@@ -24,5 +25,6 @@ versions:
   3.9.6:
     folder: all
 template:
+  from: 3.11.3
   folder: all
   url: https://github.com/ashvardanian/StringZilla/archive/refs/tags/v${version}.tar.gz

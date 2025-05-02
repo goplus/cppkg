@@ -1,3 +1,4 @@
+name: ixwebsocket
 versions:
   10.2.5:
     folder: all
@@ -20,5 +21,6 @@ versions:
   9.6.4:
     folder: all
 template:
+  from: 11.4.5
   folder: all
   url: https://github.com/machinezone/IXWebSocket/archive/refs/tags/v${version}.tar.gz

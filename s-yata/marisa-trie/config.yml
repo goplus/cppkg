@@ -1,6 +1,8 @@
+name: marisa
 versions:
   0.2.6:
     folder: all
 template:
+  from: 0.2.6
   folder: all
   url: https://github.com/s-yata/marisa-trie/archive/refs/tags/v${version}.tar.gz

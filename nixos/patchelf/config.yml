@@ -1,3 +1,4 @@
+name: patchelf
 versions:
   "0.12":
     folder: all
@@ -6,5 +7,6 @@ versions:
   "0.18":
     folder: all
 template:
+  from: "0.18"
   folder: all
   url: https://github.com/NixOS/patchelf/releases/download/${version}.0/patchelf-${version}.0.tar.bz2

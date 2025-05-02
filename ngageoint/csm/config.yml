@@ -1,6 +1,8 @@
+name: csm
 versions:
   3.0.4:
     folder: all
 template:
+  from: 3.0.4
   folder: all
   url: https://github.com/ngageoint/csm/archive/refs/tags/v${version}.tar.gz

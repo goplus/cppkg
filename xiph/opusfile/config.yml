@@ -1,8 +1,10 @@
+name: opusfile
 versions:
   "0.11":
     folder: all
   "0.12":
     folder: all
 template:
+  from: "0.12"
   folder: all
   url: https://github.com/xiph/opusfile/archive/v${version}.tar.gz

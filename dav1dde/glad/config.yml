@@ -1,3 +1,4 @@
+name: glad
 versions:
   0.1.33:
     folder: all
@@ -8,5 +9,6 @@ versions:
   0.1.36:
     folder: all
 template:
+  from: 0.1.36
   folder: all
   url: https://github.com/Dav1dde/glad/archive/v${version}.tar.gz

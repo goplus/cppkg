@@ -1,6 +1,8 @@
+name: qt-advanced-docking-system
 versions:
   4.3.1:
     folder: all
 template:
+  from: 4.3.1
   folder: all
   url: https://github.com/githubuser0xFFFF/Qt-Advanced-Docking-System/archive/refs/tags/${version}.tar.gz

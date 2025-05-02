@@ -1,3 +1,4 @@
+name: itk
 versions:
   5.1.0:
     folder: all
@@ -6,5 +7,6 @@ versions:
   5.3.0:
     folder: all
 template:
+  from: 5.3.0
   folder: all
   url: https://github.com/InsightSoftwareConsortium/ITK/releases/download/v${version}/InsightToolkit-${version}.tar.gz

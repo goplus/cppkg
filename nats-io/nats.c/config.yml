@@ -1,3 +1,4 @@
+name: cnats
 versions:
   3.10.1:
     folder: all
@@ -14,5 +15,6 @@ versions:
   3.9.3:
     folder: all
 template:
+  from: 3.10.1
   folder: all
   url: https://github.com/nats-io/nats.c/archive/refs/tags/v${version}.tar.gz

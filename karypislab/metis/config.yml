@@ -1,8 +1,10 @@
+name: metis
 versions:
   5.1.1:
     folder: all
   5.2.1:
     folder: all
 template:
+  from: 5.2.1
   folder: all
   url: https://github.com/KarypisLab/METIS/archive/refs/tags/v${version}.tar.gz

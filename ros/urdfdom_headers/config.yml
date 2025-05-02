@@ -1,6 +1,8 @@
+name: urdfdom_headers
 versions:
   1.1.1:
     folder: all
 template:
+  from: 1.1.1
   folder: all
   url: https://github.com/ros/urdfdom_headers/archive/refs/tags/${version}.zip

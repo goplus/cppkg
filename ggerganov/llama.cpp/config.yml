@@ -1,3 +1,4 @@
+name: llama-cpp
 versions:
   b3542:
     folder: all
@@ -6,5 +7,6 @@ versions:
   b4570:
     folder: all
 template:
+  from: b4570
   folder: all
   url: https://github.com/ggerganov/llama.cpp/archive/refs/tags/${version}.tar.gz

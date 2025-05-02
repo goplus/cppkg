@@ -1,3 +1,4 @@
+name: fmt
 versions:
   10.0.0:
     folder: all
@@ -36,5 +37,6 @@ versions:
   9.1.0:
     folder: all
 template:
+  from: 11.1.4
   folder: all
   url: https://github.com/fmtlib/fmt/releases/download/${version}/fmt-${version}.zip

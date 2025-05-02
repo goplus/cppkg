@@ -1,3 +1,4 @@
+name: libdivide
 versions:
   "3.0":
     folder: all
@@ -6,5 +7,6 @@ versions:
   "5.1":
     folder: all
 template:
+  from: "5.1"
   folder: all
   url: https://github.com/ridiculousfish/libdivide/archive/refs/tags/v${version}.tar.gz

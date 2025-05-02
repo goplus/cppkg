@@ -1,6 +1,8 @@
+name: kissfft
 versions:
   131.1.0:
     folder: all
 template:
+  from: 131.1.0
   folder: all
   url: https://github.com/mborgerding/kissfft/archive/${version}.tar.gz

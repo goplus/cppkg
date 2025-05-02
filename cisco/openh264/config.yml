@@ -1,3 +1,4 @@
+name: openh264
 versions:
   2.1.1:
     folder: all
@@ -8,5 +9,6 @@ versions:
   2.5.0:
     folder: all
 template:
+  from: 2.5.0
   folder: all
   url: https://github.com/cisco/openh264/archive/refs/tags/v${version}.tar.gz

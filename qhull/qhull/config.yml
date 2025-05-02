@@ -1,3 +1,4 @@
+name: qhull
 versions:
   7.3.2:
     folder: all
@@ -6,5 +7,6 @@ versions:
   8.0.1:
     folder: all
 template:
+  from: 8.0.1
   folder: all
   url: https://github.com/qhull/qhull/archive/v${version}.tar.gz

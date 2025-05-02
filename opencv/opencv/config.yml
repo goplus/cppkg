@@ -1,3 +1,4 @@
+name: opencv
 versions:
   2.4.13.7:
     folder: 2.x
@@ -20,5 +21,6 @@ versions:
   4.9.0:
     folder: 4.x
 template:
+  from: 4.11.0
   folder: 4.x
   url: https://github.com/opencv/opencv/archive/refs/tags/${version}.tar.gz

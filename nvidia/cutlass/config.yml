@@ -1,3 +1,4 @@
+name: cutlass
 versions:
   3.1.0:
     folder: all
@@ -6,5 +7,6 @@ versions:
   3.5.1:
     folder: all
 template:
+  from: 3.5.1
   folder: all
   url: https://github.com/NVIDIA/cutlass/archive/refs/tags/v${version}.tar.gz

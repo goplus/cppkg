@@ -1,8 +1,10 @@
+name: icecream-cpp
 versions:
   0.3.1:
     folder: all
   1.0.0:
     folder: all
 template:
+  from: 1.0.0
   folder: all
   url: https://github.com/renatoGarcia/icecream-cpp/archive/refs/tags/v${version}.tar.gz

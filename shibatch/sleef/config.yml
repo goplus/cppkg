@@ -1,8 +1,10 @@
+name: sleef
 versions:
   3.5.1:
     folder: all
   "3.6":
     folder: all
 template:
+  from: "3.6"
   folder: all
   url: https://github.com/shibatch/sleef/archive/${version}.tar.gz

@@ -1,3 +1,4 @@
+name: libqasm
 versions:
   0.6.5:
     folder: all
@@ -16,5 +17,6 @@ versions:
   1.2.0:
     folder: all
 template:
+  from: 1.2.0
   folder: all
   url: https://github.com/QuTech-Delft/libqasm/releases/download/${version}/libqasm-${version}.tar.gz

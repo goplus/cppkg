@@ -1,8 +1,10 @@
+name: ecos
 versions:
   2.0.10:
     folder: all
   2.0.8:
     folder: all
 template:
+  from: 2.0.10
   folder: all
   url: https://github.com/embotech/ecos/archive/refs/tags/v${version}.tar.gz

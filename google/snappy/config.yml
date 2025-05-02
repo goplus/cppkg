@@ -1,3 +1,4 @@
+name: snappy
 versions:
   1.1.10:
     folder: all
@@ -12,5 +13,6 @@ versions:
   1.2.1:
     folder: all
 template:
+  from: 1.2.1
   folder: all
   url: https://github.com/google/snappy/archive/${version}.tar.gz

@@ -1,6 +1,8 @@
+name: zopfli
 versions:
   1.0.3:
     folder: all
 template:
+  from: 1.0.3
   folder: all
   url: https://github.com/google/zopfli//archive/refs/tags/zopfli-${version}.tar.gz

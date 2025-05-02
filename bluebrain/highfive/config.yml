@@ -1,3 +1,4 @@
+name: highfive
 versions:
   2.10.0:
     folder: all
@@ -18,5 +19,6 @@ versions:
   2.9.0:
     folder: all
 template:
+  from: 2.10.0
   folder: all
   url: https://github.com/BlueBrain/HighFive/archive/refs/tags/v${version}.tar.gz

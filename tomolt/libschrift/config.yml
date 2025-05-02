@@ -1,8 +1,10 @@
+name: libschrift
 versions:
   0.10.1:
     folder: all
   0.10.2:
     folder: all
 template:
+  from: 0.10.2
   folder: all
   url: https://github.com/tomolt/libschrift/archive/v${version}.tar.gz

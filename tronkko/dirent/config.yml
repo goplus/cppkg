@@ -1,8 +1,10 @@
+name: dirent
 versions:
   1.23.2:
     folder: all
   "1.24":
     folder: all
 template:
+  from: "1.24"
   folder: all
   url: https://github.com/tronkko/dirent/archive/${version}.tar.gz

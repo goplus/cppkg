@@ -1,3 +1,4 @@
+name: cctag
 versions:
   1.0.1:
     folder: all
@@ -6,5 +7,6 @@ versions:
   1.0.4:
     folder: all
 template:
+  from: 1.0.4
   folder: all
   url: https://github.com/alicevision/CCTag/archive/refs/tags/v${version}.tar.gz

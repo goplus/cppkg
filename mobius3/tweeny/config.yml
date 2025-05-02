@@ -1,6 +1,8 @@
+name: tweeny
 versions:
   3.2.0:
     folder: all
 template:
+  from: 3.2.0
   folder: all
   url: https://github.com/mobius3/tweeny/archive/refs/tags/v${version}.tar.gz

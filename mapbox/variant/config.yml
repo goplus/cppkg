@@ -1,6 +1,8 @@
+name: mapbox-variant
 versions:
   1.2.0:
     folder: all
 template:
+  from: 1.2.0
   folder: all
   url: https://github.com/mapbox/variant/archive/refs/tags/v${version}.tar.gz

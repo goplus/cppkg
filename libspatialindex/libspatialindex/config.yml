@@ -1,6 +1,8 @@
+name: libspatialindex
 versions:
   1.9.3:
     folder: all
 template:
+  from: 1.9.3
   folder: all
   url: https://github.com/libspatialindex/libspatialindex/releases/download/${version}/spatialindex-src-${version}.tar.bz2

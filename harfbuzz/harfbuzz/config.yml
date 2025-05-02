@@ -1,3 +1,4 @@
+name: harfbuzz
 versions:
   10.4.0:
     folder: all
@@ -18,5 +19,6 @@ versions:
   8.3.0:
     folder: all
 template:
+  from: 10.4.0
   folder: all
   url: https://github.com/harfbuzz/harfbuzz/releases/download/${version}/harfbuzz-${version}.tar.xz

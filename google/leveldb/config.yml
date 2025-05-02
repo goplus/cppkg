@@ -1,8 +1,10 @@
+name: leveldb
 versions:
   "1.22":
     folder: all
   "1.23":
     folder: all
 template:
+  from: "1.23"
   folder: all
   url: https://github.com/google/leveldb/archive/${version}.tar.gz

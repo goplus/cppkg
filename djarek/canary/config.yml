@@ -1,6 +1,8 @@
+name: canary
 versions:
   v1:
     folder: all
 template:
+  from: v1
   folder: all
   url: https://github.com/djarek/canary/archive/refs/tags/${version}.tar.gz

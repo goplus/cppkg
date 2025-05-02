@@ -1,3 +1,4 @@
+name: thorvg
 versions:
   0.13.7:
     folder: all
@@ -14,5 +15,6 @@ versions:
   0.15.9:
     folder: all
 template:
+  from: 0.15.9
   folder: all
   url: https://github.com/thorvg/thorvg/archive/refs/tags/v${version}.tar.gz

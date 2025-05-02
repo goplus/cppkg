@@ -1,8 +1,10 @@
+name: edlib
 versions:
   1.2.6:
     folder: all
   1.2.7:
     folder: all
 template:
+  from: 1.2.7
   folder: all
   url: https://github.com/Martinsos/edlib/archive/v${version}.tar.gz

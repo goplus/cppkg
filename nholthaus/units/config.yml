@@ -1,8 +1,10 @@
+name: units
 versions:
   2.3.1:
     folder: all
   2.3.3:
     folder: all
 template:
+  from: 2.3.3
   folder: all
   url: https://github.com/nholthaus/units/archive/v${version}.tar.gz

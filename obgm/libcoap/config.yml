@@ -1,3 +1,4 @@
+name: libcoap
 versions:
   4.3.0:
     folder: all
@@ -6,5 +7,6 @@ versions:
   cci.20200424:
     folder: all
 template:
+  from: 4.3.3
   folder: all
   url: https://github.com/obgm/libcoap/archive/v${version}.tar.gz

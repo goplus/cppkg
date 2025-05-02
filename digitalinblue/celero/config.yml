@@ -1,3 +1,4 @@
+name: celero
 versions:
   2.6.0:
     folder: all
@@ -6,5 +7,6 @@ versions:
   2.9.0:
     folder: all
 template:
+  from: 2.9.0
   folder: all
   url: https://github.com/DigitalInBlue/Celero/archive/v${version}.tar.gz

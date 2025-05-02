@@ -1,8 +1,10 @@
+name: imguizmo
 versions:
   "1.83":
     folder: all
   cci.20231114:
     folder: all
 template:
+  from: "1.83"
   folder: all
   url: https://github.com/CedricGuillemet/ImGuizmo/archive/refs/tags/${version}.tar.gz

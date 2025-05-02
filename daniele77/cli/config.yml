@@ -1,8 +1,10 @@
+name: cli
 versions:
   2.1.0:
     folder: all
   2.2.0:
     folder: all
 template:
+  from: 2.2.0
   folder: all
   url: https://github.com/daniele77/cli/archive/refs/tags/v${version}.tar.gz

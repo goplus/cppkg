@@ -1,3 +1,4 @@
+name: simdutf
 versions:
   4.0.5:
     folder: all
@@ -24,5 +25,6 @@ versions:
   6.3.1:
     folder: all
 template:
+  from: 6.3.1
   folder: all
   url: https://github.com/simdutf/simdutf/archive/v${version}.tar.gz

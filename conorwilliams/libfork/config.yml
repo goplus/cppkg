@@ -1,8 +1,10 @@
+name: libfork
 versions:
   3.7.2:
     folder: all
   3.8.0:
     folder: all
 template:
+  from: 3.8.0
   folder: all
   url: https://github.com/conorwilliams/libfork/archive/v${version}.tar.gz

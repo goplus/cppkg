@@ -1,8 +1,10 @@
+name: osgearth
 versions:
   "3.2":
     folder: all
   "3.3":
     folder: all
 template:
+  from: "3.3"
   folder: all
   url: https://github.com/gwaldron/osgearth/archive/refs/tags/osgearth-${version}.tar.gz

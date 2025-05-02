@@ -1,3 +1,4 @@
+name: pfr
 versions:
   1.0.4:
     folder: all
@@ -10,5 +11,6 @@ versions:
   2.2.0:
     folder: all
 template:
+  from: 2.2.0
   folder: all
   url: https://github.com/boostorg/pfr/archive/refs/tags/${version}.tar.gz

@@ -1,8 +1,10 @@
+name: wyhash
 versions:
   cci.20221102:
     folder: all
   final4:
     folder: all
 template:
+  from: final4
   folder: all
   url: https://github.com/wangyi-fudan/wyhash/archive/refs/tags/wyhash_${version}.tar.gz

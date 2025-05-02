@@ -1,6 +1,8 @@
+name: cvplot
 versions:
   1.2.2:
     folder: all
 template:
+  from: 1.2.2
   folder: all
   url: https://github.com/Profactor/cv-plot/archive/refs/tags/v${version}.tar.gz

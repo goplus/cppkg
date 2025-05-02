@@ -1,8 +1,10 @@
+name: aggeom-agg
 versions:
   2.6.1:
     folder: all
   2.7.1:
     folder: all
 template:
+  from: 2.7.1
   folder: all
   url: https://github.com/aggeom/agg-2.6/archive/refs/tags/agg-${version}.tar.gz

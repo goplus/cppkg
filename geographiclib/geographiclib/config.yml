@@ -1,3 +1,4 @@
+name: geographiclib
 versions:
   1.50.2:
     folder: all
@@ -10,5 +11,6 @@ versions:
   "2.4":
     folder: all
 template:
+  from: "2.4"
   folder: all
   url: https://github.com/geographiclib/geographiclib/archive/refs/tags/v${version}.tar.gz

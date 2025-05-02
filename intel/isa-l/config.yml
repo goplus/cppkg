@@ -1,6 +1,8 @@
+name: isa-l
 versions:
   2.30.0:
     folder: all
 template:
+  from: 2.30.0
   folder: all
   url: https://github.com/intel/isa-l/archive/refs/tags/v${version}.tar.gz

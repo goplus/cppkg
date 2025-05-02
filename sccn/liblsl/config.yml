@@ -1,3 +1,4 @@
+name: liblsl
 versions:
   1.16.0:
     folder: all
@@ -6,5 +7,6 @@ versions:
   1.16.2:
     folder: all
 template:
+  from: 1.16.2
   folder: all
   url: https://github.com/sccn/liblsl/archive/refs/tags/v${version}.tar.gz

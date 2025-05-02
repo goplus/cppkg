@@ -1,6 +1,8 @@
+name: gainput
 versions:
   1.0.0:
     folder: all
 template:
+  from: 1.0.0
   folder: all
   url: https://github.com/jkuhlmann/gainput/archive/refs/tags/v${version}.tar.gz

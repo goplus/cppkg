@@ -1,6 +1,8 @@
+name: perlinnoise
 versions:
   3.0.0:
     folder: all
 template:
+  from: 3.0.0
   folder: all
   url: https://github.com/Reputeless/PerlinNoise/archive/refs/tags/v${version}.tar.gz

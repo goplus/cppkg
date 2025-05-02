@@ -1,3 +1,4 @@
+name: kaitai_struct_cpp_stl_runtime
 versions:
   "0.10":
     folder: all
@@ -6,5 +7,6 @@ versions:
   cci.20210701:
     folder: all
 template:
+  from: 0.10.1
   folder: all
   url: https://github.com/kaitai-io/kaitai_struct_cpp_stl_runtime/archive/refs/tags/${version}.tar.gz

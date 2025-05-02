@@ -1,3 +1,4 @@
+name: libcbor
 versions:
   0.10.0:
     folder: all
@@ -12,5 +13,6 @@ versions:
   0.9.0:
     folder: all
 template:
+  from: 0.11.0
   folder: all
   url: https://github.com/PJK/libcbor/archive/v${version}.tar.gz

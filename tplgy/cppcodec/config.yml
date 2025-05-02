@@ -1,6 +1,8 @@
+name: cppcodec
 versions:
   "0.2":
     folder: all
 template:
+  from: "0.2"
   folder: all
   url: https://github.com/tplgy/cppcodec/archive/v${version}.tar.gz

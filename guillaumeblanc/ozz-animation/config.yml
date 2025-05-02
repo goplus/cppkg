@@ -1,3 +1,4 @@
+name: ozz-animation
 versions:
   0.12.1:
     folder: all
@@ -6,5 +7,6 @@ versions:
   0.14.1:
     folder: all
 template:
+  from: 0.14.1
   folder: all
   url: https://github.com/guillaumeblanc/ozz-animation/archive/${version}.tar.gz

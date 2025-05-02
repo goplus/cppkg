@@ -1,8 +1,10 @@
+name: libwebm
 versions:
   1.0.0.30:
     folder: all
   1.0.0.31:
     folder: all
 template:
+  from: 1.0.0.31
   folder: all
   url: https://github.com/webmproject/libwebm/archive/refs/tags/libwebm-${version}.tar.gz

@@ -1,6 +1,8 @@
+name: ctml
 versions:
   2.0.0:
     folder: all
 template:
+  from: 2.0.0
   folder: all
   url: https://github.com/tinfoilboy/CTML/archive/refs/tags/${version}.tar.gz

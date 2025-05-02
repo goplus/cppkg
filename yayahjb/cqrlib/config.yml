@@ -1,6 +1,8 @@
+name: cqrlib
 versions:
   1.1.4:
     folder: all
 template:
+  from: 1.1.4
   folder: all
   url: https://github.com/yayahjb/cqrlib/archive/refs/tags/CQRlib-${version}.tar.gz

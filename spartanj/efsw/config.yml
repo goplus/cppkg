@@ -1,8 +1,10 @@
+name: efsw
 versions:
   1.4.0:
     folder: all
   1.4.1:
     folder: all
 template:
+  from: 1.4.1
   folder: all
   url: https://github.com/SpartanJ/efsw/archive/refs/tags/${version}.tar.gz

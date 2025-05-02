@@ -1,8 +1,10 @@
+name: polylabel
 versions:
   1.1.0:
     folder: all
   2.0.0:
     folder: all
 template:
+  from: 2.0.0
   folder: all
   url: https://github.com/mapbox/polylabel/archive/refs/tags/v${version}.tar.gz

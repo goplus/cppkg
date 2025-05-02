@@ -1,3 +1,4 @@
+name: emsdk
 versions:
   2.0.30:
     folder: all
@@ -60,5 +61,6 @@ versions:
   3.1.73:
     folder: all
 template:
+  from: 3.1.73
   folder: all
   url: https://github.com/emscripten-core/emsdk/archive/${version}.tar.gz

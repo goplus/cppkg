@@ -1,3 +1,4 @@
+name: zimg
 versions:
   2.9.3:
     folder: all
@@ -12,5 +13,6 @@ versions:
   3.0.5:
     folder: all
 template:
+  from: 3.0.5
   folder: all
   url: https://github.com/sekrit-twc/zimg/archive/refs/tags/release-${version}.tar.gz

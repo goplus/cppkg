@@ -1,3 +1,4 @@
+name: aws-c-event-stream
 versions:
   0.2.7:
     folder: all
@@ -6,5 +7,6 @@ versions:
   0.5.1:
     folder: all
 template:
+  from: 0.5.1
   folder: all
   url: https://github.com/awslabs/aws-c-event-stream/archive/v${version}.tar.gz

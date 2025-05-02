@@ -1,6 +1,8 @@
+name: zmarok-semver
 versions:
   1.1.0:
     folder: all
 template:
+  from: 1.1.0
   folder: all
   url: https://github.com/zmarko/semver/archive/refs/tags/${version}.tar.gz

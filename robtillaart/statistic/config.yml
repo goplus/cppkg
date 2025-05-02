@@ -1,6 +1,8 @@
+name: statistic
 versions:
   1.0.8:
     folder: all
 template:
+  from: 1.0.8
   folder: all
   url: https://github.com/RobTillaart/Statistic/archive/refs/tags/${version}.tar.gz

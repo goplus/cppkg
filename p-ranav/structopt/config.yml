@@ -1,3 +1,4 @@
+name: structopt
 versions:
   0.1.0:
     folder: all
@@ -8,5 +9,6 @@ versions:
   0.1.3:
     folder: all
 template:
+  from: 0.1.3
   folder: all
   url: https://github.com/p-ranav/structopt/archive/v${version}.tar.gz

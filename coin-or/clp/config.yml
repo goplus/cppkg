@@ -1,8 +1,10 @@
+name: coin-clp
 versions:
   1.17.6:
     folder: all
   1.17.7:
     folder: all
 template:
+  from: 1.17.7
   folder: all
   url: https://github.com/coin-or/Clp/archive/refs/tags/releases/${version}.tar.gz

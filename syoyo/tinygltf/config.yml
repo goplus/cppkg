@@ -1,3 +1,4 @@
+name: tinygltf
 versions:
   2.2.0:
     folder: all
@@ -12,5 +13,6 @@ versions:
   2.9.0:
     folder: all
 template:
+  from: 2.9.0
   folder: all
   url: https://github.com/syoyo/tinygltf/archive/v${version}.tar.gz

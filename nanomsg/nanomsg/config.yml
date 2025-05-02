@@ -1,8 +1,10 @@
+name: nanomsg
 versions:
   "1.2":
     folder: all
   1.2.1:
     folder: all
 template:
+  from: 1.2.1
   folder: all
   url: https://github.com/nanomsg/nanomsg/archive/refs/tags/${version}.tar.gz

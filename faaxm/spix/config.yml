@@ -1,3 +1,4 @@
+name: spix
 versions:
   "0.4":
     folder: all
@@ -8,5 +9,6 @@ versions:
   "0.7":
     folder: all
 template:
+  from: "0.7"
   folder: all
   url: https://github.com/faaxm/spix/archive/refs/tags/v${version}.tar.gz

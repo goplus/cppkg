@@ -1,3 +1,4 @@
+name: libftp
 versions:
   0.4.1:
     folder: all
@@ -12,5 +13,6 @@ versions:
   1.4.0:
     folder: all
 template:
+  from: 1.4.0
   folder: all
   url: https://github.com/deniskovalchuk/libftp/archive/refs/tags/v${version}.tar.gz

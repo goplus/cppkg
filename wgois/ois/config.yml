@@ -1,8 +1,10 @@
+name: ois
 versions:
   "1.5":
     folder: all
   1.5.1:
     folder: all
 template:
+  from: 1.5.1
   folder: all
   url: https://github.com/wgois/OIS/archive/v${version}.tar.gz

@@ -1,8 +1,10 @@
+name: libyaml
 versions:
   0.2.2:
     folder: all
   0.2.5:
     folder: all
 template:
+  from: 0.2.5
   folder: all
   url: https://github.com/yaml/libyaml/archive/${version}.tar.gz

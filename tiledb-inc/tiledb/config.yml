@@ -1,6 +1,8 @@
+name: tiledb
 versions:
   2.26.1:
     folder: all
 template:
+  from: 2.26.1
   folder: all
   url: https://github.com/TileDB-Inc/TileDB/archive/refs/tags/${version}.tar.gz

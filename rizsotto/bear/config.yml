@@ -1,6 +1,8 @@
+name: bear
 versions:
   3.0.21:
     folder: all
 template:
+  from: 3.0.21
   folder: all
   url: https://github.com/rizsotto/Bear/archive/refs/tags/${version}.tar.gz

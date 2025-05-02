@@ -1,3 +1,4 @@
+name: dice-template-library
 versions:
   0.1.0:
     folder: all
@@ -22,5 +23,6 @@ versions:
   1.9.0:
     folder: all
 template:
+  from: 1.9.0
   folder: all
   url: https://github.com/dice-group/dice-template-library/archive/refs/tags/v${version}.tar.gz

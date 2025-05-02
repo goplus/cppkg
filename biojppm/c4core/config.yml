@@ -1,3 +1,4 @@
+name: c4core
 versions:
   0.1.10:
     folder: all
@@ -16,5 +17,6 @@ versions:
   0.2.5:
     folder: all
 template:
+  from: 0.2.5
   folder: all
   url: https://github.com/biojppm/c4core/releases/download/v${version}/c4core-${version}-src.tgz

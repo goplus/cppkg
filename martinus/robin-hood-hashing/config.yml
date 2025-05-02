@@ -1,3 +1,4 @@
+name: robin-hood-hashing
 versions:
   3.11.1:
     folder: all
@@ -14,5 +15,6 @@ versions:
   3.9.1:
     folder: all
 template:
+  from: 3.11.5
   folder: all
   url: https://github.com/martinus/robin-hood-hashing/archive/refs/tags/${version}.tar.gz

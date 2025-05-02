@@ -1,3 +1,4 @@
+name: boolinq
 versions:
   3.0.1:
     folder: all
@@ -8,5 +9,6 @@ versions:
   3.0.4:
     folder: all
 template:
+  from: 3.0.4
   folder: all
   url: https://github.com/k06a/boolinq/archive/${version}.tar.gz

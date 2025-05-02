@@ -1,6 +1,8 @@
+name: fmtlog
 versions:
   2.2.1:
     folder: all
 template:
+  from: 2.2.1
   folder: all
   url: https://github.com/MengRao/fmtlog/archive/refs/tags/v${version}.tar.gz

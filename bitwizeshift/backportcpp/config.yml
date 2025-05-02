@@ -1,6 +1,8 @@
+name: backport-cpp
 versions:
   1.2.0:
     folder: all
 template:
+  from: 1.2.0
   folder: all
   url: https://github.com/bitwizeshift/BackportCpp/archive/v${version}.tar.gz

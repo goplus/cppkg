@@ -1,8 +1,10 @@
+name: libva
 versions:
   2.20.0:
     folder: all
   2.21.0:
     folder: all
 template:
+  from: 2.21.0
   folder: all
   url: https://github.com/intel/libva/archive/refs/tags/${version}.tar.gz

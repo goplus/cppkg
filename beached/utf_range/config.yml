@@ -1,3 +1,4 @@
+name: daw_utf_range
 versions:
   2.2.0:
     folder: all
@@ -10,5 +11,6 @@ versions:
   2.2.5:
     folder: all
 template:
+  from: 2.2.5
   folder: all
   url: https://github.com/beached/utf_range/archive/v${version}.tar.gz

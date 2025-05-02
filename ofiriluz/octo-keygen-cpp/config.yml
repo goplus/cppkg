@@ -1,6 +1,8 @@
+name: octo-keygen-cpp
 versions:
   1.0.0:
     folder: all
 template:
+  from: 1.0.0
   folder: all
   url: https://github.com/ofiriluz/octo-keygen-cpp/archive/refs/tags/v${version}.tar.gz

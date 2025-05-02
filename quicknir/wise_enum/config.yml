@@ -1,8 +1,10 @@
+name: wise_enum
 versions:
   3.0.0:
     folder: all
   3.1.0:
     folder: all
 template:
+  from: 3.1.0
   folder: all
   url: https://github.com/quicknir/wise_enum/archive/refs/tags/${version}.tar.gz

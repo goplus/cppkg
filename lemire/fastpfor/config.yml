@@ -1,6 +1,8 @@
+name: fastpfor
 versions:
   0.2.0:
     folder: all
 template:
+  from: 0.2.0
   folder: all
   url: https://github.com/lemire/FastPFor/archive/refs/tags/v${version}.tar.gz

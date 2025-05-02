@@ -1,6 +1,8 @@
+name: fpgen
 versions:
   1.1.0-clang:
     folder: all
 template:
+  from: 1.1.0-clang
   folder: all
   url: https://github.com/jay-tux/fpgen/archive/refs/tags/v${version}.tar.gz

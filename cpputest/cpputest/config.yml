@@ -1,6 +1,8 @@
+name: cpputest
 versions:
   "4.0":
     folder: all
 template:
+  from: "4.0"
   folder: all
   url: https://github.com/cpputest/cpputest/releases/download/v${version}/cpputest-${version}.tar.gz

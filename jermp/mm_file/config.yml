@@ -1,6 +1,8 @@
+name: mm_file
 versions:
   1.0.0:
     folder: all
 template:
+  from: 1.0.0
   folder: all
   url: https://github.com/jermp/mm_file/archive/refs/tags/v${version}.tar.gz

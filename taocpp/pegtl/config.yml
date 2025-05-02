@@ -1,3 +1,4 @@
+name: taocpp-pegtl
 versions:
   2.8.1:
     folder: 2.x.x
@@ -22,5 +23,6 @@ versions:
   3.2.8:
     folder: 3.x.x
 template:
+  from: 3.2.8
   folder: 3.x.x
   url: https://github.com/taocpp/PEGTL/archive/${version}.tar.gz

@@ -1,6 +1,8 @@
+name: battery-embed
 versions:
   1.2.19:
     folder: all
 template:
+  from: 1.2.19
   folder: all
   url: https://github.com/batterycenter/embed/archive/refs/tags/v${version}.tar.gz

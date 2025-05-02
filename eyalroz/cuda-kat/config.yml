@@ -1,6 +1,8 @@
+name: cuda-kat
 versions:
   "0.2":
     folder: all
 template:
+  from: "0.2"
   folder: all
   url: https://github.com/eyalroz/cuda-kat/archive/refs/tags/v${version}.tar.gz
