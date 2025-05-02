@@ -5,9 +5,11 @@ import (
 	"log"
 	"os"
 	"os/exec"
+	"slices"
 	"strings"
 
 	"github.com/goccy/go-yaml"
+	"golang.org/x/mod/semver"
 )
 
 type version struct {
@@ -21,26 +23,6 @@ type config struct {
 type configEx struct {
 	Versions  map[string]version `yaml:"versions"`
 	SourceURL string             `yaml:"url"`
-}
-
-type conandata struct {
-	Sources map[string]any `yaml:"sources"`
-}
-
-func getConanData(conandatas map[string]conandata, folder, localDir string) (ret conandata, err error) {
-	if v, ok := conandatas[folder]; ok {
-		return v, nil
-	}
-	file := localDir + folder + "/conandata.yml"
-	b, err := os.ReadFile(file)
-	if err != nil {
-		return
-	}
-	if err = yaml.Unmarshal(b, &ret); err != nil {
-		return
-	}
-	conandatas[folder] = ret
-	return
 }
 
 // cpgithubpkg /7bitconf/config.yml
@@ -80,11 +62,11 @@ func main() {
 	}
 
 	conandatas := make(map[string]conandata) // folder -> conandata
-	for ver, v := range conf.Versions {
+	rangeVerDesc(conf.Versions, func(ver string, v version) {
 		cd, err := getConanData(conandatas, v.Folder, localDir)
 		if err != nil {
 			if os.IsNotExist(err) {
-				continue
+				return
 			}
 			check(err)
 		}
@@ -101,7 +83,7 @@ func main() {
 				log.Panicln("[FATAL] source:", src)
 			}
 		}
-	}
+	})
 }
 
 func cpGithubPkg(pkgPath, urlPattern, srcDir string, conf config) {
@@ -127,6 +109,7 @@ func cpGithubPkg(pkgPath, urlPattern, srcDir string, conf config) {
 
 func checkGithbPkg(url, ver string) (pkgPath, urlPattern string, ok bool) {
 	const githubPrefix = "https://github.com/"
+	const pattern = "${version}"
 	if strings.HasPrefix(url, githubPrefix) {
 		path := url[len(githubPrefix):]
 		if pos := strings.Index(path, ver); pos >= 0 {
@@ -134,14 +117,44 @@ func checkGithbPkg(url, ver string) (pkgPath, urlPattern string, ok bool) {
 			if len(parts) == 3 {
 				at := len(githubPrefix) + pos
 				ending := url[at+len(ver):]
-				if !strings.Contains(ending, ver) {
-					urlPattern = url[:at] + "%s" + ending
-					pkgPath, ok = strings.ToLower(parts[0]+"/"+parts[1]), true
-				}
+				urlPattern = url[:at] + pattern + strings.ReplaceAll(ending, ver, pattern)
+				pkgPath, ok = strings.ToLower(parts[0]+"/"+parts[1]), true
 			}
 		}
 	}
 	return
+}
+
+type conandata struct {
+	Sources map[string]any `yaml:"sources"`
+}
+
+func getConanData(conandatas map[string]conandata, folder, localDir string) (ret conandata, err error) {
+	if v, ok := conandatas[folder]; ok {
+		return v, nil
+	}
+	file := localDir + folder + "/conandata.yml"
+	b, err := os.ReadFile(file)
+	if err != nil {
+		return
+	}
+	if err = yaml.Unmarshal(b, &ret); err != nil {
+		return
+	}
+	conandatas[folder] = ret
+	return
+}
+
+func rangeVerDesc[V any](data map[string]V, f func(string, V)) {
+	keys := make([]string, 0, len(data))
+	for k := range data {
+		keys = append(keys, "v"+k)
+	}
+	semver.Sort(keys)
+	for _, k := range slices.Backward(keys) {
+		k = k[1:] // remove 'v'
+		f(k, data[k])
+	}
 }
 
 func conanRoot() string {
