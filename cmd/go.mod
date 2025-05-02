@@ -1,4 +1,4 @@
-module github.com/goplus/cppkg
+module github.com/goplus/cppkg/cmd
 
 go 1.23.0
 
