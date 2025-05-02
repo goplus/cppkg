@@ -1,0 +1,8 @@
+versions:
+  1.2.4:
+    folder: all
+  1.2.5:
+    folder: all
+  1.2.6:
+    folder: all
+url: https://github.com/cxong/tinydir/archive/refs/tags/${version}.tar.gz

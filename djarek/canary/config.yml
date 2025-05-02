@@ -1,0 +1,4 @@
+versions:
+  v1:
+    folder: all
+url: https://github.com/djarek/canary/archive/refs/tags/${version}.tar.gz

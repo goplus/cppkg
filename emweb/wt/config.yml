@@ -1,0 +1,18 @@
+versions:
+  4.10.0:
+    folder: all
+  4.10.1:
+    folder: all
+  4.11.2:
+    folder: all
+  4.6.0:
+    folder: all
+  4.6.2:
+    folder: all
+  4.7.1:
+    folder: all
+  4.8.0:
+    folder: all
+  4.9.1:
+    folder: all
+url: https://github.com/emweb/wt/archive/${version}.tar.gz

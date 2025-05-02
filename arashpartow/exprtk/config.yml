@@ -1,0 +1,8 @@
+versions:
+  0.0.1:
+    folder: all
+  0.0.2:
+    folder: all
+  0.0.3:
+    folder: all
+url: https://github.com/ArashPartow/exprtk/archive/${version}.tar.gz

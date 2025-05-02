@@ -1,0 +1,6 @@
+versions:
+  0.3.0:
+    folder: all
+  0.3.1:
+    folder: all
+url: https://github.com/Neargye/semver/archive/refs/tags/v${version}.tar.gz

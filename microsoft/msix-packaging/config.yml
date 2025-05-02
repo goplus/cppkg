@@ -1,0 +1,4 @@
+versions:
+  "1.7":
+    folder: all
+url: https://github.com/microsoft/msix-packaging/archive/refs/tags/v${version}.zip

@@ -1,0 +1,6 @@
+versions:
+  "3.1":
+    folder: all
+  "3.2":
+    folder: all
+url: https://github.com/albertodemichelis/squirrel/archive/v${version}.tar.gz

@@ -1,0 +1,8 @@
+versions:
+  23.06.00:
+    folder: all
+  23.10.00:
+    folder: all
+  24.04.00:
+    folder: all
+url: https://github.com/rapidsai/rmm/archive/v${version}a.tar.gz

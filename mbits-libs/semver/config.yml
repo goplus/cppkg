@@ -1,0 +1,4 @@
+versions:
+  0.1.1:
+    folder: all
+url: https://github.com/mbits-libs/semver/archive/v${version}.tar.gz

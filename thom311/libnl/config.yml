@@ -1,0 +1,10 @@
+versions:
+  3.2.25:
+    folder: all
+  3.7.0:
+    folder: all
+  3.8.0:
+    folder: all
+  3.9.0:
+    folder: all
+url: https://github.com/thom311/libnl/releases/download/libnl3_9_0/libnl-${version}.tar.gz

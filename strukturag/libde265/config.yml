@@ -1,0 +1,12 @@
+versions:
+  1.0.11:
+    folder: all
+  1.0.12:
+    folder: all
+  1.0.15:
+    folder: all
+  1.0.8:
+    folder: all
+  1.0.9:
+    folder: all
+url: https://github.com/strukturag/libde265/releases/download/v${version}/libde265-${version}.tar.gz

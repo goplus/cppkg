@@ -1,0 +1,8 @@
+versions:
+  2.13.1:
+    folder: all
+  "2.14":
+    folder: all
+  "2.16":
+    folder: all
+url: https://github.com/mm2/Little-CMS/releases/download/lcms${version}/lcms2-${version}.tar.gz

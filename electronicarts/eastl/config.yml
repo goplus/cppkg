@@ -1,0 +1,18 @@
+versions:
+  3.15.00:
+    folder: all
+  3.16.01:
+    folder: all
+  3.16.05:
+    folder: all
+  3.16.07:
+    folder: all
+  3.17.03:
+    folder: all
+  3.17.06:
+    folder: all
+  3.18.00:
+    folder: all
+  3.21.12:
+    folder: all
+url: https://github.com/electronicarts/EASTL/archive/refs/tags/${version}.tar.gz

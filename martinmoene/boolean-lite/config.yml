@@ -1,0 +1,4 @@
+versions:
+  0.1.0:
+    folder: all
+url: https://github.com/martinmoene/boolean-lite/archive/v${version}.tar.gz

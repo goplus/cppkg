@@ -1,0 +1,10 @@
+versions:
+  0.8.25:
+    folder: all
+  0.8.29:
+    folder: all
+  0.8.30:
+    folder: all
+  0.8.33:
+    folder: all
+url: https://github.com/AravisProject/aravis/releases/download/${version}/aravis-${version}.tar.xz

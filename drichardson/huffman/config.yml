@@ -1,0 +1,4 @@
+versions:
+  1.2.7:
+    folder: all
+url: https://github.com/drichardson/huffman/archive/refs/tags/v${version}.zip

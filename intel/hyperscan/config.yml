@@ -1,0 +1,6 @@
+versions:
+  5.4.0:
+    folder: all
+  5.4.2:
+    folder: all
+url: https://github.com/intel/hyperscan/archive/v${version}.tar.gz

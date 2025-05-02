@@ -1,0 +1,14 @@
+versions:
+  "0.10":
+    folder: all
+  "0.44":
+    folder: all
+  "0.50":
+    folder: all
+  "0.65":
+    folder: all
+  "0.70":
+    folder: all
+  "0.75":
+    folder: all
+url: https://github.com/PavelKisliak/BitSerializer/archive/v${version}.tar.gz

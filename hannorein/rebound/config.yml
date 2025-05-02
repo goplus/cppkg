@@ -1,0 +1,4 @@
+versions:
+  4.4.1:
+    folder: all
+url: https://github.com/hannorein/rebound/archive/refs/tags/${version}.tar.gz

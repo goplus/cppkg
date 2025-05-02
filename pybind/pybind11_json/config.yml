@@ -1,0 +1,8 @@
+versions:
+  0.2.11:
+    folder: all
+  0.2.12:
+    folder: all
+  0.2.13:
+    folder: all
+url: https://github.com/pybind/pybind11_json/archive/${version}.tar.gz

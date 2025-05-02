@@ -1,0 +1,6 @@
+versions:
+  0.10.0:
+    folder: all
+  0.11.1:
+    folder: all
+url: https://github.com/google/s2geometry/archive/refs/tags/v${version}.tar.gz

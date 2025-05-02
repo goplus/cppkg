@@ -1,0 +1,4 @@
+versions:
+  1.0.5:
+    folder: all
+url: https://github.com/auriamg/macdylibbundler/archive/refs/tags/${version}.tar.gz

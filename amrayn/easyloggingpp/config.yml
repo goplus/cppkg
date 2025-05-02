@@ -1,0 +1,6 @@
+versions:
+  9.97.0:
+    folder: all
+  9.97.1:
+    folder: all
+url: https://github.com/amrayn/easyloggingpp/archive/v${version}.tar.gz

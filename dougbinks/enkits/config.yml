@@ -1,0 +1,8 @@
+versions:
+  "1.10":
+    folder: all
+  "1.11":
+    folder: all
+  "1.8":
+    folder: all
+url: https://github.com/dougbinks/enkiTS/archive/v${version}.tar.gz

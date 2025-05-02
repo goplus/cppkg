@@ -1,0 +1,12 @@
+versions:
+  3.10.1:
+    folder: all
+  3.11.5:
+    folder: all
+  3.12.2:
+    folder: all
+  3.12.3:
+    folder: all
+  3.9.3:
+    folder: all
+url: https://github.com/simdjson/simdjson/archive/v${version}.tar.gz

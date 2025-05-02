@@ -1,0 +1,8 @@
+versions:
+  1.0.3:
+    folder: all
+  2.0.0:
+    folder: all
+  2.0.1:
+    folder: all
+url: https://github.com/unicorn-engine/unicorn/archive/refs/tags/${version}.tar.gz

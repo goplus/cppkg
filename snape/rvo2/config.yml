@@ -1,0 +1,4 @@
+versions:
+  2.0.2:
+    folder: all
+url: https://github.com/snape/RVO2/archive/v${version}.tar.gz

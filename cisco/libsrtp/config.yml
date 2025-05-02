@@ -1,0 +1,12 @@
+versions:
+  2.3.0:
+    folder: all
+  2.4.0:
+    folder: all
+  2.4.2:
+    folder: all
+  2.5.0:
+    folder: all
+  2.6.0:
+    folder: all
+url: https://github.com/cisco/libsrtp/archive/v${version}.tar.gz

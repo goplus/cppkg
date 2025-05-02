@@ -1,0 +1,8 @@
+versions:
+  0.16.0:
+    folder: all
+  0.17.0:
+    folder: all
+  0.18.0:
+    folder: all
+url: https://github.com/aous72/OpenJPH/archive/${version}.tar.gz

@@ -1,0 +1,6 @@
+versions:
+  2.2.0:
+    folder: all
+  2.3.0:
+    folder: all
+url: https://github.com/PDAL/PDAL/releases/download/${version}/PDAL-${version}-src.tar.bz2

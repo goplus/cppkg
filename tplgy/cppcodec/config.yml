@@ -1,0 +1,4 @@
+versions:
+  "0.2":
+    folder: all
+url: https://github.com/tplgy/cppcodec/archive/v${version}.tar.gz

@@ -1,0 +1,8 @@
+versions:
+  "2021.1":
+    folder: all
+  "2023.6":
+    folder: all
+  "2024.1":
+    folder: all
+url: https://github.com/google/shaderc/archive/refs/tags/v${version}.tar.gz

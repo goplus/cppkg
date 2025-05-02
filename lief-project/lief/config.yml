@@ -1,0 +1,6 @@
+versions:
+  0.13.1:
+    folder: all
+  0.16.2:
+    folder: all
+url: https://github.com/lief-project/LIEF/archive/${version}.tar.gz

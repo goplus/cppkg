@@ -1,0 +1,8 @@
+versions:
+  0.5.5:
+    folder: all
+  1.0.0:
+    folder: all
+  1.0.1:
+    folder: all
+url: https://github.com/LLNL/zfp/archive/${version}.tar.gz

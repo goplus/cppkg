@@ -1,0 +1,12 @@
+versions:
+  "2.0":
+    folder: all
+  "3.0":
+    folder: all
+  "3.1":
+    folder: all
+  3.2.3:
+    folder: all
+  3.3.1:
+    folder: all
+url: https://github.com/redorav/hlslpp/archive/${version}.tar.gz

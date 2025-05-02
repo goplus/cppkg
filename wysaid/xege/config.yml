@@ -1,0 +1,4 @@
+versions:
+  "20.08":
+    folder: all
+url: https://github.com/wysaid/xege/archive/refs/tags/v${version}.tar.gz

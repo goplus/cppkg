@@ -1,0 +1,12 @@
+versions:
+  0.0.1:
+    folder: all
+  1.0.0:
+    folder: 1.x.x
+  1.1.0:
+    folder: 1.x.x
+  1.2.0:
+    folder: 1.x.x
+  1.2.1:
+    folder: 1.x.x
+url: https://github.com/cross-language-cpp/djinni-support-lib/archive/v${version}.tar.gz

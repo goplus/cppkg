@@ -1,0 +1,8 @@
+versions:
+  2.0.14:
+    folder: all
+  2.0.16:
+    folder: all
+  2.0.19:
+    folder: all
+url: https://github.com/numactl/numactl/releases/download/v${version}/numactl-${version}.tar.gz

@@ -1,0 +1,14 @@
+versions:
+  3.8.1:
+    folder: all
+  4.0.1:
+    folder: all
+  4.0.3:
+    folder: all
+  4.1.0:
+    folder: all
+  4.2.0:
+    folder: all
+  4.4.0:
+    folder: all
+url: https://github.com/ToruNiina/toml11/archive/refs/tags/v${version}.tar.gz

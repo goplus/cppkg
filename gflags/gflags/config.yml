@@ -1,0 +1,4 @@
+versions:
+  2.2.2:
+    folder: all
+url: https://github.com/gflags/gflags/archive/v${version}.tar.gz

@@ -1,0 +1,4 @@
+versions:
+  1.0.0:
+    folder: all
+url: https://github.com/TartanLlama/function_ref/archive/refs/tags/v${version}.tar.gz

@@ -1,0 +1,4 @@
+versions:
+  "0.8":
+    folder: all
+url: https://github.com/lathiat/avahi/releases/download/v${version}/avahi-${version}.tar.gz

@@ -1,0 +1,8 @@
+versions:
+  1.0.0:
+    folder: all
+  2.0.0:
+    folder: all
+  2.1.1:
+    folder: all
+url: https://github.com/vahancho/erkir/archive/refs/tags/v${version}.tar.gz

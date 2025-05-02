@@ -1,0 +1,6 @@
+versions:
+  2.3.0:
+    folder: all
+  2.3.1:
+    folder: all
+url: https://github.com/Tessil/hopscotch-map/archive/v${version}.tar.gz

@@ -1,0 +1,4 @@
+versions:
+  2013.1.1:
+    folder: all
+url: https://github.com/xmake-mirror/libaesgm/archive/refs/tags/${version}.tar.gz

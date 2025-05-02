@@ -1,0 +1,10 @@
+versions:
+  0.1.33:
+    folder: all
+  0.1.34:
+    folder: all
+  0.1.35:
+    folder: all
+  0.1.36:
+    folder: all
+url: https://github.com/Dav1dde/glad/archive/v${version}.tar.gz

@@ -1,0 +1,8 @@
+versions:
+  2.0.1:
+    folder: 3.x
+  3.0.1:
+    folder: 3.x
+  5.2.0:
+    folder: 5.x
+url: https://github.com/jrouwe/JoltPhysics/archive/refs/tags/v${version}.tar.gz

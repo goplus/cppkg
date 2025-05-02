@@ -1,0 +1,8 @@
+versions:
+  1.0.6:
+    folder: all
+  1.0.7:
+    folder: all
+  2.0.0-rc10:
+    folder: all
+url: https://github.com/tinyobjloader/tinyobjloader/archive/refs/tags/v${version}.tar.gz

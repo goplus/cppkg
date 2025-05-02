@@ -1,0 +1,12 @@
+versions:
+  10.0.0:
+    folder: all
+  11.0.0:
+    folder: all
+  7.1.0:
+    folder: all
+  8.0.0:
+    folder: all
+  9.0.0:
+    folder: all
+url: https://github.com/leethomason/tinyxml2/archive/refs/tags/${version}.tar.gz

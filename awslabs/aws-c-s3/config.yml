@@ -1,0 +1,8 @@
+versions:
+  0.1.26:
+    folder: all
+  0.5.5:
+    folder: all
+  0.7.11:
+    folder: all
+url: https://github.com/awslabs/aws-c-s3/archive/v${version}.tar.gz

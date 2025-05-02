@@ -1,0 +1,8 @@
+versions:
+  2.2.0:
+    folder: all
+  2.2.1:
+    folder: all
+  3.0.0:
+    folder: all
+url: https://github.com/PragmaTwice/protopuf/archive/v${version}.tar.gz

@@ -1,0 +1,4 @@
+versions:
+  0.7.1:
+    folder: all
+url: https://github.com/psyinf/gmtl/archive/refs/tags/${version}.tar.gz

@@ -1,0 +1,4 @@
+versions:
+  5.1.1:
+    folder: all
+url: https://github.com/KarypisLab/GKlib/archive/refs/tags/METIS-v${version}-DistDGL-0.5.tar.gz

@@ -1,0 +1,10 @@
+versions:
+  4.3.2:
+    folder: all
+  4.3.3:
+    folder: all
+  4.3.4:
+    folder: all
+  4.3.5:
+    folder: all
+url: https://github.com/zeromq/libzmq/releases/download/v${version}/zeromq-${version}.tar.gz

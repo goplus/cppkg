@@ -1,0 +1,8 @@
+versions:
+  2.09.05:
+    folder: all
+  2.09.06:
+    folder: all
+  2.09.12:
+    folder: all
+url: https://github.com/electronicarts/EABase/archive/refs/heads/${version}.zip

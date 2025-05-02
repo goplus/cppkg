@@ -1,0 +1,4 @@
+versions:
+  "7.80":
+    folder: all
+url: https://github.com/LoicMarechal/libMeshb/archive/refs/tags/v${version}.tar.gz

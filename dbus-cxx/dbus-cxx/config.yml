@@ -1,0 +1,4 @@
+versions:
+  2.5.2:
+    folder: 2.x.x
+url: https://github.com/dbus-cxx/dbus-cxx/archive/refs/tags/${version}.tar.gz

@@ -1,0 +1,14 @@
+versions:
+  0.10.1:
+    folder: all
+  0.11.0:
+    folder: all
+  0.11.2:
+    folder: all
+  0.12.0:
+    folder: all
+  0.13.1:
+    folder: all
+  0.14.0:
+    folder: all
+url: https://github.com/libusb/hidapi/archive/hidapi-${version}.tar.gz

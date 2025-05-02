@@ -1,0 +1,4 @@
+versions:
+  10.32.01:
+    folder: all
+url: https://github.com/jpcre2/jpcre2/archive/refs/tags/${version}.tar.gz

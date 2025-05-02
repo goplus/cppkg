@@ -1,0 +1,12 @@
+versions:
+  2019_u9:
+    folder: all
+  "2020.0":
+    folder: all
+  "2020.1":
+    folder: all
+  "2020.2":
+    folder: all
+  "2020.3":
+    folder: all
+url: https://github.com/oneapi-src/oneTBB/archive/v${version}.tar.gz

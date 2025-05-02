@@ -1,0 +1,10 @@
+versions:
+  2.1.0:
+    folder: all
+  2.2.0:
+    folder: all
+  3.0.1:
+    folder: all
+  3.0.2:
+    folder: all
+url: https://github.com/richgel999/miniz/archive/refs/tags/${version}.tar.gz

@@ -1,0 +1,8 @@
+versions:
+  0.17.1a:
+    folder: all
+  0.26.9:
+    folder: all
+  0.31.0:
+    folder: all
+url: https://github.com/awslabs/aws-crt-cpp/archive/v${version}.tar.gz

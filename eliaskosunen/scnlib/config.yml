@@ -1,0 +1,10 @@
+versions:
+  2.0.3:
+    folder: all
+  3.0.1:
+    folder: all
+  3.0.2:
+    folder: all
+  4.0.1:
+    folder: all
+url: https://github.com/eliaskosunen/scnlib/archive/refs/tags/v${version}.tar.gz

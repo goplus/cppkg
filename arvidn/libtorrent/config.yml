@@ -1,0 +1,12 @@
+versions:
+  1.2.3:
+    folder: all
+  2.0.1:
+    folder: all
+  2.0.10:
+    folder: all
+  2.0.8:
+    folder: all
+  2.0.9:
+    folder: all
+url: https://github.com/arvidn/libtorrent/releases/download/v${version}/libtorrent-rasterbar-${version}.tar.gz

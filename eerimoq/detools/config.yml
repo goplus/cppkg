@@ -1,0 +1,6 @@
+versions:
+  0.51.0:
+    folder: all
+  0.53.0:
+    folder: all
+url: https://github.com/eerimoq/detools/archive/refs/tags/${version}.tar.gz

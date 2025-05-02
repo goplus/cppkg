@@ -1,0 +1,6 @@
+versions:
+  0.5.0:
+    folder: all
+  0.6.0:
+    folder: all
+url: https://github.com/yosh-matsuda/cpp-yyjson/archive/refs/tags/v${version}.tar.gz

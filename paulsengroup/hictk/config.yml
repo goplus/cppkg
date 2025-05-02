@@ -1,0 +1,8 @@
+versions:
+  0.0.12:
+    folder: all
+  1.0.0:
+    folder: all
+  2.0.2:
+    folder: all
+url: https://github.com/paulsengroup/hictk/archive/refs/tags/v${version}.tar.gz

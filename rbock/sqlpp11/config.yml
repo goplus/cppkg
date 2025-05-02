@@ -1,0 +1,12 @@
+versions:
+  "0.60":
+    folder: all
+  "0.61":
+    folder: all
+  "0.62":
+    folder: all
+  "0.63":
+    folder: all
+  "0.64":
+    folder: all
+url: https://github.com/rbock/sqlpp11/archive/${version}.tar.gz

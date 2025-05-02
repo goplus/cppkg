@@ -1,0 +1,28 @@
+versions:
+  "2.10":
+    folder: all
+  "3.1":
+    folder: all
+  "3.2":
+    folder: all
+  3.3.4:
+    folder: all
+  3.4.1:
+    folder: all
+  "3.5":
+    folder: all
+  "3.6":
+    folder: all
+  "3.7":
+    folder: all
+  3.7.1:
+    folder: all
+  3.7.2:
+    folder: all
+  "3.8":
+    folder: all
+  3.8.1:
+    folder: all
+  3.9.0:
+    folder: all
+url: https://github.com/hanickadot/compile-time-regular-expressions/archive/v${version}.tar.gz

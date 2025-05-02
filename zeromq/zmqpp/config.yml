@@ -1,0 +1,4 @@
+versions:
+  4.2.0:
+    folder: all
+url: https://github.com/zeromq/zmqpp/archive/${version}.tar.gz

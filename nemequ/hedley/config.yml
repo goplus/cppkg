@@ -1,0 +1,4 @@
+versions:
+  "15":
+    folder: all
+url: https://github.com/nemequ/hedley/archive/refs/tags/v${version}.tar.gz

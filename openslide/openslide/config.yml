@@ -1,0 +1,4 @@
+versions:
+  4.0.0:
+    folder: all
+url: https://github.com/openslide/openslide/releases/download/v${version}/openslide-${version}.tar.xz

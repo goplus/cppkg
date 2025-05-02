@@ -1,0 +1,8 @@
+versions:
+  7.3.2:
+    folder: all
+  8.0.0:
+    folder: all
+  8.0.1:
+    folder: all
+url: https://github.com/qhull/qhull/archive/v${version}.tar.gz

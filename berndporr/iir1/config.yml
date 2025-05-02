@@ -1,0 +1,8 @@
+versions:
+  1.9.0:
+    folder: all
+  1.9.1:
+    folder: all
+  1.9.4:
+    folder: all
+url: https://github.com/berndporr/iir1/archive/refs/tags/${version}.tar.gz

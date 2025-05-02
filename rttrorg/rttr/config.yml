@@ -1,0 +1,4 @@
+versions:
+  0.9.6:
+    folder: all
+url: https://github.com/rttrorg/rttr/archive/v${version}.tar.gz
