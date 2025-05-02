@@ -24,7 +24,7 @@ type configEx struct {
 }
 
 type conandata struct {
-	Sources map[string]map[string]any `yaml:"sources"`
+	Sources map[string]any `yaml:"sources"`
 }
 
 func getConanData(conandatas map[string]conandata, folder, localDir string) (ret conandata, err error) {
@@ -61,27 +61,44 @@ func main() {
 	err = yaml.Unmarshal(b, &conf)
 	check(err)
 
-	conandatas := make(map[string]conandata) // folder -> conandata
-	for ver, v := range conf.Versions {
-		cd, err := getConanData(conandatas, v.Folder, localDir)
-		check(err)
-
-		if src, ok := cd.Sources[ver]; ok {
-			switch url := src["url"].(type) {
-			case string:
+	tryCp := func(src map[string]any, ver string) {
+		switch url := src["url"].(type) {
+		case string:
+			if pkgPath, urlPattern, ok := checkGithbPkg(url, ver); ok {
+				cpGithubPkg(pkgPath, urlPattern, localDir, conf)
+			}
+		case []any:
+			for _, u := range url {
+				url := u.(string)
 				if pkgPath, urlPattern, ok := checkGithbPkg(url, ver); ok {
 					cpGithubPkg(pkgPath, urlPattern, localDir, conf)
 				}
+			}
+		default:
+			log.Println("[INFO] skip source:", src)
+		}
+	}
+
+	conandatas := make(map[string]conandata) // folder -> conandata
+	for ver, v := range conf.Versions {
+		cd, err := getConanData(conandatas, v.Folder, localDir)
+		if err != nil {
+			if os.IsNotExist(err) {
+				continue
+			}
+			check(err)
+		}
+
+		if src, ok := cd.Sources[ver]; ok {
+			switch src := src.(type) {
+			case map[string]any:
+				tryCp(src, ver)
 			case []any:
-				for _, u := range url {
-					if url, ok := u.(string); ok {
-						if pkgPath, urlPattern, ok := checkGithbPkg(url, ver); ok {
-							cpGithubPkg(pkgPath, urlPattern, localDir, conf)
-						}
-					}
+				for _, u := range src {
+					tryCp(u.(map[string]any), ver)
 				}
 			default:
-				log.Println("[INFO] skip source:", src)
+				log.Panicln("[FATAL] source:", src)
 			}
 		}
 	}
