@@ -7,4 +7,6 @@ versions:
     folder: all
   "2.7":
     folder: all
-url: https://github.com/CD3/libInterpolate/archive/refs/tags/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/CD3/libInterpolate/archive/refs/tags/${version}.tar.gz

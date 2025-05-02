@@ -5,4 +5,6 @@ versions:
     folder: all
   7.6.2:
     folder: all
-url: https://github.com/tudo-astroparticlephysics/PROPOSAL/archive/refs/tags/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/tudo-astroparticlephysics/PROPOSAL/archive/refs/tags/${version}.tar.gz

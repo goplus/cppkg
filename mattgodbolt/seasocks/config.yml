@@ -5,4 +5,6 @@ versions:
     folder: all
   1.4.6:
     folder: all
-url: https://github.com/mattgodbolt/seasocks/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/mattgodbolt/seasocks/archive/v${version}.tar.gz

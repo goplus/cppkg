@@ -1,4 +1,6 @@
 versions:
   3.0.0:
     folder: all
-url: https://github.com/valgur/velodyne_decoder/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/valgur/velodyne_decoder/archive/refs/tags/v${version}.tar.gz

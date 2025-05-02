@@ -11,4 +11,6 @@ versions:
     folder: 2.x
   2.28.0:
     folder: 2.x
-url: https://github.com/googleapis/google-cloud-cpp/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: 2.x
+  url: https://github.com/googleapis/google-cloud-cpp/archive/refs/tags/v${version}.tar.gz

@@ -5,4 +5,6 @@ versions:
     folder: all
   cci.3.2-20200130:
     folder: all
-url: https://github.com/godotengine/godot-cpp/archive/godot-${version}-stable.tar.gz
+template:
+  folder: all
+  url: https://github.com/godotengine/godot-cpp/archive/godot-${version}-stable.tar.gz

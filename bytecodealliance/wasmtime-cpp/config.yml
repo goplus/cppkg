@@ -25,4 +25,6 @@ versions:
     folder: all
   9.0.0:
     folder: all
-url: https://github.com/bytecodealliance/wasmtime-cpp/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/bytecodealliance/wasmtime-cpp/archive/v${version}.tar.gz

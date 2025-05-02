@@ -1,4 +1,6 @@
 versions:
   1.3.0:
     folder: all
-url: https://github.com/libkml/libkml/archive/${version}.zip
+template:
+  folder: all
+  url: https://github.com/libkml/libkml/archive/${version}.zip

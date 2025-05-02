@@ -21,4 +21,6 @@ versions:
     folder: all
   1.4.0:
     folder: all
-url: https://github.com/cross-language-cpp/djinni-generator/releases/download/v${version}/djinni
+template:
+  folder: all
+  url: https://github.com/cross-language-cpp/djinni-generator/releases/download/v${version}/djinni

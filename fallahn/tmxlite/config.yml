@@ -3,4 +3,6 @@ versions:
     folder: all
   1.4.4:
     folder: all
-url: https://github.com/fallahn/tmxlite/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/fallahn/tmxlite/archive/refs/tags/v${version}.tar.gz

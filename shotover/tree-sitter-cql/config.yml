@@ -1,4 +1,6 @@
 versions:
   0.2.0:
     folder: all
-url: https://github.com/shotover/tree-sitter-cql/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/shotover/tree-sitter-cql/archive/refs/tags/v${version}.tar.gz

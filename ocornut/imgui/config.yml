@@ -27,4 +27,6 @@ versions:
     folder: all
   1.91.8-docking:
     folder: all
-url: https://github.com/ocornut/imgui/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/ocornut/imgui/archive/v${version}.tar.gz

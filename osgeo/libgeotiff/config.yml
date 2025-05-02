@@ -7,4 +7,6 @@ versions:
     folder: all
   1.7.1:
     folder: all
-url: https://github.com/OSGeo/libgeotiff/releases/download/${version}/libgeotiff-${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/OSGeo/libgeotiff/releases/download/${version}/libgeotiff-${version}.tar.gz

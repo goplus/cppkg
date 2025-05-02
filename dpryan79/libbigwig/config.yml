@@ -1,4 +1,6 @@
 versions:
   0.4.7:
     folder: all
-url: https://github.com/dpryan79/libBigWig/archive/refs/tags/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/dpryan79/libBigWig/archive/refs/tags/${version}.tar.gz

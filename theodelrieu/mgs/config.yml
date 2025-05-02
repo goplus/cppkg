@@ -9,4 +9,6 @@ versions:
     folder: all
   0.2.1:
     folder: all
-url: https://github.com/theodelrieu/mgs/releases/download/v${version}/mgs.zip
+template:
+  folder: all
+  url: https://github.com/theodelrieu/mgs/releases/download/v${version}/mgs.zip

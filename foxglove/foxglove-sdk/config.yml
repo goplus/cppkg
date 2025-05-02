@@ -1,4 +1,6 @@
 versions:
   0.1.0:
     folder: all
-url: https://github.com/foxglove/foxglove-sdk/archive/refs/tags/releases/python/foxglove-schemas-protobuf/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/foxglove/foxglove-sdk/archive/refs/tags/releases/python/foxglove-schemas-protobuf/v${version}.tar.gz

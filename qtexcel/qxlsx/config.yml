@@ -3,4 +3,6 @@ versions:
     folder: all
   1.4.9:
     folder: all
-url: https://github.com/QtExcel/QXlsx/archive/refs/tags/v${version}.zip
+template:
+  folder: all
+  url: https://github.com/QtExcel/QXlsx/archive/refs/tags/v${version}.zip

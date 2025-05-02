@@ -7,4 +7,6 @@ versions:
     folder: all
   "4.5":
     folder: all
-url: https://github.com/mfontanini/libtins/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/mfontanini/libtins/archive/v${version}.tar.gz

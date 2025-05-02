@@ -7,4 +7,6 @@ versions:
     folder: all
   1.8.0:
     folder: all
-url: https://github.com/red0124/ssp/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/red0124/ssp/archive/refs/tags/v${version}.tar.gz

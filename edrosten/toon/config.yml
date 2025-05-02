@@ -1,4 +1,6 @@
 versions:
   "3.2":
     folder: all
-url: https://github.com/edrosten/TooN/archive/refs/tags/TOON_${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/edrosten/TooN/archive/refs/tags/TOON_${version}.tar.gz

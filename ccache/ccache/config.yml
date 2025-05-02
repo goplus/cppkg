@@ -9,4 +9,6 @@ versions:
     folder: all
   4.9.1:
     folder: all
-url: https://github.com/ccache/ccache/releases/download/v${version}/ccache-${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/ccache/ccache/releases/download/v${version}/ccache-${version}.tar.gz

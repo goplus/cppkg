@@ -1,10 +1,10 @@
 #include <cstdlib>
 #include <iostream>
-#include "fmi3Functions.h"
+#include "fmi2Functions.h"
 
 
 int main(void) {
-    std::cout << fmi3Version << std::endl;
+    std::cout << fmi2Version << std::endl;
 
     return EXIT_SUCCESS;
 }

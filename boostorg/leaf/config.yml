@@ -5,4 +5,6 @@ versions:
     folder: all
   1.83.0:
     folder: all
-url: https://github.com/boostorg/leaf/archive/refs/tags/boost-${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/boostorg/leaf/archive/refs/tags/boost-${version}.tar.gz

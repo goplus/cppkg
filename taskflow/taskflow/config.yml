@@ -17,4 +17,6 @@ versions:
     folder: all
   3.9.0:
     folder: all
-url: https://github.com/taskflow/taskflow/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/taskflow/taskflow/archive/v${version}.tar.gz

@@ -3,4 +3,6 @@ versions:
     folder: all
   0.3.2:
     folder: all
-url: https://github.com/dloebl/cgif/archive/V${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/dloebl/cgif/archive/V${version}.tar.gz

@@ -5,4 +5,6 @@ versions:
     folder: all
   v2.0-rc1:
     folder: all
-url: https://github.com/leducp/KickCAT/archive/refs/tags/${version}.zip
+template:
+  folder: all
+  url: https://github.com/leducp/KickCAT/archive/refs/tags/${version}.zip

@@ -5,4 +5,6 @@ versions:
     folder: all
   0.47.0:
     folder: all
-url: https://github.com/eerimoq/pbtools/archive/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/eerimoq/pbtools/archive/${version}.tar.gz

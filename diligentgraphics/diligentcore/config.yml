@@ -13,4 +13,6 @@ versions:
     folder: all
   api.252009:
     folder: all
-url: https://github.com/DiligentGraphics/DiligentCore/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/DiligentGraphics/DiligentCore/archive/refs/tags/v${version}.tar.gz

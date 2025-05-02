@@ -1,4 +1,6 @@
 versions:
   "260557":
     folder: all
-url: https://github.com/microsoft/Windows-classic-samples/archive/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/microsoft/Windows-classic-samples/archive/${version}.tar.gz

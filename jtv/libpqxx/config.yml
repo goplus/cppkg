@@ -25,4 +25,6 @@ versions:
     folder: all
   7.9.2:
     folder: all
-url: https://github.com/jtv/libpqxx/archive/refs/tags/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/jtv/libpqxx/archive/refs/tags/${version}.tar.gz

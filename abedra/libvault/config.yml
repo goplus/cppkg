@@ -1,4 +1,6 @@
 versions:
   0.59.0:
     folder: all
-url: https://github.com/abedra/libvault/archive/refs/tags/${version}.zip
+template:
+  folder: all
+  url: https://github.com/abedra/libvault/archive/refs/tags/${version}.zip

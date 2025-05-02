@@ -11,4 +11,6 @@ versions:
     folder: all
   1.9.8:
     folder: all
-url: https://github.com/OctoMap/octomap/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/OctoMap/octomap/archive/v${version}.tar.gz

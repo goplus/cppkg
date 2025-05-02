@@ -3,4 +3,6 @@ versions:
     folder: all
   6.7.0:
     folder: all
-url: https://github.com/gazebosim/gz-math/archive/ignition-math6_${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/gazebosim/gz-math/archive/ignition-math6_${version}.tar.gz

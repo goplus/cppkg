@@ -5,4 +5,6 @@ versions:
     folder: all
   9.5.0:
     folder: all
-url: https://github.com/OSGeo/PROJ/releases/download/${version}/proj-${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/OSGeo/PROJ/releases/download/${version}/proj-${version}.tar.gz

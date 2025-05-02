@@ -1,4 +1,6 @@
 versions:
   3.2.14:
     folder: all
-url: https://github.com/eudev-project/eudev/releases/download/v${version}/eudev-${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/eudev-project/eudev/releases/download/v${version}/eudev-${version}.tar.gz

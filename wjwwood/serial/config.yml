@@ -1,4 +1,6 @@
 versions:
   1.2.1:
     folder: all
-url: https://github.com/wjwwood/serial/archive/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/wjwwood/serial/archive/${version}.tar.gz

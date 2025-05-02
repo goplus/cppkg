@@ -21,4 +21,6 @@ versions:
     folder: portable
   5.3.2:
     folder: portable
-url: https://github.com/bfgroup/b2/releases/download/${version}/b2-${version}.tar.bz2
+template:
+  folder: portable
+  url: https://github.com/bfgroup/b2/releases/download/${version}/b2-${version}.tar.bz2

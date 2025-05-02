@@ -1,4 +1,6 @@
 versions:
   1.0.19:
     folder: all
-url: https://github.com/sctp/lksctp-tools/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/sctp/lksctp-tools/archive/refs/tags/v${version}.tar.gz

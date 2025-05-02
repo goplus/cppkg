@@ -9,4 +9,6 @@ versions:
     folder: all
   1.1.2:
     folder: all
-url: https://github.com/adamstark/AudioFile/archive/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/adamstark/AudioFile/archive/${version}.tar.gz

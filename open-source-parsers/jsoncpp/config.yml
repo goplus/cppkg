@@ -13,4 +13,6 @@ versions:
     folder: all
   1.9.6:
     folder: all
-url: https://github.com/open-source-parsers/jsoncpp/archive/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/open-source-parsers/jsoncpp/archive/${version}.tar.gz

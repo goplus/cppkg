@@ -7,4 +7,6 @@ versions:
     folder: all
   cci.20211009:
     folder: all
-url: https://github.com/DiligentGraphics/DiligentTools/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/DiligentGraphics/DiligentTools/archive/refs/tags/v${version}.tar.gz

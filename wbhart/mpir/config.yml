@@ -1,4 +1,6 @@
 versions:
   3.0.0:
     folder: all
-url: https://github.com/wbhart/mpir/archive/refs/tags/mpir-${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/wbhart/mpir/archive/refs/tags/mpir-${version}.tar.gz

@@ -1,4 +1,6 @@
 versions:
   14.2.5:
     folder: all
-url: https://github.com/DaanDeMeyer/reproc/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/DaanDeMeyer/reproc/archive/refs/tags/v${version}.tar.gz

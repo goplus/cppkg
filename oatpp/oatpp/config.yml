@@ -11,4 +11,6 @@ versions:
     folder: all
   1.3.0.latest:
     folder: all
-url: https://github.com/oatpp/oatpp/archive/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/oatpp/oatpp/archive/${version}.tar.gz

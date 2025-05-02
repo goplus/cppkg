@@ -9,4 +9,6 @@ versions:
     folder: all
   "0.18":
     folder: all
-url: https://github.com/json-c/json-c/archive/json-c-${version}-20240915.tar.gz
+template:
+  folder: all
+  url: https://github.com/json-c/json-c/archive/json-c-${version}-20240915.tar.gz

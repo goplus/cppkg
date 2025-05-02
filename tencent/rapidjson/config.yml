@@ -9,4 +9,6 @@ versions:
     folder: all
   cci.20230929:
     folder: all
-url: https://github.com/Tencent/rapidjson/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/Tencent/rapidjson/archive/v${version}.tar.gz

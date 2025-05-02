@@ -7,4 +7,6 @@ versions:
     folder: all
   "1.16":
     folder: all
-url: https://github.com/civetweb/civetweb/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/civetweb/civetweb/archive/v${version}.tar.gz

@@ -9,4 +9,6 @@ versions:
     folder: all
   2.4.2:
     folder: all
-url: https://github.com/AcademySoftwareFoundation/OpenColorIO/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/AcademySoftwareFoundation/OpenColorIO/archive/v${version}.tar.gz

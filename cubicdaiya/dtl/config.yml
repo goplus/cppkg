@@ -5,4 +5,6 @@ versions:
     folder: all
   "1.21":
     folder: all
-url: https://github.com/cubicdaiya/dtl/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/cubicdaiya/dtl/archive/v${version}.tar.gz

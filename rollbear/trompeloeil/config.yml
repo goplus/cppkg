@@ -19,4 +19,6 @@ versions:
     folder: all
   "49":
     folder: all
-url: https://github.com/rollbear/trompeloeil/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/rollbear/trompeloeil/archive/v${version}.tar.gz

@@ -21,4 +21,6 @@ versions:
     folder: all
   1.9.0:
     folder: all
-url: https://github.com/slavenf/sfl-library/archive/refs/tags/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/slavenf/sfl-library/archive/refs/tags/${version}.tar.gz

@@ -9,4 +9,6 @@ versions:
     folder: all
   0.3.1:
     folder: all
-url: https://github.com/rvarago/absent/archive/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/rvarago/absent/archive/${version}.tar.gz

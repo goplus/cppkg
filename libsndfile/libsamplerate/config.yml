@@ -3,4 +3,6 @@ versions:
     folder: all
   0.2.2:
     folder: all
-url: https://github.com/libsndfile/libsamplerate/releases/download/${version}/libsamplerate-${version}.tar.xz
+template:
+  folder: all
+  url: https://github.com/libsndfile/libsamplerate/releases/download/${version}/libsamplerate-${version}.tar.xz

@@ -13,4 +13,6 @@ versions:
     folder: all
   3.9.1:
     folder: all
-url: https://github.com/martinus/robin-hood-hashing/archive/refs/tags/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/martinus/robin-hood-hashing/archive/refs/tags/${version}.tar.gz

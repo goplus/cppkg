@@ -11,4 +11,6 @@ versions:
     folder: all
   8.2.8:
     folder: all
-url: https://github.com/ivmai/bdwgc/releases/download/v${version}/gc-${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/ivmai/bdwgc/releases/download/v${version}/gc-${version}.tar.gz

@@ -3,4 +3,6 @@ versions:
     folder: all
   2.2.6:
     folder: all
-url: https://github.com/astro-informatics/s2let/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/astro-informatics/s2let/archive/v${version}.tar.gz

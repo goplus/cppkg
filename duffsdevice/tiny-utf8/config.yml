@@ -7,4 +7,6 @@ versions:
     folder: all
   4.4.3:
     folder: all
-url: https://github.com/DuffsDevice/tiny-utf8/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/DuffsDevice/tiny-utf8/archive/refs/tags/v${version}.tar.gz

@@ -9,4 +9,6 @@ versions:
     folder: all
   1.2.2:
     folder: all
-url: https://github.com/libsndfile/libsndfile/releases/download/${version}/libsndfile-${version}.tar.xz
+template:
+  folder: all
+  url: https://github.com/libsndfile/libsndfile/releases/download/${version}/libsndfile-${version}.tar.xz

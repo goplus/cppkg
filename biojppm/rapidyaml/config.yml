@@ -13,4 +13,6 @@ versions:
     folder: all
   0.8.0:
     folder: all
-url: https://github.com/biojppm/rapidyaml/releases/download/v${version}/rapidyaml-${version}-src.tgz
+template:
+  folder: all
+  url: https://github.com/biojppm/rapidyaml/releases/download/v${version}/rapidyaml-${version}-src.tgz

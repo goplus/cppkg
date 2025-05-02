@@ -17,4 +17,6 @@ versions:
     folder: all
   2.9.0:
     folder: all
-url: https://github.com/BlueBrain/HighFive/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/BlueBrain/HighFive/archive/refs/tags/v${version}.tar.gz

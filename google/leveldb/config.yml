@@ -3,4 +3,6 @@ versions:
     folder: all
   "1.23":
     folder: all
-url: https://github.com/google/leveldb/archive/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/google/leveldb/archive/${version}.tar.gz

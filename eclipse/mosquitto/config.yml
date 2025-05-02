@@ -21,4 +21,6 @@ versions:
     folder: 2.x
   2.0.7:
     folder: 2.x
-url: https://github.com/eclipse/mosquitto/archive/v${version}.tar.gz
+template:
+  folder: 2.x
+  url: https://github.com/eclipse/mosquitto/archive/v${version}.tar.gz

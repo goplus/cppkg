@@ -7,4 +7,6 @@ versions:
     folder: all
   4.2.2:
     folder: all
-url: https://github.com/Naios/continuable/archive/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/Naios/continuable/archive/${version}.tar.gz

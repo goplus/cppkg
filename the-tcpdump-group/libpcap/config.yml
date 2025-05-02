@@ -5,4 +5,6 @@ versions:
     folder: all
   1.10.5:
     folder: all
-url: https://github.com/the-tcpdump-group/libpcap/archive/libpcap-${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/the-tcpdump-group/libpcap/archive/libpcap-${version}.tar.gz

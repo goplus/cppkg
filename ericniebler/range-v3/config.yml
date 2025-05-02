@@ -15,4 +15,6 @@ versions:
     folder: all
   cci.20240905:
     folder: all
-url: https://github.com/ericniebler/range-v3/archive/refs/tags/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/ericniebler/range-v3/archive/refs/tags/${version}.tar.gz

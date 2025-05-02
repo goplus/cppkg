@@ -5,4 +5,6 @@ versions:
     folder: all
   "2023.12":
     folder: all
-url: https://github.com/cnr-isti-vclab/vcglib/archive/refs/tags/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/cnr-isti-vclab/vcglib/archive/refs/tags/${version}.tar.gz

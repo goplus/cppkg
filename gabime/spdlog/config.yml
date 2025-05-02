@@ -21,4 +21,6 @@ versions:
     folder: all
   1.9.2:
     folder: all
-url: https://github.com/gabime/spdlog/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/gabime/spdlog/archive/v${version}.tar.gz

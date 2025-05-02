@@ -7,4 +7,6 @@ versions:
     folder: all
   3.0.2:
     folder: all
-url: https://github.com/richgel999/miniz/archive/refs/tags/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/richgel999/miniz/archive/refs/tags/${version}.tar.gz

@@ -11,4 +11,6 @@ versions:
     folder: 5.x
   5.4.3:
     folder: 5.x
-url: https://github.com/assimp/assimp/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: 5.x
+  url: https://github.com/assimp/assimp/archive/refs/tags/v${version}.tar.gz

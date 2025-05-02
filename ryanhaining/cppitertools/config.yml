@@ -3,4 +3,6 @@ versions:
     folder: all
   "2.2":
     folder: all
-url: https://github.com/ryanhaining/cppitertools/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/ryanhaining/cppitertools/archive/v${version}.tar.gz

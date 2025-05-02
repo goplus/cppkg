@@ -1,4 +1,6 @@
 versions:
   1.1.2:
     folder: all
-url: https://github.com/tinyhubs/libproperties/archive/${version}.zip
+template:
+  folder: all
+  url: https://github.com/tinyhubs/libproperties/archive/${version}.zip

@@ -5,4 +5,6 @@ versions:
     folder: all
   2.5.25:
     folder: all
-url: https://github.com/lexxmark/winflexbison/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/lexxmark/winflexbison/archive/v${version}.tar.gz

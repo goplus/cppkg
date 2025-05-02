@@ -13,4 +13,6 @@ versions:
     folder: all
   "0.9":
     folder: all
-url: https://github.com/felixguendling/cista/releases/download/v${version}/cista.h
+template:
+  folder: all
+  url: https://github.com/felixguendling/cista/releases/download/v${version}/cista.h

@@ -23,4 +23,6 @@ versions:
     folder: all
   5.7.2:
     folder: all
-url: https://github.com/wolfSSL/wolfssl/archive/v${version}-stable.tar.gz
+template:
+  folder: all
+  url: https://github.com/wolfSSL/wolfssl/archive/v${version}-stable.tar.gz

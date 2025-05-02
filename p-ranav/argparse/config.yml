@@ -19,4 +19,6 @@ versions:
     folder: all
   "3.2":
     folder: all
-url: https://github.com/p-ranav/argparse/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/p-ranav/argparse/archive/v${version}.tar.gz

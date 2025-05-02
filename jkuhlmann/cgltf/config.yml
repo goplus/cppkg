@@ -17,4 +17,6 @@ versions:
     folder: all
   "1.9":
     folder: all
-url: https://github.com/jkuhlmann/cgltf/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/jkuhlmann/cgltf/archive/v${version}.tar.gz

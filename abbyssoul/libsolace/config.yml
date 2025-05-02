@@ -3,4 +3,6 @@ versions:
     folder: all
   0.4.1:
     folder: all
-url: https://github.com/abbyssoul/libsolace/archive/v${version}.zip
+template:
+  folder: all
+  url: https://github.com/abbyssoul/libsolace/archive/v${version}.zip

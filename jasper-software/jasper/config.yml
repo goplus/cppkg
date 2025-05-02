@@ -7,4 +7,6 @@ versions:
     folder: all
   4.2.4:
     folder: all
-url: https://github.com/jasper-software/jasper/releases/download/version-${version}/jasper-${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/jasper-software/jasper/releases/download/version-${version}/jasper-${version}.tar.gz

@@ -13,4 +13,6 @@ versions:
     folder: all
   6.0.2:
     folder: all
-url: https://github.com/ArthurSonzogni/FTXUI/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/ArthurSonzogni/FTXUI/archive/refs/tags/v${version}.tar.gz

@@ -7,4 +7,6 @@ versions:
     folder: all
   5.4.0:
     folder: all
-url: https://github.com/libxmlplusplus/libxmlplusplus/releases/download/${version}/libxml++-${version}.tar.xz
+template:
+  folder: all
+  url: https://github.com/libxmlplusplus/libxmlplusplus/releases/download/${version}/libxml++-${version}.tar.xz

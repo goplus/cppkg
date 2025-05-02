@@ -1,4 +1,6 @@
 versions:
   0.10.1:
     folder: all
-url: https://github.com/google/gumbo-parser/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/google/gumbo-parser/archive/v${version}.tar.gz

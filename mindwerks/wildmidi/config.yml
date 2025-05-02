@@ -1,4 +1,6 @@
 versions:
   0.4.5:
     folder: all
-url: https://github.com/Mindwerks/wildmidi/releases/download/wildmidi-${version}/wildmidi-${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/Mindwerks/wildmidi/releases/download/wildmidi-${version}/wildmidi-${version}.tar.gz

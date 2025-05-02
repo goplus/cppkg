@@ -9,4 +9,6 @@ versions:
     folder: all
   1.12.1:
     folder: all
-url: https://github.com/ninja-build/ninja/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/ninja-build/ninja/archive/v${version}.tar.gz

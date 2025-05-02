@@ -7,4 +7,6 @@ versions:
     folder: all
   20.71.0:
     folder: all
-url: https://github.com/uNetworking/uWebSockets/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/uNetworking/uWebSockets/archive/v${version}.tar.gz

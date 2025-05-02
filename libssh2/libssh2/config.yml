@@ -11,4 +11,6 @@ versions:
     folder: all
   1.9.0:
     folder: all
-url: https://github.com/libssh2/libssh2/releases/download/libssh2-${version}/libssh2-${version}.tar.xz
+template:
+  folder: all
+  url: https://github.com/libssh2/libssh2/releases/download/libssh2-${version}/libssh2-${version}.tar.xz

@@ -3,4 +3,6 @@ versions:
     folder: all
   2.0.0:
     folder: all
-url: https://github.com/martinmoene/variant-lite/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/martinmoene/variant-lite/archive/v${version}.tar.gz

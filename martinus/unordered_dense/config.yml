@@ -29,4 +29,6 @@ versions:
     folder: all
   4.5.0:
     folder: all
-url: https://github.com/martinus/unordered_dense/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/martinus/unordered_dense/archive/v${version}.tar.gz

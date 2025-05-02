@@ -35,4 +35,6 @@ versions:
     folder: all
   9.1.0:
     folder: all
-url: https://github.com/fmtlib/fmt/releases/download/${version}/fmt-${version}.zip
+template:
+  folder: all
+  url: https://github.com/fmtlib/fmt/releases/download/${version}/fmt-${version}.zip

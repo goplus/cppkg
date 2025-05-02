@@ -17,4 +17,6 @@ versions:
     folder: all
   1.9.1:
     folder: all
-url: https://github.com/strukturag/libheif/releases/download/v${version}/libheif-${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/strukturag/libheif/releases/download/v${version}/libheif-${version}.tar.gz

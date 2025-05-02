@@ -23,4 +23,6 @@ versions:
     folder: all
   1.8.21:
     folder: all
-url: https://github.com/HDFGroup/hdf5/archive/refs/tags/hdf5_${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/HDFGroup/hdf5/archive/refs/tags/hdf5_${version}.tar.gz

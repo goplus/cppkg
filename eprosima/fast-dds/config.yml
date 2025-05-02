@@ -11,4 +11,6 @@ versions:
     folder: all
   2.3.4:
     folder: all
-url: https://github.com/eProsima/Fast-DDS/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/eProsima/Fast-DDS/archive/refs/tags/v${version}.tar.gz

@@ -1,4 +1,6 @@
 versions:
   0.1.4.1:
     folder: all
-url: https://github.com/injae/serdepp/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/injae/serdepp/archive/refs/tags/v${version}.tar.gz

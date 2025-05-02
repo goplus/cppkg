@@ -1,4 +1,6 @@
 versions:
-  3.0.1:
+  2.0.4:
     folder: all
-url: https://github.com/modelica/fmi-standard/releases/download/v${version}/FMI-Standard-${version}.zip
+template:
+  folder: all
+  url: https://github.com/modelica/fmi-standard/releases/download/v${version}/FMI-Standard-${version}.zip

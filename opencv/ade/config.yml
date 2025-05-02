@@ -7,4 +7,6 @@ versions:
     folder: all
   0.1.2d:
     folder: all
-url: https://github.com/opencv/ade/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/opencv/ade/archive/refs/tags/v${version}.tar.gz

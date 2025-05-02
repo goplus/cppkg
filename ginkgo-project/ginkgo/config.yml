@@ -7,4 +7,6 @@ versions:
     folder: all
   1.8.0:
     folder: all
-url: https://github.com/ginkgo-project/ginkgo/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/ginkgo-project/ginkgo/archive/v${version}.tar.gz

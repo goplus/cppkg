@@ -3,4 +3,6 @@ versions:
     folder: all
   7.0.2:
     folder: all
-url: https://github.com/MarcDirven/cpp-lazy/releases/download/v${version}/cpp-lazy-src.zip
+template:
+  folder: all
+  url: https://github.com/MarcDirven/cpp-lazy/releases/download/v${version}/cpp-lazy-src.zip

@@ -17,4 +17,6 @@ versions:
     folder: all
   3.6.2:
     folder: all
-url: https://github.com/Mbed-TLS/mbedtls/releases/download/mbedtls-${version}/mbedtls-${version}.tar.bz2
+template:
+  folder: all
+  url: https://github.com/Mbed-TLS/mbedtls/releases/download/mbedtls-${version}/mbedtls-${version}.tar.bz2

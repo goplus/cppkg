@@ -9,4 +9,6 @@ versions:
     folder: all
   0.25.0:
     folder: all
-url: https://github.com/xtensor-stack/xtensor/archive/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/xtensor-stack/xtensor/archive/${version}.tar.gz

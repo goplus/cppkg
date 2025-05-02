@@ -9,4 +9,6 @@ versions:
     folder: 1.x.x
   2.0.0:
     folder: all
-url: https://github.com/petiaccja/Mathter/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/petiaccja/Mathter/archive/v${version}.tar.gz

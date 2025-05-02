@@ -1,4 +1,6 @@
 versions:
   0.0.4:
     folder: all
-url: https://github.com/chrberger/stringtoolbox/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/chrberger/stringtoolbox/archive/refs/tags/v${version}.tar.gz

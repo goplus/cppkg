@@ -11,4 +11,6 @@ versions:
     folder: all
   "0.6":
     folder: all
-url: https://github.com/holoplot/shield/archive/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/holoplot/shield/archive/${version}.tar.gz

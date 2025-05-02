@@ -15,4 +15,6 @@ versions:
     folder: all
   1.2.0:
     folder: all
-url: https://github.com/CrowCpp/crow/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/CrowCpp/crow/archive/refs/tags/v${version}.tar.gz

@@ -19,4 +19,6 @@ versions:
     folder: 4.x
   4.9.0:
     folder: 4.x
-url: https://github.com/opencv/opencv/archive/refs/tags/${version}.tar.gz
+template:
+  folder: 4.x
+  url: https://github.com/opencv/opencv/archive/refs/tags/${version}.tar.gz

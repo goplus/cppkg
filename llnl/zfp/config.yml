@@ -5,4 +5,6 @@ versions:
     folder: all
   1.0.1:
     folder: all
-url: https://github.com/LLNL/zfp/archive/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/LLNL/zfp/archive/${version}.tar.gz

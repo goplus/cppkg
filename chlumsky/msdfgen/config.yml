@@ -9,4 +9,6 @@ versions:
     folder: all
   1.9.1:
     folder: all
-url: https://github.com/Chlumsky/msdfgen/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/Chlumsky/msdfgen/archive/refs/tags/v${version}.tar.gz

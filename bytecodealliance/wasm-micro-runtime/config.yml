@@ -7,4 +7,6 @@ versions:
     folder: all
   2.2.0:
     folder: all
-url: https://github.com/bytecodealliance/wasm-micro-runtime/archive/refs/tags/WAMR-${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/bytecodealliance/wasm-micro-runtime/archive/refs/tags/WAMR-${version}.tar.gz

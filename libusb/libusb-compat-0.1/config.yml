@@ -1,4 +1,6 @@
 versions:
   0.1.7:
     folder: all
-url: https://github.com/libusb/libusb-compat-0.1/releases/download/v${version}/libusb-compat-${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/libusb/libusb-compat-0.1/releases/download/v${version}/libusb-compat-${version}.tar.gz

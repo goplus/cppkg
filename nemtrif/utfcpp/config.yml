@@ -13,4 +13,6 @@ versions:
     folder: all
   4.0.5:
     folder: all
-url: https://github.com/nemtrif/utfcpp/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/nemtrif/utfcpp/archive/v${version}.tar.gz

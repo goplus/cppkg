@@ -5,4 +5,6 @@ versions:
     folder: all
   3.3.2:
     folder: all
-url: https://github.com/SRombauts/SQLiteCpp/archive/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/SRombauts/SQLiteCpp/archive/${version}.tar.gz

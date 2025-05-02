@@ -3,4 +3,6 @@ versions:
     folder: all
   0.1.1:
     folder: all
-url: https://github.com/kulp/naive-tsearch/releases/download/v${version}/naive-tsearch-${version}.tar.xz
+template:
+  folder: all
+  url: https://github.com/kulp/naive-tsearch/releases/download/v${version}/naive-tsearch-${version}.tar.xz

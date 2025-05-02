@@ -9,4 +9,6 @@ versions:
     folder: all
   4.1.0:
     folder: all
-url: https://github.com/igormironchik/md4qt/archive/refs/tags/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/igormironchik/md4qt/archive/refs/tags/${version}.tar.gz

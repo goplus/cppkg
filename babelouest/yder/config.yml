@@ -3,4 +3,6 @@ versions:
     folder: all
   1.4.20:
     folder: all
-url: https://github.com/babelouest/yder/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/babelouest/yder/archive/refs/tags/v${version}.tar.gz

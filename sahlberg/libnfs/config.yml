@@ -3,4 +3,6 @@ versions:
     folder: all
   6.0.2:
     folder: all
-url: https://github.com/sahlberg/libnfs/archive/refs/tags/libnfs-${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/sahlberg/libnfs/archive/refs/tags/libnfs-${version}.tar.gz

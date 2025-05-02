@@ -11,4 +11,6 @@ versions:
     folder: all
   5.5.0:
     folder: all
-url: https://github.com/tesseract-ocr/tesseract/archive/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/tesseract-ocr/tesseract/archive/${version}.tar.gz

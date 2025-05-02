@@ -5,4 +5,6 @@ versions:
     folder: all
   2.02.00:
     folder: all
-url: https://github.com/vectorclass/version2/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/vectorclass/version2/archive/refs/tags/v${version}.tar.gz

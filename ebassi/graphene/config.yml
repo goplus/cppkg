@@ -7,4 +7,6 @@ versions:
     folder: all
   1.10.8:
     folder: all
-url: https://github.com/ebassi/graphene/archive/refs/tags/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/ebassi/graphene/archive/refs/tags/${version}.tar.gz

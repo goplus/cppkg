@@ -17,4 +17,6 @@ versions:
     folder: all
   1.3.9:
     folder: all
-url: https://github.com/eclipse/paho.mqtt.c/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/eclipse/paho.mqtt.c/archive/v${version}.tar.gz

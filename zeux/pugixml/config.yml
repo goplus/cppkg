@@ -11,4 +11,6 @@ versions:
     folder: all
   "1.15":
     folder: all
-url: https://github.com/zeux/pugixml/releases/download/v${version}/pugixml-${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/zeux/pugixml/releases/download/v${version}/pugixml-${version}.tar.gz

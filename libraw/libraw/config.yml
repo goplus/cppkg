@@ -9,4 +9,6 @@ versions:
     folder: all
   0.21.3:
     folder: all
-url: https://github.com/LibRaw/LibRaw/archive/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/LibRaw/LibRaw/archive/${version}.tar.gz

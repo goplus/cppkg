@@ -15,4 +15,6 @@ versions:
     folder: all
   4.9.1:
     folder: all
-url: https://github.com/emweb/wt/archive/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/emweb/wt/archive/${version}.tar.gz

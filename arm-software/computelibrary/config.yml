@@ -3,4 +3,6 @@ versions:
     folder: all
   "23.08":
     folder: all
-url: https://github.com/ARM-software/ComputeLibrary/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/ARM-software/ComputeLibrary/archive/refs/tags/v${version}.tar.gz

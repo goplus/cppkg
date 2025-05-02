@@ -5,4 +5,6 @@ versions:
     folder: 3.x
   5.2.0:
     folder: 5.x
-url: https://github.com/jrouwe/JoltPhysics/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: 5.x
+  url: https://github.com/jrouwe/JoltPhysics/archive/refs/tags/v${version}.tar.gz

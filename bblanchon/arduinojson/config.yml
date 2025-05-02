@@ -13,4 +13,6 @@ versions:
     folder: all
   7.0.1:
     folder: all
-url: https://github.com/bblanchon/ArduinoJson/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/bblanchon/ArduinoJson/archive/refs/tags/v${version}.tar.gz

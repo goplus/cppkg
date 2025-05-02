@@ -7,12 +7,12 @@ required_conan_version = ">=1.52.0"
 
 
 class PackageConan(ConanFile):
-    name = "fmi3"
+    name = "fmi2"
     description = "Functional Mock-up Interface (FMI)"
     license = "BSD-2-Clause"
     url = "https://github.com/conan-io/conan-center-index"
     homepage = "https://fmi-standard.org"
-    topics = ("fmi-standard", "co-simulation", "model-exchange", "scheduled execution", "header-only")
+    topics = ("fmi-standard", "co-simulation", "model-exchange", "header-only")
     package_type = "header-library"
     settings = "os", "arch", "compiler", "build_type"
     no_copy_source = True

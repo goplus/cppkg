@@ -9,4 +9,6 @@ versions:
     folder: all
   1.5.5:
     folder: all
-url: https://github.com/pyomeca/ezc3d/archive/refs/tags/Release_${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/pyomeca/ezc3d/archive/refs/tags/Release_${version}.tar.gz

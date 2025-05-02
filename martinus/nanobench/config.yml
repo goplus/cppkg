@@ -13,4 +13,6 @@ versions:
     folder: all
   4.3.9:
     folder: all
-url: https://github.com/martinus/nanobench/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/martinus/nanobench/archive/v${version}.tar.gz

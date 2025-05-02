@@ -11,4 +11,6 @@ versions:
     folder: all
   2.9.0:
     folder: all
-url: https://github.com/syoyo/tinygltf/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/syoyo/tinygltf/archive/v${version}.tar.gz

@@ -5,4 +5,6 @@ versions:
     folder: all
   878.200.35:
     folder: all
-url: https://github.com/apple-oss-distributions/mDNSResponder/archive/mDNSResponder-${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/apple-oss-distributions/mDNSResponder/archive/mDNSResponder-${version}.tar.gz

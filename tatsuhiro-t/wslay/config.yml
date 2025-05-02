@@ -1,4 +1,6 @@
 versions:
   1.1.1:
     folder: all
-url: https://github.com/tatsuhiro-t/wslay/archive/release-${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/tatsuhiro-t/wslay/archive/release-${version}.tar.gz

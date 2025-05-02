@@ -9,4 +9,6 @@ versions:
     folder: all
   0.6.5:
     folder: all
-url: https://github.com/getsentry/sentry-native/releases/download/${version}/sentry-native.zip
+template:
+  folder: all
+  url: https://github.com/getsentry/sentry-native/releases/download/${version}/sentry-native.zip

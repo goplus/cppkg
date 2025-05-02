@@ -9,4 +9,6 @@ versions:
     folder: all
   4.3.3:
     folder: all
-url: https://github.com/warmcat/libwebsockets/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/warmcat/libwebsockets/archive/v${version}.tar.gz

@@ -7,4 +7,6 @@ versions:
     folder: all
   1.9.1:
     folder: all
-url: https://github.com/google/benchmark/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/google/benchmark/archive/refs/tags/v${version}.tar.gz

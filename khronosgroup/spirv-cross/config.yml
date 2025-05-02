@@ -17,4 +17,6 @@ versions:
     folder: all
   cci.20211113:
     folder: all
-url: https://github.com/KhronosGroup/SPIRV-Cross/archive/refs/tags/vulkan-sdk-${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/KhronosGroup/SPIRV-Cross/archive/refs/tags/vulkan-sdk-${version}.tar.gz

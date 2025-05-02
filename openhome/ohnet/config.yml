@@ -5,4 +5,6 @@ versions:
     folder: all
   1.37.5454:
     folder: all
-url: https://github.com/openhome/ohNet/archive/refs/tags/ohNet_${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/openhome/ohNet/archive/refs/tags/ohNet_${version}.tar.gz

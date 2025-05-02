@@ -13,4 +13,6 @@ versions:
     folder: all
   2.5.18.0:
     folder: all
-url: https://github.com/AcademySoftwareFoundation/OpenImageIO/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/AcademySoftwareFoundation/OpenImageIO/archive/refs/tags/v${version}.tar.gz

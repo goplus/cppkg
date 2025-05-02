@@ -1,4 +1,6 @@
 versions:
   "3.4":
     folder: all
-url: https://github.com/smasherprog/clipboard_lite/archive/refs/tags/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/smasherprog/clipboard_lite/archive/refs/tags/${version}.tar.gz

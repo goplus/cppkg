@@ -25,4 +25,6 @@ versions:
     folder: all
   8.9.1:
     folder: all
-url: https://github.com/curl/curl/releases/download/curl-8_12_1/curl-${version}.tar.xz
+template:
+  folder: all
+  url: https://github.com/curl/curl/releases/download/curl-8_12_1/curl-${version}.tar.xz

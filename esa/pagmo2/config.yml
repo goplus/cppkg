@@ -5,4 +5,6 @@ versions:
     folder: all
   2.19.0:
     folder: all
-url: https://github.com/esa/pagmo2/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/esa/pagmo2/archive/refs/tags/v${version}.tar.gz

@@ -15,4 +15,6 @@ versions:
     folder: all
   1.9.3:
     folder: all
-url: https://github.com/libcpr/cpr/archive/refs/tags/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/libcpr/cpr/archive/refs/tags/${version}.tar.gz

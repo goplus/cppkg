@@ -7,4 +7,6 @@ versions:
     folder: all
   "2.3":
     folder: all
-url: https://github.com/p-ranav/indicators/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/p-ranav/indicators/archive/v${version}.tar.gz

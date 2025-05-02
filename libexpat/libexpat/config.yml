@@ -21,4 +21,6 @@ versions:
     folder: all
   2.7.1:
     folder: all
-url: https://github.com/libexpat/libexpat/releases/download/R_2_7_1/expat-${version}.tar.xz
+template:
+  folder: all
+  url: https://github.com/libexpat/libexpat/releases/download/R_2_7_1/expat-${version}.tar.xz

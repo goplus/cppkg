@@ -1,4 +1,6 @@
 versions:
   1.21.0:
     folder: all
-url: https://github.com/ofiwg/libfabric/releases/download/v${version}/libfabric-${version}.tar.bz2
+template:
+  folder: all
+  url: https://github.com/ofiwg/libfabric/releases/download/v${version}/libfabric-${version}.tar.bz2

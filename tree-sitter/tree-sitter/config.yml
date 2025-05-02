@@ -19,4 +19,6 @@ versions:
     folder: all
   0.25.1:
     folder: all
-url: https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v${version}.tar.gz

@@ -15,4 +15,6 @@ versions:
     folder: all
   "48.1":
     folder: all
-url: https://github.com/google/perfetto/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/google/perfetto/archive/refs/tags/v${version}.tar.gz

@@ -3,4 +3,6 @@ versions:
     folder: all
   "2.19":
     folder: all
-url: https://github.com/cc65/cc65/archive/V${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/cc65/cc65/archive/V${version}.tar.gz

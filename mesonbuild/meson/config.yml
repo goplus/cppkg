@@ -37,4 +37,6 @@ versions:
     folder: all
   1.7.2:
     folder: all
-url: https://github.com/mesonbuild/meson/archive/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/mesonbuild/meson/archive/${version}.tar.gz

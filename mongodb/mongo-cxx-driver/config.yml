@@ -15,4 +15,6 @@ versions:
     folder: all
   3.8.1:
     folder: all
-url: https://github.com/mongodb/mongo-cxx-driver/releases/download/r${version}/mongo-cxx-driver-r${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/mongodb/mongo-cxx-driver/releases/download/r${version}/mongo-cxx-driver-r${version}.tar.gz

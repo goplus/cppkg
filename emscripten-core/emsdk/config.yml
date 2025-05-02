@@ -59,4 +59,6 @@ versions:
     folder: all
   3.1.73:
     folder: all
-url: https://github.com/emscripten-core/emsdk/archive/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/emscripten-core/emsdk/archive/${version}.tar.gz

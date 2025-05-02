@@ -1,4 +1,6 @@
 versions:
   1.0.2.0:
     folder: all
-url: https://github.com/chronoxor/CppServer/archive/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/chronoxor/CppServer/archive/${version}.tar.gz

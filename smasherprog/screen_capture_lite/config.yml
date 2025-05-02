@@ -11,4 +11,6 @@ versions:
     folder: all
   17.1.613:
     folder: all
-url: https://github.com/smasherprog/screen_capture_lite/archive/refs/tags/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/smasherprog/screen_capture_lite/archive/refs/tags/${version}.tar.gz

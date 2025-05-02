@@ -1,4 +1,6 @@
 versions:
   0.0.42:
     folder: all
-url: https://github.com/embarktrucks/embag/archive/refs/tags/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/embarktrucks/embag/archive/refs/tags/${version}.tar.gz

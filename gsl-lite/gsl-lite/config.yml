@@ -13,4 +13,6 @@ versions:
     folder: all
   0.42.0:
     folder: all
-url: https://github.com/gsl-lite/gsl-lite/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/gsl-lite/gsl-lite/archive/v${version}.tar.gz

@@ -5,4 +5,6 @@ versions:
     folder: all
   2.0.1:
     folder: all
-url: https://github.com/unicorn-engine/unicorn/archive/refs/tags/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/unicorn-engine/unicorn/archive/refs/tags/${version}.tar.gz

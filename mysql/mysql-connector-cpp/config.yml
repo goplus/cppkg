@@ -1,4 +1,6 @@
 versions:
   9.2.0:
     folder: all
-url: https://github.com/mysql/mysql-connector-cpp/archive/refs/tags/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/mysql/mysql-connector-cpp/archive/refs/tags/${version}.tar.gz

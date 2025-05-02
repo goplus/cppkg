@@ -5,4 +5,6 @@ versions:
     folder: all
   2.9.4:
     folder: all
-url: https://github.com/nodejs/http-parser/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/nodejs/http-parser/archive/v${version}.tar.gz

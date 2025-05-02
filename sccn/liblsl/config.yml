@@ -5,4 +5,6 @@ versions:
     folder: all
   1.16.2:
     folder: all
-url: https://github.com/sccn/liblsl/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/sccn/liblsl/archive/refs/tags/v${version}.tar.gz

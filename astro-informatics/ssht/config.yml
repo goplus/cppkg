@@ -5,4 +5,6 @@ versions:
     folder: all
   1.5.2:
     folder: all
-url: https://github.com/astro-informatics/ssht/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/astro-informatics/ssht/archive/v${version}.tar.gz

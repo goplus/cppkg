@@ -9,4 +9,6 @@ versions:
     folder: all
   1.5.0:
     folder: all
-url: https://github.com/ph3at/libenvpp/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/ph3at/libenvpp/archive/refs/tags/v${version}.tar.gz

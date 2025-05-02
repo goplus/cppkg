@@ -1,4 +1,6 @@
 versions:
   2.6.4:
     folder: all
-url: https://github.com/westes/flex/releases/download/v${version}/flex-${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/westes/flex/releases/download/v${version}/flex-${version}.tar.gz
