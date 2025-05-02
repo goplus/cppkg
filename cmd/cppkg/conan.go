@@ -131,10 +131,11 @@ func conanInstall(pkg, outDir, conanfileDir string, out io.Writer, flags int) (e
 
 func copyDirR(srcDir, destDir string) error {
 	if cp, err := exec.LookPath("cp"); err == nil {
-		return exec.Command(cp, "-r", "-p", srcDir, destDir).Run()
+		return exec.Command(cp, "-r", srcDir+"/", destDir).Run()
 	}
 	if cp, err := exec.LookPath("xcopy"); err == nil {
-		return exec.Command(cp, "/E", "/I", "/Y", srcDir, destDir).Run()
+		// TODO(xsw): check xcopy
+		return exec.Command(cp, "/E", "/I", "/Y", srcDir+"/", destDir).Run()
 	}
 	return errors.New("copy command not found")
 }
