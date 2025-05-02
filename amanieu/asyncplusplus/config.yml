@@ -1,8 +1,10 @@
+name: asyncplusplus
 versions:
   "1.1":
     folder: all
   "1.2":
     folder: all
 template:
+  from: "1.2"
   folder: all
   url: https://github.com/Amanieu/asyncplusplus/archive/v${version}.tar.gz

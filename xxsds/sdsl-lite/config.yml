@@ -1,8 +1,10 @@
+name: xxsds-sdsl-lite
 versions:
   3.0.0:
     folder: all
   cci.20210329:
     folder: all
 template:
+  from: 3.0.0
   folder: all
   url: https://github.com/xxsds/sdsl-lite/archive/refs/tags/v${version}.zip

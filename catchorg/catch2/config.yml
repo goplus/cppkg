@@ -1,3 +1,4 @@
+name: catch2
 versions:
   2.11.3:
     folder: 2.x.x
@@ -22,5 +23,6 @@ versions:
   3.8.0:
     folder: 3.x.x
 template:
+  from: 3.8.0
   folder: 3.x.x
   url: https://github.com/catchorg/Catch2/archive/v${version}.tar.gz

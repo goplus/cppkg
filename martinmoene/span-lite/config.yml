@@ -1,3 +1,4 @@
+name: span-lite
 versions:
   0.10.0:
     folder: all
@@ -14,5 +15,6 @@ versions:
   0.9.2:
     folder: all
 template:
+  from: 0.11.0
   folder: all
   url: https://github.com/martinmoene/span-lite/archive/v${version}.tar.gz

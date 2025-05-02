@@ -1,3 +1,4 @@
+name: ags
 versions:
   5.4.1:
     folder: all
@@ -8,5 +9,6 @@ versions:
   6.2.0:
     folder: all
 template:
+  from: 6.2.0
   folder: all
   url: https://github.com/GPUOpen-LibrariesAndSDKs/AGS_SDK/archive/refs/tags/v${version}.tar.gz

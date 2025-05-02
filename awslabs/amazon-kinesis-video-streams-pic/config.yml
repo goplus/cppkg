@@ -1,3 +1,4 @@
+name: aws-kvs-pic
 versions:
   1.0.1:
     folder: all
@@ -6,5 +7,6 @@ versions:
   cci.20210812:
     folder: all
 template:
+  from: 1.1.0
   folder: all
   url: https://github.com/awslabs/amazon-kinesis-video-streams-pic/archive/refs/tags/v${version}.tar.gz

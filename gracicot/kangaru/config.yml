@@ -1,3 +1,4 @@
+name: kangaru
 versions:
   4.2.4:
     folder: all
@@ -8,5 +9,6 @@ versions:
   4.3.2:
     folder: all
 template:
+  from: 4.3.2
   folder: all
   url: https://github.com/gracicot/kangaru/archive/v${version}.tar.gz

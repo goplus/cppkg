@@ -1,3 +1,4 @@
+name: foonathan-lexy
 versions:
   2022.05.01:
     folder: all
@@ -6,5 +7,6 @@ versions:
   2022.12.1:
     folder: all
 template:
+  from: 2022.12.1
   folder: all
   url: https://github.com/foonathan/lexy/releases/download/v${version}/lexy-src.zip

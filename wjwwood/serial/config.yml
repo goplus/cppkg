@@ -1,6 +1,8 @@
+name: serial
 versions:
   1.2.1:
     folder: all
 template:
+  from: 1.2.1
   folder: all
   url: https://github.com/wjwwood/serial/archive/${version}.tar.gz

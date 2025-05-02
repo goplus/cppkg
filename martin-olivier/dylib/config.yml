@@ -1,6 +1,8 @@
+name: dylib
 versions:
   2.2.1:
     folder: all
 template:
+  from: 2.2.1
   folder: all
   url: https://github.com/martin-olivier/dylib/archive/refs/tags/v${version}.tar.gz

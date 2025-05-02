@@ -1,8 +1,10 @@
+name: cxxgraph
 versions:
   3.1.0:
     folder: all
   4.1.0:
     folder: all
 template:
+  from: 4.1.0
   folder: all
   url: https://github.com/ZigRazor/CXXGraph/archive/refs/tags/v${version}.tar.gz

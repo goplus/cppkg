@@ -1,8 +1,10 @@
+name: glew
 versions:
   2.1.0:
     folder: all
   2.2.0:
     folder: all
 template:
+  from: 2.2.0
   folder: all
   url: https://github.com/nigels-com/glew/releases/download/glew-${version}/glew-${version}.tgz

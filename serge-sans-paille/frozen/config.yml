@@ -1,3 +1,4 @@
+name: frozen
 versions:
   1.0.0:
     folder: all
@@ -8,5 +9,6 @@ versions:
   1.2.0:
     folder: all
 template:
+  from: 1.2.0
   folder: all
   url: https://github.com/serge-sans-paille/frozen/archive/${version}.tar.gz

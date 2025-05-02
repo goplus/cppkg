@@ -1,3 +1,4 @@
+name: opus
 versions:
   1.3.1:
     folder: all
@@ -6,5 +7,6 @@ versions:
   1.5.2:
     folder: all
 template:
+  from: "1.4"
   folder: all
   url: https://github.com/xiph/opus/releases/download/v${version}/opus-${version}.tar.gz

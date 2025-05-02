@@ -1,8 +1,10 @@
+name: naive-tsearch
 versions:
   0.1.0:
     folder: all
   0.1.1:
     folder: all
 template:
+  from: 0.1.1
   folder: all
   url: https://github.com/kulp/naive-tsearch/releases/download/v${version}/naive-tsearch-${version}.tar.xz

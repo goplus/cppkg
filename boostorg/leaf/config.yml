@@ -1,3 +1,4 @@
+name: boost-leaf
 versions:
   1.81.0:
     folder: all
@@ -6,5 +7,6 @@ versions:
   1.83.0:
     folder: all
 template:
+  from: 1.83.0
   folder: all
   url: https://github.com/boostorg/leaf/archive/refs/tags/boost-${version}.tar.gz

@@ -1,6 +1,8 @@
+name: teemo
 versions:
   "2.7":
     folder: all
 template:
+  from: "2.7"
   folder: all
   url: https://github.com/winsoft666/teemo/archive/refs/tags/v${version}.tar.gz

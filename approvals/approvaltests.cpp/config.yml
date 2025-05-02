@@ -1,3 +1,4 @@
+name: approvaltests.cpp
 versions:
   10.10.0:
     folder: all
@@ -18,5 +19,6 @@ versions:
   9.0.0:
     folder: all
 template:
+  from: 10.13.0
   folder: all
   url: https://github.com/approvals/ApprovalTests.cpp/releases/download/v.${version}/ApprovalTests.v.${version}.hpp

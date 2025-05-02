@@ -1,6 +1,8 @@
+name: folly
 versions:
   2024.08.12.00:
     folder: all
 template:
+  from: 2024.08.12.00
   folder: all
   url: https://github.com/facebook/folly/releases/download/v${version}/folly-v${version}.tar.gz

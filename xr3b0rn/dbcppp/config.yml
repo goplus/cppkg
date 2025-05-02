@@ -1,6 +1,8 @@
+name: dbcppp
 versions:
   3.2.6:
     folder: all
 template:
+  from: 3.2.6
   folder: all
   url: https://github.com/xR3b0rn/dbcppp/archive/refs/tags/v${version}.tar.gz

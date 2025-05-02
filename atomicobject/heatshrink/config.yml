@@ -1,6 +1,8 @@
+name: heatshrink
 versions:
   0.4.1:
     folder: all
 template:
+  from: 0.4.1
   folder: all
   url: https://github.com/atomicobject/heatshrink/archive/refs/tags/v${version}.tar.gz

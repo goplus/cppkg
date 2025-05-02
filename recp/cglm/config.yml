@@ -1,3 +1,4 @@
+name: cglm
 versions:
   0.8.5:
     folder: all
@@ -6,5 +7,6 @@ versions:
   0.9.1:
     folder: all
 template:
+  from: 0.9.1
   folder: all
   url: https://github.com/recp/cglm/archive/v${version}.tar.gz

@@ -1,6 +1,8 @@
+name: ncbi-cxx-toolkit-public
 versions:
   26.0.1:
     folder: "26"
 template:
+  from: 26.0.1
   folder: "26"
   url: https://github.com/ncbi/ncbi-cxx-toolkit-public/archive/refs/tags/release-${version}.tar.gz

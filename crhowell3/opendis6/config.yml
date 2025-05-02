@@ -1,6 +1,8 @@
+name: opendis6
 versions:
   0.1.0:
     folder: all
 template:
+  from: 0.1.0
   folder: all
   url: https://github.com/crhowell3/opendis6/archive/refs/tags/${version}.tar.gz

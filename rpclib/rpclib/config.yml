@@ -1,6 +1,8 @@
+name: rpclib
 versions:
   2.3.0:
     folder: all
 template:
+  from: 2.3.0
   folder: all
   url: https://github.com/rpclib/rpclib/archive/refs/tags/v${version}.tar.gz

@@ -1,6 +1,8 @@
+name: openmvg
 versions:
   "2.0":
     folder: all
 template:
+  from: "2.0"
   folder: all
   url: https://github.com/openMVG/openMVG/archive/refs/tags/v${version}.tar.gz

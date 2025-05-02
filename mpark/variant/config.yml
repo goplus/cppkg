@@ -1,6 +1,8 @@
+name: mpark-variant
 versions:
   1.4.0:
     folder: all
 template:
+  from: 1.4.0
   folder: all
   url: https://github.com/mpark/variant/archive/v${version}.tar.gz

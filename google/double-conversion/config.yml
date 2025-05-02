@@ -1,3 +1,4 @@
+name: double-conversion
 versions:
   3.1.4:
     folder: all
@@ -14,5 +15,6 @@ versions:
   3.3.0:
     folder: all
 template:
+  from: 3.3.0
   folder: all
   url: https://github.com/google/double-conversion/archive/refs/tags/v${version}.tar.gz

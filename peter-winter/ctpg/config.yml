@@ -1,6 +1,8 @@
+name: ctpg
 versions:
   1.3.7:
     folder: all
 template:
+  from: 1.3.7
   folder: all
   url: https://github.com/peter-winter/ctpg/archive/refs/tags/v${version}.tar.gz

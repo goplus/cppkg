@@ -1,3 +1,4 @@
+name: aws-c-auth
 versions:
   0.6.4:
     folder: all
@@ -6,5 +7,6 @@ versions:
   0.8.4:
     folder: all
 template:
+  from: 0.8.4
   folder: all
   url: https://github.com/awslabs/aws-c-auth/archive/v${version}.tar.gz

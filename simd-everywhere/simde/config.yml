@@ -1,3 +1,4 @@
+name: simde
 versions:
   0.7.6:
     folder: all
@@ -6,5 +7,6 @@ versions:
   0.8.2:
     folder: all
 template:
+  from: 0.8.2
   folder: all
   url: https://github.com/simd-everywhere/simde/archive/refs/tags/v${version}.tar.gz

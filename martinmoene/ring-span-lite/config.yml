@@ -1,3 +1,4 @@
+name: ring-span-lite
 versions:
   0.4.0:
     folder: all
@@ -8,5 +9,6 @@ versions:
   0.7.0:
     folder: all
 template:
+  from: 0.7.0
   folder: all
   url: https://github.com/martinmoene/ring-span-lite/archive/v${version}.tar.gz

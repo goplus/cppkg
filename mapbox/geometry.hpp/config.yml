@@ -1,6 +1,8 @@
+name: mapbox-geometry
 versions:
   2.0.3:
     folder: all
 template:
+  from: 2.0.3
   folder: all
   url: https://github.com/mapbox/geometry.hpp/archive/refs/tags/v${version}.tar.gz

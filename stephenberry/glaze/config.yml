@@ -1,3 +1,4 @@
+name: glaze
 versions:
   2.8.4:
     folder: all
@@ -32,5 +33,6 @@ versions:
   5.0.2:
     folder: all
 template:
+  from: 5.0.2
   folder: all
   url: https://github.com/stephenberry/glaze/archive/v${version}.tar.gz

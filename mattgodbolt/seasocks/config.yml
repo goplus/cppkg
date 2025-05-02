@@ -1,3 +1,4 @@
+name: seasocks
 versions:
   1.4.4:
     folder: all
@@ -6,5 +7,6 @@ versions:
   1.4.6:
     folder: all
 template:
+  from: 1.4.6
   folder: all
   url: https://github.com/mattgodbolt/seasocks/archive/v${version}.tar.gz

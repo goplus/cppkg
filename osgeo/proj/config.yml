@@ -1,3 +1,4 @@
+name: proj
 versions:
   9.3.1:
     folder: all
@@ -6,5 +7,6 @@ versions:
   9.5.0:
     folder: all
 template:
+  from: 9.5.0
   folder: all
   url: https://github.com/OSGeo/PROJ/releases/download/${version}/proj-${version}.tar.gz

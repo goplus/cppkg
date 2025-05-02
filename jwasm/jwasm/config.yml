@@ -1,6 +1,8 @@
+name: jwasm
 versions:
   "2.13":
     folder: all
 template:
+  from: "2.13"
   folder: all
   url: https://github.com/JWasm/JWasm/archive/${version}.tar.gz

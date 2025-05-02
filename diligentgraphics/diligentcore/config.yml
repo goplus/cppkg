@@ -1,3 +1,4 @@
+name: diligent-core
 versions:
   2.5.1:
     folder: all
@@ -14,5 +15,6 @@ versions:
   api.252009:
     folder: all
 template:
+  from: 2.5.2
   folder: all
   url: https://github.com/DiligentGraphics/DiligentCore/archive/refs/tags/v${version}.tar.gz

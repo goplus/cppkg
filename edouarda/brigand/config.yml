@@ -1,6 +1,8 @@
+name: brigand
 versions:
   cpp11-1.3.0:
     folder: all
 template:
+  from: cpp11-1.3.0
   folder: all
   url: https://github.com/edouarda/brigand/archive/refs/tags/${version}.tar.gz

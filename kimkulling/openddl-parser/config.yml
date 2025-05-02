@@ -1,3 +1,4 @@
+name: openddl-parser
 versions:
   0.5.0:
     folder: all
@@ -6,5 +7,6 @@ versions:
   cci.20211217:
     folder: all
 template:
+  from: 0.5.1
   folder: all
   url: https://github.com/kimkulling/openddl-parser/archive/v${version}.tar.gz

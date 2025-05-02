@@ -1,3 +1,4 @@
+name: 7bitdi
 versions:
   1.0.0:
     folder: all
@@ -16,5 +17,6 @@ versions:
   3.4.0:
     folder: all
 template:
+  from: 3.4.0
   folder: all
   url: https://github.com/7bitcoder/7bitDI/archive/refs/tags/v${version}.tar.gz

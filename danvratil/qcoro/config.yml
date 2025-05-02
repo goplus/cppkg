@@ -1,6 +1,8 @@
+name: qcoro
 versions:
   0.4.0:
     folder: all
 template:
+  from: 0.4.0
   folder: all
   url: https://github.com/danvratil/qcoro/archive/refs/tags/v${version}.tar.gz

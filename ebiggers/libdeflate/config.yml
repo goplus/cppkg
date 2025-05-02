@@ -1,3 +1,4 @@
+name: libdeflate
 versions:
   "1.10":
     folder: pre_1.15
@@ -28,5 +29,6 @@ versions:
   "1.9":
     folder: pre_1.15
 template:
+  from: "1.23"
   folder: all
   url: https://github.com/ebiggers/libdeflate/archive/refs/tags/v${version}.tar.gz

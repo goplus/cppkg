@@ -1,6 +1,8 @@
+name: ocilib
 versions:
   4.7.6:
     folder: all
 template:
+  from: 4.7.6
   folder: all
   url: https://github.com/vrogier/ocilib/releases/download/v${version}/ocilib-${version}-gnu.tar.gz

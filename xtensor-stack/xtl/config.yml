@@ -1,3 +1,4 @@
+name: xtl
 versions:
   0.6.10:
     folder: all
@@ -20,5 +21,6 @@ versions:
   0.7.6:
     folder: all
 template:
+  from: 0.7.6
   folder: all
   url: https://github.com/xtensor-stack/xtl/archive/${version}.tar.gz

@@ -1,3 +1,4 @@
+name: beauty
 versions:
   1.0.2:
     folder: all
@@ -6,5 +7,6 @@ versions:
   1.0.4:
     folder: all
 template:
+  from: 1.0.4
   folder: all
   url: https://github.com/dfleury2/beauty/archive/refs/tags/${version}.tar.gz

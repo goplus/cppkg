@@ -1,8 +1,10 @@
+name: ipaddress
 versions:
   1.0.1:
     folder: all
   1.1.0:
     folder: all
 template:
+  from: 1.1.0
   folder: all
   url: https://github.com/VladimirShaleev/ipaddress/archive/v${version}.tar.gz

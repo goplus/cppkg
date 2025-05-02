@@ -1,3 +1,4 @@
+name: uni-algo
 versions:
   0.6.0:
     folder: all
@@ -18,5 +19,6 @@ versions:
   1.2.0:
     folder: all
 template:
+  from: 1.2.0
   folder: all
   url: https://github.com/uni-algo/uni-algo/archive/v${version}.tar.gz

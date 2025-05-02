@@ -1,3 +1,4 @@
+name: sobjectizer
 versions:
   5.7.4:
     folder: all
@@ -10,5 +11,6 @@ versions:
   5.8.4:
     folder: all
 template:
+  from: 5.8.4
   folder: all
   url: https://github.com/Stiffstream/sobjectizer/archive/v.${version}.tar.gz

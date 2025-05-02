@@ -1,3 +1,4 @@
+name: verilator
 versions:
   "4.034":
     folder: all
@@ -10,5 +11,6 @@ versions:
   "5.004":
     folder: all
 template:
+  from: "4.224"
   folder: all
   url: https://github.com/verilator/verilator/archive/refs/tags/v${version}.tar.gz

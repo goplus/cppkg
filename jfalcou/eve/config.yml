@@ -1,3 +1,4 @@
+name: jfalcou-eve
 versions:
   v2021.10.0:
     folder: all
@@ -10,5 +11,6 @@ versions:
   v2023.02.15:
     folder: all
 template:
+  from: v2023.02.15
   folder: all
   url: https://github.com/jfalcou/eve/archive/refs/tags/${version}.tar.gz

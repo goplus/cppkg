@@ -1,3 +1,4 @@
+name: vulkan-headers
 versions:
   1.2.198.0:
     folder: all
@@ -18,5 +19,6 @@ versions:
   1.4.309.0:
     folder: all
 template:
+  from: 1.4.309.0
   folder: all
   url: https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/tags/vulkan-sdk-${version}.tar.gz

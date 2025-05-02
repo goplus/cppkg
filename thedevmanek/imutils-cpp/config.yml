@@ -1,6 +1,8 @@
+name: imutils-cpp
 versions:
   1.0.1:
     folder: all
 template:
+  from: 1.0.1
   folder: all
   url: https://github.com/thedevmanek/imutils-cpp/archive/refs/tags/v${version}.tar.gz

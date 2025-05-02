@@ -1,8 +1,10 @@
+name: yaclib
 versions:
   2022.10.31:
     folder: all
   2022.12.20:
     folder: all
 template:
+  from: 2022.10.31
   folder: all
   url: https://github.com/YACLib/YACLib/archive/refs/tags/v${version}.tar.gz

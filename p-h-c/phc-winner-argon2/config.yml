@@ -1,6 +1,8 @@
+name: argon2
 versions:
   "20190702":
     folder: all
 template:
+  from: "20190702"
   folder: all
   url: https://github.com/P-H-C/phc-winner-argon2/archive/${version}.tar.gz

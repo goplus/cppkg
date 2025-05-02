@@ -1,3 +1,4 @@
+name: perfetto
 versions:
   "40.0":
     folder: all
@@ -16,5 +17,6 @@ versions:
   "48.1":
     folder: all
 template:
+  from: "48.1"
   folder: all
   url: https://github.com/google/perfetto/archive/refs/tags/v${version}.tar.gz

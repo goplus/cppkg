@@ -1,8 +1,10 @@
+name: sqlpp11-connector-sqlite3
 versions:
   "0.29":
     folder: all
   "0.30":
     folder: all
 template:
+  from: "0.30"
   folder: all
   url: https://github.com/rbock/sqlpp11-connector-sqlite3/archive/${version}.tar.gz

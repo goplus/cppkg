@@ -1,8 +1,10 @@
+name: s2geometry
 versions:
   0.10.0:
     folder: all
   0.11.1:
     folder: all
 template:
+  from: 0.11.1
   folder: all
   url: https://github.com/google/s2geometry/archive/refs/tags/v${version}.tar.gz

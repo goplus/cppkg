@@ -1,3 +1,4 @@
+name: whisper-cpp
 versions:
   1.5.2:
     folder: all
@@ -8,5 +9,6 @@ versions:
   1.7.4:
     folder: all
 template:
+  from: 1.7.4
   folder: all
   url: https://github.com/ggerganov/whisper.cpp/archive/refs/tags/v${version}.tar.gz

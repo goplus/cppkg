@@ -1,8 +1,10 @@
+name: flatcc
 versions:
   0.6.0:
     folder: all
   0.6.1:
     folder: all
 template:
+  from: 0.6.1
   folder: all
   url: https://github.com/dvidelabs/flatcc/archive/v${version}.tar.gz

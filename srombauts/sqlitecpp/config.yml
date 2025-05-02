@@ -1,3 +1,4 @@
+name: sqlitecpp
 versions:
   3.1.1:
     folder: all
@@ -6,5 +7,6 @@ versions:
   3.3.2:
     folder: all
 template:
+  from: 3.3.2
   folder: all
   url: https://github.com/SRombauts/SQLiteCpp/archive/${version}.tar.gz

@@ -1,6 +1,8 @@
+name: dime
 versions:
   0.9.1:
     folder: all
 template:
+  from: 0.9.1
   folder: all
   url: https://github.com/coin3d/dime/releases/download/dime-${version}/dime-${version}-src.tar.gz

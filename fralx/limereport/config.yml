@@ -1,6 +1,8 @@
+name: limereport
 versions:
   1.7.4:
     folder: all
 template:
+  from: 1.7.4
   folder: all
   url: https://github.com/fralx/LimeReport/archive/refs/tags/${version}.tar.gz

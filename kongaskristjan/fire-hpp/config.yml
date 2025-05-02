@@ -1,8 +1,10 @@
+name: fire-hpp
 versions:
   "0.2":
     folder: all
   "1.0":
     folder: all
 template:
+  from: "1.0"
   folder: all
   url: https://github.com/kongaskristjan/fire-hpp/archive/v${version}.tar.gz

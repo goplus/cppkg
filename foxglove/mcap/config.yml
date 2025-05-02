@@ -1,3 +1,4 @@
+name: mcap
 versions:
   0.1.0:
     folder: all
@@ -28,5 +29,6 @@ versions:
   1.4.1:
     folder: all
 template:
+  from: 1.4.1
   folder: all
   url: https://github.com/foxglove/mcap/archive/refs/tags/releases/cpp/v${version}.tar.gz

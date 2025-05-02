@@ -1,3 +1,4 @@
+name: vc
 versions:
   1.4.1:
     folder: all
@@ -6,5 +7,6 @@ versions:
   1.4.3:
     folder: all
 template:
+  from: 1.4.3
   folder: all
   url: https://github.com/VcDevel/Vc/archive/${version}.tar.gz

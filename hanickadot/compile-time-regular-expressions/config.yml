@@ -1,3 +1,4 @@
+name: ctre
 versions:
   "2.10":
     folder: all
@@ -26,5 +27,6 @@ versions:
   3.9.0:
     folder: all
 template:
+  from: 3.9.0
   folder: all
   url: https://github.com/hanickadot/compile-time-regular-expressions/archive/v${version}.tar.gz

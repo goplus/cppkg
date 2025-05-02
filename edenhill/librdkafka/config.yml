@@ -1,3 +1,4 @@
+name: librdkafka
 versions:
   1.9.2:
     folder: all
@@ -20,5 +21,6 @@ versions:
   2.8.0:
     folder: all
 template:
+  from: 2.8.0
   folder: all
   url: https://github.com/edenhill/librdkafka/archive/v${version}.tar.gz

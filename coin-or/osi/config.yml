@@ -1,8 +1,10 @@
+name: coin-osi
 versions:
   0.108.6:
     folder: all
   0.108.7:
     folder: all
 template:
+  from: 0.108.7
   folder: all
   url: https://github.com/coin-or/Osi/archive/releases/${version}.tar.gz

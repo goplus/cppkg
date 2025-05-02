@@ -1,3 +1,4 @@
+name: libraw
 versions:
   0.20.0:
     folder: all
@@ -10,5 +11,6 @@ versions:
   0.21.3:
     folder: all
 template:
+  from: 0.21.3
   folder: all
   url: https://github.com/LibRaw/LibRaw/archive/${version}.tar.gz

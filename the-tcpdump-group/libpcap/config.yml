@@ -1,3 +1,4 @@
+name: libpcap
 versions:
   1.10.1:
     folder: all
@@ -6,5 +7,6 @@ versions:
   1.10.5:
     folder: all
 template:
+  from: 1.10.4
   folder: all
   url: https://github.com/the-tcpdump-group/libpcap/archive/libpcap-${version}.tar.gz

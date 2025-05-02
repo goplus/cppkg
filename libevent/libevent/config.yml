@@ -1,8 +1,10 @@
+name: libevent
 versions:
   2.1.11:
     folder: all
   2.1.12:
     folder: all
 template:
+  from: 2.1.12
   folder: all
   url: https://github.com/libevent/libevent/archive/release-${version}-stable.tar.gz

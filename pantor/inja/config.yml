@@ -1,3 +1,4 @@
+name: inja
 versions:
   3.0.0:
     folder: all
@@ -10,5 +11,6 @@ versions:
   3.4.0:
     folder: all
 template:
+  from: 3.4.0
   folder: all
   url: https://github.com/pantor/inja/archive/v${version}.tar.gz

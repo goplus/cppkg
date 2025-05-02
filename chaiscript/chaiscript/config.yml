@@ -1,6 +1,8 @@
+name: chaiscript
 versions:
   6.1.0:
     folder: all
 template:
+  from: 6.1.0
   folder: all
   url: https://github.com/ChaiScript/ChaiScript/archive/v${version}.tar.gz

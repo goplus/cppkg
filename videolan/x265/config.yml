@@ -1,8 +1,10 @@
+name: libx265
 versions:
   3.2.1:
     folder: all
   "3.4":
     folder: all
 template:
+  from: "3.4"
   folder: all
   url: https://github.com/videolan/x265/archive/refs/tags/${version}.tar.gz

@@ -1,8 +1,10 @@
+name: yandex-ozo
 versions:
   0.1.0:
     folder: all
   cci.20210509:
     folder: all
 template:
+  from: 0.1.0
   folder: all
   url: https://github.com/yandex/ozo/archive/refs/tags/v${version}.tar.gz

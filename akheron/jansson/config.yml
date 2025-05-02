@@ -1,3 +1,4 @@
+name: jansson
 versions:
   "2.12":
     folder: all
@@ -6,5 +7,6 @@ versions:
   "2.14":
     folder: all
 template:
+  from: "2.14"
   folder: all
   url: https://github.com/akheron/jansson/releases/download/v${version}/jansson-${version}.tar.bz2

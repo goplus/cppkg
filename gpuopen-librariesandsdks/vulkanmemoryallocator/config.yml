@@ -1,3 +1,4 @@
+name: vulkan-memory-allocator
 versions:
   2.3.0:
     folder: all
@@ -8,5 +9,6 @@ versions:
   cci.20231120:
     folder: all
 template:
+  from: 3.0.1
   folder: all
   url: https://github.com/GPUOpen-LibrariesAndSDKs/VulkanMemoryAllocator/archive/refs/tags/v${version}.tar.gz

@@ -1,3 +1,4 @@
+name: onnx
 versions:
   1.13.1:
     folder: all
@@ -16,5 +17,6 @@ versions:
   1.17.0:
     folder: all
 template:
+  from: 1.17.0
   folder: all
   url: https://github.com/onnx/onnx/archive/v${version}.tar.gz

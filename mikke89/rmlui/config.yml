@@ -1,3 +1,4 @@
+name: rmlui
 versions:
   "3.3":
     folder: "3.3"
@@ -12,5 +13,6 @@ versions:
   "4.4":
     folder: 4.x
 template:
+  from: "4.4"
   folder: 4.x
   url: https://github.com/mikke89/RmlUi/archive/${version}.tar.gz

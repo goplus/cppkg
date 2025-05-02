@@ -1,6 +1,8 @@
+name: scc
 versions:
   "2023.06":
     folder: all
 template:
+  from: "2023.06"
   folder: all
   url: https://github.com/Minres/SystemC-Components/releases/download/${version}/SCC-${version}-full.tar.gz

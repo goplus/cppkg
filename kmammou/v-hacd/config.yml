@@ -1,6 +1,8 @@
+name: v-hacd
 versions:
   4.1.0:
     folder: all
 template:
+  from: 4.1.0
   folder: all
   url: https://github.com/kmammou/v-hacd/archive/refs/tags/v${version}.tar.gz

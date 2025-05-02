@@ -1,3 +1,4 @@
+name: dacap-clip
 versions:
   "1.5":
     folder: all
@@ -10,5 +11,6 @@ versions:
   "1.9":
     folder: all
 template:
+  from: "1.9"
   folder: all
   url: https://github.com/dacap/clip/archive/refs/tags/v${version}.tar.gz

@@ -1,3 +1,4 @@
+name: sol2
 versions:
   2.20.6:
     folder: all
@@ -12,5 +13,6 @@ versions:
   3.5.0:
     folder: all
 template:
+  from: 3.5.0
   folder: all
   url: https://github.com/ThePhD/sol2/archive/v${version}.tar.gz

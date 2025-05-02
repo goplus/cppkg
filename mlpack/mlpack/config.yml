@@ -1,8 +1,10 @@
+name: mlpack
 versions:
   4.3.0:
     folder: all
   4.4.0:
     folder: all
 template:
+  from: 4.4.0
   folder: all
   url: https://github.com/mlpack/mlpack/archive/refs/tags/${version}.tar.gz

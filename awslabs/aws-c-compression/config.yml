@@ -1,3 +1,4 @@
+name: aws-c-compression
 versions:
   0.2.14:
     folder: all
@@ -6,5 +7,6 @@ versions:
   0.3.1:
     folder: all
 template:
+  from: 0.3.1
   folder: all
   url: https://github.com/awslabs/aws-c-compression/archive/v${version}.tar.gz

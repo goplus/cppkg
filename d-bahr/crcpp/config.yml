@@ -1,6 +1,8 @@
+name: crcpp
 versions:
   1.2.0.0:
     folder: all
 template:
+  from: 1.2.0.0
   folder: all
   url: https://github.com/d-bahr/CRCpp/archive/refs/tags/release-${version}.tar.gz

@@ -1,6 +1,8 @@
+name: libnpy
 versions:
   1.0.1:
     folder: all
 template:
+  from: 1.0.1
   folder: all
   url: https://github.com/llohse/libnpy/archive/refs/tags/v${version}.tar.gz

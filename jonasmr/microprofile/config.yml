@@ -1,8 +1,10 @@
+name: microprofile
 versions:
   "3.1":
     folder: all
   "4.0":
     folder: all
 template:
+  from: "4.0"
   folder: all
   url: https://github.com/jonasmr/microprofile/archive/refs/tags/v${version}.tar.gz

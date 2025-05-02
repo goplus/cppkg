@@ -1,6 +1,8 @@
+name: platformfolders
 versions:
   4.2.0:
     folder: all
 template:
+  from: 4.2.0
   folder: all
   url: https://github.com/sago007/PlatformFolders/archive/refs/tags/${version}.tar.gz

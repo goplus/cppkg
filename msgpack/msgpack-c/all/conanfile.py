@@ -1,104 +1,110 @@
 from conan import ConanFile
-from conan.tools.files import get, copy, rmdir, save
-from conan.tools.cmake import CMake, CMakeToolchain, cmake_layout
+from conan.tools.files import get, copy, save
+from conan.tools.layout import basic_layout
 from conan.tools.scm import Version
 import os
 import textwrap
 
 required_conan_version = ">=1.53.0"
 
-class MsgpackCConan(ConanFile):
-    name = "msgpack-c"
-    description = "MessagePack implementation for C"
+class MsgpackCXXConan(ConanFile):
+    name = "msgpack-cxx"
+    description = "The official C++ library for MessagePack"
     license = "BSL-1.0"
     url = "https://github.com/conan-io/conan-center-index"
     homepage = "https://github.com/msgpack/msgpack-c"
-    topics = ("msgpack", "message-pack", "serialization")
-    package_type = "library"
-    settings = "os", "arch", "build_type", "compiler"
+    topics = ("msgpack", "message-pack", "serialization", "header-only")
+    package_type = "header-library"
+    settings = "os", "arch", "compiler", "build_type"
     options = {
-        "fPIC": [True, False],
-        "shared": [True, False],
+        "use_boost": [True, False],
     }
     default_options = {
-        "fPIC": True,
-        "shared": False,
+        "use_boost": True,
     }
+    no_copy_source = True
 
     def config_options(self):
-        if self.settings.os == "Windows":
-            del self.options.fPIC
-
-    def configure(self):
-        if self.options.shared:
-            self.options.rm_safe("fPIC")
-        self.settings.rm_safe("compiler.libcxx")
-        self.settings.rm_safe("compiler.cppstd")
+        # Boost was not optional until 4.1.0
+        if Version(self.version) < "4.1.0":
+            del self.options.use_boost
 
     def layout(self):
-        cmake_layout(self, src_folder="src")
+        basic_layout(self, src_folder="src")
+
+    def requirements(self):
+        # Boost was not optional until 4.1.0
+        if self.options.get_safe("use_boost", True):
+            self.requires("boost/1.83.0")
+
+    def package_id(self):
+        self.info.clear()
 
     def source(self):
         get(self, **self.conan_data["sources"][self.version], strip_root=True)
 
-    def generate(self):
-        tc = CMakeToolchain(self)
-        tc.variables["MSGPACK_ENABLE_SHARED"] = self.options.shared
-        tc.variables["MSGPACK_ENABLE_STATIC"] = not self.options.shared
-        tc.variables["MSGPACK_32BIT"] = self.settings.arch == "x86"
-        tc.variables["MSGPACK_BUILD_EXAMPLES"] = False
-        tc.cache_variables["MSGPACK_BUILD_TESTS"] = False
-        tc.generate()
-
-    def build(self):
-        cmake = CMake(self)
-        cmake.configure()
-        cmake.build()
-
     def package(self):
         copy(self, pattern="LICENSE_1_0.txt", dst=os.path.join(self.package_folder, "licenses"), src=self.source_folder)
-        cmake = CMake(self)
-        cmake.install()
-        rmdir(self, os.path.join(self.package_folder, "lib", "pkgconfig"))
-        rmdir(self, os.path.join(self.package_folder, "lib", "cmake"))
-        # TODO: to remove in conan v2 once cmake_find_package* & pkg_config generators removed
-        self._create_cmake_module_alias_targets(
-            os.path.join(self.package_folder, self._module_file_rel_path),
-            {"msgpackc": "msgpack::msgpack"}
+        copy(
+            self,
+            pattern="*.h",
+            dst=os.path.join(self.package_folder, "include"),
+            src=os.path.join(self.source_folder, "include"),
         )
+        copy(
+            self,
+            pattern="*.hpp",
+            dst=os.path.join(self.package_folder, "include"),
+            src=os.path.join(self.source_folder, "include"),
+        )
+        if Version(self.version) >= "6.0.0":
+            self._create_cmake_module_alias_targets(
+                os.path.join(self.package_folder, self._module_file_rel_path),
+                {"msgpack-cxx": "msgpack-cxx::msgpack-cxx"}
+            )
+        else:
+            self._create_cmake_module_alias_targets(
+                os.path.join(self.package_folder, self._module_file_rel_path),
+                {"msgpackc-cxx": "msgpackc-cxx::msgpackc-cxx"}
+            )
 
     def _create_cmake_module_alias_targets(self, module_file, targets):
         content = ""
         for alias, aliased in targets.items():
-            content += textwrap.dedent("""\
+            content += textwrap.dedent(f"""\
                 if(TARGET {aliased} AND NOT TARGET {alias})
                     add_library({alias} INTERFACE IMPORTED)
                     set_property(TARGET {alias} PROPERTY INTERFACE_LINK_LIBRARIES {aliased})
                 endif()
-            """.format(alias=alias, aliased=aliased))
+            """)
         save(self, module_file, content)
+
+    @property
+    def _module_subfolder(self):
+        return os.path.join("lib", "cmake")
 
     @property
     def _module_file_rel_path(self):
         return os.path.join("lib", "cmake", f"conan-official-{self.name}-targets.cmake")
 
     def package_info(self):
-        self.cpp_info.set_property("cmake_file_name", "msgpack")
-        self.cpp_info.set_property("pkg_config_name", "msgpack")
-        if Version(self.version) < "6.0.0":
-            self.cpp_info.libs = ["msgpackc"]
-            self.cpp_info.set_property("cmake_target_name", "msgpackc")
+        if Version(self.version) > "6.1.1":
+            self.cpp_info.set_property("cmake_file_name", "msgpack-cxx")
         else:
-            self.cpp_info.libs = ["msgpack-c"]
-            self.cpp_info.set_property("cmake_target_name", "msgpack-c")
+            # The README is wrong, the correct name is msgpack-cxx,
+            # but keep it for old published versions not to break the consumers
+            self.cpp_info.set_property("cmake_file_name", "msgpack")
 
-        # TODO: to remove in conan v2 once cmake_find_package* & pkg_config generators removed
-        self.cpp_info.names["cmake_find_package"] = "msgpack"
-        self.cpp_info.names["cmake_find_package_multi"] = "msgpack"
-        self.cpp_info.build_modules["cmake_find_package"] = [self._module_file_rel_path]
-        self.cpp_info.build_modules["cmake_find_package_multi"] = [self._module_file_rel_path]
-        self.cpp_info.names["pkg_config"] = "msgpack"
-[]
+        if Version(self.version) >= "6.0.0":
+            self.cpp_info.set_property("cmake_target_name", "msgpack-cxx")
+            self.cpp_info.names["cmake_find_package"] = "msgpack-cxx"
+            self.cpp_info.names["cmake_find_package_multi"] = "msgpack-cxx"
+        else:
+            self.cpp_info.set_property("cmake_target_name", "msgpackc-cxx")
+            self.cpp_info.names["cmake_find_package"] = "msgpackc-cxx"
+            self.cpp_info.names["cmake_find_package_multi"] = "msgpackc-cxx"
+
+        self.cpp_info.libdirs = []
         self.cpp_info.bindirs = []
 
         if Version(self.version) >= "4.1.0" and not self.options.use_boost:

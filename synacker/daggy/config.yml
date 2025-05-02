@@ -1,6 +1,8 @@
+name: daggy
 versions:
   2.1.2:
     folder: "2.1"
 template:
+  from: 2.1.2
   folder: "2.1"
   url: https://github.com/synacker/daggy/archive/refs/tags/${version}.tar.gz

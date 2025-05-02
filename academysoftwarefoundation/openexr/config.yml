@@ -1,3 +1,4 @@
+name: openexr
 versions:
   2.5.7:
     folder: 2.x
@@ -10,5 +11,6 @@ versions:
   3.3.3:
     folder: 3.x
 template:
+  from: 3.3.3
   folder: 3.x
   url: https://github.com/AcademySoftwareFoundation/openexr/releases/download/v${version}/openexr-${version}.tar.gz

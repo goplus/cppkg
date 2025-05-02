@@ -1,3 +1,4 @@
+name: botan
 versions:
   2.19.5:
     folder: all
@@ -10,5 +11,6 @@ versions:
   3.6.1:
     folder: all
 template:
+  from: 3.6.1
   folder: all
   url: https://github.com/randombit/botan/archive/${version}.tar.gz

@@ -1,8 +1,10 @@
+name: spscqueue
 versions:
   "1.0":
     folder: all
   "1.1":
     folder: all
 template:
+  from: "1.1"
   folder: all
   url: https://github.com/rigtorp/SPSCQueue/archive/refs/tags/v${version}.tar.gz

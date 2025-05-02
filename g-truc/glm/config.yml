@@ -1,8 +1,10 @@
+name: glm
 versions:
   0.9.9.8:
     folder: all
   1.0.1:
     folder: all
 template:
+  from: 1.0.1
   folder: all
   url: https://github.com/g-truc/glm/releases/download/${version}/glm-${version}-light.zip

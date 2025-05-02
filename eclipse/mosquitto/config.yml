@@ -1,3 +1,4 @@
+name: mosquitto
 versions:
   1.6.12:
     folder: 1.x
@@ -22,5 +23,6 @@ versions:
   2.0.7:
     folder: 2.x
 template:
+  from: 2.0.21
   folder: 2.x
   url: https://github.com/eclipse/mosquitto/archive/v${version}.tar.gz

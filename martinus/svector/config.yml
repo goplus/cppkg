@@ -1,8 +1,10 @@
+name: svector
 versions:
   1.0.2:
     folder: all
   1.0.3:
     folder: all
 template:
+  from: 1.0.3
   folder: all
   url: https://github.com/martinus/svector/archive/v${version}.tar.gz

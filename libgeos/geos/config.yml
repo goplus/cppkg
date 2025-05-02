@@ -1,3 +1,4 @@
+name: geos
 versions:
   3.10.2:
     folder: all
@@ -16,5 +17,6 @@ versions:
   3.13.0:
     folder: all
 template:
+  from: 3.13.0
   folder: all
   url: https://github.com/libgeos/geos/releases/download/${version}/geos-${version}.tar.bz2

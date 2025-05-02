@@ -1,3 +1,4 @@
+name: optional-lite
 versions:
   3.2.0:
     folder: all
@@ -10,5 +11,6 @@ versions:
   3.6.0:
     folder: all
 template:
+  from: 3.6.0
   folder: all
   url: https://github.com/martinmoene/optional-lite/archive/v${version}.tar.gz

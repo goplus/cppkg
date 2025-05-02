@@ -1,8 +1,10 @@
+name: mppp
 versions:
   1.0.3:
     folder: all
   2.0.0:
     folder: all
 template:
+  from: 2.0.0
   folder: all
   url: https://github.com/bluescarni/mppp/archive/v${version}.tar.gz

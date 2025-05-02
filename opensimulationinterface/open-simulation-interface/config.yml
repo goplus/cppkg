@@ -1,3 +1,4 @@
+name: open-simulation-interface
 versions:
   3.1.2:
     folder: all
@@ -6,5 +7,6 @@ versions:
   3.4.0:
     folder: all
 template:
+  from: 3.4.0
   folder: all
   url: https://github.com/OpenSimulationInterface/open-simulation-interface/archive/refs/tags/v${version}.tar.gz

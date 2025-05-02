@@ -1,3 +1,4 @@
+name: mongo-c-driver
 versions:
   1.24.3:
     folder: all
@@ -14,5 +15,6 @@ versions:
   1.29.2:
     folder: all
 template:
+  from: 1.29.2
   folder: all
   url: https://github.com/mongodb/mongo-c-driver/releases/download/${version}/mongo-c-driver-${version}.tar.gz

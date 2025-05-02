@@ -1,3 +1,4 @@
+name: libhal
 versions:
   2.0.1:
     folder: all
@@ -6,5 +7,6 @@ versions:
   2.2.0:
     folder: all
 template:
+  from: 2.2.0
   folder: all
   url: https://github.com/libhal/libhal/archive/refs/tags/${version}.tar.gz

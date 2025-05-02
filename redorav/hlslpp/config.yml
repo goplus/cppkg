@@ -1,3 +1,4 @@
+name: hlslpp
 versions:
   "2.0":
     folder: all
@@ -10,5 +11,6 @@ versions:
   3.3.1:
     folder: all
 template:
+  from: 3.3.1
   folder: all
   url: https://github.com/redorav/hlslpp/archive/${version}.tar.gz

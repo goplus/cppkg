@@ -1,6 +1,8 @@
+name: pdcurses
 versions:
   "3.9":
     folder: all
 template:
+  from: "3.9"
   folder: all
   url: https://github.com/wmcbrine/PDCurses/archive/${version}.tar.gz

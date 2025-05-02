@@ -1,3 +1,4 @@
+name: fruit
 versions:
   3.4.0:
     folder: all
@@ -10,5 +11,6 @@ versions:
   3.7.1:
     folder: all
 template:
+  from: 3.7.1
   folder: all
   url: https://github.com/google/fruit/archive/v${version}.tar.gz

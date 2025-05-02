@@ -1,6 +1,8 @@
+name: nativefiledialog
 versions:
   "116":
     folder: all
 template:
+  from: "116"
   folder: all
   url: https://github.com/mlabbe/nativefiledialog/archive/release_${version}.tar.gz

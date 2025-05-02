@@ -1,8 +1,10 @@
+name: docopt.cpp
 versions:
   0.6.2:
     folder: all
   0.6.3:
     folder: all
 template:
+  from: 0.6.3
   folder: all
   url: https://github.com/docopt/docopt.cpp/archive/v${version}.tar.gz

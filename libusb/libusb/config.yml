@@ -1,3 +1,4 @@
+name: libusb
 versions:
   1.0.23:
     folder: all
@@ -8,5 +9,6 @@ versions:
   1.0.26:
     folder: all
 template:
+  from: 1.0.26
   folder: all
   url: https://github.com/libusb/libusb/releases/download/v${version}/libusb-${version}.tar.bz2

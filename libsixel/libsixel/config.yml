@@ -1,6 +1,8 @@
+name: libsixel
 versions:
   1.10.3:
     folder: all
 template:
+  from: 1.10.3
   folder: all
   url: https://github.com/libsixel/libsixel/archive/refs/tags/v${version}.tar.gz

@@ -1,8 +1,10 @@
+name: s2let
 versions:
   2.2.3:
     folder: all
   2.2.6:
     folder: all
 template:
+  from: 2.2.6
   folder: all
   url: https://github.com/astro-informatics/s2let/archive/v${version}.tar.gz

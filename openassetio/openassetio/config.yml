@@ -1,6 +1,8 @@
+name: openassetio
 versions:
   1.0.0-alpha.9:
     folder: all
 template:
+  from: 1.0.0-alpha.9
   folder: all
   url: https://github.com/OpenAssetIO/OpenAssetIO/archive/v${version}.tar.gz

@@ -1,3 +1,4 @@
+name: libcurl
 versions:
   7.88.1:
     folder: all
@@ -26,5 +27,6 @@ versions:
   8.9.1:
     folder: all
 template:
+  from: 8.12.1
   folder: all
   url: https://github.com/curl/curl/releases/download/curl-8_12_1/curl-${version}.tar.xz

@@ -1,3 +1,4 @@
+name: aws-checksums
 versions:
   0.1.12:
     folder: all
@@ -6,5 +7,6 @@ versions:
   0.2.3:
     folder: all
 template:
+  from: 0.2.3
   folder: all
   url: https://github.com/awslabs/aws-checksums/archive/v${version}.tar.gz

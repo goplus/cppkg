@@ -1,6 +1,8 @@
+name: cern-root
 versions:
   v6-22-06:
     folder: all
 template:
+  from: v6-22-06
   folder: all
   url: https://github.com/root-project/root/archive/${version}.zip

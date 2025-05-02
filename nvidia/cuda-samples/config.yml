@@ -1,3 +1,4 @@
+name: cuda-samples
 versions:
   "10.2":
     folder: all
@@ -6,5 +7,6 @@ versions:
   "12.2":
     folder: all
 template:
+  from: "12.2"
   folder: all
   url: https://github.com/NVIDIA/cuda-samples/archive/refs/tags/v${version}.tar.gz

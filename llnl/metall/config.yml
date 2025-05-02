@@ -1,3 +1,4 @@
+name: metall
 versions:
   "0.20":
     folder: all
@@ -16,5 +17,6 @@ versions:
   "0.28":
     folder: all
 template:
+  from: "0.28"
   folder: all
   url: https://github.com/LLNL/metall/archive/refs/tags/v${version}.tar.gz

@@ -1,6 +1,8 @@
+name: pcl
 versions:
   1.13.1:
     folder: all
 template:
+  from: 1.13.1
   folder: all
   url: https://github.com/PointCloudLibrary/pcl/archive/refs/tags/pcl-${version}.tar.gz

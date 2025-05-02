@@ -1,3 +1,4 @@
+name: read-excel
 versions:
   1.1.5:
     folder: all
@@ -22,5 +23,6 @@ versions:
   1.2.8:
     folder: all
 template:
+  from: 1.2.8
   folder: all
   url: https://github.com/igormironchik/read-excel/archive/refs/tags/${version}.tar.gz

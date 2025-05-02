@@ -1,3 +1,4 @@
+name: ouster_sdk
 versions:
   0.10.0:
     folder: all
@@ -8,5 +9,6 @@ versions:
   0.13.0:
     folder: all
 template:
+  from: 0.13.0
   folder: all
   url: https://github.com/ouster-lidar/ouster-sdk/archive/refs/tags/release-${version}.tar.gz

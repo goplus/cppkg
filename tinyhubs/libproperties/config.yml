@@ -1,6 +1,8 @@
+name: libproperties
 versions:
   1.1.2:
     folder: all
 template:
+  from: 1.1.2
   folder: all
   url: https://github.com/tinyhubs/libproperties/archive/${version}.zip

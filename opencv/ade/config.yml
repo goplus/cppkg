@@ -1,3 +1,4 @@
+name: ade
 versions:
   0.1.1f:
     folder: all
@@ -8,5 +9,6 @@ versions:
   0.1.2d:
     folder: all
 template:
+  from: 0.1.2d
   folder: all
   url: https://github.com/opencv/ade/archive/refs/tags/v${version}.tar.gz

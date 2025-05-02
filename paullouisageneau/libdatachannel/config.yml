@@ -1,6 +1,8 @@
+name: libdatachannel
 versions:
   0.22.2:
     folder: all
 template:
+  from: 0.22.2
   folder: all
   url: https://github.com/paullouisageneau/libdatachannel/archive/refs/tags/v${version}.tar.gz

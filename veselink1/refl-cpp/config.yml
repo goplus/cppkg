@@ -1,8 +1,10 @@
+name: refl-cpp
 versions:
   0.12.1:
     folder: all
   0.12.4:
     folder: all
 template:
+  from: 0.12.4
   folder: all
   url: https://github.com/veselink1/refl-cpp/archive/refs/tags/v${version}.tar.gz

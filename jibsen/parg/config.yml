@@ -1,8 +1,10 @@
+name: parg
 versions:
   1.0.2:
     folder: all
   1.0.3:
     folder: all
 template:
+  from: 1.0.3
   folder: all
   url: https://github.com/jibsen/parg/archive/refs/tags/v${version}.tar.gz

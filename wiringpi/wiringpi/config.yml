@@ -1,3 +1,4 @@
+name: wiringpi
 versions:
   "2.50":
     folder: all
@@ -16,5 +17,6 @@ versions:
   cci.20210727:
     folder: all
 template:
+  from: "3.10"
   folder: all
   url: https://github.com/WiringPi/WiringPi/archive/refs/tags/${version}.tar.gz

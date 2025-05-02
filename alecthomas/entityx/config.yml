@@ -1,6 +1,8 @@
+name: entityx
 versions:
   1.3.0:
     folder: all
 template:
+  from: 1.3.0
   folder: all
   url: https://github.com/alecthomas/entityx/archive/${version}.tar.gz

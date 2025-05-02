@@ -1,3 +1,4 @@
+name: fast-dds
 versions:
   2.10.1:
     folder: all
@@ -12,5 +13,6 @@ versions:
   2.3.4:
     folder: all
 template:
+  from: 2.14.3
   folder: all
   url: https://github.com/eProsima/Fast-DDS/archive/refs/tags/v${version}.tar.gz

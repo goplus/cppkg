@@ -1,3 +1,4 @@
+name: timsort
 versions:
   1.2.0:
     folder: all
@@ -18,5 +19,6 @@ versions:
   3.0.0:
     folder: all
 template:
+  from: 3.0.0
   folder: all
   url: https://github.com/timsort/cpp-TimSort/archive/v${version}.tar.gz

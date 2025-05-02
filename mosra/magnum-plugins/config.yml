@@ -1,6 +1,8 @@
+name: magnum-plugins
 versions:
   "2020.06":
     folder: all
 template:
+  from: "2020.06"
   folder: all
   url: https://github.com/mosra/magnum-plugins/archive/refs/tags/v${version}.tar.gz

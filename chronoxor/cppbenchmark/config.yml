@@ -1,3 +1,4 @@
+name: cppbenchmark
 versions:
   1.0.0.0:
     folder: all
@@ -8,5 +9,6 @@ versions:
   cci.20201029:
     folder: all
 template:
+  from: 1.0.4.0
   folder: all
   url: https://github.com/chronoxor/CppBenchmark/archive/${version}.tar.gz

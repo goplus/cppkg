@@ -1,6 +1,8 @@
+name: lzfse
 versions:
   "1.0":
     folder: all
 template:
+  from: "1.0"
   folder: all
   url: https://github.com/lzfse/lzfse/archive/lzfse-${version}.tar.gz

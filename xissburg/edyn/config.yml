@@ -1,6 +1,8 @@
+name: edyn
 versions:
   1.2.1:
     folder: all
 template:
+  from: 1.2.1
   folder: all
   url: https://github.com/xissburg/edyn/archive/refs/tags/v${version}.tar.gz

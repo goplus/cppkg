@@ -1,6 +1,8 @@
+name: libelfin
 versions:
   "0.3":
     folder: all
 template:
+  from: "0.3"
   folder: all
   url: https://github.com/aclements/libelfin/archive/v${version}.tar.gz

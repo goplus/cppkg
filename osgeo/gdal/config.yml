@@ -1,3 +1,4 @@
+name: gdal
 versions:
   3.4.1:
     folder: pre_3.5.0
@@ -10,5 +11,6 @@ versions:
   3.8.3:
     folder: post_3.5.0
 template:
+  from: 3.8.3
   folder: post_3.5.0
   url: https://github.com/OSGeo/gdal/releases/download/v${version}/gdal-${version}.tar.gz

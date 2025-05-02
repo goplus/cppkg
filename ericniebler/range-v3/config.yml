@@ -1,3 +1,4 @@
+name: range-v3
 versions:
   0.10.0:
     folder: all
@@ -16,5 +17,6 @@ versions:
   cci.20240905:
     folder: all
 template:
+  from: 0.12.0
   folder: all
   url: https://github.com/ericniebler/range-v3/archive/refs/tags/${version}.tar.gz

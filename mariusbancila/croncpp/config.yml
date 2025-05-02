@@ -1,6 +1,8 @@
+name: croncpp
 versions:
   2023.03.30:
     folder: all
 template:
+  from: 2023.03.30
   folder: all
   url: https://github.com/mariusbancila/croncpp/archive/refs/tags/v${version}.tar.gz

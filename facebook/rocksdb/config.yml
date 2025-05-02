@@ -1,3 +1,4 @@
+name: rocksdb
 versions:
   6.29.5:
     folder: all
@@ -12,5 +13,6 @@ versions:
   9.7.4:
     folder: all
 template:
+  from: 9.10.0
   folder: all
   url: https://github.com/facebook/rocksdb/archive/refs/tags/v${version}.tar.gz

@@ -1,3 +1,4 @@
+name: tbb
 versions:
   2019_u9:
     folder: all
@@ -10,5 +11,6 @@ versions:
   "2020.3":
     folder: all
 template:
+  from: "2020.3"
   folder: all
   url: https://github.com/oneapi-src/oneTBB/archive/v${version}.tar.gz

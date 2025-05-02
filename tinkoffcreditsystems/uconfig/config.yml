@@ -1,8 +1,10 @@
+name: tcsbank-uconfig
 versions:
   2.0.3:
     folder: all
   2.1.0:
     folder: all
 template:
+  from: 2.1.0
   folder: all
   url: https://github.com/TinkoffCreditSystems/uconfig/archive/refs/tags/v${version}.tar.gz

@@ -1,3 +1,4 @@
+name: bertrand
 versions:
   0.0.12:
     folder: all
@@ -10,5 +11,6 @@ versions:
   "0.013":
     folder: all
 template:
+  from: 0.0.17
   folder: all
   url: https://github.com/bernedom/bertrand/archive/${version}.tar.gz

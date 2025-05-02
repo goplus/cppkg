@@ -1,6 +1,8 @@
+name: azure-storage-cpp
 versions:
   7.5.0:
     folder: all
 template:
+  from: 7.5.0
   folder: all
   url: https://github.com/Azure/azure-storage-cpp/archive/refs/tags/v${version}.tar.gz

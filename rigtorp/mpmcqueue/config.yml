@@ -1,6 +1,8 @@
+name: mpmcqueue
 versions:
   "1.0":
     folder: all
 template:
+  from: "1.0"
   folder: all
   url: https://github.com/rigtorp/MPMCQueue/archive/refs/tags/v${version}.tar.gz

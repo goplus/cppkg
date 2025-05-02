@@ -1,3 +1,4 @@
+name: glfw
 versions:
   3.3.7:
     folder: all
@@ -6,5 +7,6 @@ versions:
   "3.4":
     folder: all
 template:
+  from: "3.4"
   folder: all
   url: https://github.com/glfw/glfw/releases/download/${version}/glfw-${version}.zip

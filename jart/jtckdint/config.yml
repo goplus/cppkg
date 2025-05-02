@@ -1,6 +1,8 @@
+name: jtckdint
 versions:
   "1.0":
     folder: all
 template:
+  from: "1.0"
   folder: all
   url: https://github.com/jart/jtckdint/archive/refs/tags/${version}.tar.gz

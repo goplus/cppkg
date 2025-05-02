@@ -1,3 +1,4 @@
+name: godot_headers
 versions:
   3.2.3:
     folder: all
@@ -18,5 +19,6 @@ versions:
   cci.3.2-20200130:
     folder: all
 template:
+  from: 3.5.3
   folder: all
   url: https://github.com/godotengine/godot-headers/archive/godot-${version}-stable.tar.gz

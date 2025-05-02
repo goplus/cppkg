@@ -1,6 +1,8 @@
+name: nvcloth
 versions:
   1.1.6:
     folder: 1.1.6
 template:
+  from: 1.1.6
   folder: 1.1.6
   url: https://github.com/NVIDIAGameWorks/NvCloth/archive/refs/heads/${version}.zip

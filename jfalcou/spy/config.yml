@@ -1,3 +1,4 @@
+name: spy
 versions:
   0.0.4:
     folder: all
@@ -6,5 +7,6 @@ versions:
   1.1.0:
     folder: all
 template:
+  from: 1.1.0
   folder: all
   url: https://github.com/jfalcou/spy/archive/${version}.tar.gz

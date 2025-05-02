@@ -1,3 +1,4 @@
+name: exprtk
 versions:
   0.0.1:
     folder: all
@@ -6,5 +7,6 @@ versions:
   0.0.3:
     folder: all
 template:
+  from: 0.0.3
   folder: all
   url: https://github.com/ArashPartow/exprtk/archive/${version}.tar.gz

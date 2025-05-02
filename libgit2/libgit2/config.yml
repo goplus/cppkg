@@ -1,3 +1,4 @@
+name: libgit2
 versions:
   1.0.1:
     folder: all
@@ -22,5 +23,6 @@ versions:
   1.8.4:
     folder: all
 template:
+  from: 1.8.4
   folder: all
   url: https://github.com/libgit2/libgit2/archive/v${version}.tar.gz

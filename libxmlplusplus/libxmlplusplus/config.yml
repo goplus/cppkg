@@ -1,3 +1,4 @@
+name: libxmlpp
 versions:
   5.0.1:
     folder: all
@@ -8,5 +9,6 @@ versions:
   5.4.0:
     folder: all
 template:
+  from: 5.4.0
   folder: all
   url: https://github.com/libxmlplusplus/libxmlplusplus/releases/download/${version}/libxml++-${version}.tar.xz

@@ -1,6 +1,8 @@
+name: enhex-strong_type
 versions:
   1.0.0:
     folder: all
 template:
+  from: 1.0.0
   folder: all
   url: https://github.com/Enhex/strong_type/archive/refs/tags/v${version}.zip

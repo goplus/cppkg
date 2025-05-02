@@ -1,8 +1,10 @@
+name: kitten
 versions:
   0.0.1:
     folder: all
   0.1.0:
     folder: all
 template:
+  from: 0.1.0
   folder: all
   url: https://github.com/rvarago/kitten/archive/${version}.tar.gz

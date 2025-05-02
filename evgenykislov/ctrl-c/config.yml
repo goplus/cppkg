@@ -1,6 +1,8 @@
+name: ctrl-c
 versions:
   1.0.0:
     folder: all
 template:
+  from: 1.0.0
   folder: all
   url: https://github.com/evgenykislov/ctrl-c/archive/refs/tags/v${version}.tar.gz

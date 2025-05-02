@@ -1,3 +1,4 @@
+name: simdjson
 versions:
   3.10.1:
     folder: all
@@ -10,5 +11,6 @@ versions:
   3.9.3:
     folder: all
 template:
+  from: 3.12.3
   folder: all
   url: https://github.com/simdjson/simdjson/archive/v${version}.tar.gz

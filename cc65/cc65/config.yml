@@ -1,8 +1,10 @@
+name: cc65
 versions:
   "2.18":
     folder: all
   "2.19":
     folder: all
 template:
+  from: "2.19"
   folder: all
   url: https://github.com/cc65/cc65/archive/V${version}.tar.gz

@@ -1,8 +1,10 @@
+name: tmx
 versions:
   1.10.0:
     folder: all
   1.4.0:
     folder: all
 template:
+  from: 1.10.0
   folder: all
   url: https://github.com/baylej/tmx/archive/refs/tags/tmx_${version}.tar.gz

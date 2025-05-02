@@ -1,3 +1,4 @@
+name: tabulate
 versions:
   "1.0":
     folder: all
@@ -8,5 +9,6 @@ versions:
   "1.5":
     folder: all
 template:
+  from: "1.5"
   folder: all
   url: https://github.com/p-ranav/tabulate/archive/v${version}.tar.gz

@@ -1,6 +1,8 @@
+name: libverto
 versions:
   0.3.2:
     folder: all
 template:
+  from: 0.3.2
   folder: all
   url: https://github.com/latchset/libverto/releases/download/${version}/libverto-${version}.tar.gz

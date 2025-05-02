@@ -1,8 +1,10 @@
+name: redboltz-mqtt_cpp
 versions:
   13.0.0:
     folder: all
   13.2.1:
     folder: all
 template:
+  from: 13.2.1
   folder: all
   url: https://github.com/redboltz/mqtt_cpp/archive/v${version}.tar.gz

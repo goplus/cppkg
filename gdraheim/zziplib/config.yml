@@ -1,3 +1,4 @@
+name: zziplib
 versions:
   0.13.71:
     folder: all
@@ -6,5 +7,6 @@ versions:
   0.13.78:
     folder: all
 template:
+  from: 0.13.78
   folder: all
   url: https://github.com/gdraheim/zziplib/archive/refs/tags/v${version}.tar.gz

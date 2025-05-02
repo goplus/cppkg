@@ -1,3 +1,4 @@
+name: freeglut
 versions:
   3.2.1:
     folder: all
@@ -6,5 +7,6 @@ versions:
   3.4.0:
     folder: all
 template:
+  from: 3.4.0
   folder: all
   url: https://github.com/FreeGLUTProject/freeglut/archive/v${version}.tar.gz

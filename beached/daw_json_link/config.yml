@@ -1,3 +1,4 @@
+name: daw_json_link
 versions:
   3.15.0:
     folder: all
@@ -22,5 +23,6 @@ versions:
   3.29.2:
     folder: all
 template:
+  from: 3.29.2
   folder: all
   url: https://github.com/beached/daw_json_link/archive/refs/tags/v${version}.tar.gz

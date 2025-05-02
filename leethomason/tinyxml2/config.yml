@@ -1,3 +1,4 @@
+name: tinyxml2
 versions:
   10.0.0:
     folder: all
@@ -10,5 +11,6 @@ versions:
   9.0.0:
     folder: all
 template:
+  from: 11.0.0
   folder: all
   url: https://github.com/leethomason/tinyxml2/archive/refs/tags/${version}.tar.gz

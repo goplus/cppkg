@@ -1,6 +1,8 @@
+name: rapidhash
 versions:
   "1.0":
     folder: all
 template:
+  from: "1.0"
   folder: all
   url: https://github.com/Nicoshev/rapidhash/archive/refs/tags/rapidhash_v${version}.tar.gz

@@ -1,6 +1,8 @@
+name: duckx
 versions:
   1.2.2:
     folder: all
 template:
+  from: 1.2.2
   folder: all
   url: https://github.com/amiremohamadi/DuckX/archive/refs/tags/v${version}.tar.gz

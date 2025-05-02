@@ -1,3 +1,4 @@
+name: xtensor
 versions:
   0.21.5:
     folder: all
@@ -10,5 +11,6 @@ versions:
   0.25.0:
     folder: all
 template:
+  from: 0.25.0
   folder: all
   url: https://github.com/xtensor-stack/xtensor/archive/${version}.tar.gz

@@ -1,6 +1,8 @@
+name: nodeeditor
 versions:
   3.0.11:
     folder: all
 template:
+  from: 3.0.11
   folder: all
   url: https://github.com/paceholder/nodeeditor/archive/refs/tags/${version}.tar.gz

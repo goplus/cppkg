@@ -1,6 +1,8 @@
+name: openscenegraph
 versions:
   3.6.5:
     folder: all
 template:
+  from: 3.6.5
   folder: all
   url: https://github.com/openscenegraph/OpenSceneGraph/archive/OpenSceneGraph-${version}.tar.gz

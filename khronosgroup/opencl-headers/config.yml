@@ -1,3 +1,4 @@
+name: opencl-headers
 versions:
   2020.03.13:
     folder: all
@@ -22,5 +23,6 @@ versions:
   2023.12.14:
     folder: all
 template:
+  from: 2023.12.14
   folder: all
   url: https://github.com/KhronosGroup/OpenCL-Headers/archive/refs/tags/v${version}.tar.gz

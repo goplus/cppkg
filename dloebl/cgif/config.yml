@@ -1,8 +1,10 @@
+name: cgif
 versions:
   0.3.0:
     folder: all
   0.3.2:
     folder: all
 template:
+  from: 0.3.2
   folder: all
   url: https://github.com/dloebl/cgif/archive/V${version}.tar.gz

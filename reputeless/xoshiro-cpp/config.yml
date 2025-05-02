@@ -1,6 +1,8 @@
+name: xoshiro-cpp
 versions:
   "1.1":
     folder: all
 template:
+  from: "1.1"
   folder: all
   url: https://github.com/Reputeless/Xoshiro-cpp/archive/refs/tags/v${version}.tar.gz

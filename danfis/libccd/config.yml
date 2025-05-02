@@ -1,6 +1,8 @@
+name: libccd
 versions:
   "2.1":
     folder: all
 template:
+  from: "2.1"
   folder: all
   url: https://github.com/danfis/libccd/archive/v${version}.tar.gz

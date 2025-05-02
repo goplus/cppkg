@@ -1,3 +1,4 @@
+name: bullet3
 versions:
   "2.89":
     folder: all
@@ -20,5 +21,6 @@ versions:
   "3.25":
     folder: all
 template:
+  from: "3.25"
   folder: all
   url: https://github.com/bulletphysics/bullet3/archive/refs/tags/${version}.tar.gz

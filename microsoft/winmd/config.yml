@@ -1,6 +1,8 @@
+name: winmd
 versions:
   1.0.210629.2:
     folder: all
 template:
+  from: 1.0.210629.2
   folder: all
   url: https://github.com/microsoft/winmd/archive/refs/tags/${version}.tar.gz

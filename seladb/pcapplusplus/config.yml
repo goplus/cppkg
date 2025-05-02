@@ -1,3 +1,4 @@
+name: pcapplusplus
 versions:
   "21.05":
     folder: all
@@ -12,5 +13,6 @@ versions:
   "24.09":
     folder: cmake
 template:
+  from: "22.11"
   folder: all
   url: https://github.com/seladb/PcapPlusPlus/archive/v${version}.tar.gz

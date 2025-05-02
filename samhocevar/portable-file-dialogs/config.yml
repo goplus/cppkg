@@ -1,6 +1,8 @@
+name: portable-file-dialogs
 versions:
   0.1.0:
     folder: all
 template:
+  from: 0.1.0
   folder: all
   url: https://github.com/samhocevar/portable-file-dialogs/archive/${version}.tar.gz

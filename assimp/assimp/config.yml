@@ -1,3 +1,4 @@
+name: assimp
 versions:
   5.1.6:
     folder: 5.x
@@ -12,5 +13,6 @@ versions:
   5.4.3:
     folder: 5.x
 template:
+  from: 5.4.3
   folder: 5.x
   url: https://github.com/assimp/assimp/archive/refs/tags/v${version}.tar.gz

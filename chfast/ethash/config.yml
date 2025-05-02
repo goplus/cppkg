@@ -1,6 +1,8 @@
+name: ethash
 versions:
   1.0.1:
     folder: all
 template:
+  from: 1.0.1
   folder: all
   url: https://github.com/chfast/ethash/archive/v${version}.tar.gz

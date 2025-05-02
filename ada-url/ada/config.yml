@@ -1,3 +1,4 @@
+name: ada
 versions:
   2.5.1:
     folder: all
@@ -14,5 +15,6 @@ versions:
   2.9.2:
     folder: all
 template:
+  from: 2.9.2
   folder: all
   url: https://github.com/ada-url/ada/archive/v${version}.tar.gz

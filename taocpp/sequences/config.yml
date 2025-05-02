@@ -1,6 +1,8 @@
+name: taocpp-sequences
 versions:
   2.0.1:
     folder: all
 template:
+  from: 2.0.1
   folder: all
   url: https://github.com/taocpp/sequences/archive/${version}.tar.gz

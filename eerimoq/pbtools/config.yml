@@ -1,3 +1,4 @@
+name: pbtools
 versions:
   0.45.0:
     folder: all
@@ -6,5 +7,6 @@ versions:
   0.47.0:
     folder: all
 template:
+  from: 0.47.0
   folder: all
   url: https://github.com/eerimoq/pbtools/archive/${version}.tar.gz

@@ -1,6 +1,8 @@
+name: luple
 versions:
   "1.2":
     folder: all
 template:
+  from: "1.2"
   folder: all
   url: https://github.com/alexpolt/luple/archive/${version}.tar.gz

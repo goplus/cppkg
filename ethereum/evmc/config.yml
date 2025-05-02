@@ -1,8 +1,10 @@
+name: evmc
 versions:
   10.1.1:
     folder: all
   11.0.0:
     folder: all
 template:
+  from: 11.0.0
   folder: all
   url: https://github.com/ethereum/evmc/archive/v${version}.tar.gz

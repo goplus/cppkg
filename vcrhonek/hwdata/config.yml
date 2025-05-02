@@ -1,3 +1,4 @@
+name: hwdata
 versions:
   "0.374":
     folder: all
@@ -10,5 +11,6 @@ versions:
   "0.385":
     folder: all
 template:
+  from: "0.385"
   folder: all
   url: https://github.com/vcrhonek/hwdata/archive/v${version}.tar.gz

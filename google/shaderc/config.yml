@@ -1,3 +1,4 @@
+name: shaderc
 versions:
   "2021.1":
     folder: all
@@ -6,5 +7,6 @@ versions:
   "2024.1":
     folder: all
 template:
+  from: "2024.1"
   folder: all
   url: https://github.com/google/shaderc/archive/refs/tags/v${version}.tar.gz

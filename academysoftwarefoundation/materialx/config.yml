@@ -1,8 +1,10 @@
+name: materialx
 versions:
   1.38.10:
     folder: all
   1.39.1:
     folder: all
 template:
+  from: 1.39.1
   folder: all
   url: https://github.com/AcademySoftwareFoundation/MaterialX/archive/refs/tags/v${version}.tar.gz

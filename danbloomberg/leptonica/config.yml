@@ -1,3 +1,4 @@
+name: leptonica
 versions:
   1.81.0:
     folder: all
@@ -8,5 +9,6 @@ versions:
   1.85.0:
     folder: all
 template:
+  from: 1.85.0
   folder: all
   url: https://github.com/DanBloomberg/leptonica/archive/${version}.tar.gz

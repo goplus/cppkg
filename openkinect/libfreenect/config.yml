@@ -1,8 +1,10 @@
+name: libfreenect
 versions:
   0.6.2:
     folder: all
   0.7.0:
     folder: all
 template:
+  from: 0.7.0
   folder: all
   url: https://github.com/OpenKinect/libfreenect/archive/v${version}.tar.gz

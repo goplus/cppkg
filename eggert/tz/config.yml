@@ -1,6 +1,8 @@
+name: tz
 versions:
   2023c:
     folder: all
 template:
+  from: 2023c
   folder: all
   url: https://github.com/eggert/tz/archive/refs/tags/${version}.tar.gz

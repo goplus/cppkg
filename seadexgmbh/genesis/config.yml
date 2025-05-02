@@ -1,6 +1,8 @@
+name: seadex-genesis
 versions:
   2.0.0:
     folder: all
 template:
+  from: 2.0.0
   folder: all
   url: https://github.com/SeadexGmbH/genesis/archive/refs/tags/${version}.tar.gz

@@ -1,3 +1,4 @@
+name: safeint
 versions:
   3.0.26:
     folder: all
@@ -8,5 +9,6 @@ versions:
   "3.24":
     folder: all
 template:
+  from: "3.24"
   folder: all
   url: https://github.com/dcleblanc/SafeInt/archive/${version}.tar.gz

@@ -1,3 +1,4 @@
+name: shield
 versions:
   "0.1":
     folder: all
@@ -12,5 +13,6 @@ versions:
   "0.6":
     folder: all
 template:
+  from: "0.6"
   folder: all
   url: https://github.com/holoplot/shield/archive/${version}.tar.gz

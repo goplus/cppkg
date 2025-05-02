@@ -1,3 +1,4 @@
+name: capstone
 versions:
   4.0.2:
     folder: all
@@ -6,5 +7,6 @@ versions:
   5.0.1:
     folder: all
 template:
+  from: 5.0.1
   folder: all
   url: https://github.com/capstone-engine/capstone/archive/refs/tags/${version}.tar.gz

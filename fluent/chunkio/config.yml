@@ -1,8 +1,10 @@
+name: chunkio
 versions:
   1.1.6:
     folder: all
   1.5.2:
     folder: all
 template:
+  from: 1.5.2
   folder: all
   url: https://github.com/fluent/chunkio/archive/refs/tags/v${version}.tar.gz

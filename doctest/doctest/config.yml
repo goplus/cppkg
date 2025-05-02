@@ -1,3 +1,4 @@
+name: doctest
 versions:
   2.3.5:
     folder: 2.x.x
@@ -28,5 +29,6 @@ versions:
   2.4.9:
     folder: 2.x.x
 template:
+  from: 2.4.11
   folder: 2.x.x
   url: https://github.com/doctest/doctest/archive/refs/tags/v${version}.tar.gz

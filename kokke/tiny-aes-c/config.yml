@@ -1,6 +1,8 @@
+name: tiny-aes-c
 versions:
   1.0.0:
     folder: all
 template:
+  from: 1.0.0
   folder: all
   url: https://github.com/kokke/tiny-AES-c/archive/v${version}.tar.gz

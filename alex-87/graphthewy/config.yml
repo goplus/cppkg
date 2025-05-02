@@ -1,6 +1,8 @@
+name: graphthewy
 versions:
   "1.1":
     folder: all
 template:
+  from: "1.1"
   folder: all
   url: https://github.com/alex-87/graphthewy/archive/v${version}.tar.gz

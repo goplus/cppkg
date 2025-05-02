@@ -1,8 +1,10 @@
+name: bacnet-stack
 versions:
   1.0.0:
     folder: all
   1.3.2:
     folder: all
 template:
+  from: 1.3.2
   folder: all
   url: https://github.com/bacnet-stack/bacnet-stack/archive/refs/tags/bacnet-stack-${version}.tar.gz

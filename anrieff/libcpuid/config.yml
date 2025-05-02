@@ -1,8 +1,10 @@
+name: libcpuid
 versions:
   0.5.0:
     folder: all
   0.5.1:
     folder: all
 template:
+  from: 0.5.1
   folder: all
   url: https://github.com/anrieff/libcpuid/archive/v${version}.tar.gz

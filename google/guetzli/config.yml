@@ -1,6 +1,8 @@
+name: guetzli
 versions:
   1.0.1:
     folder: all
 template:
+  from: 1.0.1
   folder: all
   url: https://github.com/google/guetzli/archive/v${version}.tar.gz

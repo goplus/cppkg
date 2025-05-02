@@ -1,3 +1,4 @@
+name: c-blosc2
 versions:
   2.10.5:
     folder: all
@@ -16,5 +17,6 @@ versions:
   2.17.0:
     folder: all
 template:
+  from: 2.17.0
   folder: all
   url: https://github.com/Blosc/c-blosc2/archive/v${version}.tar.gz

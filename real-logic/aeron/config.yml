@@ -1,3 +1,4 @@
+name: aeron
 versions:
   1.32.0:
     folder: all
@@ -10,5 +11,6 @@ versions:
   1.41.4:
     folder: all
 template:
+  from: 1.41.4
   folder: all
   url: https://github.com/real-logic/aeron/archive/${version}.tar.gz

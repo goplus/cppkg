@@ -1,6 +1,8 @@
+name: qpoases
 versions:
   3.2.1:
     folder: all
 template:
+  from: 3.2.1
   folder: all
   url: https://github.com/coin-or/qpOASES/archive/releases/${version}.tar.gz

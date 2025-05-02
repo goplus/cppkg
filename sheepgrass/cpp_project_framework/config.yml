@@ -1,6 +1,8 @@
+name: cpp_project_framework
 versions:
   1.0.0:
     folder: all
 template:
+  from: 1.0.0
   folder: all
   url: https://github.com/sheepgrass/cpp_project_framework/archive/${version}.tar.gz

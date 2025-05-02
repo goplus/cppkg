@@ -1,6 +1,8 @@
+name: seqan
 versions:
   2.4.0:
     folder: 2.x.x
 template:
+  from: 2.4.0
   folder: 2.x.x
   url: https://github.com/seqan/seqan/archive/seqan-v${version}.tar.gz

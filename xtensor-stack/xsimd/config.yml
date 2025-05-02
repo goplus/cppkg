@@ -1,3 +1,4 @@
+name: xsimd
 versions:
   10.0.0:
     folder: all
@@ -28,5 +29,6 @@ versions:
   9.0.1:
     folder: all
 template:
+  from: 13.0.0
   folder: all
   url: https://github.com/xtensor-stack/xsimd/archive/${version}.tar.gz

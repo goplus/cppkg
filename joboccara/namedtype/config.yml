@@ -1,8 +1,10 @@
+name: namedtype
 versions:
   1.1.0:
     folder: all
   "20190324":
     folder: all
 template:
+  from: 1.1.0
   folder: all
   url: https://github.com/joboccara/NamedType/archive/v${version}.tar.gz

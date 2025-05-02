@@ -1,6 +1,8 @@
+name: imgui-sfml
 versions:
   2.6.1:
     folder: all
 template:
+  from: 2.6.1
   folder: all
   url: https://github.com/SFML/imgui-sfml/archive/refs/tags/v${version}.tar.gz

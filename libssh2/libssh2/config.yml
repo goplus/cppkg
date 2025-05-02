@@ -1,3 +1,4 @@
+name: libssh2
 versions:
   1.10.0:
     folder: all
@@ -12,5 +13,6 @@ versions:
   1.9.0:
     folder: all
 template:
+  from: 1.11.1
   folder: all
   url: https://github.com/libssh2/libssh2/releases/download/libssh2-${version}/libssh2-${version}.tar.xz
