@@ -2,7 +2,10 @@ package main
 
 import (
 	"bytes"
+	"encoding/json"
+	"io"
 	stdlog "log"
+	"net/http"
 	"net/http/httptest"
 	"net/http/httputil"
 	"net/url"
@@ -12,6 +15,37 @@ import (
 )
 
 type revertProxy = httptest.Server
+
+type rtHandler func(*http.Request) (*http.Response, error)
+
+func (p rtHandler) RoundTrip(req *http.Request) (*http.Response, error) {
+	return p(req)
+}
+
+type teeReader struct {
+	rc   io.ReadCloser
+	b    bytes.Buffer
+	req  *http.Request
+	resp *http.Response
+	log  *stdlog.Logger
+}
+
+func (p *teeReader) Read(b []byte) (n int, err error) {
+	n, err = p.rc.Read(b)
+	p.b.Write(b[:n])
+	return
+}
+
+func (p *teeReader) Close() error {
+	err := p.rc.Close()
+	resp := *p.resp
+	resp.Body = io.NopCloser(&p.b)
+	var b bytes.Buffer
+	p.req.Write(&b)
+	resp.Write(&b)
+	p.log.Print(b.String())
+	return err
+}
 
 func startRevertProxy(endpoint string, log *stdlog.Logger) (_ *revertProxy, err error) {
 	rpURL, err := url.Parse(endpoint)
@@ -24,10 +58,17 @@ func startRevertProxy(endpoint string, log *stdlog.Logger) (_ *revertProxy, err 
 	proxy := httptest.NewServer(&httputil.ReverseProxy{
 		Rewrite: func(r *httputil.ProxyRequest) {
 			r.SetURL(rpURL)
-			var b bytes.Buffer
-			r.Out.Write(&b)
-			log.Print(b.String())
 		},
+		Transport: rtHandler(func(req *http.Request) (resp *http.Response, err error) {
+			resp, err = http.DefaultTransport.RoundTrip(req)
+			resp.Body = &teeReader{
+				rc:   resp.Body,
+				req:  req,
+				resp: resp,
+				log:  log,
+			}
+			return
+		}),
 	})
 	return proxy, nil
 }
@@ -37,25 +78,33 @@ const (
 	conanEndpoint = "https://center2.conan.io"
 )
 
-func (p *Manager) remoteProxy(flags int, logfile string, f func() error) (err error) {
-	const conanCenterOld = conanCenter + ".origin"
+type remoteList []struct {
+	Name string `json:"name"`
+	URL  string `json:"url"`
+}
 
+func (p *Manager) remoteProxy(flags int, logfile string, f func() error) (err error) {
 	quietInstall := flags&ToolQuietInstall != 0
 	app, err := conanCmd.Get(quietInstall)
 	if err != nil {
 		return
 	}
 
-	cmd := exec.Command(app, "remote", "rename", conanCenter, conanCenterOld)
-	result, err := cmd.CombinedOutput()
-	if err != nil {
-		if !strings.Contains(string(result), "already exists") {
-			return
+	endpoint := conanEndpoint
+	cmd := exec.Command(app, "remote", "list", "-f", "json")
+	if b, err := cmd.Output(); err == nil {
+		var rl remoteList
+		if json.Unmarshal(b, &rl) == nil {
+			for _, r := range rl {
+				if r.Name == conanCenter && strings.HasPrefix(r.URL, "https://") {
+					endpoint = r.URL
+					break
+				}
+			}
 		}
 	}
 	defer func() {
-		exec.Command(app, "remote", "remove", conanCenter).Run()
-		exec.Command(app, "remote", "rename", conanCenterOld, conanCenter).Run()
+		exec.Command(app, "remote", "add", "--force", conanCenter, endpoint).Run()
 	}()
 
 	var log *stdlog.Logger
