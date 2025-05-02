@@ -83,7 +83,7 @@ type remoteList []struct {
 	URL  string `json:"url"`
 }
 
-func (p *Manager) remoteProxy(flags int, logfile string, f func() error) (err error) {
+func remoteProxy(flags int, logfile string, f func() error) (err error) {
 	quietInstall := flags&ToolQuietInstall != 0
 	app, err := conanCmd.Get(quietInstall)
 	if err != nil {

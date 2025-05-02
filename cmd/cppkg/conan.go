@@ -94,8 +94,8 @@ func (p *Manager) Install(pkg *Package, flags int) (err error) {
 		out = os.Stdout
 	}
 	logFile := outDir + "/rp.log"
-	return p.remoteProxy(flags, logFile, func() error {
-		return conanInstall(pkgVer, outDir, conanfileDir, out, flags)
+	return remoteProxy(flags, logFile, func() error {
+		return conanInstall(pkg.Name+"/"+pkgVer, outDir, conanfileDir, out, flags)
 	})
 }
 
@@ -108,14 +108,14 @@ func (p *Manager) conanfileDir(pkgPath, pkgFolder string) string {
 	return root + "/" + pkgPath + "/" + pkgFolder
 }
 
-func conanInstall(pkgVer, outDir, conanfileDir string, out io.Writer, flags int) (err error) {
-	args := make([]string, 0, 10)
+func conanInstall(pkg, outDir, conanfileDir string, out io.Writer, flags int) (err error) {
+	args := make([]string, 0, 12)
 	args = append(args, "install",
+		"--requires", pkg,
+		"--generator", "PkgConfigDeps",
 		"--build", "missing",
 		"--format", "json",
-		"--version", pkgVer,
 		"--output-folder", outDir,
-		"./conanfile.py",
 	)
 	quietInstall := flags&ToolQuietInstall != 0
 	cmd, err := conanCmd.New(quietInstall, args...)
