@@ -1,0 +1,16 @@
+versions:
+  3.7.0:
+    folder: all
+  3.8.6:
+    folder: all
+  4.0.1:
+    folder: all
+  4.5.2:
+    folder: all
+  4.6.0:
+    folder: all
+  4.6.1:
+    folder: all
+  4.6.2:
+    folder: all
+url: https://github.com/BehaviorTree/BehaviorTree.CPP/archive/refs/tags/${version}.tar.gz

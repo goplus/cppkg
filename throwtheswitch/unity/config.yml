@@ -1,0 +1,6 @@
+versions:
+  2.5.2:
+    folder: all
+  2.6.0:
+    folder: all
+url: https://github.com/ThrowTheSwitch/Unity/archive/refs/tags/v${version}.tar.gz

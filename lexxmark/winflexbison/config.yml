@@ -1,0 +1,8 @@
+versions:
+  2.5.22:
+    folder: all
+  2.5.24:
+    folder: all
+  2.5.25:
+    folder: all
+url: https://github.com/lexxmark/winflexbison/archive/v${version}.tar.gz

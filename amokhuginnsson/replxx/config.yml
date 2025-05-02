@@ -1,0 +1,6 @@
+versions:
+  0.0.3:
+    folder: all
+  0.0.4:
+    folder: all
+url: https://github.com/AmokHuginnsson/replxx/archive/release-${version}.tar.gz

@@ -1,0 +1,12 @@
+versions:
+  1.0.0:
+    folder: 1.x.x
+  1.0.1:
+    folder: 1.x.x
+  1.1.0:
+    folder: 1.x.x
+  1.1.1:
+    folder: 1.x.x
+  2.0.0:
+    folder: all
+url: https://github.com/petiaccja/Mathter/archive/v${version}.tar.gz

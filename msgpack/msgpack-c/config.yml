@@ -1,0 +1,6 @@
+versions:
+  3.2.1:
+    folder: all
+  3.3.0:
+    folder: all
+url: https://github.com/msgpack/msgpack-c/archive/cpp-${version}.tar.gz

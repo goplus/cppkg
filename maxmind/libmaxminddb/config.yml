@@ -1,0 +1,14 @@
+versions:
+  1.10.0:
+    folder: all
+  1.12.2:
+    folder: all
+  1.6.0:
+    folder: all
+  1.7.1:
+    folder: all
+  1.8.0:
+    folder: all
+  1.9.1:
+    folder: all
+url: https://github.com/maxmind/libmaxminddb/releases/download/${version}/libmaxminddb-${version}.tar.gz

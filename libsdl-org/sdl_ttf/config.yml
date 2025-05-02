@@ -1,0 +1,14 @@
+versions:
+  2.0.15:
+    folder: all
+  2.0.18:
+    folder: all
+  2.20.1:
+    folder: all
+  2.20.2:
+    folder: all
+  2.22.0:
+    folder: all
+  2.24.0:
+    folder: all
+url: https://github.com/libsdl-org/SDL_ttf/releases/download/release-${version}/SDL2_ttf-${version}.tar.gz

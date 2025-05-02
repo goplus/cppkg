@@ -1,0 +1,6 @@
+versions:
+  0.10.0:
+    folder: all
+  1.0.0:
+    folder: all
+url: https://github.com/kkAyataka/plusaes/archive/refs/tags/v${version}.tar.gz

@@ -1,0 +1,8 @@
+versions:
+  0.6.0:
+    folder: all
+  0.7.0:
+    folder: all
+  0.7.1:
+    folder: all
+url: https://github.com/google/glog/archive/refs/tags/v${version}.tar.gz

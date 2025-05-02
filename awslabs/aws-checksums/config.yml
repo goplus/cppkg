@@ -1,0 +1,8 @@
+versions:
+  0.1.12:
+    folder: all
+  0.1.18:
+    folder: all
+  0.2.3:
+    folder: all
+url: https://github.com/awslabs/aws-checksums/archive/v${version}.tar.gz

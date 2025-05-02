@@ -1,0 +1,8 @@
+versions:
+  2.01.03:
+    folder: all
+  2.01.04:
+    folder: all
+  2.02.00:
+    folder: all
+url: https://github.com/vectorclass/version2/archive/refs/tags/v${version}.tar.gz

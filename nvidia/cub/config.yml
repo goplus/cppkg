@@ -1,0 +1,4 @@
+versions:
+  1.17.2:
+    folder: all
+url: https://github.com/NVIDIA/cub/archive/refs/tags/${version}.tar.gz

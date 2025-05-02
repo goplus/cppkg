@@ -1,0 +1,4 @@
+versions:
+  3.8.1:
+    folder: all
+url: https://github.com/usgs-coupled/iphreeqc/releases/download/v${version}/iphreeqc-${version}-16963.tar.gz

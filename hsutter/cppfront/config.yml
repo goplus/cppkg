@@ -1,0 +1,4 @@
+versions:
+  0.8.0:
+    folder: all
+url: https://github.com/hsutter/cppfront/archive/refs/tags/v${version}.tar.gz

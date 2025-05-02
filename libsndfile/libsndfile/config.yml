@@ -1,0 +1,12 @@
+versions:
+  1.0.29:
+    folder: all
+  1.0.30:
+    folder: all
+  1.0.31:
+    folder: all
+  1.2.0:
+    folder: all
+  1.2.2:
+    folder: all
+url: https://github.com/libsndfile/libsndfile/releases/download/${version}/libsndfile-${version}.tar.xz

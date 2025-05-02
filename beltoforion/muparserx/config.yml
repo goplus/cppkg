@@ -1,0 +1,6 @@
+versions:
+  4.0.12:
+    folder: all
+  4.0.8:
+    folder: all
+url: https://github.com/beltoforion/muparserx/archive/v${version}.tar.gz

@@ -1,0 +1,10 @@
+versions:
+  2.5.2:
+    folder: all
+  api.252005:
+    folder: all
+  api.252009:
+    folder: all
+  cci.20211009:
+    folder: all
+url: https://github.com/DiligentGraphics/DiligentTools/archive/refs/tags/v${version}.tar.gz

@@ -1,0 +1,12 @@
+versions:
+  2.6.0:
+    folder: all
+  2.7.4:
+    folder: all
+  2.8.2:
+    folder: all
+  3.0.0:
+    folder: all
+  4.1.0:
+    folder: all
+url: https://github.com/igormironchik/md4qt/archive/refs/tags/${version}.tar.gz

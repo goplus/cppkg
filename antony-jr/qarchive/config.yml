@@ -1,0 +1,16 @@
+versions:
+  2.0.1:
+    folder: all
+  2.0.2:
+    folder: all
+  2.1.1:
+    folder: all
+  2.2.3:
+    folder: all
+  2.2.4:
+    folder: all
+  2.2.6:
+    folder: all
+  2.2.8:
+    folder: all
+url: https://github.com/antony-jr/QArchive/archive/v${version}.tar.gz

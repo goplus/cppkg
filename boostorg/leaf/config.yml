@@ -1,0 +1,8 @@
+versions:
+  1.81.0:
+    folder: all
+  1.82.0:
+    folder: all
+  1.83.0:
+    folder: all
+url: https://github.com/boostorg/leaf/archive/refs/tags/boost-${version}.tar.gz

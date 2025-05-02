@@ -1,0 +1,6 @@
+versions:
+  0.6.1:
+    folder: all
+  0.7.0:
+    folder: all
+url: https://github.com/flexible-collision-library/fcl/archive/refs/tags/${version}.tar.gz

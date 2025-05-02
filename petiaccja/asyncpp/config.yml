@@ -1,0 +1,4 @@
+versions:
+  0.2.4:
+    folder: all
+url: https://github.com/petiaccja/asyncpp/archive/refs/tags/v${version}.tar.gz

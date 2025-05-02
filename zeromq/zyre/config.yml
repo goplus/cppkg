@@ -1,0 +1,4 @@
+versions:
+  2.0.1:
+    folder: all
+url: https://github.com/zeromq/zyre/archive/v${version}.tar.gz

@@ -1,0 +1,10 @@
+versions:
+  4.1.7:
+    folder: all
+  4.2.1:
+    folder: all
+  4.3.24:
+    folder: all
+  4.3.26:
+    folder: all
+url: https://github.com/CopernicaMarketingSoftware/AMQP-CPP/archive/v${version}.tar.gz

@@ -1,0 +1,4 @@
+versions:
+  2.1.0:
+    folder: all
+url: https://github.com/mosure/inversify-cpp/archive/refs/tags/${version}.tar.gz

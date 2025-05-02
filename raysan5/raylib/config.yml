@@ -1,0 +1,10 @@
+versions:
+  3.5.0:
+    folder: all
+  4.0.0:
+    folder: all
+  "5.0":
+    folder: all
+  "5.5":
+    folder: all
+url: https://github.com/raysan5/raylib/archive/refs/tags/${version}.tar.gz

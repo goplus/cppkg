@@ -1,0 +1,4 @@
+versions:
+  0.2.2:
+    folder: all
+url: https://github.com/Rechip/simple-yaml/archive/refs/tags/v${version}.zip

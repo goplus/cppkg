@@ -1,0 +1,6 @@
+versions:
+  1.12.0:
+    folder: all
+  1.13.0:
+    folder: all
+url: https://github.com/cpp-netlib/url/archive/v${version}.tar.gz

@@ -1,0 +1,12 @@
+versions:
+  1.0.1:
+    folder: all
+  2.0.1:
+    folder: all
+  2.1.0:
+    folder: all
+  2.1.1:
+    folder: all
+  2.1.2:
+    folder: all
+url: https://github.com/choll/xtr/archive/refs/tags/${version}.tar.gz

@@ -1,0 +1,28 @@
+versions:
+  7.88.1:
+    folder: all
+  8.0.1:
+    folder: all
+  8.1.2:
+    folder: all
+  8.10.0:
+    folder: all
+  8.10.1:
+    folder: all
+  8.11.1:
+    folder: all
+  8.12.1:
+    folder: all
+  8.2.1:
+    folder: all
+  8.4.0:
+    folder: all
+  8.5.0:
+    folder: all
+  8.6.0:
+    folder: all
+  8.8.0:
+    folder: all
+  8.9.1:
+    folder: all
+url: https://github.com/curl/curl/releases/download/curl-8_12_1/curl-${version}.tar.xz

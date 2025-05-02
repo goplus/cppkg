@@ -1,0 +1,8 @@
+versions:
+  1.0.3:
+    folder: all
+  1.0.5:
+    folder: all
+  1.0.6:
+    folder: all
+url: https://github.com/cameron314/readerwriterqueue/archive/v${version}.tar.gz

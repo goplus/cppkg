@@ -1,0 +1,4 @@
+versions:
+  1.10.2:
+    folder: 1.x
+url: https://github.com/OGRECave/ogre/archive/refs/tags/v${version}.tar.gz

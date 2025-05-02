@@ -1,0 +1,4 @@
+versions:
+  0.2.2:
+    folder: all
+url: https://github.com/graeme-hill/crossguid/archive/refs/tags/v${version}.tar.gz

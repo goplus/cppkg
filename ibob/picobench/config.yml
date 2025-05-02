@@ -1,0 +1,8 @@
+versions:
+  "2.01":
+    folder: all
+  "2.02":
+    folder: all
+  "2.05":
+    folder: all
+url: https://github.com/iboB/picobench/archive/v${version}.tar.gz

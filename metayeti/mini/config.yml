@@ -1,0 +1,6 @@
+versions:
+  0.9.15:
+    folder: all
+  0.9.16:
+    folder: all
+url: https://github.com/metayeti/mINI/archive/refs/tags/${version}.tar.gz

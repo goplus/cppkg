@@ -1,0 +1,4 @@
+versions:
+  0.0.1:
+    folder: all
+url: https://github.com/p-ranav/glob/archive/refs/tags/v${version}.tar.gz

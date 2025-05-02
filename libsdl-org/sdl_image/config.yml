@@ -1,0 +1,6 @@
+versions:
+  2.6.3:
+    folder: all
+  2.8.2:
+    folder: all
+url: https://github.com/libsdl-org/SDL_image/releases/download/release-${version}/SDL2_image-${version}.tar.gz

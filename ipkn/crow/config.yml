@@ -1,0 +1,4 @@
+versions:
+  "0.1":
+    folder: all
+url: https://github.com/ipkn/crow/archive/v${version}.tar.gz

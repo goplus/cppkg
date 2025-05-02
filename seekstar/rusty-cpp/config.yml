@@ -1,0 +1,4 @@
+versions:
+  0.1.12:
+    folder: all
+url: https://github.com/seekstar/rusty-cpp/archive/refs/tags/v${version}.tar.gz

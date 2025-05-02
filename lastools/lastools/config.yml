@@ -1,0 +1,4 @@
+versions:
+  2.0.2:
+    folder: all
+url: https://github.com/LAStools/LAStools/archive/refs/tags/v${version}.tar.gz

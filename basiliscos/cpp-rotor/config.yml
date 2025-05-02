@@ -1,0 +1,14 @@
+versions:
+  "0.29":
+    folder: all
+  "0.30":
+    folder: all
+  "0.31":
+    folder: all
+  "0.32":
+    folder: all
+  "0.33":
+    folder: all
+  "0.34":
+    folder: all
+url: https://github.com/basiliscos/cpp-rotor/archive/refs/tags/v${version}.tar.gz

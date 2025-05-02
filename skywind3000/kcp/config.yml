@@ -1,0 +1,6 @@
+versions:
+  "1.5":
+    folder: all
+  "1.7":
+    folder: all
+url: https://github.com/skywind3000/kcp/archive/${version}.tar.gz

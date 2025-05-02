@@ -1,0 +1,12 @@
+versions:
+  "4.10":
+    folder: all
+  4.10.2:
+    folder: all
+  "4.11":
+    folder: all
+  4.8.3:
+    folder: all
+  4.9.1:
+    folder: all
+url: https://github.com/ccache/ccache/releases/download/v${version}/ccache-${version}.tar.gz

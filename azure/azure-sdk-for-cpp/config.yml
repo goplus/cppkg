@@ -1,0 +1,4 @@
+versions:
+  1.11.3:
+    folder: all
+url: https://github.com/Azure/azure-sdk-for-cpp/archive/refs/tags/azure-core_${version}.tar.gz

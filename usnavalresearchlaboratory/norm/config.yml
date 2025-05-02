@@ -1,0 +1,4 @@
+versions:
+  1.5.9:
+    folder: all
+url: https://github.com/USNavalResearchLaboratory/norm/releases/download/v${version}/src-norm-${version}.tgz

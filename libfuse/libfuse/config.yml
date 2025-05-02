@@ -1,0 +1,8 @@
+versions:
+  2.9.9:
+    folder: 2.x.x
+  3.10.5:
+    folder: all
+  3.16.2:
+    folder: all
+url: https://github.com/libfuse/libfuse/releases/download/fuse-${version}/fuse-${version}.tar.gz

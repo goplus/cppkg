@@ -1,0 +1,8 @@
+versions:
+  1310.140.1:
+    folder: all
+  1790.80.10:
+    folder: all
+  878.200.35:
+    folder: all
+url: https://github.com/apple-oss-distributions/mDNSResponder/archive/mDNSResponder-${version}.tar.gz

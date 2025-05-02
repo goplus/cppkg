@@ -1,0 +1,16 @@
+versions:
+  "253.10":
+    folder: all
+  "253.14":
+    folder: all
+  "253.6":
+    folder: all
+  "255":
+    folder: all
+  "255.10":
+    folder: all
+  "255.2":
+    folder: all
+  "255.7":
+    folder: all
+url: https://github.com/systemd/systemd-stable/archive/v${version}.tar.gz

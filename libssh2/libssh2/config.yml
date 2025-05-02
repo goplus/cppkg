@@ -1,0 +1,14 @@
+versions:
+  1.10.0:
+    folder: all
+  1.11.0:
+    folder: all
+  1.11.1:
+    folder: all
+  1.8.0:
+    folder: all
+  1.8.2:
+    folder: all
+  1.9.0:
+    folder: all
+url: https://github.com/libssh2/libssh2/releases/download/libssh2-${version}/libssh2-${version}.tar.xz

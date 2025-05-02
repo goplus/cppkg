@@ -1,0 +1,10 @@
+versions:
+  2.1.0:
+    folder: all
+  2.3.0:
+    folder: all
+  2.3.2:
+    folder: all
+  2.4.0:
+    folder: all
+url: https://github.com/h4tr3d/avcpp/archive/refs/tags/v${version}.tar.gz

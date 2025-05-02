@@ -1,0 +1,6 @@
+versions:
+  1.6.0:
+    folder: all
+  cci.20200511:
+    folder: all
+url: https://github.com/recastnavigation/recastnavigation/archive/refs/tags/v${version}.tar.gz

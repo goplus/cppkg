@@ -1,0 +1,8 @@
+versions:
+  "2020.12":
+    folder: all
+  "2022.02":
+    folder: all
+  "2023.12":
+    folder: all
+url: https://github.com/cnr-isti-vclab/vcglib/archive/refs/tags/${version}.tar.gz

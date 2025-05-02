@@ -1,0 +1,6 @@
+versions:
+  1.35.1:
+    folder: all
+  1.35.2:
+    folder: all
+url: https://github.com/martinmoene/lest/archive/v${version}.tar.gz

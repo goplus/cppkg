@@ -1,0 +1,14 @@
+versions:
+  6.29.5:
+    folder: all
+  8.8.1:
+    folder: all
+  9.10.0:
+    folder: all
+  9.4.0:
+    folder: all
+  9.5.2:
+    folder: all
+  9.7.4:
+    folder: all
+url: https://github.com/facebook/rocksdb/archive/refs/tags/v${version}.tar.gz

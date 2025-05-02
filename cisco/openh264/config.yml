@@ -1,0 +1,10 @@
+versions:
+  2.1.1:
+    folder: all
+  2.3.1:
+    folder: all
+  2.4.1:
+    folder: all
+  2.5.0:
+    folder: all
+url: https://github.com/cisco/openh264/archive/refs/tags/v${version}.tar.gz

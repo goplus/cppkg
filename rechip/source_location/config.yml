@@ -1,0 +1,8 @@
+versions:
+  0.1.1:
+    folder: all
+  0.2.0:
+    folder: all
+  0.2.1:
+    folder: all
+url: https://github.com/Rechip/source_location/archive/v${version}.tar.gz

@@ -1,0 +1,12 @@
+versions:
+  0.20.0:
+    folder: all
+  0.20.2:
+    folder: all
+  0.21.1:
+    folder: all
+  0.21.2:
+    folder: all
+  0.21.3:
+    folder: all
+url: https://github.com/LibRaw/LibRaw/archive/${version}.tar.gz

@@ -1,0 +1,10 @@
+versions:
+  1.0.6:
+    folder: all
+  1.0.7:
+    folder: all
+  1.0.8:
+    folder: all
+  1.0.9:
+    folder: all
+url: https://github.com/QuTech-Delft/tree-gen/archive/refs/tags/${version}.tar.gz

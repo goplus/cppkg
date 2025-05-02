@@ -1,0 +1,6 @@
+versions:
+  4.0.0:
+    folder: all
+  4.3.2:
+    folder: all
+url: https://github.com/KhronosGroup/KTX-Software/archive/refs/tags/v${version}.tar.gz

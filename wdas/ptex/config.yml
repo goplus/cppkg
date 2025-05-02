@@ -1,0 +1,6 @@
+versions:
+  2.4.0:
+    folder: all
+  2.4.2:
+    folder: all
+url: https://github.com/wdas/ptex/archive/refs/tags/v${version}.tar.gz

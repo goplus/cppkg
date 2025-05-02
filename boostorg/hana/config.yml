@@ -1,0 +1,12 @@
+versions:
+  1.6.0:
+    folder: all
+  1.7.0:
+    folder: all
+  1.79.0:
+    folder: all
+  boost-1.74.0:
+    folder: all
+  boost-1.78.0:
+    folder: all
+url: https://github.com/boostorg/hana/archive/boost-${version}.tar.gz

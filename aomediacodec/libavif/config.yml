@@ -1,0 +1,18 @@
+versions:
+  0.11.1:
+    folder: all
+  0.9.3:
+    folder: all
+  1.0.1:
+    folder: all
+  1.0.2:
+    folder: all
+  1.0.3:
+    folder: all
+  1.0.4:
+    folder: all
+  1.1.0:
+    folder: all
+  1.1.1:
+    folder: all
+url: https://github.com/AOMediaCodec/libavif/archive/refs/tags/v${version}.tar.gz

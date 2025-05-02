@@ -1,0 +1,12 @@
+versions:
+  2.19.5:
+    folder: all
+  3.3.0:
+    folder: all
+  3.4.0:
+    folder: all
+  3.5.0:
+    folder: all
+  3.6.1:
+    folder: all
+url: https://github.com/randombit/botan/archive/${version}.tar.gz

@@ -1,0 +1,6 @@
+versions:
+  3.2.2:
+    folder: all
+  "3.3":
+    folder: all
+url: https://github.com/martinh/libconfuse/releases/download/v${version}/confuse-${version}.tar.gz

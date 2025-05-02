@@ -1,0 +1,6 @@
+versions:
+  1.6.2:
+    folder: all
+  1.6.3:
+    folder: all
+url: https://github.com/libxls/libxls/releases/download/v${version}/libxls-${version}.tar.gz

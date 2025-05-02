@@ -1,0 +1,4 @@
+versions:
+  "3.9":
+    folder: all
+url: https://github.com/wmcbrine/PDCurses/archive/${version}.tar.gz

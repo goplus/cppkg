@@ -1,0 +1,10 @@
+versions:
+  1.0.0:
+    folder: all
+  1.0.1:
+    folder: all
+  1.0.6:
+    folder: all
+  1.0.7:
+    folder: all
+url: https://github.com/syoyo/tinyexr/archive/v${version}.tar.gz

@@ -1,0 +1,4 @@
+versions:
+  0.17.0:
+    folder: all
+url: https://github.com/open62541pp/open62541pp/archive/refs/tags/v${version}.tar.gz

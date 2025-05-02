@@ -1,0 +1,12 @@
+versions:
+  "4.034":
+    folder: all
+  "4.038":
+    folder: all
+  "4.200":
+    folder: all
+  "4.224":
+    folder: all
+  "5.004":
+    folder: all
+url: https://github.com/verilator/verilator/archive/refs/tags/v${version}.tar.gz

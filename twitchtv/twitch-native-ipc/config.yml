@@ -1,0 +1,4 @@
+versions:
+  3.1.1:
+    folder: all
+url: https://github.com/twitchtv/twitch-native-ipc/archive/v${version}.tar.gz

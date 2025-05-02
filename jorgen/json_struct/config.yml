@@ -1,0 +1,4 @@
+versions:
+  1.0.2:
+    folder: all
+url: https://github.com/jorgen/json_struct/archive/refs/tags/${version}.tar.gz

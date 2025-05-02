@@ -1,0 +1,14 @@
+versions:
+  5.1.6:
+    folder: 5.x
+  5.2.5:
+    folder: 5.x
+  5.3.1:
+    folder: 5.x
+  5.4.1:
+    folder: 5.x
+  5.4.2:
+    folder: 5.x
+  5.4.3:
+    folder: 5.x
+url: https://github.com/assimp/assimp/archive/refs/tags/v${version}.tar.gz

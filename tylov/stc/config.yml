@@ -1,0 +1,12 @@
+versions:
+  1.0.0-rc1:
+    folder: all
+  3.5.1:
+    folder: all
+  "3.9":
+    folder: all
+  4.1.1:
+    folder: all
+  "4.2":
+    folder: all
+url: https://github.com/tylov/STC/archive/v${version}.tar.gz

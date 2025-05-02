@@ -1,0 +1,18 @@
+versions:
+  "1.6":
+    folder: all
+  "1.7":
+    folder: all
+  1.7.1:
+    folder: all
+  "1.8":
+    folder: all
+  1.8.1:
+    folder: all
+  1.8.2:
+    folder: all
+  "1.9":
+    folder: all
+  1.9.1:
+    folder: all
+url: https://github.com/fnc12/sqlite_orm/archive/refs/tags/v${version}.tar.gz

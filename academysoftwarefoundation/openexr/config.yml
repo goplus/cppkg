@@ -1,0 +1,12 @@
+versions:
+  2.5.7:
+    folder: 2.x
+  2.5.9:
+    folder: 2.x
+  3.2.4:
+    folder: 3.x
+  3.3.2:
+    folder: 3.x
+  3.3.3:
+    folder: 3.x
+url: https://github.com/AcademySoftwareFoundation/openexr/releases/download/v${version}/openexr-${version}.tar.gz

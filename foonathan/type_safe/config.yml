@@ -1,0 +1,10 @@
+versions:
+  0.2.1:
+    folder: all
+  0.2.2:
+    folder: all
+  0.2.3:
+    folder: all
+  0.2.4:
+    folder: all
+url: https://github.com/foonathan/type_safe/archive/v${version}.tar.gz

@@ -1,0 +1,8 @@
+versions:
+  1.0.1:
+    folder: all
+  2.0.0:
+    folder: all
+  2.1.0:
+    folder: all
+url: https://github.com/ikalnytskyi/termcolor/archive/v${version}.tar.gz

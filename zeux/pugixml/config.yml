@@ -1,0 +1,14 @@
+versions:
+  "1.10":
+    folder: all
+  "1.11":
+    folder: all
+  1.12.1:
+    folder: all
+  "1.13":
+    folder: all
+  "1.14":
+    folder: all
+  "1.15":
+    folder: all
+url: https://github.com/zeux/pugixml/releases/download/v${version}/pugixml-${version}.tar.gz

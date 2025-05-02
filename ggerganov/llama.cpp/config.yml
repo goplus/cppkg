@@ -1,0 +1,8 @@
+versions:
+  b3542:
+    folder: all
+  b4079:
+    folder: all
+  b4570:
+    folder: all
+url: https://github.com/ggerganov/llama.cpp/archive/refs/tags/${version}.tar.gz

@@ -1,0 +1,6 @@
+versions:
+  1.9.1:
+    folder: all
+  1.9.2:
+    folder: all
+url: https://github.com/flann-lib/flann/archive/refs/tags/${version}.tar.gz

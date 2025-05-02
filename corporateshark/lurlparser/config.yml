@@ -1,0 +1,4 @@
+versions:
+  "1.1":
+    folder: all
+url: https://github.com/corporateshark/LUrlParser/archive/refs/tags/release-${version}.tar.gz

@@ -1,0 +1,6 @@
+versions:
+  1.0.0:
+    folder: all
+  cci.20220808:
+    folder: all
+url: https://github.com/okdshin/PicoSHA2/archive/refs/tags/v${version}.tar.gz

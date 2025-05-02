@@ -1,0 +1,10 @@
+versions:
+  2.7.1:
+    folder: all
+  2.8.5:
+    folder: all
+  2.9.0:
+    folder: all
+  3.0.1:
+    folder: all
+url: https://github.com/flintlib/flint/releases/download/v${version}/flint-${version}.tar.xz

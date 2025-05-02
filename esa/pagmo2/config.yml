@@ -1,0 +1,8 @@
+versions:
+  "2.10":
+    folder: pre_2.11
+  2.17.0:
+    folder: all
+  2.19.0:
+    folder: all
+url: https://github.com/esa/pagmo2/archive/refs/tags/v${version}.tar.gz

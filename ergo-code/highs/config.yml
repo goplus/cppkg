@@ -1,0 +1,10 @@
+versions:
+  1.10.0:
+    folder: all
+  1.7.2:
+    folder: all
+  1.8.1:
+    folder: all
+  1.9.0:
+    folder: all
+url: https://github.com/ERGO-Code/HiGHS/releases/download/v${version}/source-archive.tar.gz

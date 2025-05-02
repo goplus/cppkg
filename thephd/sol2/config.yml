@@ -1,0 +1,14 @@
+versions:
+  2.20.6:
+    folder: all
+  3.0.3:
+    folder: all
+  3.2.3:
+    folder: all
+  3.3.0:
+    folder: all
+  3.3.1:
+    folder: all
+  3.5.0:
+    folder: all
+url: https://github.com/ThePhD/sol2/archive/v${version}.tar.gz

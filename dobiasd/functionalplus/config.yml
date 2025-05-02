@@ -1,0 +1,10 @@
+versions:
+  0.2.22:
+    folder: all
+  0.2.23:
+    folder: all
+  0.2.24:
+    folder: all
+  0.2.25:
+    folder: all
+url: https://github.com/Dobiasd/FunctionalPlus/archive/v${version}.tar.gz

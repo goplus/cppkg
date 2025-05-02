@@ -1,0 +1,6 @@
+versions:
+  1.2.1:
+    folder: all
+  1.2.2:
+    folder: all
+url: https://github.com/erikerlandson/st_tree/archive/version_${version}.tar.gz

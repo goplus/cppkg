@@ -1,0 +1,6 @@
+versions:
+  10.0.34:
+    folder: all
+  10.0.35:
+    folder: all
+url: https://github.com/brainboxdotcc/DPP/archive/refs/tags/v${version}.zip

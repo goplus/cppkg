@@ -1,0 +1,4 @@
+versions:
+  1.6.3:
+    folder: all
+url: https://github.com/max0x7ba/atomic_queue/archive/refs/tags/v${version}.tar.gz

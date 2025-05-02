@@ -1,0 +1,10 @@
+versions:
+  2.0.0:
+    folder: all
+  2.1.0:
+    folder: all
+  2.2.0:
+    folder: all
+  2.3.0:
+    folder: all
+url: https://github.com/pboettch/json-schema-validator/archive/refs/tags/${version}.tar.gz

@@ -1,0 +1,4 @@
+versions:
+  3.0.3:
+    folder: all
+url: https://github.com/repology/libversion/archive/refs/tags/${version}.tar.gz

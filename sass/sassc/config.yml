@@ -1,0 +1,4 @@
+versions:
+  3.6.2:
+    folder: all
+url: https://github.com/sass/sassc/archive/${version}.tar.gz

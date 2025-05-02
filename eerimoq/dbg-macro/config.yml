@@ -1,0 +1,4 @@
+versions:
+  0.12.1:
+    folder: all
+url: https://github.com/eerimoq/dbg-macro/archive/${version}.tar.gz

@@ -1,0 +1,10 @@
+versions:
+  3.1.5:
+    folder: all
+  3.2.0:
+    folder: all
+  3.2.1:
+    folder: all
+  3.2.2:
+    folder: all
+url: https://github.com/argtable/argtable3/archive/refs/tags/v${version}.f25c624.tar.gz

@@ -1,0 +1,4 @@
+versions:
+  0.10.0-alpha:
+    folder: all
+url: https://github.com/Auburn/FastNoise2/archive/v${version}.tar.gz

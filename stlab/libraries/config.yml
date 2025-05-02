@@ -1,0 +1,4 @@
+versions:
+  1.7.1:
+    folder: all
+url: https://github.com/stlab/libraries/archive/refs/tags/v${version}.tar.gz

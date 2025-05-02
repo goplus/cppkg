@@ -1,0 +1,4 @@
+versions:
+  4.9.1:
+    folder: all
+url: https://github.com/Ultimaker/libArcus/archive/refs/tags/${version}.tar.gz

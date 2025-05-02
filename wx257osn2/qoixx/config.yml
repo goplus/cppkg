@@ -1,0 +1,4 @@
+versions:
+  0.1.7:
+    folder: all
+url: https://github.com/wx257osn2/qoixx/archive/refs/tags/v${version}.tar.gz

@@ -1,0 +1,8 @@
+versions:
+  0.6.3:
+    folder: all
+  0.7.0:
+    folder: all
+  0.8.0:
+    folder: all
+url: https://github.com/jbeder/yaml-cpp/archive/refs/tags/${version}.tar.gz

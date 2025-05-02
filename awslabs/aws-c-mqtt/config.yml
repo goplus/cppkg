@@ -1,0 +1,8 @@
+versions:
+  0.10.3:
+    folder: all
+  0.12.1:
+    folder: all
+  0.7.8:
+    folder: all
+url: https://github.com/awslabs/aws-c-mqtt/archive/v${version}.tar.gz

@@ -1,0 +1,4 @@
+versions:
+  0.4.0:
+    folder: all
+url: https://github.com/signalfx/splunk-otel-cpp/archive/refs/tags/v${version}.tar.gz

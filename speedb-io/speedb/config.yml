@@ -1,0 +1,4 @@
+versions:
+  2.8.0:
+    folder: all
+url: https://github.com/speedb-io/speedb/archive/refs/tags/speedb/v${version}.tar.gz

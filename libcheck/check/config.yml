@@ -1,0 +1,4 @@
+versions:
+  0.15.2:
+    folder: all
+url: https://github.com/libcheck/check/releases/download/${version}/check-${version}.tar.gz
