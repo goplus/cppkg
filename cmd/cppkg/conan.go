@@ -103,8 +103,7 @@ func (p *Manager) Install(pkg *Package, flags int) (err error) {
 	logFile := outDir + "/rp.log"
 	return remoteProxy(flags, logFile, func() error {
 		return conanInstall(pkg.Name+"/"+pkgVer, outDir, conanfileDir, out, flags)
-	}, func(req *http.Request) (resp *http.Response, err error) {
-		return nil, errPassThrough
+	}, func(mux *http.ServeMux, next http.RoundTripper) {
 	})
 }
 
