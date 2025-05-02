@@ -21,8 +21,9 @@ type config struct {
 }
 
 type template struct {
-	Folder string `yaml:"folder"`
-	URL    string `yaml:"url"`
+	FromVer string `yaml:"from"`
+	Folder  string `yaml:"folder"`
+	URL     string `yaml:"url"`
 }
 
 type configEx struct {
@@ -52,13 +53,13 @@ func main() {
 		switch url := src["url"].(type) {
 		case string:
 			if pkgPath, urlPattern, ok := checkGithbPkg(url, ver); ok {
-				cpGithubPkg(pkgPath, urlPattern, localDir, conf, v)
+				cpGithubPkg(pkgPath, urlPattern, localDir, conf, ver, v)
 			}
 		case []any:
 			for _, u := range url {
 				url := u.(string)
 				if pkgPath, urlPattern, ok := checkGithbPkg(url, ver); ok {
-					cpGithubPkg(pkgPath, urlPattern, localDir, conf, v)
+					cpGithubPkg(pkgPath, urlPattern, localDir, conf, ver, v)
 				}
 			}
 		default:
@@ -91,7 +92,7 @@ func main() {
 	})
 }
 
-func cpGithubPkg(pkgPath, urlPattern, srcDir string, conf config, v version) {
+func cpGithubPkg(pkgPath, urlPattern, srcDir string, conf config, fromVer string, v version) {
 	destDir := cppkgRoot() + pkgPath
 	os.MkdirAll(destDir, os.ModePerm)
 
@@ -101,8 +102,9 @@ func cpGithubPkg(pkgPath, urlPattern, srcDir string, conf config, v version) {
 	confex := &configEx{
 		Versions: conf.Versions,
 		Template: template{
-			Folder: v.Folder,
-			URL:    urlPattern,
+			FromVer: fromVer,
+			Folder:  v.Folder,
+			URL:     urlPattern,
 		},
 	}
 	b, err := yaml.Marshal(confex)
