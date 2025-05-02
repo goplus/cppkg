@@ -3,7 +3,6 @@ package main
 import (
 	"errors"
 	"os"
-	"strings"
 
 	"github.com/goccy/go-yaml"
 	"golang.org/x/mod/semver"
@@ -38,7 +37,7 @@ type version struct {
 	Folder string `yaml:"folder"`
 }
 
-type template struct {
+type Template struct {
 	FromVer string `yaml:"from"`
 	Folder  string `yaml:"folder"`
 	URL     string `yaml:"url"`
@@ -47,15 +46,15 @@ type template struct {
 type config struct {
 	PkgName  string             `yaml:"name"`
 	Versions map[string]version `yaml:"versions"`
-	Template template           `yaml:"template"`
+	Template Template           `yaml:"template"`
 }
 
 type Package struct {
-	Name    string
-	Path    string
-	Version string
-	Folder  string
-	URL     string
+	Name     string
+	Path     string
+	Version  string
+	Folder   string
+	Template *Template
 }
 
 var (
@@ -85,15 +84,14 @@ func (p *Manager) Lookup(pkgPath, ver string, flags int) (_ *Package, err error)
 		return
 	}
 	if v, ok := conf.Versions[ver]; ok {
-		return &Package{Name: conf.PkgName, Path: pkgPath, Version: ver, Folder: v.Folder}, nil
+		return &Package{conf.PkgName, pkgPath, ver, v.Folder, nil}, nil
 	}
 	if compareVer(ver, conf.Template.FromVer) < 0 {
 		err = ErrVersionNotFound
 		return
 	}
 	folder := conf.Template.Folder
-	url := strings.ReplaceAll(conf.Template.URL, "${version}", ver)
-	return &Package{Name: conf.PkgName, Path: pkgPath, Version: ver, Folder: folder, URL: url}, nil
+	return &Package{conf.PkgName, pkgPath, ver, folder, &conf.Template}, nil
 }
 
 func (p *Manager) indexRoot() string {
