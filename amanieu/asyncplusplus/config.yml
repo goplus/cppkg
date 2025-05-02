@@ -3,4 +3,6 @@ versions:
     folder: all
   "1.2":
     folder: all
-url: https://github.com/Amanieu/asyncplusplus/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/Amanieu/asyncplusplus/archive/v${version}.tar.gz

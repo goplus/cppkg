@@ -13,4 +13,6 @@ versions:
     folder: all
   1.4.309.0:
     folder: all
-url: https://github.com/KhronosGroup/SPIRV-Tools/archive/refs/tags/vulkan-sdk-${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/KhronosGroup/SPIRV-Tools/archive/refs/tags/vulkan-sdk-${version}.tar.gz

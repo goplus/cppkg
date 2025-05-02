@@ -27,4 +27,6 @@ versions:
     folder: all
   0.8.3:
     folder: all
-url: https://github.com/jeremy-rifkin/cpptrace/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/jeremy-rifkin/cpptrace/archive/refs/tags/v${version}.tar.gz

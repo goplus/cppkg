@@ -13,4 +13,6 @@ versions:
     folder: all
   3.9.3:
     folder: all
-url: https://github.com/nats-io/nats.c/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/nats-io/nats.c/archive/refs/tags/v${version}.tar.gz

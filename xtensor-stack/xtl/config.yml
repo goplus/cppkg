@@ -19,4 +19,6 @@ versions:
     folder: all
   0.7.6:
     folder: all
-url: https://github.com/xtensor-stack/xtl/archive/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/xtensor-stack/xtl/archive/${version}.tar.gz

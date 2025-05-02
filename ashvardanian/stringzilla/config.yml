@@ -23,4 +23,6 @@ versions:
     folder: all
   3.9.6:
     folder: all
-url: https://github.com/ashvardanian/StringZilla/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/ashvardanian/StringZilla/archive/refs/tags/v${version}.tar.gz

@@ -21,4 +21,6 @@ versions:
     folder: all
   3.2.6:
     folder: 3.x
-url: https://github.com/libsdl-org/SDL/releases/download/release-${version}/SDL3-${version}.tar.gz
+template:
+  folder: 3.x
+  url: https://github.com/libsdl-org/SDL/releases/download/release-${version}/SDL3-${version}.tar.gz

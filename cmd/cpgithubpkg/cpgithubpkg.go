@@ -20,9 +20,14 @@ type config struct {
 	Versions map[string]version `yaml:"versions"`
 }
 
+type template struct {
+	Folder string `yaml:"folder"`
+	URL    string `yaml:"url"`
+}
+
 type configEx struct {
-	Versions  map[string]version `yaml:"versions"`
-	SourceURL string             `yaml:"url"`
+	Versions map[string]version `yaml:"versions"`
+	Template template           `yaml:"template"`
 }
 
 // cpgithubpkg /7bitconf/config.yml
@@ -43,17 +48,17 @@ func main() {
 	err = yaml.Unmarshal(b, &conf)
 	check(err)
 
-	tryCp := func(src map[string]any, ver string) {
+	tryCp := func(src map[string]any, ver string, v version) {
 		switch url := src["url"].(type) {
 		case string:
 			if pkgPath, urlPattern, ok := checkGithbPkg(url, ver); ok {
-				cpGithubPkg(pkgPath, urlPattern, localDir, conf)
+				cpGithubPkg(pkgPath, urlPattern, localDir, conf, v)
 			}
 		case []any:
 			for _, u := range url {
 				url := u.(string)
 				if pkgPath, urlPattern, ok := checkGithbPkg(url, ver); ok {
-					cpGithubPkg(pkgPath, urlPattern, localDir, conf)
+					cpGithubPkg(pkgPath, urlPattern, localDir, conf, v)
 				}
 			}
 		default:
@@ -74,10 +79,10 @@ func main() {
 		if src, ok := cd.Sources[ver]; ok {
 			switch src := src.(type) {
 			case map[string]any:
-				tryCp(src, ver)
+				tryCp(src, ver, v)
 			case []any:
 				for _, u := range src {
-					tryCp(u.(map[string]any), ver)
+					tryCp(u.(map[string]any), ver, v)
 				}
 			default:
 				log.Panicln("[FATAL] source:", src)
@@ -86,7 +91,7 @@ func main() {
 	})
 }
 
-func cpGithubPkg(pkgPath, urlPattern, srcDir string, conf config) {
+func cpGithubPkg(pkgPath, urlPattern, srcDir string, conf config, v version) {
 	destDir := cppkgRoot() + pkgPath
 	os.MkdirAll(destDir, os.ModePerm)
 
@@ -94,8 +99,11 @@ func cpGithubPkg(pkgPath, urlPattern, srcDir string, conf config) {
 	check(err)
 
 	confex := &configEx{
-		Versions:  conf.Versions,
-		SourceURL: urlPattern,
+		Versions: conf.Versions,
+		Template: template{
+			Folder: v.Folder,
+			URL:    urlPattern,
+		},
 	}
 	b, err := yaml.Marshal(confex)
 	check(err)

@@ -5,4 +5,6 @@ versions:
     folder: all
   6.9.9:
     folder: all
-url: https://github.com/kkos/oniguruma/releases/download/v${version}/onig-${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/kkos/oniguruma/releases/download/v${version}/onig-${version}.tar.gz

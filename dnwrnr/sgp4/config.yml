@@ -3,4 +3,6 @@ versions:
     folder: all
   "20191207":
     folder: all
-url: https://github.com/dnwrnr/sgp4/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/dnwrnr/sgp4/archive/refs/tags/v${version}.tar.gz

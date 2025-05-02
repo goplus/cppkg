@@ -35,4 +35,6 @@ versions:
     folder: all
   3.9.1:
     folder: all
-url: https://github.com/nlohmann/json/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/nlohmann/json/archive/v${version}.tar.gz

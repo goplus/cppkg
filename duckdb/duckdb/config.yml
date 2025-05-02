@@ -15,4 +15,6 @@ versions:
     folder: all
   1.1.3:
     folder: all
-url: https://github.com/duckdb/duckdb/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/duckdb/duckdb/archive/refs/tags/v${version}.tar.gz

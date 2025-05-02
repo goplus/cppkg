@@ -3,4 +3,6 @@ versions:
     folder: all
   1.0.1:
     folder: all
-url: https://github.com/g-truc/glm/releases/download/${version}/glm-${version}-light.zip
+template:
+  folder: all
+  url: https://github.com/g-truc/glm/releases/download/${version}/glm-${version}-light.zip

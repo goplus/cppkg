@@ -9,4 +9,6 @@ versions:
     folder: all
   4.0.4:
     folder: all
-url: https://github.com/Esri/lerc/archive/js_v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/Esri/lerc/archive/js_v${version}.tar.gz

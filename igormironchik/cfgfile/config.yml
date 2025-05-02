@@ -9,4 +9,6 @@ versions:
     folder: all
   0.2.9.1:
     folder: all
-url: https://github.com/igormironchik/cfgfile/archive/refs/tags/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/igormironchik/cfgfile/archive/refs/tags/${version}.tar.gz

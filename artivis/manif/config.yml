@@ -1,4 +1,6 @@
 versions:
   0.0.5:
     folder: all
-url: https://github.com/artivis/manif/archive/refs/tags/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/artivis/manif/archive/refs/tags/${version}.tar.gz

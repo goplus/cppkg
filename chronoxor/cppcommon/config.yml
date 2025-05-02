@@ -11,4 +11,6 @@ versions:
     folder: all
   cci.20201104:
     folder: all
-url: https://github.com/chronoxor/CppCommon/archive/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/chronoxor/CppCommon/archive/${version}.tar.gz

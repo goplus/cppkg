@@ -1,6 +1,14 @@
 versions:
-  3.2.1:
-    folder: all
   3.3.0:
     folder: all
-url: https://github.com/msgpack/msgpack-c/archive/cpp-${version}.tar.gz
+  4.0.0:
+    folder: all
+  5.0.0:
+    folder: all
+  6.0.0:
+    folder: all
+  6.1.0:
+    folder: all
+template:
+  folder: all
+  url: https://github.com/msgpack/msgpack-c/releases/download/c-${version}/msgpack-c-${version}.tar.gz

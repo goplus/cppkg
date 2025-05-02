@@ -7,4 +7,6 @@ versions:
     folder: all
   2.11.9:
     folder: all
-url: https://github.com/coin-or/CoinUtils/archive/releases/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/coin-or/CoinUtils/archive/releases/${version}.tar.gz

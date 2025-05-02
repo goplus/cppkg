@@ -19,4 +19,6 @@ versions:
     folder: all
   1.5.1:
     folder: all
-url: https://github.com/kspalaiologos/bzip3/releases/download/${version}/bzip3-${version}.tar.xz
+template:
+  folder: all
+  url: https://github.com/kspalaiologos/bzip3/releases/download/${version}/bzip3-${version}.tar.xz

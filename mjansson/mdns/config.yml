@@ -7,4 +7,6 @@ versions:
     folder: all
   1.4.3:
     folder: all
-url: https://github.com/mjansson/mdns/archive/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/mjansson/mdns/archive/${version}.tar.gz

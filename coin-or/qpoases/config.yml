@@ -1,4 +1,6 @@
 versions:
   3.2.1:
     folder: all
-url: https://github.com/coin-or/qpOASES/archive/releases/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/coin-or/qpOASES/archive/releases/${version}.tar.gz

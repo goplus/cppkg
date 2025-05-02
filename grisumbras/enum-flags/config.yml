@@ -1,4 +1,6 @@
 versions:
   0.1a:
     folder: all
-url: https://github.com/grisumbras/enum-flags/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/grisumbras/enum-flags/archive/refs/tags/v${version}.tar.gz

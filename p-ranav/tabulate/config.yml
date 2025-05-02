@@ -7,4 +7,6 @@ versions:
     folder: all
   "1.5":
     folder: all
-url: https://github.com/p-ranav/tabulate/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/p-ranav/tabulate/archive/v${version}.tar.gz

@@ -9,4 +9,6 @@ versions:
     folder: all
   3.7.1:
     folder: all
-url: https://github.com/google/fruit/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/google/fruit/archive/v${version}.tar.gz

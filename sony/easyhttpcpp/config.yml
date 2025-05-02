@@ -1,4 +1,6 @@
 versions:
   2.1.0:
     folder: all
-url: https://github.com/sony/easyhttpcpp/archive/refs/tags/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/sony/easyhttpcpp/archive/refs/tags/${version}.tar.gz

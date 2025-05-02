@@ -11,4 +11,6 @@ versions:
     folder: 4.x
   "4.4":
     folder: 4.x
-url: https://github.com/mikke89/RmlUi/archive/${version}.tar.gz
+template:
+  folder: 4.x
+  url: https://github.com/mikke89/RmlUi/archive/${version}.tar.gz

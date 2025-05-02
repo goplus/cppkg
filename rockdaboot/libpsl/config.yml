@@ -3,4 +3,6 @@ versions:
     folder: all
   0.21.5:
     folder: all
-url: https://github.com/rockdaboot/libpsl/releases/download/${version}/libpsl-${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/rockdaboot/libpsl/releases/download/${version}/libpsl-${version}.tar.gz

@@ -9,4 +9,6 @@ versions:
     folder: all
   2.2.0:
     folder: all
-url: https://github.com/boostorg/pfr/archive/refs/tags/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/boostorg/pfr/archive/refs/tags/${version}.tar.gz

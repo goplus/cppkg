@@ -3,4 +3,6 @@ versions:
     folder: all
   2.2.0:
     folder: all
-url: https://github.com/nigels-com/glew/releases/download/glew-${version}/glew-${version}.tgz
+template:
+  folder: all
+  url: https://github.com/nigels-com/glew/releases/download/glew-${version}/glew-${version}.tgz

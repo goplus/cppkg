@@ -1,4 +1,6 @@
 versions:
   0.9.1:
     folder: all
-url: https://github.com/LLNL/units/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/LLNL/units/archive/refs/tags/v${version}.tar.gz

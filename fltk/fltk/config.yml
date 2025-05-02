@@ -5,4 +5,6 @@ versions:
     folder: all
   1.4.1:
     folder: all
-url: https://github.com/fltk/fltk/archive/refs/tags/release-${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/fltk/fltk/archive/refs/tags/release-${version}.tar.gz

@@ -27,4 +27,6 @@ versions:
     folder: all
   1.4.1:
     folder: all
-url: https://github.com/foxglove/mcap/archive/refs/tags/releases/cpp/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/foxglove/mcap/archive/refs/tags/releases/cpp/v${version}.tar.gz

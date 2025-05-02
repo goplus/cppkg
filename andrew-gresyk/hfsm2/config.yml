@@ -1,4 +1,6 @@
 versions:
   2.5.2:
     folder: all
-url: https://github.com/andrew-gresyk/HFSM2/archive/refs/tags/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/andrew-gresyk/HFSM2/archive/refs/tags/${version}.tar.gz

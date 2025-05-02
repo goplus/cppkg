@@ -17,4 +17,6 @@ versions:
     folder: all
   4.12.0:
     folder: all
-url: https://github.com/Immediate-Mode-UI/Nuklear/archive/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/Immediate-Mode-UI/Nuklear/archive/${version}.tar.gz

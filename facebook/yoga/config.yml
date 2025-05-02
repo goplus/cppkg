@@ -11,4 +11,6 @@ versions:
     folder: all
   3.2.0:
     folder: all
-url: https://github.com/facebook/yoga/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/facebook/yoga/archive/refs/tags/v${version}.tar.gz

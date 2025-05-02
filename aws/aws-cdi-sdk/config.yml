@@ -1,4 +1,6 @@
 versions:
   2.2.0:
     folder: all
-url: https://github.com/aws/aws-cdi-sdk/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/aws/aws-cdi-sdk/archive/refs/tags/v${version}.tar.gz

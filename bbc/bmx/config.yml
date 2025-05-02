@@ -3,4 +3,6 @@ versions:
     folder: all
   "1.3":
     folder: all
-url: https://github.com/bbc/bmx/releases/download/v${version}/bmx-${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/bbc/bmx/releases/download/v${version}/bmx-${version}.tar.gz

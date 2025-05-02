@@ -13,4 +13,6 @@ versions:
     folder: all
   1.0.0:
     folder: all
-url: https://github.com/sammycage/plutovg/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/sammycage/plutovg/archive/refs/tags/v${version}.tar.gz

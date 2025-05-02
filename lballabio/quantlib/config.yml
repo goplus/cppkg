@@ -3,4 +3,6 @@ versions:
     folder: all
   "1.30":
     folder: all
-url: https://github.com/lballabio/QuantLib/releases/download/QuantLib-v${version}/QuantLib-${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/lballabio/QuantLib/releases/download/QuantLib-v${version}/QuantLib-${version}.tar.gz

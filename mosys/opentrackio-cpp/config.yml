@@ -1,4 +1,6 @@
 versions:
   1.0.1:
     folder: all
-url: https://github.com/mosys/opentrackio-cpp/archive/refs/tags/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/mosys/opentrackio-cpp/archive/refs/tags/${version}.tar.gz

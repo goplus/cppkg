@@ -15,4 +15,6 @@ versions:
     folder: all
   cci.20220130:
     folder: all
-url: https://github.com/wolfpld/tracy/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/wolfpld/tracy/archive/refs/tags/v${version}.tar.gz

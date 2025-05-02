@@ -15,4 +15,6 @@ versions:
     folder: all
   2023.12.14:
     folder: all
-url: https://github.com/KhronosGroup/OpenCL-ICD-Loader/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/KhronosGroup/OpenCL-ICD-Loader/archive/refs/tags/v${version}.tar.gz

@@ -1,4 +1,6 @@
 versions:
   2.3.3:
     folder: all
-url: https://github.com/khizmax/libcds/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/khizmax/libcds/archive/v${version}.tar.gz

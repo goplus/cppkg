@@ -7,4 +7,6 @@ versions:
     folder: all
   4.6.1:
     folder: all
-url: https://github.com/JustWhit3/osmanip/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/JustWhit3/osmanip/archive/v${version}.tar.gz

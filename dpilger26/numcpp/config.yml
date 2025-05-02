@@ -23,4 +23,6 @@ versions:
     folder: all
   2.9.0:
     folder: all
-url: https://github.com/dpilger26/NumCpp/archive/Version_${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/dpilger26/NumCpp/archive/Version_${version}.tar.gz

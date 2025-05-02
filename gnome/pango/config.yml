@@ -15,4 +15,6 @@ versions:
     folder: all
   1.54.0:
     folder: all
-url: https://github.com/GNOME/pango/archive/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/GNOME/pango/archive/${version}.tar.gz

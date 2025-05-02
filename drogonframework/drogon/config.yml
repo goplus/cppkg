@@ -3,4 +3,6 @@ versions:
     folder: all
   1.9.10:
     folder: all
-url: https://github.com/drogonframework/drogon/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/drogonframework/drogon/archive/v${version}.tar.gz

@@ -11,4 +11,6 @@ versions:
     folder: all
   0.9.4:
     folder: all
-url: https://github.com/Neargye/nameof/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/Neargye/nameof/archive/v${version}.tar.gz

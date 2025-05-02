@@ -7,4 +7,6 @@ versions:
     folder: all
   1.2.0:
     folder: all
-url: https://github.com/serge-sans-paille/frozen/archive/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/serge-sans-paille/frozen/archive/${version}.tar.gz

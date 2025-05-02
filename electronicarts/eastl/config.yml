@@ -15,4 +15,6 @@ versions:
     folder: all
   3.21.12:
     folder: all
-url: https://github.com/electronicarts/EASTL/archive/refs/tags/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/electronicarts/EASTL/archive/refs/tags/${version}.tar.gz

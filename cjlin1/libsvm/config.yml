@@ -9,4 +9,6 @@ versions:
     folder: all
   "333":
     folder: all
-url: https://github.com/cjlin1/libsvm/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/cjlin1/libsvm/archive/v${version}.tar.gz

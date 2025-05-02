@@ -5,4 +5,6 @@ versions:
     folder: all
   2.09.12:
     folder: all
-url: https://github.com/electronicarts/EABase/archive/refs/heads/${version}.zip
+template:
+  folder: all
+  url: https://github.com/electronicarts/EABase/archive/refs/heads/${version}.zip

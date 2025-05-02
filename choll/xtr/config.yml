@@ -9,4 +9,6 @@ versions:
     folder: all
   2.1.2:
     folder: all
-url: https://github.com/choll/xtr/archive/refs/tags/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/choll/xtr/archive/refs/tags/${version}.tar.gz

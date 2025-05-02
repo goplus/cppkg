@@ -1,4 +1,6 @@
 versions:
   "2.1":
     folder: all
-url: https://github.com/larsbs/id3v2lib/archive/refs/tags/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/larsbs/id3v2lib/archive/refs/tags/${version}.tar.gz

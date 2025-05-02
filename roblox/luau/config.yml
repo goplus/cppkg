@@ -17,4 +17,6 @@ versions:
     folder: all
   "0.667":
     folder: all
-url: https://github.com/Roblox/luau/archive/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/Roblox/luau/archive/${version}.tar.gz

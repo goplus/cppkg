@@ -9,4 +9,6 @@ versions:
     folder: all
   2.0.9:
     folder: all
-url: https://github.com/arvidn/libtorrent/releases/download/v${version}/libtorrent-rasterbar-${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/arvidn/libtorrent/releases/download/v${version}/libtorrent-rasterbar-${version}.tar.gz

@@ -1,4 +1,6 @@
 versions:
   2.0.8:
     folder: all
-url: https://github.com/CPPAlliance/NuDB/archive/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/CPPAlliance/NuDB/archive/${version}.tar.gz

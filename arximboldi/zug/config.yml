@@ -5,4 +5,6 @@ versions:
     folder: all
   cci.20220125:
     folder: all
-url: https://github.com/arximboldi/zug/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/arximboldi/zug/archive/refs/tags/v${version}.tar.gz

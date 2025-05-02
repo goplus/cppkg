@@ -9,4 +9,6 @@ versions:
     folder: all
   "1.9":
     folder: all
-url: https://github.com/dacap/clip/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/dacap/clip/archive/refs/tags/v${version}.tar.gz

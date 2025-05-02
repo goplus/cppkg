@@ -11,4 +11,6 @@ versions:
     folder: all
   4.9.3:
     folder: all
-url: https://github.com/antlr/antlr4/archive/refs/tags/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/antlr/antlr4/archive/refs/tags/${version}.tar.gz

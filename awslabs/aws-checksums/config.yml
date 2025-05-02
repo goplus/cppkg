@@ -5,4 +5,6 @@ versions:
     folder: all
   0.2.3:
     folder: all
-url: https://github.com/awslabs/aws-checksums/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/awslabs/aws-checksums/archive/v${version}.tar.gz

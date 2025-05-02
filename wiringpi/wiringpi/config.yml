@@ -15,4 +15,6 @@ versions:
     folder: all
   cci.20210727:
     folder: all
-url: https://github.com/WiringPi/WiringPi/archive/refs/tags/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/WiringPi/WiringPi/archive/refs/tags/${version}.tar.gz

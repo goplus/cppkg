@@ -27,4 +27,6 @@ versions:
     folder: all
   2.2.4:
     folder: all
-url: https://github.com/zlib-ng/zlib-ng/archive/refs/tags/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/zlib-ng/zlib-ng/archive/refs/tags/${version}.tar.gz

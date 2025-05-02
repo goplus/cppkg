@@ -7,4 +7,6 @@ versions:
     folder: all
   0.2.25:
     folder: all
-url: https://github.com/Dobiasd/FunctionalPlus/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/Dobiasd/FunctionalPlus/archive/v${version}.tar.gz

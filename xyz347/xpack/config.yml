@@ -7,4 +7,6 @@ versions:
     folder: all
   1.0.5:
     folder: all
-url: https://github.com/xyz347/xpack/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/xyz347/xpack/archive/v${version}.tar.gz

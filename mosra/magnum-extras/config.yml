@@ -1,4 +1,6 @@
 versions:
   "2020.06":
     folder: all
-url: https://github.com/mosra/magnum-extras/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/mosra/magnum-extras/archive/refs/tags/v${version}.tar.gz

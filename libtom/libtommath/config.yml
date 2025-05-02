@@ -1,4 +1,6 @@
 versions:
   1.2.0:
     folder: all
-url: https://github.com/libtom/libtommath/releases/download/v${version}/ltm-${version}.tar.xz
+template:
+  folder: all
+  url: https://github.com/libtom/libtommath/releases/download/v${version}/ltm-${version}.tar.xz

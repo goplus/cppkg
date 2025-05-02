@@ -3,4 +3,6 @@ versions:
     folder: 2.x
   3.0.1:
     folder: 2.x
-url: https://github.com/agenium-scale/nsimd/archive/v${version}.tar.gz
+template:
+  folder: 2.x
+  url: https://github.com/agenium-scale/nsimd/archive/v${version}.tar.gz

@@ -15,4 +15,6 @@ versions:
     folder: all
   1.0.240803.1:
     folder: all
-url: https://github.com/microsoft/wil/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/microsoft/wil/archive/refs/tags/v${version}.tar.gz

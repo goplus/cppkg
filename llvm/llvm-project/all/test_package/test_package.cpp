@@ -1,38 +1,23 @@
-#include <llvm/ExecutionEngine/Interpreter.h>
-#include <llvm/ExecutionEngine/GenericValue.h>
-#include <llvm/ExecutionEngine/ExecutionEngine.h>
-#include <llvm/IRReader/IRReader.h>
-#include <llvm/IR/LLVMContext.h>
-#include <llvm/Support/TargetSelect.h>
-#include <llvm/Support/SourceMgr.h>
+#include <omp.h>
 
-#include <memory>
+#include <iostream>
 
-
-int main(int argc, char const* argv[]) {
-    if (argc < 2)
-        return 0;
-
-    llvm::InitializeNativeTarget();
-    llvm::SMDiagnostic smd;
-    llvm::LLVMContext context;
-    std::string error;
-
-    llvm::EngineBuilder engine_builder{
-        llvm::parseIRFile(argv[1], smd, context)
-    };
-    engine_builder.setEngineKind(llvm::EngineKind::Interpreter);
-    engine_builder.setErrorStr(&error);
-
-    auto execution_engine = std::unique_ptr<llvm::ExecutionEngine>(
-        engine_builder.create()
-    );
-    execution_engine->runStaticConstructorsDestructors(false);
-
-    auto test_function = execution_engine->FindFunctionNamed("test");
-    auto result = execution_engine->runFunction(
-        test_function,
-        llvm::ArrayRef<llvm::GenericValue>()
-    );
-    return result.IntVal.getSExtValue();
+int main()
+{
+    int num_threads = std::max(5, omp_get_num_procs());
+    omp_set_num_threads(num_threads);
+    int actual_number;
+    #pragma omp parallel
+    {
+       #pragma omp single
+       {
+          actual_number = omp_get_num_threads();
+       }
+    }
+    if(actual_number != num_threads){
+        std::cout << "Something went wrong. Expecting " << num_threads << " threads but found " << actual_number << ".\n";
+        std::cout << "There are probably missing compiler flags.\n";
+        return 1;
+    }
+    return 0;
 }

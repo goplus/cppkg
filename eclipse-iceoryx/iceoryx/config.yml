@@ -7,4 +7,6 @@ versions:
     folder: all
   2.0.6:
     folder: all
-url: https://github.com/eclipse-iceoryx/iceoryx/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/eclipse-iceoryx/iceoryx/archive/v${version}.tar.gz

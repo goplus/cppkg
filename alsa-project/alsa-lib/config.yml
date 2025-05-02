@@ -17,4 +17,6 @@ versions:
     folder: all
   1.2.7.2:
     folder: all
-url: https://github.com/alsa-project/alsa-lib/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/alsa-project/alsa-lib/archive/v${version}.tar.gz

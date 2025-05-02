@@ -7,4 +7,6 @@ versions:
     folder: all
   2.1.1:
     folder: all
-url: https://github.com/JustWhit3/arsenalgear-cpp/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/JustWhit3/arsenalgear-cpp/archive/refs/tags/v${version}.tar.gz

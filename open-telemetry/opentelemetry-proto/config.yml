@@ -25,4 +25,6 @@ versions:
     folder: all
   1.4.0:
     folder: all
-url: https://github.com/open-telemetry/opentelemetry-proto/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/open-telemetry/opentelemetry-proto/archive/v${version}.tar.gz

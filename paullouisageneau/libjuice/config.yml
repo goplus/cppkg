@@ -1,4 +1,6 @@
 versions:
   1.5.7:
     folder: all
-url: https://github.com/paullouisageneau/libjuice/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/paullouisageneau/libjuice/archive/refs/tags/v${version}.tar.gz

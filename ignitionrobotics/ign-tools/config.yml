@@ -1,4 +1,6 @@
 versions:
   1.4.0:
     folder: all
-url: https://github.com/ignitionrobotics/ign-tools/archive/refs/tags/ignition-tools_${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/ignitionrobotics/ign-tools/archive/refs/tags/ignition-tools_${version}.tar.gz

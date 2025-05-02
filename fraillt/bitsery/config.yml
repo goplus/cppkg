@@ -5,4 +5,6 @@ versions:
     folder: all
   5.2.4:
     folder: all
-url: https://github.com/fraillt/bitsery/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/fraillt/bitsery/archive/v${version}.tar.gz

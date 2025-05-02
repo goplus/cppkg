@@ -13,4 +13,6 @@ versions:
     folder: all
   1.9.1:
     folder: all
-url: https://github.com/open-telemetry/opentelemetry-cpp/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/open-telemetry/opentelemetry-cpp/archive/v${version}.tar.gz

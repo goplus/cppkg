@@ -17,4 +17,6 @@ versions:
     folder: all
   4.2.1:
     folder: all
-url: https://github.com/RoaringBitmap/CRoaring/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/RoaringBitmap/CRoaring/archive/refs/tags/v${version}.tar.gz

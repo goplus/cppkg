@@ -21,4 +21,6 @@ versions:
     folder: all
   3.29.2:
     folder: all
-url: https://github.com/beached/daw_json_link/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/beached/daw_json_link/archive/refs/tags/v${version}.tar.gz

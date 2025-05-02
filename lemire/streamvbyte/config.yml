@@ -3,4 +3,6 @@ versions:
     folder: all
   2.0.0:
     folder: all
-url: https://github.com/lemire/streamvbyte/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/lemire/streamvbyte/archive/refs/tags/v${version}.tar.gz

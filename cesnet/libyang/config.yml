@@ -1,4 +1,6 @@
 versions:
   2.1.148:
     folder: all
-url: https://github.com/CESNET/libyang/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/CESNET/libyang/archive/refs/tags/v${version}.tar.gz

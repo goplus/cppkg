@@ -19,4 +19,6 @@ versions:
     folder: all
   0.3.27:
     folder: all
-url: https://github.com/xianyi/OpenBLAS/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/xianyi/OpenBLAS/archive/v${version}.tar.gz

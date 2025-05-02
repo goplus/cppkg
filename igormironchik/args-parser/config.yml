@@ -19,4 +19,6 @@ versions:
     folder: all
   6.3.4:
     folder: all
-url: https://github.com/igormironchik/args-parser/archive/refs/tags/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/igormironchik/args-parser/archive/refs/tags/${version}.tar.gz

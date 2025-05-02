@@ -1,4 +1,6 @@
 versions:
   2.2.0:
     folder: all
-url: https://github.com/niklasso/minisat/archive/refs/tags/releases/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/niklasso/minisat/archive/refs/tags/releases/${version}.tar.gz

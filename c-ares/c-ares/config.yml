@@ -17,4 +17,6 @@ versions:
     folder: all
   1.34.3:
     folder: all
-url: https://github.com/c-ares/c-ares/releases/download/v${version}/c-ares-${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/c-ares/c-ares/releases/download/v${version}/c-ares-${version}.tar.gz

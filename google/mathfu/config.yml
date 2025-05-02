@@ -1,4 +1,6 @@
 versions:
   1.1.0:
     folder: all
-url: https://github.com/google/mathfu/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/google/mathfu/archive/v${version}.tar.gz

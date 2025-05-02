@@ -5,4 +5,6 @@ versions:
     folder: all
   0.5.1:
     folder: all
-url: https://github.com/sharkdp/dbg-macro/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/sharkdp/dbg-macro/archive/v${version}.tar.gz

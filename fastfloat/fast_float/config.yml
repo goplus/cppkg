@@ -51,4 +51,6 @@ versions:
     folder: all
   8.0.0:
     folder: all
-url: https://github.com/fastfloat/fast_float/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/fastfloat/fast_float/archive/v${version}.tar.gz

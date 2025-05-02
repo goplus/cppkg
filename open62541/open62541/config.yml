@@ -11,4 +11,6 @@ versions:
     folder: all
   1.4.6:
     folder: all
-url: https://github.com/open62541/open62541/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/open62541/open62541/archive/v${version}.tar.gz

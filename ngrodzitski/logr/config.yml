@@ -15,4 +15,6 @@ versions:
     folder: all
   0.7.0:
     folder: v0.7
-url: https://github.com/ngrodzitski/logr/archive/v${version}.tar.gz
+template:
+  folder: v0.7
+  url: https://github.com/ngrodzitski/logr/archive/v${version}.tar.gz

@@ -11,4 +11,6 @@ versions:
     folder: all
   3.5.0:
     folder: all
-url: https://github.com/ThePhD/sol2/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/ThePhD/sol2/archive/v${version}.tar.gz

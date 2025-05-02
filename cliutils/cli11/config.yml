@@ -23,4 +23,6 @@ versions:
     folder: all
   2.5.0:
     folder: all
-url: https://github.com/CLIUtils/CLI11/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/CLIUtils/CLI11/archive/v${version}.tar.gz

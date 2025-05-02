@@ -7,4 +7,6 @@ versions:
     folder: all
   0.13.0:
     folder: all
-url: https://github.com/ouster-lidar/ouster-sdk/archive/refs/tags/release-${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/ouster-lidar/ouster-sdk/archive/refs/tags/release-${version}.tar.gz

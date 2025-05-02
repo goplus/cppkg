@@ -17,4 +17,6 @@ versions:
     folder: all
   7.9.3:
     folder: all
-url: https://github.com/tlk00/BitMagic/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/tlk00/BitMagic/archive/refs/tags/v${version}.tar.gz

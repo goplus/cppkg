@@ -13,4 +13,6 @@ versions:
     folder: all
   1.7.18:
     folder: all
-url: https://github.com/DaveGamble/cJSON/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/DaveGamble/cJSON/archive/v${version}.tar.gz

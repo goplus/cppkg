@@ -11,4 +11,6 @@ versions:
     folder: all
   4.3.0:
     folder: all
-url: https://github.com/swig/swig/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/swig/swig/archive/refs/tags/v${version}.tar.gz

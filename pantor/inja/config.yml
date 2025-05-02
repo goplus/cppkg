@@ -9,4 +9,6 @@ versions:
     folder: all
   3.4.0:
     folder: all
-url: https://github.com/pantor/inja/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/pantor/inja/archive/v${version}.tar.gz

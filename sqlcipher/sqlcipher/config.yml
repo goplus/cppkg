@@ -5,4 +5,6 @@ versions:
     folder: all
   4.6.1:
     folder: all
-url: https://github.com/sqlcipher/sqlcipher/archive/v${version}.zip
+template:
+  folder: all
+  url: https://github.com/sqlcipher/sqlcipher/archive/v${version}.zip

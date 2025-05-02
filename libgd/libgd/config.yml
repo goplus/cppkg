@@ -9,4 +9,6 @@ versions:
     folder: all
   2.3.3:
     folder: all
-url: https://github.com/libgd/libgd/archive/gd-${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/libgd/libgd/archive/gd-${version}.tar.gz

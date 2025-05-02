@@ -13,4 +13,6 @@ versions:
     folder: all
   "2.4":
     folder: all
-url: https://github.com/KjellKod/g3log/archive/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/KjellKod/g3log/archive/${version}.tar.gz

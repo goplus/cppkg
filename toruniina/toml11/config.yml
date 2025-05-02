@@ -11,4 +11,6 @@ versions:
     folder: all
   4.4.0:
     folder: all
-url: https://github.com/ToruNiina/toml11/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/ToruNiina/toml11/archive/refs/tags/v${version}.tar.gz

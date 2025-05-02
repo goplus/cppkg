@@ -9,4 +9,6 @@ versions:
     folder: all
   1.11.3:
     folder: all
-url: https://github.com/apache/avro/archive/release-${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/apache/avro/archive/release-${version}.tar.gz

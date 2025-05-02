@@ -9,4 +9,6 @@ versions:
     folder: all
   3.9.3:
     folder: all
-url: https://github.com/simdjson/simdjson/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/simdjson/simdjson/archive/v${version}.tar.gz

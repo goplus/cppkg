@@ -1,4 +1,6 @@
 versions:
   6.4.0:
     folder: all
-url: https://github.com/gamecreature/QtAwesome/archive/font-awesome-${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/gamecreature/QtAwesome/archive/font-awesome-${version}.tar.gz

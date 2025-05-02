@@ -9,4 +9,6 @@ versions:
     folder: all
   "6.5":
     folder: all
-url: https://github.com/avaneev/r8brain-free-src/archive/refs/tags/version-${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/avaneev/r8brain-free-src/archive/refs/tags/version-${version}.tar.gz

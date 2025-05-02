@@ -1,4 +1,6 @@
 versions:
   1.1.13:
     folder: all
-url: https://github.com/JSBSim-Team/jsbsim/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/JSBSim-Team/jsbsim/archive/refs/tags/v${version}.tar.gz

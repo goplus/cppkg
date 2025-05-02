@@ -23,4 +23,6 @@ versions:
     folder: all
   6.3.1:
     folder: all
-url: https://github.com/simdutf/simdutf/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/simdutf/simdutf/archive/v${version}.tar.gz

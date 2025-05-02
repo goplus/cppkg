@@ -3,4 +3,6 @@ versions:
     folder: all
   "0.30":
     folder: all
-url: https://github.com/rbock/sqlpp11-connector-sqlite3/archive/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/rbock/sqlpp11-connector-sqlite3/archive/${version}.tar.gz

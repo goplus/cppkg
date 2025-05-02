@@ -17,4 +17,6 @@ versions:
     folder: all
   2.4.0:
     folder: all
-url: https://github.com/rui314/mold/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/rui314/mold/archive/refs/tags/v${version}.tar.gz

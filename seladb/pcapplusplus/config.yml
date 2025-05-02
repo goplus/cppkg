@@ -11,4 +11,6 @@ versions:
     folder: cmake
   "24.09":
     folder: cmake
-url: https://github.com/seladb/PcapPlusPlus/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/seladb/PcapPlusPlus/archive/v${version}.tar.gz

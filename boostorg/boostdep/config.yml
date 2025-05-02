@@ -3,4 +3,6 @@ versions:
     folder: all
   1.82.0:
     folder: all
-url: https://github.com/boostorg/boostdep/archive/refs/tags/boost-${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/boostorg/boostdep/archive/refs/tags/boost-${version}.tar.gz

@@ -9,4 +9,6 @@ versions:
     folder: all
   cci.20220219:
     folder: all
-url: https://github.com/DiligentGraphics/DiligentFX/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/DiligentGraphics/DiligentFX/archive/refs/tags/v${version}.tar.gz

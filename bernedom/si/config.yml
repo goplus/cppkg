@@ -11,4 +11,6 @@ versions:
     folder: all
   2.5.3:
     folder: all
-url: https://github.com/bernedom/SI/archive/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/bernedom/SI/archive/${version}.tar.gz

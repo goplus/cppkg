@@ -9,4 +9,6 @@ versions:
     folder: all
   boost-1.78.0:
     folder: all
-url: https://github.com/boostorg/hana/archive/boost-${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/boostorg/hana/archive/boost-${version}.tar.gz

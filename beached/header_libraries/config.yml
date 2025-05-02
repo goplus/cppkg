@@ -21,4 +21,6 @@ versions:
     folder: all
   2.98.5:
     folder: all
-url: https://github.com/beached/header_libraries/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/beached/header_libraries/archive/v${version}.tar.gz

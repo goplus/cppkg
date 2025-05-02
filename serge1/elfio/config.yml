@@ -9,4 +9,6 @@ versions:
     folder: all
   "3.9":
     folder: all
-url: https://github.com/serge1/ELFIO/releases/download/Release_${version}/elfio-${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/serge1/ELFIO/releases/download/Release_${version}/elfio-${version}.tar.gz

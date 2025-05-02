@@ -3,4 +3,6 @@ versions:
     folder: all
   cci.20210117:
     folder: all
-url: https://github.com/kazuho/picojson/archive/v${version}.zip
+template:
+  folder: all
+  url: https://github.com/kazuho/picojson/archive/v${version}.zip

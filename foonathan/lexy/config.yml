@@ -5,4 +5,6 @@ versions:
     folder: all
   2022.12.1:
     folder: all
-url: https://github.com/foonathan/lexy/releases/download/v${version}/lexy-src.zip
+template:
+  folder: all
+  url: https://github.com/foonathan/lexy/releases/download/v${version}/lexy-src.zip

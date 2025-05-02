@@ -3,4 +3,6 @@ versions:
     folder: all
   1.2.3:
     folder: all
-url: https://github.com/snitch-org/snitch/archive/refs/tags/v${version}.zip
+template:
+  folder: all
+  url: https://github.com/snitch-org/snitch/archive/refs/tags/v${version}.zip

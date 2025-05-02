@@ -5,4 +5,6 @@ versions:
     folder: all
   1.2.6:
     folder: all
-url: https://github.com/cxong/tinydir/archive/refs/tags/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/cxong/tinydir/archive/refs/tags/${version}.tar.gz

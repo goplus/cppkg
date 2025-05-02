@@ -7,4 +7,6 @@ versions:
     folder: all
   1.4.1:
     folder: all
-url: https://github.com/copperspice/cs_libguarded/archive/libguarded-${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/copperspice/cs_libguarded/archive/libguarded-${version}.tar.gz

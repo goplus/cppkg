@@ -11,4 +11,6 @@ versions:
     folder: all
   "58":
     folder: all
-url: https://github.com/benhoyt/inih/archive/r${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/benhoyt/inih/archive/r${version}.tar.gz

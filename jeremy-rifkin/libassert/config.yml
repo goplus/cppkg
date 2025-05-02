@@ -21,4 +21,6 @@ versions:
     folder: v2
   2.1.4:
     folder: v2
-url: https://github.com/jeremy-rifkin/libassert/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: v2
+  url: https://github.com/jeremy-rifkin/libassert/archive/refs/tags/v${version}.tar.gz

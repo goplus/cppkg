@@ -3,4 +3,6 @@ versions:
     folder: all
   cci.20230913:
     folder: all
-url: https://github.com/stotko/stdgpu/archive/refs/tags/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/stotko/stdgpu/archive/refs/tags/${version}.tar.gz

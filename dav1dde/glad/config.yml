@@ -7,4 +7,6 @@ versions:
     folder: all
   0.1.36:
     folder: all
-url: https://github.com/Dav1dde/glad/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/Dav1dde/glad/archive/v${version}.tar.gz

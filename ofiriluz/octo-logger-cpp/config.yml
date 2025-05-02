@@ -21,4 +21,6 @@ versions:
     folder: all
   2.1.2:
     folder: all
-url: https://github.com/ofiriluz/octo-logger-cpp/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/ofiriluz/octo-logger-cpp/archive/v${version}.tar.gz

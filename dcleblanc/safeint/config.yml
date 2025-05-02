@@ -7,4 +7,6 @@ versions:
     folder: all
   "3.24":
     folder: all
-url: https://github.com/dcleblanc/SafeInt/archive/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/dcleblanc/SafeInt/archive/${version}.tar.gz

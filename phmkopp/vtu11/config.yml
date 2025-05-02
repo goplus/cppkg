@@ -1,4 +1,6 @@
 versions:
   "1.2":
     folder: all
-url: https://github.com/phmkopp/vtu11/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/phmkopp/vtu11/archive/refs/tags/v${version}.tar.gz

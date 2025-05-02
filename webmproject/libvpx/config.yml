@@ -9,4 +9,6 @@ versions:
     folder: all
   1.14.1:
     folder: all
-url: https://github.com/webmproject/libvpx/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/webmproject/libvpx/archive/refs/tags/v${version}.tar.gz

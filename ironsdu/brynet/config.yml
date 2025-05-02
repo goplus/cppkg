@@ -7,4 +7,6 @@ versions:
     folder: all
   1.12.2:
     folder: all
-url: https://github.com/IronsDu/brynet/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/IronsDu/brynet/archive/v${version}.tar.gz

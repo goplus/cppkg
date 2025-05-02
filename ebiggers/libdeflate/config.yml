@@ -27,4 +27,6 @@ versions:
     folder: pre_1.15
   "1.9":
     folder: pre_1.15
-url: https://github.com/ebiggers/libdeflate/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/ebiggers/libdeflate/archive/refs/tags/v${version}.tar.gz

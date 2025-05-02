@@ -21,4 +21,6 @@ versions:
     folder: all
   3.4.1:
     folder: all
-url: https://github.com/Tradias/asio-grpc/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/Tradias/asio-grpc/archive/refs/tags/v${version}.tar.gz

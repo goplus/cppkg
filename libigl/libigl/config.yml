@@ -3,4 +3,6 @@ versions:
     folder: all
   2.5.0:
     folder: all
-url: https://github.com/libigl/libigl/archive/refs/tags/v${version}.zip
+template:
+  folder: all
+  url: https://github.com/libigl/libigl/archive/refs/tags/v${version}.zip

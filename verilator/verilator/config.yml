@@ -9,4 +9,6 @@ versions:
     folder: all
   "5.004":
     folder: all
-url: https://github.com/verilator/verilator/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/verilator/verilator/archive/refs/tags/v${version}.tar.gz

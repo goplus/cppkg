@@ -13,4 +13,6 @@ versions:
     folder: all
   1.8.1:
     folder: all
-url: https://github.com/google/googletest/archive/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/google/googletest/archive/v${version}.tar.gz

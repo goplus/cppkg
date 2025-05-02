@@ -3,4 +3,6 @@ versions:
     folder: all
   final4:
     folder: all
-url: https://github.com/wangyi-fudan/wyhash/archive/refs/tags/wyhash_${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/wangyi-fudan/wyhash/archive/refs/tags/wyhash_${version}.tar.gz

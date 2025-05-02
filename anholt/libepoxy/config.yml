@@ -5,4 +5,6 @@ versions:
     folder: all
   1.5.9:
     folder: all
-url: https://github.com/anholt/libepoxy/archive/${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/anholt/libepoxy/archive/${version}.tar.gz

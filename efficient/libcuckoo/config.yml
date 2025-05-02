@@ -3,4 +3,6 @@ versions:
     folder: all
   0.3.1:
     folder: all
-url: https://github.com/efficient/libcuckoo/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/efficient/libcuckoo/archive/refs/tags/v${version}.tar.gz

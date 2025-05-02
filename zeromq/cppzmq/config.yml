@@ -11,4 +11,6 @@ versions:
     folder: all
   4.9.0:
     folder: all
-url: https://github.com/zeromq/cppzmq/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/zeromq/cppzmq/archive/refs/tags/v${version}.tar.gz

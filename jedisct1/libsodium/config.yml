@@ -7,4 +7,6 @@ versions:
     folder: all
   cci.20220430:
     folder: all
-url: https://github.com/jedisct1/libsodium/archive/${version}-RELEASE.tar.gz
+template:
+  folder: all
+  url: https://github.com/jedisct1/libsodium/archive/${version}-RELEASE.tar.gz

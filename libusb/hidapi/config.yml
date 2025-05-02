@@ -11,4 +11,6 @@ versions:
     folder: all
   0.14.0:
     folder: all
-url: https://github.com/libusb/hidapi/archive/hidapi-${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/libusb/hidapi/archive/hidapi-${version}.tar.gz

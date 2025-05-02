@@ -13,4 +13,6 @@ versions:
     folder: all
   2.2.1:
     folder: all
-url: https://github.com/victimsnino/ReactivePlusPlus/archive/refs/tags/v${version}.tar.gz
+template:
+  folder: all
+  url: https://github.com/victimsnino/ReactivePlusPlus/archive/refs/tags/v${version}.tar.gz
