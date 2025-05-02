@@ -2,6 +2,7 @@ package main
 
 import (
 	"errors"
+	"io"
 	"os"
 	"os/exec"
 	"strings"
@@ -18,19 +19,19 @@ type conandata struct {
 	Sources map[string]any `yaml:"sources"`
 }
 
-func replaceVer(src any, fromVer, toVer, hash string) any {
+func replaceVer(src any, fromVer, toVer string) any {
 	switch src := src.(type) {
 	case map[string]any:
-		doReplace(src, fromVer, toVer, hash)
+		doReplace(src, fromVer, toVer)
 	case []any:
 		for _, u := range src {
-			doReplace(u.(map[string]any), fromVer, toVer, hash)
+			doReplace(u.(map[string]any), fromVer, toVer)
 		}
 	}
 	return src
 }
 
-func doReplace(src map[string]any, fromVer, toVer, _ string) {
+func doReplace(src map[string]any, fromVer, toVer string) {
 	switch url := src["url"].(type) {
 	case string:
 		src["url"] = strings.ReplaceAll(url, fromVer, toVer)
@@ -70,9 +71,8 @@ func (p *Manager) Install(pkg *Package, flags int) (err error) {
 		if !ok {
 			return ErrVersionNotFound
 		}
-		hash := "" // TODO(xsw): hash
 		cd.Sources = map[string]any{
-			pkgVer: replaceVer(source, fromVer, pkgVer, hash),
+			pkgVer: replaceVer(source, fromVer, pkgVer),
 		}
 		b, err = yaml.Marshal(cd)
 		if err != nil {
@@ -84,7 +84,14 @@ func (p *Manager) Install(pkg *Package, flags int) (err error) {
 		}
 		conanfileDir = outDir
 	}
-	return conanInstall(pkgVer, flags, outDir, conanfileDir)
+	outFile := outDir + "/out.json"
+	out, err := os.Create(outFile)
+	if err == nil {
+		defer out.Close()
+	} else {
+		out = os.Stdout
+	}
+	return conanInstall(pkgVer, outDir, conanfileDir, out, flags)
 }
 
 func (p *Manager) outDir(pkg *Package) string {
@@ -96,11 +103,11 @@ func (p *Manager) conanfileDir(pkgPath, pkgFolder string) string {
 	return root + "/" + pkgPath + "/" + pkgFolder
 }
 
-func conanInstall(pkgVer string, flags int, outDir, conanfileDir string) (err error) {
+func conanInstall(pkgVer, outDir, conanfileDir string, out io.Writer, flags int) (err error) {
 	args := make([]string, 0, 10)
 	args = append(args, "install",
 		"--build", "missing",
-		// "--format", "json",
+		"--format", "json",
 		"--version", pkgVer,
 		"--output-folder", outDir,
 		"./conanfile.py",
@@ -112,7 +119,7 @@ func conanInstall(pkgVer string, flags int, outDir, conanfileDir string) (err er
 	}
 	cmd.Dir = conanfileDir
 	cmd.Stderr = os.Stderr
-	cmd.Stdout = os.Stdout
+	cmd.Stdout = out
 	err = cmd.Run()
 	return
 }
