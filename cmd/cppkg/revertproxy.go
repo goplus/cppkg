@@ -3,6 +3,7 @@ package main
 import (
 	"bytes"
 	"encoding/json"
+	"errors"
 	"io"
 	stdlog "log"
 	"net/http"
@@ -14,9 +15,17 @@ import (
 	"strings"
 )
 
-type revertProxy = httptest.Server
+var (
+	errPassThrough = errors.New("pass through")
+)
 
-type rtHandler func(*http.Request) (*http.Response, error)
+type rtFunc = func(req *http.Request) (resp *http.Response, err error)
+
+func rtDefault(req *http.Request) (resp *http.Response, err error) {
+	return nil, errPassThrough
+}
+
+type rtHandler rtFunc
 
 func (p rtHandler) RoundTrip(req *http.Request) (*http.Response, error) {
 	return p(req)
@@ -47,7 +56,9 @@ func (p *teeReader) Close() error {
 	return err
 }
 
-func startRevertProxy(endpoint string, log *stdlog.Logger) (_ *revertProxy, err error) {
+type revertProxy = httptest.Server
+
+func startRevertProxy(endpoint string, rt rtFunc, log *stdlog.Logger) (_ *revertProxy, err error) {
 	rpURL, err := url.Parse(endpoint)
 	if err != nil {
 		return
@@ -55,17 +66,25 @@ func startRevertProxy(endpoint string, log *stdlog.Logger) (_ *revertProxy, err 
 	if log == nil {
 		log = stdlog.Default()
 	}
+	if rt == nil {
+		rt = rtDefault
+	}
 	proxy := httptest.NewServer(&httputil.ReverseProxy{
 		Rewrite: func(r *httputil.ProxyRequest) {
 			r.SetURL(rpURL)
 		},
 		Transport: rtHandler(func(req *http.Request) (resp *http.Response, err error) {
-			resp, err = http.DefaultTransport.RoundTrip(req)
-			resp.Body = &teeReader{
-				rc:   resp.Body,
-				req:  req,
-				resp: resp,
-				log:  log,
+			resp, err = rt(req)
+			if err == errPassThrough {
+				resp, err = http.DefaultTransport.RoundTrip(req)
+			}
+			if resp.Body != nil {
+				resp.Body = &teeReader{
+					rc:   resp.Body,
+					req:  req,
+					resp: resp,
+					log:  log,
+				}
 			}
 			return
 		}),
@@ -83,7 +102,7 @@ type remoteList []struct {
 	URL  string `json:"url"`
 }
 
-func remoteProxy(flags int, logfile string, f func() error) (err error) {
+func remoteProxy(flags int, logfile string, f func() error, rt rtFunc) (err error) {
 	quietInstall := flags&ToolQuietInstall != 0
 	app, err := conanCmd.Get(quietInstall)
 	if err != nil {
@@ -115,7 +134,7 @@ func remoteProxy(flags int, logfile string, f func() error) (err error) {
 			log = stdlog.New(f, "", stdlog.LstdFlags)
 		}
 	}
-	rp, err := startRevertProxy(conanEndpoint, log)
+	rp, err := startRevertProxy(conanEndpoint, rt, log)
 	if err != nil {
 		return
 	}

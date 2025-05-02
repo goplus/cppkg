@@ -3,6 +3,7 @@ package main
 import (
 	"errors"
 	"io"
+	"net/http"
 	"os"
 	"os/exec"
 	"strings"
@@ -86,6 +87,7 @@ func (p *Manager) Install(pkg *Package, flags int) (err error) {
 		}
 		conanfileDir = outDir
 	}
+
 	outFile := outDir + "/out.json"
 	out, err := os.Create(outFile)
 	if err == nil {
@@ -93,9 +95,16 @@ func (p *Manager) Install(pkg *Package, flags int) (err error) {
 	} else {
 		out = os.Stdout
 	}
+
+	if template == nil {
+		return conanInstall(pkg.Name+"/"+pkgVer, outDir, conanfileDir, out, flags)
+	}
+
 	logFile := outDir + "/rp.log"
 	return remoteProxy(flags, logFile, func() error {
 		return conanInstall(pkg.Name+"/"+pkgVer, outDir, conanfileDir, out, flags)
+	}, func(req *http.Request) (resp *http.Response, err error) {
+		return nil, errPassThrough
 	})
 }
 
@@ -131,7 +140,7 @@ func conanInstall(pkg, outDir, conanfileDir string, out io.Writer, flags int) (e
 
 func copyDirR(srcDir, destDir string) error {
 	if cp, err := exec.LookPath("cp"); err == nil {
-		return exec.Command(cp, "-r", srcDir+"/", destDir).Run()
+		return exec.Command(cp, "-r", "-p", srcDir+"/", destDir).Run()
 	}
 	if cp, err := exec.LookPath("xcopy"); err == nil {
 		// TODO(xsw): check xcopy
