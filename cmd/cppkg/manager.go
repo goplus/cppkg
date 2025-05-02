@@ -9,17 +9,10 @@ import (
 	"golang.org/x/mod/semver"
 )
 
-var (
-	gitCmd = NewCommand("git", []string{
-		"brew install git",
-		"apt-get install git",
-	})
-
-	conanCmd = NewCommand("conan", []string{
-		"brew install conan",
-		"apt-get install conan",
-	})
-)
+var gitCmd = NewCommand("git", []string{
+	"brew install git",
+	"apt-get install git",
+})
 
 // Manager represents a package manager for C/C++ packages.
 type Manager struct {
@@ -52,19 +45,17 @@ type template struct {
 }
 
 type config struct {
+	PkgName  string             `yaml:"name"`
 	Versions map[string]version `yaml:"versions"`
 	Template template           `yaml:"template"`
 }
 
 type Package struct {
+	Name    string
 	Path    string
 	Version string
 	Folder  string
 	URL     string
-}
-
-func (p *Package) isTemplate() bool {
-	return p.URL != ""
 }
 
 var (
@@ -94,7 +85,7 @@ func (p *Manager) Lookup(pkgPath, ver string, flags int) (_ *Package, err error)
 		return
 	}
 	if v, ok := conf.Versions[ver]; ok {
-		return &Package{Path: pkgPath, Version: ver, Folder: v.Folder}, nil
+		return &Package{Name: conf.PkgName, Path: pkgPath, Version: ver, Folder: v.Folder}, nil
 	}
 	if compareVer(ver, conf.Template.FromVer) < 0 {
 		err = ErrVersionNotFound
@@ -102,19 +93,7 @@ func (p *Manager) Lookup(pkgPath, ver string, flags int) (_ *Package, err error)
 	}
 	folder := conf.Template.Folder
 	url := strings.ReplaceAll(conf.Template.URL, "${version}", ver)
-	return &Package{Path: pkgPath, Version: ver, Folder: folder, URL: url}, nil
-}
-
-func (p *Manager) Install(pkg *Package, flags int) (err error) {
-	if pkg.isTemplate() {
-		panic("TODO: install by template")
-	}
-	quietInstall := flags&ToolQuietInstall != 0
-	_, err = conanCmd.New(quietInstall)
-	if err != nil {
-		return
-	}
-	panic("TODO: install")
+	return &Package{Name: conf.PkgName, Path: pkgPath, Version: ver, Folder: folder, URL: url}, nil
 }
 
 func (p *Manager) indexRoot() string {
