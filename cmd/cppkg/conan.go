@@ -1,14 +1,19 @@
 package main
 
 import (
+	"archive/tar"
+	"bytes"
+	"compress/gzip"
 	"crypto/md5"
 	"encoding/hex"
 	"errors"
+	"fmt"
 	"io"
 	"net/http"
 	"os"
 	"os/exec"
 	"strings"
+	"time"
 
 	"github.com/goccy/go-yaml"
 	"github.com/qiniu/x/httputil"
@@ -56,6 +61,7 @@ func (p *Manager) Install(pkg *Package, flags int) (err error) {
 
 	var rev string
 	var gr *githubRelease
+	var conandataYml, conanfilePy []byte
 
 	conanfileDir := p.conanfileDir(pkg.Path, pkg.Folder)
 	pkgVer := pkg.Version
@@ -70,13 +76,19 @@ func (p *Manager) Install(pkg *Package, flags int) (err error) {
 		if err != nil {
 			return
 		}
+
+		conanfilePy, err = os.ReadFile(outDir + "/conanfile.py")
+		if err != nil {
+			return
+		}
+
 		conandataFile := outDir + "/conandata.yml"
-		b, e := os.ReadFile(conandataFile)
-		if e != nil {
-			return e
+		conandataYml, err = os.ReadFile(conandataFile)
+		if err != nil {
+			return
 		}
 		var cd conandata
-		err = yaml.Unmarshal(b, &cd)
+		err = yaml.Unmarshal(conandataYml, &cd)
 		if err != nil {
 			return
 		}
@@ -88,15 +100,15 @@ func (p *Manager) Install(pkg *Package, flags int) (err error) {
 		cd.Sources = map[string]any{
 			pkgVer: replaceVer(source, fromVer, pkgVer),
 		}
-		b, err = yaml.Marshal(cd)
+		conandataYml, err = yaml.Marshal(cd)
 		if err != nil {
 			return
 		}
-		err = os.WriteFile(conandataFile, b, os.ModePerm)
+		err = os.WriteFile(conandataFile, conandataYml, os.ModePerm)
 		if err != nil {
 			return
 		}
-		rev = recipeRevision(pkg, gr, b)
+		rev = recipeRevision(pkg, gr, conandataYml)
 		conanfileDir = outDir
 	}
 
@@ -111,6 +123,11 @@ func (p *Manager) Install(pkg *Package, flags int) (err error) {
 	nameAndVer := pkg.Name + "/" + pkgVer
 	if template == nil {
 		return conanInstall(nameAndVer, outDir, conanfileDir, out, flags)
+	}
+
+	mtime, err := unixTime(gr.PublishedAt)
+	if err != nil {
+		return
 	}
 
 	logFile := outDir + "/rp.log"
@@ -140,18 +157,26 @@ func (p *Manager) Install(pkg *Package, flags int) (err error) {
 			})
 		})
 		mux.HandleFunc(revbase+"/files/conanfile.py", func(w http.ResponseWriter, r *http.Request) {
-			b, err := os.ReadFile(outDir + "/conanfile.py")
-			if err != nil {
-				w.WriteHeader(passThrough)
-				return
-			}
 			h := w.Header()
 			h.Set("Cache-Control", "public,max-age=3600")
 			h.Set("Content-Disposition", `attachment; filename="conanfile.py"`)
-			httputil.ReplyWith(w, http.StatusOK, "text/x-python", b)
+			httputil.ReplyWith(w, http.StatusOK, "text/x-python", conanfilePy)
+		})
+		const conanmanifest = "%d\nconandata.yml: %s\nconanfile.py: %s\n"
+		mux.HandleFunc(revbase+"/files/conanmanifest.txt", func(w http.ResponseWriter, r *http.Request) {
+			h := w.Header()
+			h.Set("Cache-Control", "public,max-age=3600")
+			h.Set("Content-Disposition", `attachment; filename="conanmanifest.txt"`)
+			data := fmt.Sprintf(conanmanifest, mtime, md5Of(conandataYml), md5Of(conanfilePy))
+			httputil.ReplyWithStream(w, http.StatusOK, "text/plain", strings.NewReader(data), int64(len(data)))
 		})
 		mux.HandleFunc(revbase+"/files/conan_export.tgz", func(w http.ResponseWriter, r *http.Request) {
-			ga := gr.asset(".gz")
+			h := w.Header()
+			h.Set("Cache-Control", "public,max-age=3600")
+			h.Set("Content-Disposition", `attachment; filename="conan_export.tgz"`)
+			data := tarGzip("conan_export.tgz", conandataYml)
+			httputil.ReplyWith(w, http.StatusOK, "application/x-gzip", data)
+			/* ga := gr.asset(".gz")
 			if ga != nil {
 				resp, err := http.Get(ga.BrowserDownloadURL)
 				if err == nil {
@@ -164,6 +189,7 @@ func (p *Manager) Install(pkg *Package, flags int) (err error) {
 				}
 			}
 			w.WriteHeader(passThrough)
+			*/
 		})
 	})
 }
@@ -198,10 +224,40 @@ func conanInstall(pkg, outDir, conanfileDir string, out io.Writer, flags int) (e
 	return
 }
 
-func recipeRevision(_ *Package, _ *githubRelease, conandata []byte) string {
+func recipeRevision(_ *Package, _ *githubRelease, conandataYml []byte) string {
+	return md5Of(conandataYml)
+}
+
+func md5Of(data []byte) string {
 	h := md5.New()
-	h.Write(conandata)
+	h.Write(data)
 	return hex.EncodeToString(h.Sum(nil))
+}
+
+func tarGzip(name string, data []byte) []byte {
+	var tarb bytes.Buffer
+	tarw := tar.NewWriter(&tarb)
+	tarw.WriteHeader(&tar.Header{
+		Name: name,
+		Mode: 0600,
+		Size: int64(len(data)),
+	})
+	tarw.Write(data)
+	tarw.Close()
+
+	var b bytes.Buffer
+	gzw := gzip.NewWriter(&b)
+	gzw.Write(tarb.Bytes())
+	gzw.Close()
+	return b.Bytes()
+}
+
+func unixTime(tstr string) (ret int64, err error) {
+	t, err := time.Parse(time.RFC3339, tstr)
+	if err == nil {
+		ret = t.Unix()
+	}
+	return
 }
 
 func copyDirR(srcDir, destDir string) error {
