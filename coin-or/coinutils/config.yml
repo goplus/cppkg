@@ -11,4 +11,4 @@ versions:
 template:
   from: 2.11.10
   folder: all
-  url: https://github.com/coin-or/CoinUtils/archive/releases/${version}.tar.gz
+  tag: "*"

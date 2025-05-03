@@ -5,4 +5,4 @@ versions:
 template:
   from: 2.4.3-b34
   folder: all
-  url: https://github.com/tomojitakasu/RTKLIB/archive/refs/tags/v${version}.tar.gz
+  tag: v*

@@ -9,4 +9,4 @@ versions:
 template:
   from: 1.1.0
   folder: all
-  url: https://github.com/awslabs/amazon-kinesis-video-streams-pic/archive/refs/tags/v${version}.tar.gz
+  tag: v*

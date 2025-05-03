@@ -7,4 +7,4 @@ versions:
 template:
   from: 1.5.1
   folder: all
-  url: https://github.com/wgois/OIS/archive/v${version}.tar.gz
+  tag: v*

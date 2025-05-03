@@ -9,4 +9,4 @@ versions:
 template:
   from: "2.05"
   folder: all
-  url: https://github.com/iboB/picobench/archive/v${version}.tar.gz
+  tag: v*

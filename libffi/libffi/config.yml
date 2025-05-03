@@ -9,4 +9,4 @@ versions:
 template:
   from: 3.4.6
   folder: all
-  url: https://github.com/libffi/libffi/releases/download/v${version}/libffi-${version}.tar.gz
+  tag: v*

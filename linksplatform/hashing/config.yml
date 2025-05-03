@@ -13,4 +13,4 @@ versions:
 template:
   from: 0.5.6
   folder: all
-  url: https://github.com/linksplatform/Hashing/archive/refs/tags/cpp_${version}.tar.gz
+  tag: cpp_*

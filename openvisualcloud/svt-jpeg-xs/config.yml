@@ -5,4 +5,4 @@ versions:
 template:
   from: 0.9.0
   folder: all
-  url: https://github.com/OpenVisualCloud/SVT-JPEG-XS/archive/refs/tags/v${version}.tar.gz
+  tag: v*

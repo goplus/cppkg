@@ -7,4 +7,4 @@ versions:
 template:
   from: 3.0.0
   folder: all
-  url: https://github.com/xxsds/sdsl-lite/archive/refs/tags/v${version}.zip
+  tag: v*

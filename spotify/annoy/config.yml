@@ -5,4 +5,4 @@ versions:
 template:
   from: 1.17.3
   folder: all
-  url: https://github.com/spotify/annoy/archive/refs/tags/v${version}.tar.gz
+  tag: v*

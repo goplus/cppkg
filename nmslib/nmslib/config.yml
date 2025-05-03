@@ -5,4 +5,4 @@ versions:
 template:
   from: 2.1.1
   folder: all
-  url: https://github.com/nmslib/nmslib/archive/v${version}.zip
+  tag: v*

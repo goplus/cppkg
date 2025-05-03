@@ -7,4 +7,4 @@ versions:
 template:
   from: 1.0.2
   folder: all
-  url: https://github.com/cdcseacave/TinyEXIF/archive/refs/tags/${version}.tar.gz
+  tag: "*"

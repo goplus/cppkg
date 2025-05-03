@@ -7,4 +7,4 @@ versions:
 template:
   from: final4
   folder: all
-  url: https://github.com/wangyi-fudan/wyhash/archive/refs/tags/wyhash_${version}.tar.gz
+  tag: wyhash_*

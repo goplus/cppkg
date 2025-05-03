@@ -5,4 +5,4 @@ versions:
 template:
   from: "2019.1"
   folder: all
-  url: https://github.com/google/effcee/archive/refs/tags/v${version}.zip
+  tag: v*

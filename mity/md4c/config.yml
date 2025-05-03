@@ -9,4 +9,4 @@ versions:
 template:
   from: 0.5.2
   folder: all
-  url: https://github.com/mity/md4c/archive/refs/tags/release-${version}.tar.gz
+  tag: release-*

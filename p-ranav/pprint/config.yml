@@ -5,4 +5,4 @@ versions:
 template:
   from: 0.9.1
   folder: all
-  url: https://github.com/p-ranav/pprint/archive/v${version}.tar.gz
+  tag: v*

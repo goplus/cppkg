@@ -19,4 +19,4 @@ versions:
 template:
   from: 1.11.2
   folder: all
-  url: https://github.com/libcpr/cpr/archive/refs/tags/${version}.tar.gz
+  tag: "*"

@@ -9,4 +9,4 @@ versions:
 template:
   from: 3.12.0
   folder: all
-  url: https://github.com/pciutils/pciutils/archive/v${version}.tar.gz
+  tag: v*

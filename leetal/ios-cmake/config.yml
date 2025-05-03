@@ -11,4 +11,4 @@ versions:
 template:
   from: 4.2.0
   folder: all
-  url: https://github.com/leetal/ios-cmake/archive/${version}.zip
+  tag: "*"

@@ -5,4 +5,4 @@ versions:
 template:
   from: 0.6.0
   folder: all
-  url: https://github.com/Tessil/hat-trie/archive/v${version}.tar.gz
+  tag: v*

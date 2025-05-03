@@ -7,4 +7,4 @@ versions:
 template:
   from: 1.9.2
   folder: all
-  url: https://github.com/flann-lib/flann/archive/refs/tags/${version}.tar.gz
+  tag: "*"

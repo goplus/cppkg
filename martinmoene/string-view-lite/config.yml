@@ -15,4 +15,4 @@ versions:
 template:
   from: 1.8.0
   folder: all
-  url: https://github.com/martinmoene/string-view-lite/archive/v${version}.tar.gz
+  tag: v*

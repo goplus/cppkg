@@ -15,4 +15,4 @@ versions:
 template:
   from: 2.1.2
   folder: all
-  url: https://github.com/log4cplus/log4cplus/releases/download/REL_2_1_2/log4cplus-${version}.tar.bz2
+  tag: log4cplus-*

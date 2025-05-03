@@ -5,4 +5,3 @@ versions:
 template:
   from: 5.3.2
   folder: all
-  url: https://github.com/apple/swift-corelibs-libdispatch/archive/swift-${version}-RELEASE.tar.gz

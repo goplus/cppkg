@@ -5,4 +5,4 @@ versions:
 template:
   from: 0.7.1
   folder: all
-  url: https://github.com/Tessil/array-hash/archive/v${version}.tar.gz
+  tag: v*

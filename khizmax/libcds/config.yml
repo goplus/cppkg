@@ -5,4 +5,4 @@ versions:
 template:
   from: 2.3.3
   folder: all
-  url: https://github.com/khizmax/libcds/archive/v${version}.tar.gz
+  tag: v*

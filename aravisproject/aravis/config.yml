@@ -11,4 +11,4 @@ versions:
 template:
   from: 0.8.33
   folder: all
-  url: https://github.com/AravisProject/aravis/releases/download/${version}/aravis-${version}.tar.xz
+  tag: "*"

@@ -5,4 +5,4 @@ versions:
 template:
   from: 2.2.0
   folder: all
-  url: https://github.com/niklasso/minisat/archive/refs/tags/releases/${version}.tar.gz
+  tag: "*"

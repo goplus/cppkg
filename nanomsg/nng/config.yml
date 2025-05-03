@@ -23,4 +23,4 @@ versions:
 template:
   from: 1.9.0
   folder: all
-  url: https://github.com/nanomsg/nng/archive/refs/tags/v${version}.tar.gz
+  tag: v*

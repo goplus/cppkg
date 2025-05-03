@@ -9,4 +9,4 @@ versions:
 template:
   from: 0.9.3
   folder: all
-  url: https://github.com/awslabs/aws-c-http/archive/v${version}.tar.gz
+  tag: v*

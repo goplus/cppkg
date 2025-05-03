@@ -13,4 +13,4 @@ versions:
 template:
   from: 2.2.9
   folder: all
-  url: https://github.com/ned14/outcome/archive/v${version}.tar.gz
+  tag: v*

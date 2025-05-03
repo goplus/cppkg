@@ -9,4 +9,4 @@ versions:
 template:
   from: 2.3.5
   folder: all
-  url: https://github.com/beltoforion/muparser/archive/refs/tags/v${version}.tar.gz
+  tag: v*

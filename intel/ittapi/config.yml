@@ -11,4 +11,4 @@ versions:
 template:
   from: 3.25.5
   folder: all
-  url: https://github.com/intel/ittapi/archive/v${version}.tar.gz
+  tag: v*

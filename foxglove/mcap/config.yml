@@ -31,4 +31,4 @@ versions:
 template:
   from: 1.4.1
   folder: all
-  url: https://github.com/foxglove/mcap/archive/refs/tags/releases/cpp/v${version}.tar.gz
+  tag: v*

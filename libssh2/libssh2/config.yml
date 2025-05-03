@@ -15,4 +15,4 @@ versions:
 template:
   from: 1.11.1
   folder: all
-  url: https://github.com/libssh2/libssh2/releases/download/libssh2-${version}/libssh2-${version}.tar.xz
+  tag: libssh2-*

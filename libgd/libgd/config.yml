@@ -13,4 +13,4 @@ versions:
 template:
   from: 2.3.3
   folder: all
-  url: https://github.com/libgd/libgd/archive/gd-${version}.tar.gz
+  tag: gd-*

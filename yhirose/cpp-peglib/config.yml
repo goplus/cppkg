@@ -33,4 +33,4 @@ versions:
 template:
   from: 1.9.1
   folder: 1.x.x
-  url: https://github.com/yhirose/cpp-peglib/archive/v${version}.tar.gz
+  tag: v*

@@ -5,4 +5,4 @@ versions:
 template:
   from: 8.13.42
   folder: all
-  url: https://github.com/google/libphonenumber/archive/refs/tags/v${version}.tar.gz
+  tag: v*

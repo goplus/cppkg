@@ -11,4 +11,4 @@ versions:
 template:
   from: 1.0.5
   folder: all
-  url: https://github.com/xyz347/xpack/archive/v${version}.tar.gz
+  tag: v*

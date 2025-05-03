@@ -11,4 +11,4 @@ versions:
 template:
   from: 3.13.5
   folder: all
-  url: https://github.com/embree/embree/archive/refs/tags/v${version}.tar.gz
+  tag: v*

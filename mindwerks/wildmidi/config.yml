@@ -5,4 +5,4 @@ versions:
 template:
   from: 0.4.5
   folder: all
-  url: https://github.com/Mindwerks/wildmidi/releases/download/wildmidi-${version}/wildmidi-${version}.tar.gz
+  tag: wildmidi-*

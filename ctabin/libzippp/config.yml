@@ -15,4 +15,3 @@ versions:
 template:
   from: "4.0"
   folder: all
-  url: https://github.com/ctabin/libzippp/archive/libzippp-v${version}-1.7.3.tar.gz

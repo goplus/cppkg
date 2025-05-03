@@ -9,4 +9,4 @@ versions:
 template:
   from: 5.0.1
   folder: all
-  url: https://github.com/capstone-engine/capstone/archive/refs/tags/${version}.tar.gz
+  tag: "*"

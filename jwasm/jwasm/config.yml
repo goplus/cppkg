@@ -5,4 +5,4 @@ versions:
 template:
   from: "2.13"
   folder: all
-  url: https://github.com/JWasm/JWasm/archive/${version}.tar.gz
+  tag: "*"

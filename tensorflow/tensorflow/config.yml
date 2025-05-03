@@ -9,4 +9,4 @@ versions:
 template:
   from: 2.15.0
   folder: all
-  url: https://github.com/tensorflow/tensorflow/archive/refs/tags/v${version}.tar.gz
+  tag: v*

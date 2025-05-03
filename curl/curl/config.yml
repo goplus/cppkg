@@ -29,4 +29,4 @@ versions:
 template:
   from: 8.12.1
   folder: all
-  url: https://github.com/curl/curl/releases/download/curl-8_12_1/curl-${version}.tar.xz
+  tag: curl-*

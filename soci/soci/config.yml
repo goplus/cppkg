@@ -5,4 +5,4 @@ versions:
 template:
   from: 4.0.3
   folder: all
-  url: https://github.com/SOCI/soci/archive/v${version}.tar.gz
+  tag: v*

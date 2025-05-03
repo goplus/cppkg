@@ -17,4 +17,4 @@ versions:
 template:
   from: 2.5.18.0
   folder: all
-  url: https://github.com/AcademySoftwareFoundation/OpenImageIO/archive/refs/tags/v${version}.tar.gz
+  tag: v*

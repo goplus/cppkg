@@ -7,4 +7,4 @@ versions:
 template:
   from: "1.23"
   folder: all
-  url: https://github.com/google/leveldb/archive/${version}.tar.gz
+  tag: "*"

@@ -11,4 +11,4 @@ versions:
 template:
   from: 1.85.0
   folder: all
-  url: https://github.com/DanBloomberg/leptonica/archive/${version}.tar.gz
+  tag: "*"

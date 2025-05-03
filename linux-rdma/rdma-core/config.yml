@@ -9,4 +9,4 @@ versions:
 template:
   from: "52.0"
   folder: all
-  url: https://github.com/linux-rdma/rdma-core/releases/download/v${version}/rdma-core-${version}.tar.gz
+  tag: v*

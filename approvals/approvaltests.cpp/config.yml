@@ -21,4 +21,4 @@ versions:
 template:
   from: 10.13.0
   folder: all
-  url: https://github.com/approvals/ApprovalTests.cpp/releases/download/v.${version}/ApprovalTests.v.${version}.hpp
+  tag: v.*

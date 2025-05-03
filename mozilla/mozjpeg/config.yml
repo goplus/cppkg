@@ -13,4 +13,4 @@ versions:
 template:
   from: 4.1.5
   folder: all
-  url: https://github.com/mozilla/mozjpeg/archive/v${version}.tar.gz
+  tag: v*

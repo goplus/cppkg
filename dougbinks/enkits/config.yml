@@ -9,4 +9,4 @@ versions:
 template:
   from: "1.11"
   folder: all
-  url: https://github.com/dougbinks/enkiTS/archive/v${version}.tar.gz
+  tag: v*

@@ -19,4 +19,4 @@ versions:
 template:
   from: 3.11.0
   folder: all
-  url: https://github.com/mongodb/mongo-cxx-driver/releases/download/r${version}/mongo-cxx-driver-r${version}.tar.gz
+  tag: r*

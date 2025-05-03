@@ -13,4 +13,4 @@ versions:
 template:
   from: 3.12.3
   folder: all
-  url: https://github.com/simdjson/simdjson/archive/v${version}.tar.gz
+  tag: v*

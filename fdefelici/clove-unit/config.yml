@@ -19,4 +19,4 @@ versions:
 template:
   from: 2.4.6
   folder: all
-  url: https://github.com/fdefelici/clove-unit/archive/v${version}.tar.gz
+  tag: v*

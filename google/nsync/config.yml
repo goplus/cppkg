@@ -19,4 +19,4 @@ versions:
 template:
   from: 1.29.2
   folder: all
-  url: https://github.com/google/nsync/archive/${version}.tar.gz
+  tag: "*"

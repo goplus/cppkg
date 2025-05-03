@@ -11,4 +11,4 @@ versions:
 template:
   from: 1.7.1
   folder: all
-  url: https://github.com/OSGeo/libgeotiff/releases/download/${version}/libgeotiff-${version}.tar.gz
+  tag: "*"

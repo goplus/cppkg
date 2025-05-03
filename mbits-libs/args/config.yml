@@ -5,4 +5,4 @@ versions:
 template:
   from: 0.12.3
   folder: all
-  url: https://github.com/mbits-libs/args/archive/v${version}.tar.gz
+  tag: v*

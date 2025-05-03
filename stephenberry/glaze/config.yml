@@ -35,4 +35,4 @@ versions:
 template:
   from: 5.0.2
   folder: all
-  url: https://github.com/stephenberry/glaze/archive/v${version}.tar.gz
+  tag: v*

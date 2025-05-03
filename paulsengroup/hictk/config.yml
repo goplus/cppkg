@@ -9,4 +9,4 @@ versions:
 template:
   from: 2.0.2
   folder: all
-  url: https://github.com/paulsengroup/hictk/archive/refs/tags/v${version}.tar.gz
+  tag: v*

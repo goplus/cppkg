@@ -5,4 +5,4 @@ versions:
 template:
   from: 1.1.9
   folder: all
-  url: https://github.com/symisc/unqlite/archive/refs/tags/v${version}.tar.gz
+  tag: v*

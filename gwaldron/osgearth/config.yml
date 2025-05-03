@@ -7,4 +7,4 @@ versions:
 template:
   from: "3.3"
   folder: all
-  url: https://github.com/gwaldron/osgearth/archive/refs/tags/osgearth-${version}.tar.gz
+  tag: osgearth-*

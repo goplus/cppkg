@@ -11,4 +11,4 @@ versions:
 template:
   from: 0.5.2
   folder: all
-  url: https://github.com/aklomp/base64/archive/v${version}.tar.gz
+  tag: v*

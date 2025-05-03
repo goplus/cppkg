@@ -9,4 +9,4 @@ versions:
 template:
   from: 0.60.7
   folder: all
-  url: https://github.com/coin-or/Cgl/archive/releases/${version}.tar.gz
+  tag: "*"

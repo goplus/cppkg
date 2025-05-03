@@ -9,4 +9,4 @@ versions:
 template:
   from: "2.16"
   folder: all
-  url: https://github.com/mm2/Little-CMS/releases/download/lcms${version}/lcms2-${version}.tar.gz
+  tag: lcms*

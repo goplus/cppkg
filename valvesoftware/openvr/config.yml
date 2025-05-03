@@ -9,4 +9,4 @@ versions:
 template:
   from: 1.16.8
   folder: all
-  url: https://github.com/ValveSoftware/openvr/archive/refs/tags/v${version}.tar.gz
+  tag: v*

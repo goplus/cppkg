@@ -7,4 +7,4 @@ versions:
 template:
   from: 0.9.16
   folder: all
-  url: https://github.com/metayeti/mINI/archive/refs/tags/${version}.tar.gz
+  tag: "*"

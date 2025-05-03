@@ -21,4 +21,4 @@ versions:
 template:
   from: 4.2.1
   folder: all
-  url: https://github.com/RoaringBitmap/CRoaring/archive/refs/tags/v${version}.tar.gz
+  tag: v*

@@ -11,4 +11,4 @@ versions:
 template:
   from: 2.4.0
   folder: all
-  url: https://github.com/h4tr3d/avcpp/archive/refs/tags/v${version}.tar.gz
+  tag: v*

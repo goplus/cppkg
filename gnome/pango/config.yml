@@ -19,4 +19,4 @@ versions:
 template:
   from: 1.50.7
   folder: all
-  url: https://github.com/GNOME/pango/archive/${version}.tar.gz
+  tag: "*"

@@ -25,4 +25,4 @@ versions:
 template:
   from: 2.0.21
   folder: 2.x
-  url: https://github.com/eclipse/mosquitto/archive/v${version}.tar.gz
+  tag: v*

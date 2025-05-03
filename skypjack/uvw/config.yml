@@ -17,4 +17,3 @@ versions:
 template:
   from: 3.4.0
   folder: all
-  url: https://github.com/skypjack/uvw/archive/v${version}_libuv_v1.48.tar.gz

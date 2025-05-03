@@ -15,4 +15,4 @@ versions:
 template:
   from: "22.11"
   folder: all
-  url: https://github.com/seladb/PcapPlusPlus/archive/v${version}.tar.gz
+  tag: v*

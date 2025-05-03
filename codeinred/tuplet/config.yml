@@ -11,4 +11,4 @@ versions:
 template:
   from: 2.1.1
   folder: all
-  url: https://github.com/codeinred/tuplet/archive/v${version}.tar.gz
+  tag: v*

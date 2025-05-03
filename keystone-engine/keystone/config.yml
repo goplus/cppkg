@@ -5,4 +5,4 @@ versions:
 template:
   from: 0.9.2
   folder: all
-  url: https://github.com/keystone-engine/keystone/archive/refs/tags/${version}.tar.gz
+  tag: "*"

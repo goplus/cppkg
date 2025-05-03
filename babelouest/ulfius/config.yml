@@ -5,4 +5,4 @@ versions:
 template:
   from: 2.7.11
   folder: all
-  url: https://github.com/babelouest/ulfius/archive/refs/tags/v${version}.tar.gz
+  tag: v*

@@ -25,4 +25,4 @@ versions:
 template:
   from: 14.0.6
   folder: all
-  url: https://github.com/llvm/llvm-project/releases/download/llvmorg-${version}/openmp-${version}.src.tar.xz
+  tag: llvmorg-*

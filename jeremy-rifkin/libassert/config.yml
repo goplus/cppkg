@@ -25,4 +25,4 @@ versions:
 template:
   from: 2.1.4
   folder: v2
-  url: https://github.com/jeremy-rifkin/libassert/archive/refs/tags/v${version}.tar.gz
+  tag: v*

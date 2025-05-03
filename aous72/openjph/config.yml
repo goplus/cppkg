@@ -9,4 +9,4 @@ versions:
 template:
   from: 0.18.0
   folder: all
-  url: https://github.com/aous72/OpenJPH/archive/${version}.tar.gz
+  tag: "*"

@@ -13,4 +13,4 @@ versions:
 template:
   from: "0.385"
   folder: all
-  url: https://github.com/vcrhonek/hwdata/archive/v${version}.tar.gz
+  tag: v*

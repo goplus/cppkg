@@ -21,4 +21,4 @@ versions:
 template:
   from: 3.5.3
   folder: all
-  url: https://github.com/godotengine/godot-headers/archive/godot-${version}-stable.tar.gz
+  tag: godot-*-stable

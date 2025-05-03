@@ -25,4 +25,4 @@ versions:
 template:
   from: 1.4.0
   folder: all
-  url: https://github.com/cross-language-cpp/djinni-generator/releases/download/v${version}/djinni
+  tag: v*

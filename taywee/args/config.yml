@@ -23,4 +23,4 @@ versions:
 template:
   from: 6.4.6
   folder: all
-  url: https://github.com/Taywee/args/archive/${version}.tar.gz
+  tag: "*"

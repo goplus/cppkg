@@ -17,4 +17,4 @@ versions:
 template:
   from: 4.0.5
   folder: all
-  url: https://github.com/nemtrif/utfcpp/archive/v${version}.tar.gz
+  tag: v*

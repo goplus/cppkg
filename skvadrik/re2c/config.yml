@@ -9,4 +9,4 @@ versions:
 template:
   from: 4.0.2
   folder: all
-  url: https://github.com/skvadrik/re2c/releases/download/${version}/re2c-${version}.tar.xz
+  tag: "*"

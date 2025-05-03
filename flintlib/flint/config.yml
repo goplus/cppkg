@@ -11,4 +11,4 @@ versions:
 template:
   from: 3.0.1
   folder: all
-  url: https://github.com/flintlib/flint/releases/download/v${version}/flint-${version}.tar.xz
+  tag: v*

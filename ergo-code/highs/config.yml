@@ -11,4 +11,4 @@ versions:
 template:
   from: 1.10.0
   folder: all
-  url: https://github.com/ERGO-Code/HiGHS/releases/download/v${version}/source-archive.tar.gz
+  tag: v*

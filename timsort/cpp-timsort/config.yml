@@ -21,4 +21,4 @@ versions:
 template:
   from: 3.0.0
   folder: all
-  url: https://github.com/timsort/cpp-TimSort/archive/v${version}.tar.gz
+  tag: v*

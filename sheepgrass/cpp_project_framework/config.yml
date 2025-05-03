@@ -5,4 +5,4 @@ versions:
 template:
   from: 1.0.0
   folder: all
-  url: https://github.com/sheepgrass/cpp_project_framework/archive/${version}.tar.gz
+  tag: "*"

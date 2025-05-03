@@ -5,4 +5,4 @@ versions:
 template:
   from: 0.5.2
   folder: all
-  url: https://github.com/jgaa/logfault/archive/refs/tags/v${version}.tar.gz
+  tag: v*

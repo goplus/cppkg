@@ -27,4 +27,4 @@ versions:
 template:
   from: 1.14.5
   folder: all
-  url: https://github.com/HDFGroup/hdf5/archive/refs/tags/hdf5_${version}.tar.gz
+  tag: hdf5_*

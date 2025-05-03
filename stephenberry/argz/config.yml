@@ -5,4 +5,4 @@ versions:
 template:
   from: 0.2.1
   folder: all
-  url: https://github.com/stephenberry/argz/archive/refs/tags/v${version}.tar.gz
+  tag: v*

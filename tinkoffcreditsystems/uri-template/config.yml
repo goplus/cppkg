@@ -7,4 +7,4 @@ versions:
 template:
   from: 1.2.1
   folder: all
-  url: https://github.com/TinkoffCreditSystems/uri-template/archive/refs/tags/v${version}.tar.gz
+  tag: v*

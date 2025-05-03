@@ -11,4 +11,4 @@ versions:
 template:
   from: "5.5"
   folder: all
-  url: https://github.com/raysan5/raylib/archive/refs/tags/${version}.tar.gz
+  tag: "*"

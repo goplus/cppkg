@@ -7,4 +7,4 @@ versions:
 template:
   from: 5.2.1
   folder: all
-  url: https://github.com/KarypisLab/METIS/archive/refs/tags/v${version}.tar.gz
+  tag: v*

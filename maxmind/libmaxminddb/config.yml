@@ -15,4 +15,4 @@ versions:
 template:
   from: 1.12.2
   folder: all
-  url: https://github.com/maxmind/libmaxminddb/releases/download/${version}/libmaxminddb-${version}.tar.gz
+  tag: "*"

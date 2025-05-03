@@ -9,4 +9,4 @@ versions:
 template:
   from: 0.4.0
   folder: all
-  url: https://github.com/martinmoene/any-lite/archive/v${version}.tar.gz
+  tag: v*

@@ -9,4 +9,4 @@ versions:
 template:
   from: "4.2"
   folder: all
-  url: https://github.com/borglab/gtsam/archive/refs/tags/${version}.tar.gz
+  tag: "*"

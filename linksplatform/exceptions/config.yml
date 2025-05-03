@@ -9,4 +9,4 @@ versions:
 template:
   from: 0.5.0
   folder: all
-  url: https://github.com/linksplatform/Exceptions/archive/csharp_${version}.tar.gz
+  tag: csharp_*

@@ -5,4 +5,4 @@ versions:
 template:
   from: "5.13"
   folder: all
-  url: https://github.com/torvalds/linux/archive/refs/tags/v${version}.tar.gz
+  tag: v*

@@ -9,4 +9,3 @@ versions:
 template:
   from: 24.04.00
   folder: all
-  url: https://github.com/rapidsai/rmm/archive/v${version}a.tar.gz

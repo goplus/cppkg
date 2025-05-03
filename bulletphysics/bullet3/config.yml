@@ -23,4 +23,4 @@ versions:
 template:
   from: "3.25"
   folder: all
-  url: https://github.com/bulletphysics/bullet3/archive/refs/tags/${version}.tar.gz
+  tag: "*"

@@ -9,4 +9,4 @@ versions:
 template:
   from: 2.4.0
   folder: all
-  url: https://github.com/jerryscript-project/jerryscript/archive/v${version}.zip
+  tag: v*

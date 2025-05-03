@@ -23,4 +23,4 @@ versions:
 template:
   from: 2.4.1
   folder: all
-  url: https://github.com/eranpeer/FakeIt/archive/${version}.tar.gz
+  tag: "*"

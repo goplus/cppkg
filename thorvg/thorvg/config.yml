@@ -17,4 +17,4 @@ versions:
 template:
   from: 0.15.9
   folder: all
-  url: https://github.com/thorvg/thorvg/archive/refs/tags/v${version}.tar.gz
+  tag: v*

@@ -17,4 +17,4 @@ versions:
 template:
   from: 1.18.0
   folder: all
-  url: https://github.com/open-telemetry/opentelemetry-cpp/archive/v${version}.tar.gz
+  tag: v*

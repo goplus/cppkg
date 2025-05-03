@@ -13,4 +13,4 @@ versions:
 template:
   from: 1.79.0
   folder: all
-  url: https://github.com/boostorg/hana/archive/boost-${version}.tar.gz
+  tag: boost-*

@@ -13,4 +13,4 @@ versions:
 template:
   from: "333"
   folder: all
-  url: https://github.com/cjlin1/libsvm/archive/v${version}.tar.gz
+  tag: v*

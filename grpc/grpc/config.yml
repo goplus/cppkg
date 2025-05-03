@@ -15,4 +15,4 @@ versions:
 template:
   from: 1.69.0
   folder: all
-  url: https://github.com/grpc/grpc/archive/v${version}.tar.gz
+  tag: v*

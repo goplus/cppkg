@@ -21,4 +21,4 @@ versions:
 template:
   from: 0.10.0
   folder: all
-  url: https://github.com/ibireme/yyjson/archive/refs/tags/${version}.tar.gz
+  tag: "*"

@@ -9,4 +9,4 @@ versions:
 template:
   from: 0.9.97
   folder: all
-  url: https://github.com/RealTimeChris/Jsonifier/archive/refs/tags/v${version}.tar.gz
+  tag: v*

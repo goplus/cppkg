@@ -37,4 +37,4 @@ versions:
 template:
   from: "7.21"
   folder: all
-  url: https://github.com/herumi/xbyak/archive/v${version}.tar.gz
+  tag: v*

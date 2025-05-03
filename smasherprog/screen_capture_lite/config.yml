@@ -15,4 +15,4 @@ versions:
 template:
   from: 17.1.1369
   folder: all
-  url: https://github.com/smasherprog/screen_capture_lite/archive/refs/tags/${version}.tar.gz
+  tag: "*"

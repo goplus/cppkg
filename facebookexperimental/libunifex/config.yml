@@ -5,4 +5,4 @@ versions:
 template:
   from: 0.4.0
   folder: all
-  url: https://github.com/facebookexperimental/libunifex/archive/refs/tags/v${version}.tar.gz
+  tag: v*

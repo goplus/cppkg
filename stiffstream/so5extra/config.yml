@@ -17,4 +17,4 @@ versions:
 template:
   from: 1.6.1
   folder: all
-  url: https://github.com/Stiffstream/so5extra/archive/v.${version}.tar.gz
+  tag: v.*

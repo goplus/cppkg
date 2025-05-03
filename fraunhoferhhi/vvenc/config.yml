@@ -11,4 +11,4 @@ versions:
 template:
   from: 1.12.0
   folder: all
-  url: https://github.com/fraunhoferhhi/vvenc/archive/refs/tags/v${version}.tar.gz
+  tag: v*

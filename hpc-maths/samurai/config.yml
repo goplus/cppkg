@@ -19,4 +19,4 @@ versions:
 template:
   from: 0.16.0
   folder: all
-  url: https://github.com/hpc-maths/samurai/archive/v${version}.tar.gz
+  tag: v*

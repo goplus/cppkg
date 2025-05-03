@@ -27,4 +27,3 @@ versions:
 template:
   from: 1.13.3
   folder: all
-  url: https://github.com/pocoproject/poco/archive/poco-${version}-release.tar.gz

@@ -31,4 +31,4 @@ versions:
 template:
   from: "1.23"
   folder: all
-  url: https://github.com/ebiggers/libdeflate/archive/refs/tags/v${version}.tar.gz
+  tag: v*

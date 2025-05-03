@@ -19,4 +19,4 @@ versions:
 template:
   from: 0.14.0
   folder: all
-  url: https://github.com/symengine/symengine/archive/refs/tags/v${version}.tar.gz
+  tag: v*

@@ -11,4 +11,4 @@ versions:
 template:
   from: 1.0.9
   folder: all
-  url: https://github.com/QuTech-Delft/tree-gen/archive/refs/tags/${version}.tar.gz
+  tag: "*"

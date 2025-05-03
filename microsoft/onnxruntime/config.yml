@@ -13,4 +13,4 @@ versions:
 template:
   from: 1.18.1
   folder: all
-  url: https://github.com/microsoft/onnxruntime/archive/refs/tags/v${version}.tar.gz
+  tag: v*

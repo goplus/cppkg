@@ -41,4 +41,4 @@ versions:
 template:
   from: 1.7.2
   folder: all
-  url: https://github.com/mesonbuild/meson/archive/${version}.tar.gz
+  tag: "*"

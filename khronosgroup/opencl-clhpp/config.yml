@@ -25,4 +25,4 @@ versions:
 template:
   from: 2023.12.14
   folder: all
-  url: https://github.com/KhronosGroup/OpenCL-CLHPP/archive/refs/tags/v${version}.tar.gz
+  tag: v*

@@ -15,4 +15,4 @@ versions:
 template:
   from: 2.5.3
   folder: all
-  url: https://github.com/uclouvain/openjpeg/archive/refs/tags/v${version}.tar.gz
+  tag: v*

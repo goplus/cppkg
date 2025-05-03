@@ -29,4 +29,4 @@ versions:
 template:
   from: 3.9.0
   folder: all
-  url: https://github.com/hanickadot/compile-time-regular-expressions/archive/v${version}.tar.gz
+  tag: v*

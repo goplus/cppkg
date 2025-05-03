@@ -7,4 +7,4 @@ versions:
 template:
   from: "1.24"
   folder: all
-  url: https://github.com/tronkko/dirent/archive/${version}.tar.gz
+  tag: "*"

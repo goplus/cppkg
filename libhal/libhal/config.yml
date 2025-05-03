@@ -9,4 +9,4 @@ versions:
 template:
   from: 2.2.0
   folder: all
-  url: https://github.com/libhal/libhal/archive/refs/tags/${version}.tar.gz
+  tag: "*"

@@ -23,4 +23,4 @@ versions:
 template:
   from: "2.8"
   folder: all
-  url: https://github.com/axboe/liburing/archive/liburing-${version}.tar.gz
+  tag: liburing-*

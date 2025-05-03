@@ -11,4 +11,4 @@ versions:
 template:
   from: 1.0.13
   folder: all
-  url: https://github.com/fribidi/fribidi/archive/v${version}.tar.gz
+  tag: v*

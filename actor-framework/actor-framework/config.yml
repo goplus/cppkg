@@ -11,4 +11,4 @@ versions:
 template:
   from: 1.0.2
   folder: all
-  url: https://github.com/actor-framework/actor-framework/archive/${version}.tar.gz
+  tag: "*"

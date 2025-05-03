@@ -21,4 +21,4 @@ versions:
 template:
   from: "1.13"
   folder: all
-  url: https://github.com/jkuhlmann/cgltf/archive/v${version}.tar.gz
+  tag: v*

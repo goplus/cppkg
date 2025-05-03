@@ -7,4 +7,4 @@ versions:
 template:
   from: 2.14.0
   folder: all
-  url: https://github.com/nanodbc/nanodbc/archive/v${version}.tar.gz
+  tag: v*

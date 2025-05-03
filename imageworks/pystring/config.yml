@@ -7,4 +7,4 @@ versions:
 template:
   from: 1.1.4
   folder: all
-  url: https://github.com/imageworks/pystring/archive/refs/tags/v${version}.tar.gz
+  tag: v*

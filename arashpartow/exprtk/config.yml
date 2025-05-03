@@ -9,4 +9,4 @@ versions:
 template:
   from: 0.0.3
   folder: all
-  url: https://github.com/ArashPartow/exprtk/archive/${version}.tar.gz
+  tag: "*"

@@ -11,4 +11,4 @@ versions:
 template:
   from: 0.11.8
   folder: all
-  url: https://github.com/HdrHistogram/HdrHistogram_c/archive/${version}.tar.gz
+  tag: "*"

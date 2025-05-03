@@ -7,4 +7,4 @@ versions:
 template:
   from: "4.0"
   folder: all
-  url: https://github.com/jonasmr/microprofile/archive/refs/tags/v${version}.tar.gz
+  tag: v*

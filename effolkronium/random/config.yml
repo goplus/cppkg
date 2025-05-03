@@ -11,4 +11,4 @@ versions:
 template:
   from: 1.5.0
   folder: all
-  url: https://github.com/effolkronium/random/archive/v${version}.tar.gz
+  tag: v*

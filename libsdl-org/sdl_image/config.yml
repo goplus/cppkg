@@ -7,4 +7,4 @@ versions:
 template:
   from: 2.8.2
   folder: all
-  url: https://github.com/libsdl-org/SDL_image/releases/download/release-${version}/SDL2_image-${version}.tar.gz
+  tag: release-*

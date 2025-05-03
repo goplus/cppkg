@@ -13,4 +13,4 @@ versions:
 template:
   from: 3.2.0
   folder: all
-  url: https://github.com/jarro2783/cxxopts/archive/refs/tags/v${version}.tar.gz
+  tag: v*

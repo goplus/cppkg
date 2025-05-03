@@ -9,4 +9,4 @@ versions:
 template:
   from: 0.11.0
   folder: all
-  url: https://github.com/crossdb-org/crossdb/archive/refs/tags/${version}.tar.gz
+  tag: "*"

@@ -15,4 +15,4 @@ versions:
 template:
   from: 1.18.0
   folder: all
-  url: https://github.com/kthohr/gcem/archive/v${version}.tar.gz
+  tag: v*

@@ -11,4 +11,4 @@ versions:
 template:
   from: 2.2.0
   folder: all
-  url: https://github.com/GM2Calc/GM2Calc/archive/v${version}.tar.gz
+  tag: v*

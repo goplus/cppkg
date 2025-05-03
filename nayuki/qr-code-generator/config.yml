@@ -13,4 +13,4 @@ versions:
 template:
   from: 1.8.0
   folder: all
-  url: https://github.com/nayuki/QR-Code-generator/archive/v${version}.tar.gz
+  tag: v*

@@ -19,4 +19,4 @@ versions:
 template:
   from: 1.9.1
   folder: all
-  url: https://github.com/fnc12/sqlite_orm/archive/refs/tags/v${version}.tar.gz
+  tag: v*

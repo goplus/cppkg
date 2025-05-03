@@ -13,4 +13,4 @@ versions:
 template:
   from: 2.0.10
   folder: all
-  url: https://github.com/arvidn/libtorrent/releases/download/v${version}/libtorrent-rasterbar-${version}.tar.gz
+  tag: v*

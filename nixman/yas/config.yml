@@ -9,4 +9,4 @@ versions:
 template:
   from: 7.1.0
   folder: all
-  url: https://github.com/niXman/yas/archive/${version}.zip
+  tag: "*"

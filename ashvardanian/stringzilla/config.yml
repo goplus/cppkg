@@ -27,4 +27,4 @@ versions:
 template:
   from: 3.11.3
   folder: all
-  url: https://github.com/ashvardanian/StringZilla/archive/refs/tags/v${version}.tar.gz
+  tag: v*

@@ -15,4 +15,4 @@ versions:
 template:
   from: 2.9.0
   folder: all
-  url: https://github.com/JuliaStrings/utf8proc/archive/v${version}.tar.gz
+  tag: v*

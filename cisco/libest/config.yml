@@ -5,4 +5,4 @@ versions:
 template:
   from: 3.2.0
   folder: all
-  url: https://github.com/cisco/libest/archive/r${version}.tar.gz
+  tag: r*

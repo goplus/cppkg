@@ -13,4 +13,4 @@ versions:
 template:
   from: 8.16.0
   folder: all
-  url: https://github.com/libvips/libvips/releases/download/v${version}/vips-${version}.tar.xz
+  tag: v*

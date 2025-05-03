@@ -13,4 +13,3 @@ versions:
 template:
   from: "0.18"
   folder: all
-  url: https://github.com/json-c/json-c/archive/json-c-${version}-20240915.tar.gz

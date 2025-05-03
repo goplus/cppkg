@@ -15,4 +15,4 @@ versions:
 template:
   from: 4.10.0
   folder: all
-  url: https://github.com/zeromq/cppzmq/archive/refs/tags/v${version}.tar.gz
+  tag: v*

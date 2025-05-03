@@ -29,4 +29,4 @@ versions:
 template:
   from: 18.0.0
   folder: all
-  url: https://github.com/bytecodealliance/wasmtime-cpp/archive/v${version}.tar.gz
+  tag: v*

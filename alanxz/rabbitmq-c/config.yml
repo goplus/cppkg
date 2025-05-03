@@ -15,4 +15,4 @@ versions:
 template:
   from: 0.15.0
   folder: all
-  url: https://github.com/alanxz/rabbitmq-c/archive/v${version}.tar.gz
+  tag: v*

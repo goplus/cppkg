@@ -7,4 +7,4 @@ versions:
 template:
   from: 2.5.31
   folder: all
-  url: https://github.com/gphoto/libgphoto2/releases/download/v${version}/libgphoto2-${version}.tar.xz
+  tag: v*

@@ -5,4 +5,4 @@ versions:
 template:
   from: "1.1"
   folder: all
-  url: https://github.com/meekrosoft/fff/archive/refs/tags/v${version}.zip
+  tag: v*

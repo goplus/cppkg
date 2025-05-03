@@ -5,4 +5,4 @@ versions:
 template:
   from: 2.0.0.1
   folder: all
-  url: https://github.com/libb64/libb64/archive/refs/tags/v${version}.tar.gz
+  tag: v*

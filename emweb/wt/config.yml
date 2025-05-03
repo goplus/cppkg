@@ -19,4 +19,4 @@ versions:
 template:
   from: 4.11.2
   folder: all
-  url: https://github.com/emweb/wt/archive/${version}.tar.gz
+  tag: "*"

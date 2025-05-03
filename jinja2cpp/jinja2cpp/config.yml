@@ -9,4 +9,4 @@ versions:
 template:
   from: 1.3.2
   folder: all
-  url: https://github.com/jinja2cpp/Jinja2Cpp/archive/${version}.tar.gz
+  tag: "*"

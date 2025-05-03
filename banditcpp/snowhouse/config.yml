@@ -5,4 +5,4 @@ versions:
 template:
   from: 5.0.0
   folder: all
-  url: https://github.com/banditcpp/snowhouse/archive/v${version}.tar.gz
+  tag: v*

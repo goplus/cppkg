@@ -9,4 +9,4 @@ versions:
 template:
   from: 9.5.0
   folder: all
-  url: https://github.com/OSGeo/PROJ/releases/download/${version}/proj-${version}.tar.gz
+  tag: "*"

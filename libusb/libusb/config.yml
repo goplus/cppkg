@@ -11,4 +11,4 @@ versions:
 template:
   from: 1.0.26
   folder: all
-  url: https://github.com/libusb/libusb/releases/download/v${version}/libusb-${version}.tar.bz2
+  tag: v*

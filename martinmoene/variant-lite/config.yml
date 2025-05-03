@@ -7,4 +7,4 @@ versions:
 template:
   from: 2.0.0
   folder: all
-  url: https://github.com/martinmoene/variant-lite/archive/v${version}.tar.gz
+  tag: v*

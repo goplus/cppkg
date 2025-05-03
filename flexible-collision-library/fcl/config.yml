@@ -7,4 +7,4 @@ versions:
 template:
   from: 0.7.0
   folder: all
-  url: https://github.com/flexible-collision-library/fcl/archive/refs/tags/${version}.tar.gz
+  tag: "*"
