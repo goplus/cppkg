@@ -89,7 +89,7 @@ func startRevertProxy(endpoint string, f rpFunc, log *stdlog.Logger) (_ *revertP
 			if resp == nil {
 				resp, err = http.DefaultTransport.RoundTrip(req)
 			}
-			if resp.Body != nil {
+			if err == nil && resp.Body != nil {
 				resp.Body = &teeReader{
 					rc:   resp.Body,
 					req:  req,

@@ -13,6 +13,7 @@ import (
 	"time"
 
 	"github.com/goccy/go-yaml"
+	"github.com/goplus/cppkg/cmd/internal/github"
 	"github.com/qiniu/x/httputil"
 )
 
@@ -57,14 +58,14 @@ func (p *Manager) Install(pkg *Package, flags int) (err error) {
 	os.MkdirAll(outDir, os.ModePerm)
 
 	var rev string
-	var gr *githubRelease
+	var gr *github.Release
 	var conandataYml, conanfilePy []byte
 
 	conanfileDir := p.conanfileDir(pkg.Path, pkg.Folder)
 	pkgVer := pkg.Version
 	template := pkg.Template
 	if template != nil {
-		gr, err = githubReleaseGet(pkg.Path, "v"+pkg.Version)
+		gr, err = github.GetRelease(pkg.Path, "v"+pkg.Version)
 		if err != nil {
 			return
 		}
@@ -214,7 +215,7 @@ func conanInstall(pkg, outDir, conanfileDir string, out io.Writer, flags int) (e
 	return
 }
 
-func recipeRevision(_ *Package, _ *githubRelease, conandataYml []byte) string {
+func recipeRevision(_ *Package, _ *github.Release, conandataYml []byte) string {
 	return md5Of(conandataYml)
 }
 

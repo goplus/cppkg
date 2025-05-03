@@ -40,7 +40,7 @@ type version struct {
 type Template struct {
 	FromVer string `yaml:"from"`
 	Folder  string `yaml:"folder"`
-	URL     string `yaml:"url"`
+	Tag     string `yaml:"tag,omitempty"` // pattern with *, empty if dynamic tag
 }
 
 type config struct {
