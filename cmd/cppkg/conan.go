@@ -1,6 +1,8 @@
 package main
 
 import (
+	"crypto/md5"
+	"encoding/hex"
 	"errors"
 	"io"
 	"net/http"
@@ -9,6 +11,7 @@ import (
 	"strings"
 
 	"github.com/goccy/go-yaml"
+	"github.com/qiniu/x/httputil"
 )
 
 var conanCmd = NewCommand("conan", []string{
@@ -51,10 +54,18 @@ func (p *Manager) Install(pkg *Package, flags int) (err error) {
 	outDir := p.outDir(pkg)
 	os.MkdirAll(outDir, os.ModePerm)
 
+	var rev string
+	var gr *githubRelease
+
 	conanfileDir := p.conanfileDir(pkg.Path, pkg.Folder)
 	pkgVer := pkg.Version
 	template := pkg.Template
 	if template != nil {
+		gr, err = githubReleaseGet(pkg.Path, "v"+pkg.Version)
+		if err != nil {
+			return
+		}
+
 		err = copyDirR(conanfileDir, outDir)
 		if err != nil {
 			return
@@ -85,6 +96,7 @@ func (p *Manager) Install(pkg *Package, flags int) (err error) {
 		if err != nil {
 			return
 		}
+		rev = recipeRevision(pkg, gr, b)
 		conanfileDir = outDir
 	}
 
@@ -96,14 +108,37 @@ func (p *Manager) Install(pkg *Package, flags int) (err error) {
 		out = os.Stdout
 	}
 
+	nameAndVer := pkg.Name + "/" + pkgVer
 	if template == nil {
-		return conanInstall(pkg.Name+"/"+pkgVer, outDir, conanfileDir, out, flags)
+		return conanInstall(nameAndVer, outDir, conanfileDir, out, flags)
 	}
 
 	logFile := outDir + "/rp.log"
 	return remoteProxy(flags, logFile, func() error {
-		return conanInstall(pkg.Name+"/"+pkgVer, outDir, conanfileDir, out, flags)
+		return conanInstall(nameAndVer, outDir, conanfileDir, out, flags)
 	}, func(mux *http.ServeMux, next http.RoundTripper) {
+		base := "/v2/conans/" + nameAndVer
+		revbase := base + "/_/_/revisions/" + rev
+		mux.HandleFunc(base+"/_/_/latest", func(w http.ResponseWriter, r *http.Request) {
+			h := w.Header()
+			h.Set("Cache-Control", "public,max-age=300")
+			httputil.Reply(w, http.StatusOK, map[string]any{
+				"revision": rev,
+				"time":     gr.PublishedAt,
+			})
+		})
+		mux.HandleFunc(revbase+"/files", func(w http.ResponseWriter, r *http.Request) {
+			h := w.Header()
+			h.Set("Cache-Control", "public,max-age=3600")
+			empty := map[string]any{}
+			httputil.Reply(w, http.StatusOK, map[string]any{
+				"files": map[string]any{
+					"conan_export.tgz":  empty,
+					"conanmanifest.txt": empty,
+					"conanfile.py":      empty,
+				},
+			})
+		})
 	})
 }
 
@@ -135,6 +170,12 @@ func conanInstall(pkg, outDir, conanfileDir string, out io.Writer, flags int) (e
 	cmd.Stdout = out
 	err = cmd.Run()
 	return
+}
+
+func recipeRevision(_ *Package, _ *githubRelease, conandata []byte) string {
+	h := md5.New()
+	h.Write(conandata)
+	return hex.EncodeToString(h.Sum(nil))
 }
 
 func copyDirR(srcDir, destDir string) error {
