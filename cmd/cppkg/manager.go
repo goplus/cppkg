@@ -64,6 +64,7 @@ var (
 const (
 	IndexAutoUpdate = 1 << iota
 	ToolQuietInstall
+	LogRevertProxy
 )
 
 func (p *Manager) Lookup(pkgPath, ver string, flags int) (_ *Package, err error) {
