@@ -45,8 +45,38 @@ func (p *teeReader) Close() error {
 	return err
 }
 
+type response struct {
+	httptest.ResponseRecorder
+	resp *http.Response
+}
+
+func replyResponse(w http.ResponseWriter, resp *http.Response) {
+	w.(*response).resp = resp
+}
+
+func newResponse() *response {
+	return &response{
+		ResponseRecorder: httptest.ResponseRecorder{
+			HeaderMap: make(http.Header),
+			Body:      new(bytes.Buffer),
+			Code:      200,
+		},
+	}
+}
+
+func (p *response) Result() *http.Response {
+	if p.resp != nil {
+		return p.resp
+	}
+	return p.ResponseRecorder.Result()
+}
+
 type revertProxy = httptest.Server
-type rpFunc = func(mux *http.ServeMux, next http.RoundTripper)
+type rpFunc = func(mux *http.ServeMux)
+
+const (
+	passThrough = http.StatusNotFound
+)
 
 func startRevertProxy(endpoint string, f rpFunc, log *stdlog.Logger) (_ *revertProxy, err error) {
 	rpURL, err := url.Parse(endpoint)
@@ -56,11 +86,10 @@ func startRevertProxy(endpoint string, f rpFunc, log *stdlog.Logger) (_ *revertP
 	if log == nil {
 		log = stdlog.Default()
 	}
-	var next = http.DefaultTransport
 	var mux *http.ServeMux
 	if f != nil {
 		mux = http.NewServeMux()
-		f(mux, next)
+		f(mux)
 	}
 	proxy := httptest.NewServer(&httputil.ReverseProxy{
 		Rewrite: func(r *httputil.ProxyRequest) {
@@ -68,14 +97,14 @@ func startRevertProxy(endpoint string, f rpFunc, log *stdlog.Logger) (_ *revertP
 		},
 		Transport: rtHandler(func(req *http.Request) (resp *http.Response, err error) {
 			if mux != nil {
-				rec := httptest.NewRecorder()
-				mux.ServeHTTP(rec, req)
-				if rec.Code != http.StatusNotFound {
-					resp = rec.Result()
+				w := newResponse()
+				mux.ServeHTTP(w, req)
+				if w.Code != passThrough {
+					resp = w.Result()
 				}
 			}
 			if resp == nil {
-				resp, err = next.RoundTrip(req)
+				resp, err = http.DefaultTransport.RoundTrip(req)
 			}
 			if resp.Body != nil {
 				resp.Body = &teeReader{

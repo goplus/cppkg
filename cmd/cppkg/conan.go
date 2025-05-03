@@ -116,7 +116,7 @@ func (p *Manager) Install(pkg *Package, flags int) (err error) {
 	logFile := outDir + "/rp.log"
 	return remoteProxy(flags, logFile, func() error {
 		return conanInstall(nameAndVer, outDir, conanfileDir, out, flags)
-	}, func(mux *http.ServeMux, next http.RoundTripper) {
+	}, func(mux *http.ServeMux) {
 		base := "/v2/conans/" + nameAndVer
 		revbase := base + "/_/_/revisions/" + rev
 		mux.HandleFunc(base+"/_/_/latest", func(w http.ResponseWriter, r *http.Request) {
@@ -138,6 +138,32 @@ func (p *Manager) Install(pkg *Package, flags int) (err error) {
 					"conanfile.py":      empty,
 				},
 			})
+		})
+		mux.HandleFunc(revbase+"/files/conanfile.py", func(w http.ResponseWriter, r *http.Request) {
+			b, err := os.ReadFile(outDir + "/conanfile.py")
+			if err != nil {
+				w.WriteHeader(passThrough)
+				return
+			}
+			h := w.Header()
+			h.Set("Cache-Control", "public,max-age=3600")
+			h.Set("Content-Disposition", `attachment; filename="conanfile.py"`)
+			httputil.ReplyWith(w, http.StatusOK, "text/x-python", b)
+		})
+		mux.HandleFunc(revbase+"/files/conan_export.tgz", func(w http.ResponseWriter, r *http.Request) {
+			ga := gr.asset(".gz")
+			if ga != nil {
+				resp, err := http.Get(ga.BrowserDownloadURL)
+				if err == nil {
+					h := resp.Header
+					h.Set("Cache-Control", "public,max-age=3600")
+					h.Set("Content-Disposition", `attachment; filename="conan_export.tgz"`)
+					h.Set("Content-Type", "application/x-gzip")
+					replyResponse(w, resp)
+					return
+				}
+			}
+			w.WriteHeader(passThrough)
 		})
 	})
 }
