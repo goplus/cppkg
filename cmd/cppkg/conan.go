@@ -122,23 +122,10 @@ func (p *Manager) Install(pkg *Package, flags int) (err error) {
 		return conanInstall(nameAndVer, outDir, conanfileDir, out, flags)
 	}
 
-	mtime, err := unixTime(gr.PublishedAt)
-	if err != nil {
-		return
+	logFile := ""
+	if flags&LogRevertProxy != 0 {
+		logFile = outDir + "/rp.log"
 	}
-
-	cmd := exec.Command("tar", "-czf", "conan_export.tgz", "conandata.yml")
-	cmd.Dir = outDir
-	err = cmd.Run()
-	if err != nil {
-		return
-	}
-	conanExportTgz, err := os.ReadFile(outDir + "/conan_export.tgz")
-	if err != nil {
-		return
-	}
-
-	logFile := outDir + "/rp.log"
 	return remoteProxy(flags, logFile, func() error {
 		return conanInstall(nameAndVer, outDir, conanfileDir, out, flags)
 	}, func(mux *http.ServeMux) {
@@ -172,6 +159,11 @@ func (p *Manager) Install(pkg *Package, flags int) (err error) {
 		})
 		const conanmanifest = "%d\nconandata.yml: %s\nconanfile.py: %s\n"
 		mux.HandleFunc(revbase+"/files/conanmanifest.txt", func(w http.ResponseWriter, r *http.Request) {
+			mtime, err := unixTime(gr.PublishedAt)
+			if err != nil {
+				replyError(w, err)
+				return
+			}
 			h := w.Header()
 			h.Set("Cache-Control", "public,max-age=3600")
 			h.Set("Content-Disposition", `attachment; filename="conanmanifest.txt"`)
@@ -179,6 +171,11 @@ func (p *Manager) Install(pkg *Package, flags int) (err error) {
 			httputil.ReplyWithStream(w, http.StatusOK, "text/plain", strings.NewReader(data), int64(len(data)))
 		})
 		mux.HandleFunc(revbase+"/files/conan_export.tgz", func(w http.ResponseWriter, r *http.Request) {
+			conanExportTgz, err := tgzOfConandata(outDir)
+			if err != nil {
+				replyError(w, err)
+				return
+			}
 			h := w.Header()
 			h.Set("Cache-Control", "public,max-age=3600")
 			h.Set("Content-Disposition", `attachment; filename="conan_export.tgz"`)
@@ -225,6 +222,16 @@ func md5Of(data []byte) string {
 	h := md5.New()
 	h.Write(data)
 	return hex.EncodeToString(h.Sum(nil))
+}
+
+func tgzOfConandata(outDir string) (_ []byte, err error) {
+	cmd := exec.Command("tar", "-czf", "conan_export.tgz", "conandata.yml")
+	cmd.Dir = outDir
+	err = cmd.Run()
+	if err != nil {
+		return
+	}
+	return os.ReadFile(outDir + "/conan_export.tgz")
 }
 
 func unixTime(tstr string) (ret int64, err error) {

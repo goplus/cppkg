@@ -36,12 +36,14 @@ func (p *teeReader) Read(b []byte) (n int, err error) {
 
 func (p *teeReader) Close() error {
 	err := p.rc.Close()
-	resp := *p.resp
-	resp.Body = io.NopCloser(&p.b)
-	var b bytes.Buffer
-	p.req.Write(&b)
-	resp.Write(&b)
-	p.log.Print(b.String())
+	if log := p.log; log != nil {
+		resp := *p.resp
+		resp.Body = io.NopCloser(&p.b)
+		var b bytes.Buffer
+		p.req.Write(&b)
+		resp.Write(&b)
+		log.Print(b.String())
+	}
 	return err
 }
 
@@ -58,13 +60,14 @@ const (
 	passThrough = http.StatusNotFound
 )
 
+func replyError(w http.ResponseWriter, _ error) {
+	w.WriteHeader(passThrough)
+}
+
 func startRevertProxy(endpoint string, f rpFunc, log *stdlog.Logger) (_ *revertProxy, err error) {
 	rpURL, err := url.Parse(endpoint)
 	if err != nil {
 		return
-	}
-	if log == nil {
-		log = stdlog.Default()
 	}
 	var mux *http.ServeMux
 	if f != nil {
@@ -110,7 +113,7 @@ type remoteList []struct {
 	URL  string `json:"url"`
 }
 
-func remoteProxy(flags int, logfile string, f func() error, rpf rpFunc) (err error) {
+func remoteProxy(flags int, logFile string, f func() error, rpf rpFunc) (err error) {
 	quietInstall := flags&ToolQuietInstall != 0
 	app, err := conanCmd.Get(quietInstall)
 	if err != nil {
@@ -135,8 +138,8 @@ func remoteProxy(flags int, logfile string, f func() error, rpf rpFunc) (err err
 	}()
 
 	var log *stdlog.Logger
-	if logfile != "" {
-		f, err := os.Create(logfile)
+	if logFile != "" {
+		f, err := os.Create(logFile)
 		if err == nil {
 			defer f.Close()
 			log = stdlog.New(f, "", stdlog.LstdFlags)
