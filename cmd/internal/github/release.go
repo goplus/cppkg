@@ -48,8 +48,8 @@ type Release struct {
 	Prerelease      bool            `json:"prerelease"`
 }
 
-// ReleaseURL constructs the URL for a GitHub release.
-func ReleaseURL(pkgPath, ver string) string {
+// releaseURL constructs the URL for a GitHub release.
+func releaseURL(pkgPath, ver string) string {
 	if ver == "" || ver == "latest" {
 		return "https://api.github.com/repos/" + pkgPath + "/releases/latest"
 	}
@@ -58,7 +58,7 @@ func ReleaseURL(pkgPath, ver string) string {
 
 // GetRelease fetches the release information from GitHub.
 func GetRelease(pkgPath, ver string) (ret *Release, err error) {
-	url := ReleaseURL(pkgPath, ver)
+	url := releaseURL(pkgPath, ver)
 	resp, err := http.Get(url)
 	if err != nil {
 		return
@@ -67,40 +67,3 @@ func GetRelease(pkgPath, ver string) (ret *Release, err error) {
 	err = json.NewDecoder(resp.Body).Decode(ret)
 	return
 }
-
-/*
-// Commit represents a commit in a GitHub repository.
-type Commit struct {
-	SHA string `json:"sha"`
-	URL string `json:"url"`
-}
-
-// Tag represents a GitHub tag.
-type Tag struct {
-	Name       string `json:"name"`
-	ZipballURL string `json:"zipball_url"`
-	TarballURL string `json:"tarball_url"`
-	Commit     Commit `json:"commit"`
-	NodeID     string `json:"node_id"`
-}
-
-// TagsURL constructs the URL for fetching tags from a GitHub repository.
-func TagsURL(pkgPath string) string {
-	return "https://api.github.com/repos/" + pkgPath + "/tags"
-}
-
-// GetTags fetches the tags from a GitHub repository.
-func GetTags(pkgPath string, page string) (tags []*Tag, err error) {
-	u := TagsURL(pkgPath)
-	if page != "" {
-		vals := url.Values{"page": []string{page}}
-		u += "?" + vals.Encode()
-	}
-	resp, err := http.Get(u)
-	if err != nil {
-		return
-	}
-	err = json.NewDecoder(resp.Body).Decode(&tags)
-	return
-}
-*/
