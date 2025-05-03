@@ -23,7 +23,7 @@ type config struct {
 type template struct {
 	FromVer string `yaml:"from"`
 	Folder  string `yaml:"folder"`
-	URL     string `yaml:"url"`
+	Tag     string `yaml:"tag,omitempty"` // pattern with *, empty if dynamic tag
 }
 
 type configEx struct {
@@ -53,14 +53,14 @@ func main() {
 	tryCp := func(src map[string]any, ver string, v version) {
 		switch url := src["url"].(type) {
 		case string:
-			if pkgPath, urlPattern, ok := checkGithbPkg(url, ver); ok {
-				cpGithubPkg(pkgName, pkgPath, urlPattern, localDir, conf, ver, v)
+			if pkgPath, tagPattern, ok := checkGithbPkg(url, ver); ok {
+				cpGithubPkg(pkgName, pkgPath, tagPattern, localDir, conf, ver, v)
 			}
 		case []any:
 			for _, u := range url {
 				url := u.(string)
-				if pkgPath, urlPattern, ok := checkGithbPkg(url, ver); ok {
-					cpGithubPkg(pkgName, pkgPath, urlPattern, localDir, conf, ver, v)
+				if pkgPath, tagPattern, ok := checkGithbPkg(url, ver); ok {
+					cpGithubPkg(pkgName, pkgPath, tagPattern, localDir, conf, ver, v)
 				}
 			}
 		default:
@@ -93,7 +93,7 @@ func main() {
 	})
 }
 
-func cpGithubPkg(pkgName, pkgPath, urlPattern, srcDir string, conf config, fromVer string, v version) {
+func cpGithubPkg(pkgName, pkgPath, tagPattern, srcDir string, conf config, fromVer string, v version) {
 	destDir := cppkgRoot() + pkgPath
 	os.MkdirAll(destDir, os.ModePerm)
 
@@ -106,7 +106,7 @@ func cpGithubPkg(pkgName, pkgPath, urlPattern, srcDir string, conf config, fromV
 		Template: template{
 			FromVer: fromVer,
 			Folder:  v.Folder,
-			URL:     urlPattern,
+			Tag:     tagPattern,
 		},
 	}
 	b, err := yaml.Marshal(confex)
@@ -119,22 +119,54 @@ func cpGithubPkg(pkgName, pkgPath, urlPattern, srcDir string, conf config, fromV
 	os.Exit(0)
 }
 
-func checkGithbPkg(url, ver string) (pkgPath, urlPattern string, ok bool) {
+func checkGithbPkg(url, ver string) (pkgPath, tagPattern string, ok bool) {
 	const githubPrefix = "https://github.com/"
-	const pattern = "${version}"
 	if strings.HasPrefix(url, githubPrefix) {
 		path := url[len(githubPrefix):]
-		if pos := strings.Index(path, ver); pos >= 0 {
-			parts := strings.SplitN(path, "/", 3)
-			if len(parts) == 3 {
-				at := len(githubPrefix) + pos
-				ending := url[at+len(ver):]
-				urlPattern = url[:at] + pattern + strings.ReplaceAll(ending, ver, pattern)
-				pkgPath, ok = strings.ToLower(parts[0]+"/"+parts[1]), true
+		parts := strings.SplitN(path, "/", 3)
+		if len(parts) == 3 { // user/repo/xxx
+			if pos := strings.Index(parts[2], ver); pos >= 0 {
+				userRepo := parts[0] + "/" + parts[1]
+				at := len(githubPrefix) + len(userRepo) + 1 + pos
+				tagPattern = tagPatternOf(url, ver, at)
+				pkgPath, ok = strings.ToLower(userRepo), true
 			}
 		}
 	}
 	return
+}
+
+func tagPatternOf(url, ver string, at int) (tagPattern string) {
+	var tag string
+	if pos := strings.LastIndexByte(url[:at], '/'); pos >= 0 {
+		last := at + len(ver)
+		left := url[last:]
+		if end, ok := checkTagEnd(left); ok {
+			pos++
+			tag = url[pos:last]
+			tagPattern = url[pos:at] + end
+		}
+	}
+	if tag == "" {
+		log.Println("[INFO] dynamic tag found:", url)
+	}
+	return
+}
+
+func checkTagEnd(left string) (end string, ok bool) {
+	if n := len(left); n > 0 {
+		if left[0] == '/' {
+			return "*", true
+		}
+		if n >= 4 && left[0] == '.' {
+			ext := left[1:4]
+			return "*", ext == "tar" || ext == "zip" || ext == "tgz"
+		}
+		if strings.HasPrefix(left, "-stable.") {
+			return "*-stable", true
+		}
+	}
+	return "", false
 }
 
 type conandata struct {
