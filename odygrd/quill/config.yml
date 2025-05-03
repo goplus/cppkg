@@ -29,4 +29,4 @@ versions:
 template:
   from: 9.0.2
   folder: all
-  url: https://github.com/odygrd/quill/releases/download/v${version}/quill-${version}.zip
+  tag: v*

@@ -21,4 +21,4 @@ versions:
 template:
   from: "10.44"
   folder: all
-  url: https://github.com/PCRE2Project/pcre2/releases/download/pcre2-${version}/pcre2-${version}.tar.bz2
+  tag: pcre2-*

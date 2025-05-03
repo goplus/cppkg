@@ -7,4 +7,4 @@ versions:
 template:
   from: 1.4.1
   folder: all
-  url: https://github.com/SpartanJ/efsw/archive/refs/tags/${version}.tar.gz
+  tag: "*"

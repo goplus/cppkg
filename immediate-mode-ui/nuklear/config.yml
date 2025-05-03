@@ -21,4 +21,4 @@ versions:
 template:
   from: 4.12.0
   folder: all
-  url: https://github.com/Immediate-Mode-UI/Nuklear/archive/${version}.tar.gz
+  tag: "*"

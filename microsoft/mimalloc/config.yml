@@ -19,4 +19,4 @@ versions:
 template:
   from: 2.1.9
   folder: all
-  url: https://github.com/microsoft/mimalloc/archive/v${version}.tar.gz
+  tag: v*

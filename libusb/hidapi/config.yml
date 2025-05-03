@@ -15,4 +15,4 @@ versions:
 template:
   from: 0.14.0
   folder: all
-  url: https://github.com/libusb/hidapi/archive/hidapi-${version}.tar.gz
+  tag: hidapi-*

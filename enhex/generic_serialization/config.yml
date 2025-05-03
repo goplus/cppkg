@@ -5,4 +5,4 @@ versions:
 template:
   from: 1.0.0
   folder: all
-  url: https://github.com/Enhex/generic_serialization/archive/refs/tags/v${version}.zip
+  tag: v*

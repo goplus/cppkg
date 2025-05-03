@@ -9,4 +9,4 @@ versions:
 template:
   from: 0.10.1
   folder: all
-  url: https://github.com/kaitai-io/kaitai_struct_cpp_stl_runtime/archive/refs/tags/${version}.tar.gz
+  tag: "*"

@@ -17,4 +17,4 @@ versions:
 template:
   from: 3.10.1
   folder: all
-  url: https://github.com/nats-io/nats.c/archive/refs/tags/v${version}.tar.gz
+  tag: v*

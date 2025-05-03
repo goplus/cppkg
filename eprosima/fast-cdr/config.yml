@@ -17,4 +17,4 @@ versions:
 template:
   from: 2.2.5
   folder: all
-  url: https://github.com/eProsima/Fast-CDR/archive/v${version}.tar.gz
+  tag: v*

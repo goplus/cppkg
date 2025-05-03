@@ -7,4 +7,4 @@ versions:
 template:
   from: 1.17.7
   folder: all
-  url: https://github.com/coin-or/Clp/archive/refs/tags/releases/${version}.tar.gz
+  tag: "*"

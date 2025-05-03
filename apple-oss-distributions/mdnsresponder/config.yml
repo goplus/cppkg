@@ -9,4 +9,4 @@ versions:
 template:
   from: 1790.80.10
   folder: all
-  url: https://github.com/apple-oss-distributions/mDNSResponder/archive/mDNSResponder-${version}.tar.gz
+  tag: mDNSResponder-*

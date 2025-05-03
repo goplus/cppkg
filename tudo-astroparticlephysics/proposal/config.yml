@@ -9,4 +9,4 @@ versions:
 template:
   from: 7.6.2
   folder: all
-  url: https://github.com/tudo-astroparticlephysics/PROPOSAL/archive/refs/tags/${version}.tar.gz
+  tag: "*"

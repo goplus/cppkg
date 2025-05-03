@@ -9,4 +9,4 @@ versions:
 template:
   from: 0.79.0
   folder: all
-  url: https://github.com/uncrustify/uncrustify/archive/uncrustify-${version}.tar.gz
+  tag: uncrustify-*

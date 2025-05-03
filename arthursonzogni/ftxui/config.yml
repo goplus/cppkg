@@ -17,4 +17,4 @@ versions:
 template:
   from: 6.0.2
   folder: all
-  url: https://github.com/ArthurSonzogni/FTXUI/archive/refs/tags/v${version}.tar.gz
+  tag: v*

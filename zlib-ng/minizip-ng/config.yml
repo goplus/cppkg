@@ -27,4 +27,4 @@ versions:
 template:
   from: 4.0.7
   folder: all
-  url: https://github.com/zlib-ng/minizip-ng/archive/${version}.tar.gz
+  tag: "*"

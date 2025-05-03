@@ -5,4 +5,4 @@ versions:
 template:
   from: 0.0.42
   folder: all
-  url: https://github.com/embarktrucks/embag/archive/refs/tags/${version}.tar.gz
+  tag: "*"

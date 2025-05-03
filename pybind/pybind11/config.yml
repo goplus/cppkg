@@ -31,4 +31,4 @@ versions:
 template:
   from: 2.13.6
   folder: all
-  url: https://github.com/pybind/pybind11/archive/v${version}.tar.gz
+  tag: v*

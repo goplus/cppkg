@@ -9,4 +9,4 @@ versions:
 template:
   from: 0.3.7
   folder: all
-  url: https://github.com/linksplatform/Delegates/archive/refs/tags/cpp_${version}.tar.gz
+  tag: cpp_*

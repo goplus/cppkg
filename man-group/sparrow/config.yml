@@ -5,4 +5,4 @@ versions:
 template:
   from: 0.5.0
   folder: all
-  url: https://github.com/man-group/sparrow/archive/refs/tags/${version}.tar.gz
+  tag: "*"

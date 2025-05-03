@@ -15,4 +15,4 @@ versions:
 template:
   from: "4.4"
   folder: 4.x
-  url: https://github.com/mikke89/RmlUi/archive/${version}.tar.gz
+  tag: "*"

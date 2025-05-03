@@ -13,4 +13,4 @@ versions:
 template:
   from: 3.3.3
   folder: 3.x
-  url: https://github.com/AcademySoftwareFoundation/openexr/releases/download/v${version}/openexr-${version}.tar.gz
+  tag: v*

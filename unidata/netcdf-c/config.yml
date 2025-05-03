@@ -7,4 +7,4 @@ versions:
 template:
   from: 4.8.1
   folder: all
-  url: https://github.com/Unidata/netcdf-c/archive/v${version}.tar.gz
+  tag: v*

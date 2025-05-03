@@ -13,4 +13,4 @@ versions:
 template:
   from: 0.8.0
   folder: all
-  url: https://github.com/eyalroz/cuda-api-wrappers/archive/refs/tags/v${version}.tar.gz
+  tag: v*

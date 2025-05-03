@@ -7,4 +7,4 @@ versions:
 template:
   from: 1.4.0
   folder: all
-  url: https://github.com/rlogiacco/CircularBuffer/archive/refs/tags/${version}.tar.gz
+  tag: "*"

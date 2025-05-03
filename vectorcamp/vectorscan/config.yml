@@ -5,4 +5,4 @@ versions:
 template:
   from: 5.4.11
   folder: all
-  url: https://github.com/VectorCamp/vectorscan/archive/refs/tags/vectorscan/${version}.tar.gz
+  tag: "*"

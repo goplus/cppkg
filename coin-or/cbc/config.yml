@@ -5,4 +5,4 @@ versions:
 template:
   from: 2.10.5
   folder: all
-  url: https://github.com/coin-or/Cbc/archive/releases/${version}.tar.gz
+  tag: "*"

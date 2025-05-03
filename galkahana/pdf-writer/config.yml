@@ -17,4 +17,4 @@ versions:
 template:
   from: 4.6.7
   folder: all
-  url: https://github.com/galkahana/PDF-Writer/archive/refs/tags/v${version}.tar.gz
+  tag: v*

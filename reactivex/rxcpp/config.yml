@@ -7,4 +7,4 @@ versions:
 template:
   from: 4.1.1
   folder: all
-  url: https://github.com/ReactiveX/RxCpp/archive/v${version}.tar.gz
+  tag: v*

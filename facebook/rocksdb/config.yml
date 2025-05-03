@@ -15,4 +15,4 @@ versions:
 template:
   from: 9.10.0
   folder: all
-  url: https://github.com/facebook/rocksdb/archive/refs/tags/v${version}.tar.gz
+  tag: v*

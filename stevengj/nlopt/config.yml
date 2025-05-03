@@ -13,4 +13,4 @@ versions:
 template:
   from: 2.9.1
   folder: all
-  url: https://github.com/stevengj/nlopt/archive/refs/tags/v${version}.tar.gz
+  tag: v*

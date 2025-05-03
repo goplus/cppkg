@@ -7,4 +7,4 @@ versions:
 template:
   from: 4.3.2
   folder: all
-  url: https://github.com/KhronosGroup/KTX-Software/archive/refs/tags/v${version}.tar.gz
+  tag: v*

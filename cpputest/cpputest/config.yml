@@ -5,4 +5,4 @@ versions:
 template:
   from: "4.0"
   folder: all
-  url: https://github.com/cpputest/cpputest/releases/download/v${version}/cpputest-${version}.tar.gz
+  tag: v*

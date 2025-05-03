@@ -9,4 +9,4 @@ versions:
 template:
   from: 3.4.0
   folder: all
-  url: https://github.com/FreeGLUTProject/freeglut/archive/v${version}.tar.gz
+  tag: v*

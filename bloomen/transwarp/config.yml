@@ -7,4 +7,4 @@ versions:
 template:
   from: 2.2.3
   folder: all
-  url: https://github.com/bloomen/transwarp/archive/${version}.tar.gz
+  tag: "*"

@@ -17,4 +17,4 @@ versions:
 template:
   from: 0.12.1
   folder: all
-  url: https://github.com/jbaldwin/libcoro/archive/refs/tags/v${version}.tar.gz
+  tag: v*

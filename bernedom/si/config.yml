@@ -15,4 +15,4 @@ versions:
 template:
   from: 2.5.3
   folder: all
-  url: https://github.com/bernedom/SI/archive/${version}.tar.gz
+  tag: "*"

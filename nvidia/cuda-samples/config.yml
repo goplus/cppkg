@@ -9,4 +9,4 @@ versions:
 template:
   from: "12.2"
   folder: all
-  url: https://github.com/NVIDIA/cuda-samples/archive/refs/tags/v${version}.tar.gz
+  tag: v*

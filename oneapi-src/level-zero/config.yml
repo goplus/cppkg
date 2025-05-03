@@ -5,4 +5,4 @@ versions:
 template:
   from: 1.17.39
   folder: all
-  url: https://github.com/oneapi-src/level-zero/archive/refs/tags/v${version}.tar.gz
+  tag: v*

@@ -5,4 +5,4 @@ versions:
 template:
   from: 0.9.28
   folder: all
-  url: https://github.com/vlm/asn1c/releases/download/v${version}/asn1c-${version}.tar.gz
+  tag: v*

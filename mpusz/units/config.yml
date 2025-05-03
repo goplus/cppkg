@@ -17,4 +17,4 @@ versions:
 template:
   from: 2.4.0
   folder: 2.3.0
-  url: https://github.com/mpusz/units/archive/v${version}.tar.gz
+  tag: v*

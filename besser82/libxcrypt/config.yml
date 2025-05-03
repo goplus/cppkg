@@ -27,4 +27,4 @@ versions:
 template:
   from: 4.4.36
   folder: all
-  url: https://github.com/besser82/libxcrypt/archive/v${version}.tar.gz
+  tag: v*

@@ -7,4 +7,4 @@ versions:
 template:
   from: 3.8.0
   folder: all
-  url: https://github.com/conorwilliams/libfork/archive/v${version}.tar.gz
+  tag: v*

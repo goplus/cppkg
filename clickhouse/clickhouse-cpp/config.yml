@@ -9,4 +9,4 @@ versions:
 template:
   from: 2.5.1
   folder: all
-  url: https://github.com/ClickHouse/clickhouse-cpp/archive/refs/tags/v${version}.tar.gz
+  tag: v*

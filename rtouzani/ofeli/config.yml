@@ -7,4 +7,4 @@ versions:
 template:
   from: 4.1.2
   folder: 4.x
-  url: https://github.com/rtouzani/ofeli/releases/download/ofeli-${version}/ofeli-${version}.tar.gz
+  tag: ofeli-*

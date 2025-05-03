@@ -7,4 +7,4 @@ versions:
 template:
   from: 2.1.12
   folder: all
-  url: https://github.com/libevent/libevent/archive/release-${version}-stable.tar.gz
+  tag: release-*-stable

@@ -23,4 +23,4 @@ versions:
 template:
   from: 0.3.2
   folder: all
-  url: https://github.com/kuba--/zip/archive/v${version}.tar.gz
+  tag: v*

@@ -9,4 +9,4 @@ versions:
 template:
   from: 0.2.13
   folder: all
-  url: https://github.com/pybind/pybind11_json/archive/${version}.tar.gz
+  tag: "*"

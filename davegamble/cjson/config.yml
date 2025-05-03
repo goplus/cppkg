@@ -17,4 +17,4 @@ versions:
 template:
   from: 1.7.18
   folder: all
-  url: https://github.com/DaveGamble/cJSON/archive/v${version}.tar.gz
+  tag: v*

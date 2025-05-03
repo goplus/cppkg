@@ -17,4 +17,4 @@ versions:
 template:
   from: 1.1.12
   folder: all
-  url: https://github.com/boost-ext/sml/archive/refs/tags/v${version}.tar.gz
+  tag: v*

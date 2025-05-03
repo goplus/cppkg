@@ -21,4 +21,4 @@ versions:
 template:
   from: 2.36.0
   folder: all
-  url: https://github.com/rui314/mold/archive/refs/tags/v${version}.tar.gz
+  tag: v*

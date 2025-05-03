@@ -9,4 +9,4 @@ versions:
 template:
   from: 2.09.06
   folder: all
-  url: https://github.com/electronicarts/EABase/archive/refs/heads/${version}.zip
+  tag: "*"

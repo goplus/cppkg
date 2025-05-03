@@ -5,4 +5,4 @@ versions:
 template:
   from: 2.0.3
   folder: all
-  url: https://github.com/evgeniums/cpp-validator/archive/refs/tags/v${version}.tar.gz
+  tag: v*

@@ -9,4 +9,4 @@ versions:
 template:
   from: 1.22.10
   folder: all
-  url: https://github.com/strasdat/Sophus/archive/refs/tags/${version}.tar.gz
+  tag: "*"

@@ -9,4 +9,4 @@ versions:
 template:
   from: 0.1.5
   folder: all
-  url: https://github.com/tudo-astroparticlephysics/cubic_interpolation/archive/v${version}.tar.gz
+  tag: v*

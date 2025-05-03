@@ -15,4 +15,4 @@ versions:
 template:
   from: 4.13.1
   folder: all
-  url: https://github.com/antlr/antlr4/archive/refs/tags/${version}.tar.gz
+  tag: "*"

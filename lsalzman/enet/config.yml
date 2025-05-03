@@ -9,4 +9,4 @@ versions:
 template:
   from: 1.3.18
   folder: all
-  url: https://github.com/lsalzman/enet/archive/refs/tags/v${version}.tar.gz
+  tag: v*

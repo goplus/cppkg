@@ -17,4 +17,4 @@ versions:
 template:
   from: 0.2.12
   folder: all
-  url: https://github.com/Forceflow/libmorton/archive/v${version}.tar.gz
+  tag: v*

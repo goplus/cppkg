@@ -11,4 +11,4 @@ versions:
 template:
   from: 0.8.3
   folder: all
-  url: https://github.com/Cyan4973/xxHash/archive/v${version}.tar.gz
+  tag: v*

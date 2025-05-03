@@ -5,4 +5,4 @@ versions:
 template:
   from: 1.9.1amzncdi1.0
   folder: all
-  url: https://github.com/aws/libfabric/archive/refs/tags/${version}.tar.gz
+  tag: "*"

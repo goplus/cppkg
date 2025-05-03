@@ -9,4 +9,4 @@ versions:
 template:
   from: 0.9.1
   folder: all
-  url: https://github.com/recp/cglm/archive/v${version}.tar.gz
+  tag: v*

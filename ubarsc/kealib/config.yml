@@ -9,4 +9,4 @@ versions:
 template:
   from: 1.5.2
   folder: all
-  url: https://github.com/ubarsc/kealib/archive/refs/tags/kealib-${version}.tar.gz
+  tag: kealib-*

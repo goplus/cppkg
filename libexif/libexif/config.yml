@@ -7,4 +7,4 @@ versions:
 template:
   from: 0.6.24
   folder: all
-  url: https://github.com/libexif/libexif/releases/download/v${version}/libexif-${version}.tar.bz2
+  tag: v*

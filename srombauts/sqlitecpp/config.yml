@@ -9,4 +9,4 @@ versions:
 template:
   from: 3.3.2
   folder: all
-  url: https://github.com/SRombauts/SQLiteCpp/archive/${version}.tar.gz
+  tag: "*"

@@ -9,4 +9,4 @@ versions:
 template:
   from: 0.0.5
   folder: all
-  url: https://github.com/pistacheio/pistache/archive/refs/tags/${version}.tar.gz
+  tag: "*"

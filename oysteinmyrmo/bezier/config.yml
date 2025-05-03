@@ -5,4 +5,4 @@ versions:
 template:
   from: 0.2.1
   folder: all
-  url: https://github.com/oysteinmyrmo/bezier/archive/refs/tags/v${version}.tar.gz
+  tag: v*

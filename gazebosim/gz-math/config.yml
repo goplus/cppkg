@@ -7,4 +7,4 @@ versions:
 template:
   from: 6.10.0
   folder: all
-  url: https://github.com/gazebosim/gz-math/archive/ignition-math6_${version}.tar.gz
+  tag: ignition-math6_*

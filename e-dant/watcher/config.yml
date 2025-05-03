@@ -19,4 +19,4 @@ versions:
 template:
   from: 0.12.0
   folder: all
-  url: https://github.com/e-dant/watcher/archive/release/${version}.tar.gz
+  tag: "*"

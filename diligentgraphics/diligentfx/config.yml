@@ -13,4 +13,4 @@ versions:
 template:
   from: 2.5.2
   folder: all
-  url: https://github.com/DiligentGraphics/DiligentFX/archive/refs/tags/v${version}.tar.gz
+  tag: v*

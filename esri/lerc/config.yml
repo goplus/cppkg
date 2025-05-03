@@ -13,4 +13,4 @@ versions:
 template:
   from: 4.0.4
   folder: all
-  url: https://github.com/Esri/lerc/archive/js_v${version}.tar.gz
+  tag: js_v*

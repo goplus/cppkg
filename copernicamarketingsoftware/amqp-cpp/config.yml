@@ -11,4 +11,4 @@ versions:
 template:
   from: 4.3.26
   folder: all
-  url: https://github.com/CopernicaMarketingSoftware/AMQP-CPP/archive/v${version}.tar.gz
+  tag: v*

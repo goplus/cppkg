@@ -19,4 +19,4 @@ versions:
 template:
   from: 2.0.0
   folder: all
-  url: https://github.com/Kistler-Group/sdbus-cpp/archive/v${version}.tar.gz
+  tag: v*

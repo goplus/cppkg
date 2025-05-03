@@ -13,4 +13,4 @@ versions:
 template:
   from: 1.12.1
   folder: all
-  url: https://github.com/ninja-build/ninja/archive/v${version}.tar.gz
+  tag: v*

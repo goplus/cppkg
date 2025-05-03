@@ -11,4 +11,4 @@ versions:
 template:
   from: 2.17.1
   folder: all
-  url: https://github.com/datastax/cpp-driver/archive/${version}.tar.gz
+  tag: "*"

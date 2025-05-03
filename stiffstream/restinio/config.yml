@@ -15,4 +15,4 @@ versions:
 template:
   from: 0.7.2
   folder: v0.7
-  url: https://github.com/Stiffstream/restinio/archive/v.${version}.tar.gz
+  tag: v.*

@@ -7,4 +7,4 @@ versions:
 template:
   from: 2.2.0
   folder: all
-  url: https://github.com/libsdl-org/SDL_net/releases/download/release-${version}/SDL2_net-${version}.tar.gz
+  tag: release-*

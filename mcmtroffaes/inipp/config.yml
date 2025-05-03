@@ -5,4 +5,4 @@ versions:
 template:
   from: 1.0.12
   folder: all
-  url: https://github.com/mcmtroffaes/inipp/archive/refs/tags/${version}.tar.gz
+  tag: "*"

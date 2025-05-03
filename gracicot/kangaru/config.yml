@@ -11,4 +11,4 @@ versions:
 template:
   from: 4.3.2
   folder: all
-  url: https://github.com/gracicot/kangaru/archive/v${version}.tar.gz
+  tag: v*

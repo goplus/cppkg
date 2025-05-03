@@ -7,4 +7,4 @@ versions:
 template:
   from: 0.2.0
   folder: all
-  url: https://github.com/martinmoene/scope-lite/archive/v${version}.tar.gz
+  tag: v*

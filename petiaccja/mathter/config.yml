@@ -13,4 +13,4 @@ versions:
 template:
   from: 2.0.0
   folder: all
-  url: https://github.com/petiaccja/Mathter/archive/v${version}.tar.gz
+  tag: v*

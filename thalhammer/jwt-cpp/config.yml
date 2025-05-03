@@ -17,4 +17,4 @@ versions:
 template:
   from: 0.7.1
   folder: all
-  url: https://github.com/Thalhammer/jwt-cpp/archive/v${version}.tar.gz
+  tag: v*

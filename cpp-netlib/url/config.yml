@@ -7,4 +7,4 @@ versions:
 template:
   from: 1.13.0
   folder: all
-  url: https://github.com/cpp-netlib/url/archive/v${version}.tar.gz
+  tag: v*

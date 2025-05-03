@@ -5,4 +5,4 @@ versions:
 template:
   from: 2.3.2
   folder: all
-  url: https://github.com/rrthomas/enchant/releases/download/v${version}/enchant-${version}.tar.gz
+  tag: v*

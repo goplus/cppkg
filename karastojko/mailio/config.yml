@@ -13,4 +13,4 @@ versions:
 template:
   from: 0.24.1
   folder: all
-  url: https://github.com/karastojko/mailio/archive/refs/tags/${version}.tar.gz
+  tag: "*"

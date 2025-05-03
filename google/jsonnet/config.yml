@@ -11,4 +11,4 @@ versions:
 template:
   from: 0.20.0
   folder: all
-  url: https://github.com/google/jsonnet/archive/v${version}.tar.gz
+  tag: v*

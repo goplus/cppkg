@@ -9,4 +9,4 @@ versions:
 template:
   from: 3.4.0
   folder: all
-  url: https://github.com/OpenSimulationInterface/open-simulation-interface/archive/refs/tags/v${version}.tar.gz
+  tag: v*

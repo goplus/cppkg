@@ -5,4 +5,4 @@ versions:
 template:
   from: 5.0.0-alpha15
   folder: 5.x
-  url: https://github.com/premake/premake-core/releases/download/v${version}/premake-${version}-src.zip
+  tag: v*

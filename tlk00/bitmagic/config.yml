@@ -21,4 +21,4 @@ versions:
 template:
   from: 7.13.4
   folder: all
-  url: https://github.com/tlk00/BitMagic/archive/refs/tags/v${version}.tar.gz
+  tag: v*

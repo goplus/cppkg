@@ -5,4 +5,4 @@ versions:
 template:
   from: 0.2.2
   folder: all
-  url: https://github.com/CD3/BoostUnitDefinitions/archive/refs/tags/${version}.tar.gz
+  tag: "*"

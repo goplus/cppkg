@@ -15,4 +15,4 @@ versions:
 template:
   from: 1.0.4.0
   folder: all
-  url: https://github.com/chronoxor/CppCommon/archive/${version}.tar.gz
+  tag: "*"

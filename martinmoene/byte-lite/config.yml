@@ -5,4 +5,4 @@ versions:
 template:
   from: 0.3.0
   folder: all
-  url: https://github.com/martinmoene/byte-lite/archive/v${version}.tar.gz
+  tag: v*

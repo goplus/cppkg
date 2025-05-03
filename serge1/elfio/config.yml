@@ -13,4 +13,4 @@ versions:
 template:
   from: "3.12"
   folder: all
-  url: https://github.com/serge1/ELFIO/releases/download/Release_${version}/elfio-${version}.tar.gz
+  tag: Release_*

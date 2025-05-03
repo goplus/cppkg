@@ -11,4 +11,4 @@ versions:
 template:
   from: 1.4.4
   folder: all
-  url: https://github.com/ddemidov/amgcl/archive/${version}.tar.gz
+  tag: "*"

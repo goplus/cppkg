@@ -9,4 +9,4 @@ versions:
 template:
   from: "42"
   folder: all
-  url: https://github.com/SimonKagstrom/kcov/archive/refs/tags/v${version}.tar.gz
+  tag: v*

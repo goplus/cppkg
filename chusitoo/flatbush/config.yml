@@ -9,4 +9,4 @@ versions:
 template:
   from: 1.2.1
   folder: all
-  url: https://github.com/chusitoo/flatbush/archive/refs/tags/v${version}.zip
+  tag: v*

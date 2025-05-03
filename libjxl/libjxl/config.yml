@@ -11,4 +11,4 @@ versions:
 template:
   from: 0.11.1
   folder: all
-  url: https://github.com/libjxl/libjxl/archive/v${version}.tar.gz
+  tag: v*

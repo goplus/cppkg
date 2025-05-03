@@ -9,4 +9,4 @@ versions:
 template:
   from: 0.12.0
   folder: all
-  url: https://github.com/chfast/intx/archive/v${version}.tar.gz
+  tag: v*

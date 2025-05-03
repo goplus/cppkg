@@ -5,4 +5,4 @@ versions:
 template:
   from: 1.1.1
   folder: all
-  url: https://github.com/werto87/confu_json/archive/refs/tags/v${version}.tar.gz
+  tag: v*

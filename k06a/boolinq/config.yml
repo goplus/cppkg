@@ -11,4 +11,4 @@ versions:
 template:
   from: 3.0.4
   folder: all
-  url: https://github.com/k06a/boolinq/archive/${version}.tar.gz
+  tag: "*"

@@ -5,4 +5,4 @@ versions:
 template:
   from: 4.7.6
   folder: all
-  url: https://github.com/vrogier/ocilib/releases/download/v${version}/ocilib-${version}-gnu.tar.gz
+  tag: v*

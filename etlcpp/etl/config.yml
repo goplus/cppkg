@@ -9,4 +9,4 @@ versions:
 template:
   from: 20.40.0
   folder: all
-  url: https://github.com/ETLCPP/etl/archive/refs/tags/${version}.tar.gz
+  tag: "*"

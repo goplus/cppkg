@@ -5,4 +5,4 @@ versions:
 template:
   from: 4.3.0
   folder: all
-  url: https://github.com/CGNS/CGNS/archive/v${version}.tar.gz
+  tag: v*

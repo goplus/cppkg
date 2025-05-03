@@ -13,4 +13,4 @@ versions:
 template:
   from: "2.4"
   folder: all
-  url: https://github.com/geographiclib/geographiclib/archive/refs/tags/v${version}.tar.gz
+  tag: v*

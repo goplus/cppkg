@@ -19,4 +19,4 @@ versions:
 template:
   from: 0.9.0
   folder: all
-  url: https://github.com/Viatorus/emio/archive/${version}.tar.gz
+  tag: "*"

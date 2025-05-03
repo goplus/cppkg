@@ -7,4 +7,4 @@ versions:
 template:
   from: 3.3.0
   folder: all
-  url: https://github.com/seqan/seqan3/releases/download/${version}/seqan3-${version}-Source.tar.xz
+  tag: "*"

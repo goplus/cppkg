@@ -7,4 +7,4 @@ versions:
 template:
   from: 0.23.92
   folder: all
-  url: https://github.com/mchehab/zbar/archive/refs/tags/${version}.tar.gz
+  tag: "*"

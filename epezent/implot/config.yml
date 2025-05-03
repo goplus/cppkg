@@ -15,4 +15,4 @@ versions:
 template:
   from: "0.16"
   folder: all
-  url: https://github.com/epezent/implot/archive/v${version}.tar.gz
+  tag: v*

@@ -15,4 +15,4 @@ versions:
 template:
   from: 5.5.0
   folder: all
-  url: https://github.com/tesseract-ocr/tesseract/archive/${version}.tar.gz
+  tag: "*"

@@ -13,4 +13,4 @@ versions:
 template:
   from: 1.0.0-beta.14
   folder: all
-  url: https://github.com/taocpp/json/archive/${version}.tar.gz
+  tag: "*"

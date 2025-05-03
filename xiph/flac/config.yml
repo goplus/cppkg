@@ -11,4 +11,4 @@ versions:
 template:
   from: 1.5.0
   folder: all
-  url: https://github.com/xiph/flac/releases/download/${version}/flac-${version}.tar.xz
+  tag: "*"

@@ -13,4 +13,4 @@ versions:
 template:
   from: 19.24.2
   folder: all
-  url: https://github.com/davisking/dlib/archive/v${version}.tar.gz
+  tag: v*

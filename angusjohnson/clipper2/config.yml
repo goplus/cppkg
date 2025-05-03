@@ -13,4 +13,4 @@ versions:
 template:
   from: 1.4.0
   folder: all
-  url: https://github.com/AngusJohnson/Clipper2/archive/refs/tags/Clipper2_${version}.tar.gz
+  tag: Clipper2_*

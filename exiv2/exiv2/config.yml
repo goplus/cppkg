@@ -11,4 +11,4 @@ versions:
 template:
   from: 0.28.3
   folder: all
-  url: https://github.com/Exiv2/exiv2/archive/refs/tags/v${version}.tar.gz
+  tag: v*

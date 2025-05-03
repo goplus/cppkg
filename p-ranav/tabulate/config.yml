@@ -11,4 +11,4 @@ versions:
 template:
   from: "1.5"
   folder: all
-  url: https://github.com/p-ranav/tabulate/archive/v${version}.tar.gz
+  tag: v*

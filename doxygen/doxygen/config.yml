@@ -9,4 +9,3 @@ versions:
 template:
   from: 1.13.2
   folder: all
-  url: https://github.com/doxygen/doxygen/releases/download/Release_1_13_2/doxygen-${version}.src.tar.gz

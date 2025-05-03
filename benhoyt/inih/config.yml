@@ -15,4 +15,4 @@ versions:
 template:
   from: "58"
   folder: all
-  url: https://github.com/benhoyt/inih/archive/r${version}.tar.gz
+  tag: r*

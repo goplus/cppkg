@@ -21,4 +21,4 @@ versions:
 template:
   from: "0.667"
   folder: all
-  url: https://github.com/Roblox/luau/archive/${version}.tar.gz
+  tag: "*"

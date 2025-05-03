@@ -9,4 +9,4 @@ versions:
 template:
   from: "2024.1"
   folder: all
-  url: https://github.com/google/shaderc/archive/refs/tags/v${version}.tar.gz
+  tag: v*

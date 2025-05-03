@@ -5,4 +5,4 @@ versions:
 template:
   from: 1.0.2
   folder: all
-  url: https://github.com/sgieseking/anyrpc/archive/refs/tags/v${version}.tar.gz
+  tag: v*

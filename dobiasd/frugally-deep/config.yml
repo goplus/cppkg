@@ -15,4 +15,4 @@ versions:
 template:
   from: 0.17.1
   folder: all
-  url: https://github.com/Dobiasd/frugally-deep/archive/v${version}.tar.gz
+  tag: v*

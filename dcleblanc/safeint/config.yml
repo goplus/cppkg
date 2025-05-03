@@ -11,4 +11,4 @@ versions:
 template:
   from: "3.24"
   folder: all
-  url: https://github.com/dcleblanc/SafeInt/archive/${version}.tar.gz
+  tag: "*"

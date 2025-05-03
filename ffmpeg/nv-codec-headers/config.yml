@@ -11,4 +11,4 @@ versions:
 template:
   from: 9.1.23.2
   folder: all
-  url: https://github.com/FFmpeg/nv-codec-headers/releases/download/n${version}/nv-codec-headers-${version}.tar.gz
+  tag: n*

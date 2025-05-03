@@ -5,4 +5,4 @@ versions:
 template:
   from: 0.7.7
   folder: all
-  url: https://github.com/dmtx/libdmtx/archive/refs/tags/v${version}.tar.gz
+  tag: v*

@@ -9,4 +9,4 @@ versions:
 template:
   from: 1.0.1
   folder: all
-  url: https://github.com/LLNL/zfp/archive/${version}.tar.gz
+  tag: "*"

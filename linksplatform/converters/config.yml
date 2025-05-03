@@ -7,4 +7,4 @@ versions:
 template:
   from: 0.4.0
   folder: all
-  url: https://github.com/linksplatform/Converters/archive/csharp_${version}.tar.gz
+  tag: csharp_*

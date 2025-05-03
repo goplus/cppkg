@@ -9,4 +9,4 @@ versions:
 template:
   from: 3.16.2
   folder: all
-  url: https://github.com/libfuse/libfuse/releases/download/fuse-${version}/fuse-${version}.tar.gz
+  tag: fuse-*

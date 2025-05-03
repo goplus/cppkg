@@ -5,4 +5,4 @@ versions:
 template:
   from: 0.1a
   folder: all
-  url: https://github.com/grisumbras/enum-flags/archive/refs/tags/v${version}.tar.gz
+  tag: v*

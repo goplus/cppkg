@@ -9,4 +9,4 @@ versions:
 template:
   from: "1.6"
   folder: all
-  url: https://github.com/bombela/backward-cpp/archive/v${version}.tar.gz
+  tag: v*

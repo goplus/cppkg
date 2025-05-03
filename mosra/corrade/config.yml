@@ -7,4 +7,4 @@ versions:
 template:
   from: "2019.10"
   folder: all
-  url: https://github.com/mosra/corrade/archive/v${version}.tar.gz
+  tag: v*

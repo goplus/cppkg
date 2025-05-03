@@ -5,4 +5,4 @@ versions:
 template:
   from: 1.1.0-clang
   folder: all
-  url: https://github.com/jay-tux/fpgen/archive/refs/tags/v${version}.tar.gz
+  tag: v*

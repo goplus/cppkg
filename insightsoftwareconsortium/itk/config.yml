@@ -9,4 +9,4 @@ versions:
 template:
   from: 5.3.0
   folder: all
-  url: https://github.com/InsightSoftwareConsortium/ITK/releases/download/v${version}/InsightToolkit-${version}.tar.gz
+  tag: v*

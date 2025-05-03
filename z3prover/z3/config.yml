@@ -19,4 +19,4 @@ versions:
 template:
   from: 4.14.1
   folder: all
-  url: https://github.com/Z3Prover/z3/archive/z3-${version}.tar.gz
+  tag: z3-*

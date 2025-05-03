@@ -31,4 +31,4 @@ versions:
 template:
   from: 13.0.0
   folder: all
-  url: https://github.com/xtensor-stack/xsimd/archive/${version}.tar.gz
+  tag: "*"

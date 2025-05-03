@@ -7,4 +7,4 @@ versions:
 template:
   from: 0.8.2
   folder: all
-  url: https://github.com/zaphoyd/websocketpp/archive/${version}.tar.gz
+  tag: "*"

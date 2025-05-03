@@ -21,4 +21,4 @@ versions:
 template:
   from: 0.8.0
   folder: all
-  url: https://github.com/martinmoene/expected-lite/archive/v${version}.tar.gz
+  tag: v*

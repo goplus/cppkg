@@ -11,4 +11,4 @@ versions:
 template:
   from: 0.2.4
   folder: all
-  url: https://github.com/foonathan/type_safe/archive/v${version}.tar.gz
+  tag: v*

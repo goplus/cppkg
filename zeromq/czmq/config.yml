@@ -7,4 +7,4 @@ versions:
 template:
   from: 4.2.1
   folder: all
-  url: https://github.com/zeromq/czmq/releases/download/v${version}/czmq-${version}.tar.gz
+  tag: v*

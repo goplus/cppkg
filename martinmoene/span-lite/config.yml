@@ -17,4 +17,4 @@ versions:
 template:
   from: 0.11.0
   folder: all
-  url: https://github.com/martinmoene/span-lite/archive/v${version}.tar.gz
+  tag: v*

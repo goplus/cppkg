@@ -9,4 +9,4 @@ versions:
 template:
   from: 0.1.1
   folder: all
-  url: https://github.com/arximboldi/zug/archive/refs/tags/v${version}.tar.gz
+  tag: v*

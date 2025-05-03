@@ -5,4 +5,4 @@ versions:
 template:
   from: 0.1.0
   folder: all
-  url: https://github.com/AndreRenaud/PDFGen/archive/refs/tags/${version}.tar.gz
+  tag: "*"

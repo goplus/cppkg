@@ -17,4 +17,4 @@ versions:
 template:
   from: "2.16"
   folder: all
-  url: https://github.com/gperftools/gperftools/releases/download/gperftools-${version}/gperftools-${version}.tar.gz
+  tag: gperftools-*

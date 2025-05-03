@@ -15,4 +15,4 @@ versions:
 template:
   from: "0.75"
   folder: all
-  url: https://github.com/PavelKisliak/BitSerializer/archive/v${version}.tar.gz
+  tag: v*

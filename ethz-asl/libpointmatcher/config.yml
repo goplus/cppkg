@@ -5,4 +5,4 @@ versions:
 template:
   from: 1.4.3
   folder: all
-  url: https://github.com/ethz-asl/libpointmatcher/archive/refs/tags/${version}.tar.gz
+  tag: "*"

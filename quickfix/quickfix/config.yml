@@ -5,4 +5,4 @@ versions:
 template:
   from: 1.15.1
   folder: all
-  url: https://github.com/quickfix/quickfix/archive/v${version}.tar.gz
+  tag: v*

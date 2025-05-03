@@ -17,4 +17,4 @@ versions:
 template:
   from: 1.11.3
   folder: all
-  url: https://github.com/nih-at/libzip/releases/download/v${version}/libzip-${version}.tar.gz
+  tag: v*

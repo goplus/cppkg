@@ -5,4 +5,4 @@ versions:
 template:
   from: 0.0.1
   folder: all
-  url: https://github.com/jbcoe/indirect_value/archive/refs/tags/v${version}.tar.gz
+  tag: v*

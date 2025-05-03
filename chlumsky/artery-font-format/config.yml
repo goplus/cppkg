@@ -9,4 +9,4 @@ versions:
 template:
   from: "1.1"
   folder: all
-  url: https://github.com/Chlumsky/artery-font-format/archive/v${version}.tar.gz
+  tag: v*

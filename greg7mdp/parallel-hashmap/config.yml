@@ -27,4 +27,4 @@ versions:
 template:
   from: 2.0.0
   folder: all
-  url: https://github.com/greg7mdp/parallel-hashmap/archive/refs/tags/v${version}.tar.gz
+  tag: v*

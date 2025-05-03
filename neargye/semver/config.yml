@@ -7,4 +7,4 @@ versions:
 template:
   from: 0.3.1
   folder: all
-  url: https://github.com/Neargye/semver/archive/refs/tags/v${version}.tar.gz
+  tag: v*

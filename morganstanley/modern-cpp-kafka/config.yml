@@ -17,4 +17,4 @@ versions:
 template:
   from: 2022.10.12
   folder: all
-  url: https://github.com/morganstanley/modern-cpp-kafka/archive/v${version}.tar.gz
+  tag: v*

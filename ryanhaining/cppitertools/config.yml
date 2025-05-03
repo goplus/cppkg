@@ -7,4 +7,4 @@ versions:
 template:
   from: "2.2"
   folder: all
-  url: https://github.com/ryanhaining/cppitertools/archive/v${version}.tar.gz
+  tag: v*

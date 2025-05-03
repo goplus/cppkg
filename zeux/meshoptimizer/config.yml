@@ -17,4 +17,4 @@ versions:
 template:
   from: "0.22"
   folder: all
-  url: https://github.com/zeux/meshoptimizer/archive/refs/tags/v${version}.tar.gz
+  tag: v*

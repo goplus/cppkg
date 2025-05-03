@@ -7,4 +7,4 @@ versions:
 template:
   from: 1.6.0
   folder: all
-  url: https://github.com/recastnavigation/recastnavigation/archive/refs/tags/v${version}.tar.gz
+  tag: v*

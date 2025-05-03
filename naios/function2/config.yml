@@ -15,4 +15,4 @@ versions:
 template:
   from: 4.2.4
   folder: all
-  url: https://github.com/Naios/function2/archive/refs/tags/${version}.tar.gz
+  tag: "*"

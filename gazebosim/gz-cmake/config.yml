@@ -9,4 +9,4 @@ versions:
 template:
   from: 2.17.1
   folder: all
-  url: https://github.com/gazebosim/gz-cmake/archive/refs/tags/ignition-cmake2_${version}.tar.gz
+  tag: ignition-cmake2_*

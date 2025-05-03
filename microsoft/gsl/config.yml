@@ -15,4 +15,4 @@ versions:
 template:
   from: 4.1.0
   folder: all
-  url: https://github.com/microsoft/GSL/archive/v${version}.tar.gz
+  tag: v*

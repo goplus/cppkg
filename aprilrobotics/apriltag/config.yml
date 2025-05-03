@@ -7,4 +7,4 @@ versions:
 template:
   from: 3.4.2
   folder: all
-  url: https://github.com/AprilRobotics/apriltag/archive/refs/tags/v${version}.tar.gz
+  tag: v*

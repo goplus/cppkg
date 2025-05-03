@@ -7,4 +7,4 @@ versions:
 template:
   from: 4.0.12
   folder: all
-  url: https://github.com/beltoforion/muparserx/archive/v${version}.tar.gz
+  tag: v*

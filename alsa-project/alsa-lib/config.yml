@@ -21,4 +21,4 @@ versions:
 template:
   from: 1.2.13
   folder: all
-  url: https://github.com/alsa-project/alsa-lib/archive/v${version}.tar.gz
+  tag: v*

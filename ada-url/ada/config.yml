@@ -17,4 +17,4 @@ versions:
 template:
   from: 2.9.2
   folder: all
-  url: https://github.com/ada-url/ada/archive/v${version}.tar.gz
+  tag: v*

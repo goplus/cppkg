@@ -5,4 +5,4 @@ versions:
 template:
   from: 0.1.0
   folder: all
-  url: https://github.com/endingly/games101-cgl/archive/refs/tags/v${version}.zip
+  tag: v*

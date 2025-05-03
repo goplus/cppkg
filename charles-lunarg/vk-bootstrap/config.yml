@@ -15,4 +15,4 @@ versions:
 template:
   from: "0.7"
   folder: all
-  url: https://github.com/charles-lunarg/vk-bootstrap/archive/refs/tags/v${version}.tar.gz
+  tag: v*

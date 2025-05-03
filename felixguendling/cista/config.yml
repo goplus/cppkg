@@ -17,4 +17,4 @@ versions:
 template:
   from: "0.15"
   folder: all
-  url: https://github.com/felixguendling/cista/releases/download/v${version}/cista.h
+  tag: v*

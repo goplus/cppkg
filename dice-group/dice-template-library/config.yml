@@ -25,4 +25,4 @@ versions:
 template:
   from: 1.9.0
   folder: all
-  url: https://github.com/dice-group/dice-template-library/archive/refs/tags/v${version}.tar.gz
+  tag: v*

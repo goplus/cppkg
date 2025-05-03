@@ -5,4 +5,4 @@ versions:
 template:
   from: 0.15.4
   folder: all
-  url: https://github.com/etcd-cpp-apiv3/etcd-cpp-apiv3/archive/refs/tags/v${version}.tar.gz
+  tag: v*

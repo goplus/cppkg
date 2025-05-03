@@ -5,4 +5,4 @@ versions:
 template:
   from: 2.0.2
   folder: all
-  url: https://github.com/nextsilicon/cpp-subprocess/archive/refs/tags/v${version}.tar.gz
+  tag: v*

@@ -21,4 +21,4 @@ versions:
 template:
   from: v9
   folder: all
-  url: https://github.com/rollbear/strong_type/archive/refs/tags/${version}.tar.gz
+  tag: "*"

@@ -27,4 +27,4 @@ versions:
 template:
   from: 5.7.2
   folder: all
-  url: https://github.com/wolfSSL/wolfssl/archive/v${version}-stable.tar.gz
+  tag: v*-stable

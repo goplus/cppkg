@@ -5,4 +5,4 @@ versions:
 template:
   from: "0.12"
   folder: all
-  url: https://github.com/basiliscos/cpp-bredis/archive/refs/tags/v${version}.tar.gz
+  tag: v*

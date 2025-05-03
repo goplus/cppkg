@@ -21,4 +21,4 @@ versions:
 template:
   from: 1.19.5
   folder: all
-  url: https://github.com/strukturag/libheif/releases/download/v${version}/libheif-${version}.tar.gz
+  tag: v*

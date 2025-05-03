@@ -39,4 +39,4 @@ versions:
 template:
   from: 3.11.3
   folder: all
-  url: https://github.com/nlohmann/json/archive/v${version}.tar.gz
+  tag: v*

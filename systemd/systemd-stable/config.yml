@@ -17,4 +17,4 @@ versions:
 template:
   from: "255.10"
   folder: all
-  url: https://github.com/systemd/systemd-stable/archive/v${version}.tar.gz
+  tag: v*

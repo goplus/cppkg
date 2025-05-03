@@ -5,4 +5,4 @@ versions:
 template:
   from: 0.4.7
   folder: all
-  url: https://github.com/dpryan79/libBigWig/archive/refs/tags/${version}.tar.gz
+  tag: "*"

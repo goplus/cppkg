@@ -13,4 +13,4 @@ versions:
 template:
   from: "4.11"
   folder: all
-  url: https://github.com/ccache/ccache/releases/download/v${version}/ccache-${version}.tar.gz
+  tag: v*

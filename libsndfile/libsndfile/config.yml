@@ -13,4 +13,4 @@ versions:
 template:
   from: 1.2.2
   folder: all
-  url: https://github.com/libsndfile/libsndfile/releases/download/${version}/libsndfile-${version}.tar.xz
+  tag: "*"

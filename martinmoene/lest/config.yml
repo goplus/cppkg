@@ -7,4 +7,4 @@ versions:
 template:
   from: 1.35.2
   folder: all
-  url: https://github.com/martinmoene/lest/archive/v${version}.tar.gz
+  tag: v*

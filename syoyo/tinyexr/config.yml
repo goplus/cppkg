@@ -11,4 +11,4 @@ versions:
 template:
   from: 1.0.7
   folder: all
-  url: https://github.com/syoyo/tinyexr/archive/v${version}.tar.gz
+  tag: v*

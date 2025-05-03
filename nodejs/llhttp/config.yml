@@ -9,4 +9,4 @@ versions:
 template:
   from: 9.1.3
   folder: all
-  url: https://github.com/nodejs/llhttp/archive/refs/tags/release/v${version}.tar.gz
+  tag: v*

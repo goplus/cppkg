@@ -15,4 +15,4 @@ versions:
 template:
   from: 2.24.0
   folder: all
-  url: https://github.com/libsdl-org/SDL_ttf/releases/download/release-${version}/SDL2_ttf-${version}.tar.gz
+  tag: release-*
