@@ -53,19 +53,44 @@ func doReplace(src map[string]any, fromVer, toVer string) {
 	}
 }
 
+type githubRelease struct {
+	PublishedAt string
+}
+
+func getRelease(pkg *Package, tagPattern string) (ret *githubRelease, err error) {
+	if tagPattern == "" {
+		return nil, errors.New("dynamic tag")
+	}
+	ver := strings.Replace(tagPattern, "*", pkg.Version, 1)
+	gr, err := github.GetRelease(pkg.Path, ver)
+	if err == nil {
+		ret = &githubRelease{PublishedAt: gr.PublishedAt}
+		return
+	}
+	t, err := github.GetTag(pkg.Path, ver)
+	if err != nil {
+		return
+	}
+	c, err := github.GetCommit(pkg.Path, t.Commit.URL)
+	if err == nil {
+		ret = &githubRelease{PublishedAt: c.Commit.Author.Date}
+	}
+	return
+}
+
 func (p *Manager) Install(pkg *Package, flags int) (err error) {
 	outDir := p.outDir(pkg)
 	os.MkdirAll(outDir, os.ModePerm)
 
 	var rev string
-	var gr *github.Release
+	var gr *githubRelease
 	var conandataYml, conanfilePy []byte
 
 	conanfileDir := p.conanfileDir(pkg.Path, pkg.Folder)
 	pkgVer := pkg.Version
 	template := pkg.Template
 	if template != nil {
-		gr, err = github.GetRelease(pkg.Path, "v"+pkg.Version)
+		gr, err = getRelease(pkg, template.Tag)
 		if err != nil {
 			return
 		}
@@ -215,7 +240,7 @@ func conanInstall(pkg, outDir, conanfileDir string, out io.Writer, flags int) (e
 	return
 }
 
-func recipeRevision(_ *Package, _ *github.Release, conandataYml []byte) string {
+func recipeRevision(_ *Package, _ *githubRelease, conandataYml []byte) string {
 	return md5Of(conandataYml)
 }
 

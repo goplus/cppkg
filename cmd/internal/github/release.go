@@ -19,18 +19,6 @@ type ReleaseAsset struct {
 	BrowserDownloadURL string `json:"browser_download_url"` // https://github.com/flintlib/flint/releases/download/v3.2.2/flint-3.2.2.tar.gz
 }
 
-// ReleaseAuthor represents the author of a GitHub release.
-type ReleaseAuthor struct {
-	Login     string `json:"login"`      // github-actions[bot]
-	ID        int    `json:"id"`         // 41898282
-	NodeID    string `json:"node_id"`    // MDM6Qm90NDE4OTgyODI=
-	AvatarURL string `json:"avatar_url"` // https://avatars.githubusercontent.com/in/15368?v=4
-	URL       string `json:"url"`        // https://api.github.com/users/github-actions%5Bbot%5D
-	HtmlURL   string `json:"html_url"`   // https://github.com/apps/github-actions
-	Type      string `json:"type"`       // Bot
-	SiteAdmin bool   `json:"site_admin"` // false
-}
-
 // Release represents a GitHub release.
 type Release struct {
 	URL             string          `json:"url"`              // https://api.github.com/repos/flintlib/flint/releases/209285187
@@ -43,7 +31,7 @@ type Release struct {
 	Body            string          `json:"body"`             // Release Notes
 	TarballURL      string          `json:"tarball_url"`      // https://api.github.com/repos/flintlib/flint/tarball/v3.2.2
 	ZipballURL      string          `json:"zipball_url"`      // https://api.github.com/repos/flintlib/flint/zipball/v3.2.2
-	Author          ReleaseAuthor   `json:"author"`
+	Author          Author          `json:"author"`
 	Assets          []*ReleaseAsset `json:"assets"`
 	Prerelease      bool            `json:"prerelease"`
 }
@@ -63,6 +51,8 @@ func GetRelease(pkgPath, ver string) (ret *Release, err error) {
 	if err != nil {
 		return
 	}
+	defer resp.Body.Close()
+
 	ret = new(Release)
 	err = json.NewDecoder(resp.Body).Decode(ret)
 	return
