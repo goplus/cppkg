@@ -65,6 +65,7 @@ loop:
 	if err != nil {
 		return
 	}
+	defer resp.Body.Close()
 
 	var tags []*Tag
 	err = json.NewDecoder(resp.Body).Decode(&tags)
