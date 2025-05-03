@@ -45,30 +45,10 @@ func (p *teeReader) Close() error {
 	return err
 }
 
-type response struct {
-	httptest.ResponseRecorder
-	resp *http.Response
-}
-
-func replyResponse(w http.ResponseWriter, resp *http.Response) {
-	w.(*response).resp = resp
-}
+type response = httptest.ResponseRecorder
 
 func newResponse() *response {
-	return &response{
-		ResponseRecorder: httptest.ResponseRecorder{
-			HeaderMap: make(http.Header),
-			Body:      new(bytes.Buffer),
-			Code:      200,
-		},
-	}
-}
-
-func (p *response) Result() *http.Response {
-	if p.resp != nil {
-		return p.resp
-	}
-	return p.ResponseRecorder.Result()
+	return httptest.NewRecorder()
 }
 
 type revertProxy = httptest.Server

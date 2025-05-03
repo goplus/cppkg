@@ -1,9 +1,6 @@
 package main
 
 import (
-	"archive/tar"
-	"bytes"
-	"compress/gzip"
 	"crypto/md5"
 	"encoding/hex"
 	"errors"
@@ -130,6 +127,17 @@ func (p *Manager) Install(pkg *Package, flags int) (err error) {
 		return
 	}
 
+	cmd := exec.Command("tar", "-czf", "conan_export.tgz", "conandata.yml")
+	cmd.Dir = outDir
+	err = cmd.Run()
+	if err != nil {
+		return
+	}
+	conanExportTgz, err := os.ReadFile(outDir + "/conan_export.tgz")
+	if err != nil {
+		return
+	}
+
 	logFile := outDir + "/rp.log"
 	return remoteProxy(flags, logFile, func() error {
 		return conanInstall(nameAndVer, outDir, conanfileDir, out, flags)
@@ -174,22 +182,7 @@ func (p *Manager) Install(pkg *Package, flags int) (err error) {
 			h := w.Header()
 			h.Set("Cache-Control", "public,max-age=3600")
 			h.Set("Content-Disposition", `attachment; filename="conan_export.tgz"`)
-			data := tarGzip("conan_export.tgz", conandataYml)
-			httputil.ReplyWith(w, http.StatusOK, "application/x-gzip", data)
-			/* ga := gr.asset(".gz")
-			if ga != nil {
-				resp, err := http.Get(ga.BrowserDownloadURL)
-				if err == nil {
-					h := resp.Header
-					h.Set("Cache-Control", "public,max-age=3600")
-					h.Set("Content-Disposition", `attachment; filename="conan_export.tgz"`)
-					h.Set("Content-Type", "application/x-gzip")
-					replyResponse(w, resp)
-					return
-				}
-			}
-			w.WriteHeader(passThrough)
-			*/
+			httputil.ReplyWith(w, http.StatusOK, "application/x-gzip", conanExportTgz)
 		})
 	})
 }
@@ -232,24 +225,6 @@ func md5Of(data []byte) string {
 	h := md5.New()
 	h.Write(data)
 	return hex.EncodeToString(h.Sum(nil))
-}
-
-func tarGzip(name string, data []byte) []byte {
-	var tarb bytes.Buffer
-	tarw := tar.NewWriter(&tarb)
-	tarw.WriteHeader(&tar.Header{
-		Name: name,
-		Mode: 0600,
-		Size: int64(len(data)),
-	})
-	tarw.Write(data)
-	tarw.Close()
-
-	var b bytes.Buffer
-	gzw := gzip.NewWriter(&b)
-	gzw.Write(tarb.Bytes())
-	gzw.Close()
-	return b.Bytes()
 }
 
 func unixTime(tstr string) (ret int64, err error) {

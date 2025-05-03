@@ -3,7 +3,6 @@ package main
 import (
 	"encoding/json"
 	"net/http"
-	"strings"
 )
 
 type githubReleaseAsset struct {
@@ -44,15 +43,6 @@ type githubRelease struct {
 	Author          githubReleaseAuthor   `json:"author"`
 	Assets          []*githubReleaseAsset `json:"assets"`
 	Prerelease      bool                  `json:"prerelease"`
-}
-
-func (p *githubRelease) asset(suffix string) *githubReleaseAsset {
-	for _, asset := range p.Assets {
-		if strings.HasSuffix(asset.BrowserDownloadURL, suffix) {
-			return asset
-		}
-	}
-	return nil
 }
 
 func githubReleaseURL(pkgPath, ver string) string {
