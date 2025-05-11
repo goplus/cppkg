@@ -1,2 +1,2 @@
-cppkg - C/C++ Package Manager
+cppkg - C/C++ Package Center
 =====
